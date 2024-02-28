@@ -1,10 +1,12 @@
-import Link from "next/link";
+import React from "react";
 import Layout from "../components/Layout";
 
-const AboutPage = () => (
-  <Layout title="About | Next.js + TypeScript Example">
-    <h1>This is the about page</h1>
-  </Layout>
-);
+const Calendrier = () => {
+  return (
+    <Layout title="Calendrier | Orientrek">
+      <h1>Welcome to Calendrier | Orientrek 👋</h1>
+    </Layout>
+  );
+};
 
-export default AboutPage;
+export default Calendrier;
