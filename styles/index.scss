@@ -10,3 +10,9 @@
 @import "./2-basics/buttons";
 
 // 3 - LAYOUT
+
+input, textarea {
+  background-color: grey;
+  color: white;
+  margin-left: 20px;
+}
