@@ -19,9 +19,11 @@ const ContactForm = () => {
 
   const notify = () =>
     toast.success(
-      "Message bien envoyé. Vous allez reçevoir une confirmation par mail"
+      `Message bien envoyé. Vous allez reçevoir une confirmation par mail à l'adresse : ${values.email}`,
+      { duration: 6000 }
     );
-  const notifyError = () => toast.error("Erreur. Veuillez réessayer.");
+  const notifyError = () =>
+    toast.error("Erreur. Veuillez réessayer.", { duration: 6000 });
 
   const handleSubmit = async () => {
     try {
@@ -47,63 +49,74 @@ const ContactForm = () => {
       <Toaster />
       <br />
       <br />
-      <p>Nom</p>
-      <input
-        type="text"
-        aria-label="Nom"
-        name="firstName"
-        value={values.firstName}
-        onChange={(e) => setInputChanges("firstName", e.target.value)}
-      />
-      <br />
-      <br />
-      <p>Prénom</p>
-      <input
-        type="text"
-        aria-label="Prénom"
-        name="firstName"
-        value={values.lastName}
-        onChange={(e) => setInputChanges("lastName", e.target.value)}
-      />
-      <br />
-      <br />
-      <p>Téléphone</p>
-      <input
-        type="tel"
-        aria-label="Téléphone"
-        name="firstName"
-        value={values.num}
-        onChange={(e) => setInputChanges("num", e.target.value)}
-      />
-      <br />
-      <br />
-      <p>Email</p>
-      <input
-        type="email"
-        aria-label="Email"
-        name="firstName"
-        value={values.email}
-        onChange={(e) => setInputChanges("email", e.target.value)}
-      />
-      <br />
-      <br />
-      <p>Message</p>
-      <textarea
-        aria-label="Message"
-        name="firstName"
-        value={values.message}
-        onChange={(e) => setInputChanges("message", e.target.value)}
-      />
-      <br />
-      <br />
-      {!isLoading && (
-        <button type="submit" onClick={() => handleSubmit()}>
-          Envoyer
-        </button>
-      )}
-      {isLoading && (
-        <ReactLoading type={"spin"} color={"blue"} height={66} width={37} />
-      )}
+      <label htmlFor="firstName">Prénom: </label>
+      <form
+        name="contactForm"
+        onSubmit={(e) => {
+          e.preventDefault();
+          handleSubmit();
+        }}
+      >
+        <input
+          type="text"
+          aria-label="Nom"
+          name="firstName"
+          id="firstName"
+          value={values.firstName}
+          onChange={(e) => setInputChanges("firstName", e.target.value)}
+        />
+        <br />
+        <br />
+        <label htmlFor="lastName">Nom: </label>
+        <input
+          type="text"
+          aria-label="Prénom"
+          name="lastName"
+          id="lastName"
+          value={values.lastName}
+          onChange={(e) => setInputChanges("lastName", e.target.value)}
+        />
+        <br />
+        <br />
+        <label htmlFor="num">Numéro: </label>
+        <input
+          type="tel"
+          aria-label="Téléphone"
+          name="num"
+          id="num"
+          value={values.num}
+          onChange={(e) => setInputChanges("num", e.target.value)}
+        />
+        <br />
+        <br />
+        <label htmlFor="email">Email: </label>
+        <input
+          required
+          type="email"
+          aria-label="Email"
+          name="email"
+          id="email"
+          value={values.email}
+          onChange={(e) => setInputChanges("email", e.target.value)}
+        />
+        <br />
+        <br />
+        <label htmlFor="message">Message: </label>
+        <textarea
+          required
+          aria-label="Message"
+          name="message"
+          id="message"
+          value={values.message}
+          onChange={(e) => setInputChanges("message", e.target.value)}
+        />
+        <br />
+        <br />
+        {!isLoading && <input type="submit" value="Envoyer" />}
+        {isLoading && (
+          <ReactLoading type={"spin"} color={"blue"} height={66} width={37} />
+        )}
+      </form>
     </div>
   );
 };
