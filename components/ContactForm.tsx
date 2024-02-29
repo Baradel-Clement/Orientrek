@@ -19,7 +19,7 @@ const ContactForm = () => {
 
   const notify = () =>
     toast.success(
-      `Message bien envoyé. Vous allez reçevoir une confirmation par mail à l'adresse : ${values.email}`,
+      `Votre message a bien été envoyé et vous recevrez un accusé de réception à l’adresse : ${values.email}`,
       { duration: 6000 }
     );
   const notifyError = () =>

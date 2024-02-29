@@ -7,7 +7,7 @@ export default async function handle(
 ) {
   const mailToOrientrek = await resend.emails.send({
     from: `${req.body.firstName} ${req.body.lastName} <contact@orientrek.com>`,
-    to: ["baradelclement@gmail.com"],
+    to: ["orientrek@gmail.com"],
     subject: "Page Contact | Vous avez reçu un message.",
     html: `Vous avez reçu un message de : ${req.body.firstName} ${req.body.lastName} \n \n Contact : ${req.body.email} OU ${req.body.num} \n \n ${req.body.message}`,
   });
