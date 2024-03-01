@@ -1,10 +1,7 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import { resend } from "../../lib/resend";
 
-export default async function handle(
-  req: NextApiRequest,
-  res: NextApiResponse
-) {
+export async function POST(req: NextApiRequest, res: NextApiResponse) {
   const date = new Date();
   const months = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre']
   const mailToOrientrek = await resend.emails.send({
@@ -22,7 +19,6 @@ export default async function handle(
   if (mailToOrientrek.error) {
     return res.status(400).json(mailToOrientrek.error);
   }
-  res.status(200).json(mailToOrientrek.data);
 
   const datePlus3 = new Date(date);
   datePlus3.setDate(datePlus3.getDate() + 3);
@@ -44,5 +40,5 @@ export default async function handle(
   if (mailToClient.error) {
     return res.status(400).json(mailToClient.error);
   }
-  res.status(200).json(mailToClient.data);
+  return res.status(200).json([mailToClient.data, mailToOrientrek.data]);
 }
