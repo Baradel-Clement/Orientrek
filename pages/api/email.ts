@@ -25,7 +25,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     datePlus3.setDate(datePlus3.getDate() + 3);
   
     const mailToClient = await resend.emails.send({
-      from: "Samuel Bernard <contact@orientrek.com>",
+      from: "Samuel Bernard <ne-pas-repondre@orientrek.com>",
       to: [req.body.email],
       subject: "Orientrek a bien reçu votre message",
       html: `Bonjour ${req.body.firstName},<br /><br />
@@ -35,7 +35,9 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       
       ${req.body.message}<br /> <br />
       
-      Message : Orientrek a pris en compte votre demande et vous remercie. Notre équipe met tout en œuvre pour y répondre avant le ${datePlus3.getDate()} ${months[datePlus3.getMonth()]} ${datePlus3.getFullYear()}`,
+      Orientrek a pris en compte votre demande et vous remercie. Notre équipe met tout en œuvre pour y répondre avant le ${datePlus3.getDate()} ${months[datePlus3.getMonth()]}.<br /><br />
+      
+      Si vous souhaitez compléter votre demande, nous vous remercions d'adresser votre message à contact@orientrek.com.`,
     });
   
     if (mailToClient.error) {
