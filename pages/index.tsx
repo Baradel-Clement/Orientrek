@@ -5,7 +5,7 @@ type Props = {};
 
 const Accueil: NextPageWithLayout<Props> = () => (
   <Layout title="Accueil | Orientrek">
-    <h1>Welcome to Accueil | Orientrek 👋</h1>
+    <div className="Accueil" />
   </Layout>
 );
 

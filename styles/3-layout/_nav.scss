@@ -1,0 +1,30 @@
+nav {
+  width: 100%;
+  height: 70px;
+  background-color: $red;
+  @extend %flex-start-center;
+  position: relative;
+
+  button {
+    margin-left: 25px;
+    width: 30px;
+    height: 30px;
+    background-color: $dark-blue;
+  }
+
+  p.logo {
+    margin: 0px 50%;
+    position: absolute;
+    transform: translateX(-50%);
+  }
+  z-index: 2;
+}
+
+div.Accueil {
+  position: absolute;
+  top: 0px;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  background-color: $aqua;
+}
