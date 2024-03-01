@@ -5,11 +5,21 @@ export default async function handle(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
+  const date = new Date();
+  const months = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre']
+  console.log(new Date().getDate())
+  console.log(months[new Date().getMonth()])
+  console.log(new Date().getFullYear())
   const mailToOrientrek = await resend.emails.send({
     from: `${req.body.firstName} ${req.body.lastName} <contact@orientrek.com>`,
-    to: ["orientrek@gmail.com"],
-    subject: "Page Contact | Vous avez reçu un message.",
-    html: `Vous avez reçu un message de : ${req.body.firstName} ${req.body.lastName} \n \n Contact : ${req.body.email} OU ${req.body.num} \n \n ${req.body.message}`,
+    to: ["baradelclement@gmail.com"], // contact@orientrek.com
+    subject: `La demande de ${req.body.firstName} ${req.body.lastName} en date du ${new Date().getDate()} ${months[new Date().getMonth()]} ${new Date().getFullYear()}`,
+    html: `Votre nom : ${req.body.lastName}<br />
+    Votre prénom : ${req.body.firstName}<br />
+    Votre email : ${req.body.email}<br />
+    Votre téléphone : ${req.body.num}<br />
+    Votre message : <br /> <br />
+    ${req.body.message}`,
   });
 
   if (mailToOrientrek.error) {
@@ -17,11 +27,21 @@ export default async function handle(
   }
   res.status(200).json(mailToOrientrek.data);
 
+  const datePlus3 = new Date(date);
+  datePlus3.setDate(datePlus3.getDate() + 3);
+
   const mailToClient = await resend.emails.send({
-    from: "Samuel Bernard <do-not-reply@orientrek.com>",
+    from: "Samuel Bernard <contact@orientrek.com>",
     to: [req.body.email],
     subject: "Orientrek a bien reçu votre message",
-    html: `Prénom:  ${req.body.firstName} \n \n Nom:  ${req.body.lastName} \n \n num:  ${req.body.num} \n \n email:  ${req.body.email} \n \n message:  ${req.body.message} \n \n Votre message a bien été envoyé `,
+    html: `Bonjour ${req.body.lastName},<br /><br />
+
+    
+    Vous nous avez adressé le message ci-dessous via notre formulaire de contact : <br /><br />
+    
+    ${req.body.message}<br /> <br />
+    
+    Message : Orientrek a pris en compte votre demande et vous remercie. Notre équipe met tout en œuvre pour y répondre avant le ${datePlus3.getDate()} ${months[datePlus3.getMonth()]} ${datePlus3.getFullYear()}`,
   });
 
   if (mailToClient.error) {
