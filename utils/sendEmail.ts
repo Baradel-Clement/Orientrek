@@ -8,7 +8,7 @@ export const sendEmail = async (inputValues: {
   try {
     console.log(inputValues);
 
-    let res = await fetch("/api/email", {
+    let res = await fetch("api/email", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(inputValues),
