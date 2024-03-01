@@ -34,7 +34,7 @@ export default async function handle(
     from: "Samuel Bernard <contact@orientrek.com>",
     to: [req.body.email],
     subject: "Orientrek a bien reçu votre message",
-    html: `Bonjour ${req.body.lastName},<br /><br />
+    html: `Bonjour ${req.body.firstName},<br /><br />
 
     
     Vous nous avez adressé le message ci-dessous via notre formulaire de contact : <br /><br />
