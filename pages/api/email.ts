@@ -12,7 +12,7 @@ export default async function handle(
   console.log(new Date().getFullYear())
   const mailToOrientrek = await resend.emails.send({
     from: `${req.body.firstName} ${req.body.lastName} <contact@orientrek.com>`,
-    to: ["baradelclement@gmail.com"], // contact@orientrek.com
+    to: ["contact@orientrek.com"], // contact@orientrek.com
     subject: `La demande de ${req.body.firstName} ${req.body.lastName} en date du ${new Date().getDate()} ${months[new Date().getMonth()]} ${new Date().getFullYear()}`,
     html: `Votre nom : ${req.body.lastName}<br />
     Votre prénom : ${req.body.firstName}<br />
