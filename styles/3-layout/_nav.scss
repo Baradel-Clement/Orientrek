@@ -45,10 +45,10 @@ nav {
 
     & > a,
     & > p {
-      margin-top: 40px;
       font-size: 40px;
 
       &:not(:first-child) {
+        margin-top: 40px;
         text-decoration: underline;
       }
     }

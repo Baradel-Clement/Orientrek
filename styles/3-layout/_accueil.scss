@@ -1,6 +1,48 @@
 .Accueil {
-  padding-top: 200px;
+  padding-top: 70px;
+  @extend %flex-start-center;
+  flex-direction: column;
+
+  .maps-container {
+    width: 100%;
+    max-width: 310px;
+    height: 306px;
+    margin: 50px 0px;
+    position: relative;
+
+    & > img.map {
+      position: absolute;
+      bottom: 0px;
+      right: 0px;
+      @extend %transition;
+    }
+
+    & > img.active {
+      width: 100%;
+      z-index: 1;
+    }
+    & > img.inactive {
+      width: 30%;
+      height: 30%;
+      z-index: 2;
+    }
+
+    & > img.flag {
+      position: absolute;
+      z-index: 3;
+
+      &.flagAlpes {
+        top: 184px;
+        left: 157px;
+      }
+      &.flagHoka {
+        top: 23px;
+        left: 251px;
+      }
+    }
+  }
   & > button {
-    font-size: 30px;
+    font-size: 25px;
+    background-color: $red;
   }
 }
