@@ -5,6 +5,7 @@ import sejours from "../utils/sejours";
 import Image from "next/image";
 import arrowChevron from "../public/assets/arrow-chevron.svg";
 import Hamburger from "hamburger-react";
+import { useHomeStateContext } from "../context/Home";
 
 /* const navLinks = [
   { label: "Séjours" },
@@ -20,8 +21,7 @@ type Props = {
 };
 
 const Layout = ({ children, title = "Orientrek" }: Props) => {
-  const [displayNavList, setDisplayNavList] = useState(false);
-  const [displayNavSejours, setDisplayNavSejours] = useState(false);
+  const { displayNavList, setDisplayNavList, displayNavSejours, setDisplayNavSejours } = useHomeStateContext();
   return (
     <div>
       <Head>
