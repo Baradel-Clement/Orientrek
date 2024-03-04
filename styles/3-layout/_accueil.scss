@@ -1,3 +1,12 @@
+div.Accueil {
+  position: absolute;
+  top: 0px;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  background-color: $aqua;
+}
+
 .Accueil {
   padding-top: 70px;
   @extend %flex-start-center;
@@ -12,8 +21,8 @@
 
     & > img.map {
       position: absolute;
-      bottom: 0px;
-      right: 0px;
+      top: 0px;
+      left: 0px;
       @extend %transition;
     }
 
@@ -42,7 +51,12 @@
     }
   }
   & > button {
-    font-size: 25px;
+    font-size: 20px;
     background-color: $red;
+    border-radius: 25px;
+    width: 218px;
+    height: 51px;
+    @extend %drop-shadow;
+    margin-top: 60px;
   }
 }

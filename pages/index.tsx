@@ -55,6 +55,7 @@ const Accueil: NextPageWithLayout<Props> = () => {
             setDisplayNavList(true);
             setDisplayNavSejours(true);
           }}
+          className="bold"
         >
           Nos treks en 2025
         </button>

@@ -4,18 +4,23 @@ nav {
   z-index: 3;
 
   .nav-upper {
-    background-color: $white;
+    background-color: $red;
     width: 100%;
-    height: 70px;
+    height: 75px;
     position: relative;
     z-index: 4;
     @extend %flex-start-center;
 
-    button {
-      margin-left: 25px;
-      width: 30px;
-      height: 30px;
-      background-color: $dark-blue;
+    div.hamburger-react {
+      margin-left: 20px;
+    }
+
+    div.hamburger-shadow {
+      position: absolute;
+      left: 0px;
+      width: 48px;
+      height: 48px;
+      border-radius: 20px;
     }
 
     p.logo {
@@ -28,52 +33,37 @@ nav {
   div.nav-list {
     position: absolute;
     top: -100vh;
-    background-color: $blue;
-    width: 100%;
-    height: 100vh;
-    padding-top: 100px;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: $white;
+    width: 87%;
+    padding: 15px 0px;
     z-index: 2;
+    border-radius: 25px;
 
     @extend %flex-start-center;
     @extend %transition;
+    @extend %drop-shadow;
     flex-direction: column;
 
     &.active {
-      top: 0px;
+      top: 90px;
       @extend %transition;
     }
 
-    & > a,
-    & > p {
-      font-size: 40px;
-
-      &:not(:first-child) {
-        margin-top: 40px;
-        text-decoration: underline;
-      }
-    }
-
-    & > a.sejour {
+    & > button.btnSejour, & > a.navLink {
       position: relative;
-      top: -20px;
-      opacity: 0;
-      display: none;
-      transition-delay: 0s;
+      width: 242px;
+      background-color: $red;
+      height: 42px;
+      border-radius: 25px;
+      color: $white;
+      padding: 0px 32px;
+      @extend %drop-shadow;
+      text-align: center;
 
-      &.active {
-        top: 0px;
-        opacity: 1;
-        display: block;
-        @extend %transition;
-      }
-    }
-
-    & > p.buttonSejour {
-      position: relative;
+      @extend %flex-between-center;
       & > img {
-        position: absolute;
-        right: -53px;
-        top: 3px;
         transform: rotate(90deg);
         @extend %transition;
       }
@@ -83,29 +73,48 @@ nav {
         }
       }
     }
-    & > a.sejour.active:nth-child(2) {
-      transition-delay: 0s;
+
+    & > a.navLink {
+      margin-top: 20px;
+      text-decoration: underline;
+      @extend %flex-center-center;
     }
-    & > a.sejour.active:nth-child(3) {
-      transition-delay: 0.2s;
-    }
-    & > a.sejour.active:nth-child(4) {
-      transition-delay: 0.4s;
-    }
-    & > a.sejour.active:nth-child(5) {
-      transition-delay: 0.6s;
-    }
-    & > a.sejour.active:nth-child(6) {
-      transition-delay: 0.8s;
+
+    & > a.sejour {
+      display: none;
+      margin-top: 13px;
+      width: 300px;
+      border-radius: 25px;
+      background-color: $red;
+      padding: 5px 10px;
+      @extend %flex-between-center;
+
+      &.active {
+        display: flex;
+      }
+
+      & > div.sejour-desc {
+        height: 69px;
+        @extend %flex-center-center;
+        flex-direction: column;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+        text-align: center;
+
+        & > p:first-child {
+          min-width: 159px;
+        }
+
+        & > p:nth-child(2) {
+          margin-top: 5px;
+          margin-bottom: 10px;
+          min-width: 154px;
+        }
+
+        & > div.sejour-difficulty {
+          width: 134.69px;
+          @extend %flex-between-center;
+        }
+      }
     }
   }
-}
-
-div.Accueil {
-  position: absolute;
-  top: 0px;
-  width: 100vw;
-  height: 100vh;
-  z-index: 1;
-  background-color: $aqua;
 }
