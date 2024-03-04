@@ -5,6 +5,7 @@ import sejours from "../utils/sejours";
 import Image from "next/image";
 import arrowChevron from "../public/assets/arrow-chevron.svg";
 import bootsActive from "../public/assets/boots.svg";
+import bootsInactive from "../public/assets/boots-inactive.svg";
 import sejourImg from "../public/assets/sejourimg.png";
 import Hamburger from "hamburger-react";
 import { useHomeStateContext } from "../context/Home";
@@ -103,7 +104,7 @@ const Layout = ({ children, title = "Orientrek" }: Props) => {
                   <Image src={bootsActive} alt='bottes' width={18.66} height={20.48} />
                   <Image src={bootsActive} alt='bottes' width={18.66} height={20.48} />
                   <Image src={bootsActive} alt='bottes' width={18.66} height={20.48} />
-                  <Image src={bootsActive} alt='bottes' width={18.66} height={20.48} />
+                  <Image src={bootsInactive} alt='bottes' width={18.66} height={20.48} />
                 </div>
               </div>
             </Link>
