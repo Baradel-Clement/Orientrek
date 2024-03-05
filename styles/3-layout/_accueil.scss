@@ -61,9 +61,69 @@ div.Accueil {
   }
 }
 
-
 @media screen and (min-width: 1200px) {
-  .maps-container-mobile, button.btn-sejours-mobile {
+  .maps-container-mobile,
+  button.btn-sejours-mobile {
     display: none !important;
   }
+
+  .Accueil {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.Accueil-main {
+  width: 656px;
+  @extend %flex-start-center;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-right: 270px;
+  position: relative;
+}
+
+.maps-hint {
+  width: 100%;
+  height: 31px;
+  background-color: $red;
+  border-radius: 25px;
+  @extend %drop-shadow;
+  font-size: 20px;
+  @extend %flex-center-center;
+}
+
+.maps-container {
+  width: 487px;
+  height: 481px;
+  margin-top: 20px;
+  & > img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.maps-news {
+  margin-top: 37px;
+  width: 100%;
+  height: 41px;
+  background-color: $white;
+  border-radius: 25px;
+  color: black;
+  text-align: center;
+  @extend %flex-center-center;
+
+  & > p {
+    width: 634px;
+    line-height: 18px;
+  }
+}
+
+.Accueil-destinations {
+  width: 150px;
+  height: 609px;
+  background-color: $red;
+  position: absolute;
+  left: 0px;
 }
