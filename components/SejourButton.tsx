@@ -12,7 +12,7 @@ const SejourButton = ({ sejour }) => {
     <Link
       key={sejour.trek}
       href={sejour.slug}
-      className={`sejour ${displayNavSejours ? "active" : ""}`}
+      className={`sejour transition hover-shadow transition ${displayNavSejours ? "active" : ""}`}
     >
       <Image src={sejourImg} alt="image sejour" width={107.6} height={68.91} placeholder="blur" />
       <div className="sejour-desc">

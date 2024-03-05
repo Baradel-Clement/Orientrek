@@ -8,8 +8,10 @@ import arrowChevron from "../public/assets/arrow-chevron.svg";
 import Hamburger from "hamburger-react";
 import { useHomeStateContext } from "../context/Home";
 import logo from "../public/assets/logo.png";
+import closeIcon from "../public/assets/close.svg";
 import { useRouter } from "next/router";
 import SejourButton from "./SejourButton";
+import { closeModal } from "../utils/closeModal";
 
 /* const navLinks = [
   { label: "Séjours" },
@@ -30,6 +32,8 @@ const Layout = ({ children, title = "Orientrek" }: Props) => {
     setDisplayNavList,
     displayNavSejours,
     setDisplayNavSejours,
+    displayNestedSejours,
+    setDisplayNestedSejours,
   } = useHomeStateContext();
 
   const [sejoursYear, setSejoursYear] = useState(2025);
@@ -37,7 +41,13 @@ const Layout = ({ children, title = "Orientrek" }: Props) => {
   const router = useRouter();
 
   return (
-    <div>
+    <div onClick={(e) => {
+      if (displayNestedSejours) {
+        if (closeModal('closeModalNestedLinksOff', e)) {
+          setDisplayNestedSejours(false);
+        }
+      }
+    }}>
       <Head>
         <title>{title}</title>
         <meta charSet="utf-8" />
@@ -65,7 +75,49 @@ const Layout = ({ children, title = "Orientrek" }: Props) => {
               <Image src={logo} alt="logo Orientrek" width="65" height="65" />
             </Link>
             <div className="nav-upper-links">
-              <p>Séjours</p>
+              <p
+                className={`nav-upper-btnDisplayNestedSejours closeModalNestedLinksOff ${
+                  displayNestedSejours ? "active" : ""
+                }`}
+                onClick={() => setDisplayNestedSejours(!displayNestedSejours)}
+              >
+                Nos Séjours
+              </p>
+
+              {/* Nested Links */}
+              {displayNestedSejours && (
+                <div className="nav-upper-nestedLinks closeModalNestedLinksOff">
+                  <Image src={closeIcon} alt="icone fermeture" onClick={() => setDisplayNestedSejours(false)} />
+                  <div className="upper-sejours-yearBtn-container">
+                    <button
+                      onClick={() => setSejoursYear(2025)}
+                      className={`upper-sejours-yearBtn bold hover-shadow transition ${
+                        sejoursYear === 2025 ? "active" : ""
+                      }`}
+                    >
+                      2025
+                    </button>
+                    <button
+                      onClick={() => setSejoursYear(2026)}
+                      className={`upper-sejours-yearBtn bold hover-shadow transition ${
+                        sejoursYear === 2026 ? "active" : ""
+                      }`}
+                    >
+                      2026
+                    </button>
+                  </div>
+
+                  {sejoursYear === 2025 &&
+                    sejours2025.map((sejour) => (
+                      <SejourButton sejour={sejour} />
+                    ))}
+                  {sejoursYear === 2026 &&
+                    sejours2026.map((sejour) => (
+                      <SejourButton sejour={sejour} />
+                    ))}
+                </div>
+              )}
+
               <Link href="/calendrier">Calendrier</Link>
               <Link href="/reservations">Réservation</Link>
               <Link href="/nous-connaitre">Nous connaître</Link>
@@ -78,7 +130,7 @@ const Layout = ({ children, title = "Orientrek" }: Props) => {
                 <div className="upper-sejours-yearBtn-container">
                   <button
                     onClick={() => setSejoursYear(2025)}
-                    className={`upper-sejours-yearBtn bold ${
+                    className={`upper-sejours-yearBtn bold hover-shadow transition ${
                       sejoursYear === 2025 ? "active" : ""
                     }`}
                   >
@@ -86,7 +138,7 @@ const Layout = ({ children, title = "Orientrek" }: Props) => {
                   </button>
                   <button
                     onClick={() => setSejoursYear(2026)}
-                    className={`upper-sejours-yearBtn bold ${
+                    className={`upper-sejours-yearBtn bold hover-shadow transition ${
                       sejoursYear === 2026 ? "active" : ""
                     }`}
                   >
@@ -95,6 +147,8 @@ const Layout = ({ children, title = "Orientrek" }: Props) => {
                 </div>
                 {sejoursYear === 2025 &&
                   sejours2025.map((sejour) => <SejourButton sejour={sejour} />)}
+                {sejoursYear === 2026 &&
+                  sejours2026.map((sejour) => <SejourButton sejour={sejour} />)}
               </div>
             )}
           </div>

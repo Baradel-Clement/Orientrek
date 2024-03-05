@@ -176,3 +176,12 @@ label {
 .drop-shadow {
   @extend %drop-shadow;
 }
+.hover-shadow {
+  box-shadow: none;
+}
+.hover-shadow:hover {
+  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.5);
+}
+.transition {
+  transition: 0.2s ease-in-out;
+}
