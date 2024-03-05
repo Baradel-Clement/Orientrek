@@ -12,7 +12,7 @@ div.Accueil {
   @extend %flex-start-center;
   flex-direction: column;
 
-  .maps-container {
+  .maps-container-mobile {
     width: 100%;
     max-width: 310px;
     height: 306px;
@@ -51,12 +51,19 @@ div.Accueil {
     }
   }
   & > button {
-    font-size: 20px;
+    font-size: 18px;
     background-color: $red;
     border-radius: 25px;
     width: 218px;
     height: 51px;
     @extend %drop-shadow;
     margin-top: 60px;
+  }
+}
+
+
+@media screen and (min-width: 1200px) {
+  .maps-container-mobile, button.btn-sejours-mobile {
+    display: none !important;
   }
 }

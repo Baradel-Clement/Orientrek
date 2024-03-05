@@ -10,23 +10,27 @@ nav {
     position: relative;
     z-index: 4;
     @extend %flex-start-center;
+    @extend %drop-shadow;
+
+    .nav-upper-container {
+      display: none;
+    }
 
     div.hamburger-react {
       margin-left: 20px;
     }
 
-    div.hamburger-shadow {
-      position: absolute;
-      left: 0px;
-      width: 48px;
-      height: 48px;
-      border-radius: 20px;
-    }
-
-    p.logo {
+    & > a.logo {
       margin: 0px 50%;
       position: absolute;
       transform: translateX(-50%);
+
+      width: 65px;
+      height: 65px;
+      & > img {
+        width: 100%;
+        height: 100%;
+      }
     }
   }
 
@@ -51,7 +55,8 @@ nav {
       @extend %transition;
     }
 
-    & > button.btnSejour, & > a.navLink {
+    & > button.btnSejour,
+    & > a.navLink {
       position: relative;
       width: 242px;
       background-color: $red;
@@ -88,9 +93,15 @@ nav {
       background-color: $red;
       padding: 5px 10px;
       @extend %flex-between-center;
+      height: auto;
 
       &.active {
         display: flex;
+      }
+
+      & > img {
+        width: 107.6px;
+        height: 68.91px;
       }
 
       & > div.sejour-desc {
@@ -102,17 +113,121 @@ nav {
 
         & > p:first-child {
           min-width: 159px;
+          font-size: 11px !important;
         }
 
         & > p:nth-child(2) {
           margin-top: 5px;
           margin-bottom: 10px;
           min-width: 154px;
+          font-size: 11px !important;
         }
 
         & > div.sejour-difficulty {
           width: 134.69px;
           @extend %flex-between-center;
+
+          & > img {
+            width: 18.66px;
+            height: 20.48px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  div.hamburger-react,
+  div.nav-list,
+  a.logo {
+    display: none !important;
+  }
+
+  nav {
+    .nav-upper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .nav-upper-container {
+        width: 1205px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+
+        & > a:first-child {
+          height: 61px;
+        }
+
+        .nav-upper-links {
+          width: 597px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          font-size: 20px;
+          font-weight: bold;
+          text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+
+          & > a:hover {
+            text-decoration: underline;
+            text-shadow: none;
+          }
+        }
+
+        .nav-upper-sejours {
+          width: 405px;
+          height: 698px;
+          background-color: $white;
+          border-radius: 25px;
+          position: absolute;
+          top: 0px;
+          right: -11px;
+          z-index: 3;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 58px 11px 18px 11px;
+
+          & > .upper-sejours-yearBtn-container {
+            width: 205px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            & > .upper-sejours-yearBtn {
+              width: 96px;
+              height: 27px;
+              background-color: $red;
+              margin: 0px;
+              border-radius: 25px;
+              font-size: 20px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+
+              &.active {
+                opacity: 0.5;
+              }
+            }
+          }
+        }
+
+        .nav-upper-contactBtn {
+          position: relative;
+          z-index: 4;
+          width: 383px;
+          height: 41px;
+          border-radius: 25px;
+          background-color: $red;
+          text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+          font-size: 20px;
+          font-weight: bold;
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
       }
     }

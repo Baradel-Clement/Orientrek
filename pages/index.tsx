@@ -15,7 +15,8 @@ const Accueil: NextPageWithLayout<Props> = () => {
   return (
     <Layout title="Accueil | Orientrek">
       <div className="Accueil">
-        <div className="maps-container">
+        {/* MOBILE SECTION */}
+        <div className="maps-container-mobile">
           <Image
             className={`map ${mapJaponActive ? 'active' : 'inactive'}`}
             src={mapJapon}
@@ -55,10 +56,14 @@ const Accueil: NextPageWithLayout<Props> = () => {
             setDisplayNavList(true);
             setDisplayNavSejours(true);
           }}
-          className="bold"
+          className="bold btn-sejours-mobile"
         >
-          Nos treks en 2025
+          Nos séjours en 2025
         </button>
+
+        {/* DESKTOP SECTION */}
+
+        
       </div>
     </Layout>
   );
