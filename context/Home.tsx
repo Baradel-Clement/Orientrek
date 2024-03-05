@@ -8,9 +8,11 @@ type HomeContextType = {
   displayNavList: boolean;
   displayNavSejours: boolean;
   displayNestedSejours: boolean;
+  sejourHovering: string;
   setDisplayNavList: React.Dispatch<React.SetStateAction<boolean>>;
   setDisplayNavSejours: React.Dispatch<React.SetStateAction<boolean>>;
   setDisplayNestedSejours: React.Dispatch<React.SetStateAction<boolean>>;
+  setSejourHovering: React.Dispatch<React.SetStateAction<string>>;
 };
 
 export const HomeContext = createContext({} as HomeContextType);
@@ -19,6 +21,7 @@ export const HomeContextProvider = ({ children }: HomeContextProviderProps) => {
   const [displayNavList, setDisplayNavList] = useState(false);
   const [displayNavSejours, setDisplayNavSejours] = useState(false);
   const [displayNestedSejours, setDisplayNestedSejours] = useState(false);
+  const [sejourHovering, setSejourHovering] = useState('false');
 
   return (
     <HomeContext.Provider
@@ -28,7 +31,9 @@ export const HomeContextProvider = ({ children }: HomeContextProviderProps) => {
         displayNavSejours,
         setDisplayNavSejours,
         displayNestedSejours,
-        setDisplayNestedSejours
+        setDisplayNestedSejours,
+        sejourHovering,
+        setSejourHovering
       }}
     >
       {children}

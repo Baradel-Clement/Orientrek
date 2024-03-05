@@ -34,6 +34,7 @@ const Layout = ({ children, title = "Orientrek" }: Props) => {
     setDisplayNavSejours,
     displayNestedSejours,
     setDisplayNestedSejours,
+    setSejourHovering,
   } = useHomeStateContext();
 
   const [sejoursYear, setSejoursYear] = useState(2025);
@@ -41,13 +42,15 @@ const Layout = ({ children, title = "Orientrek" }: Props) => {
   const router = useRouter();
 
   return (
-    <div onClick={(e) => {
-      if (displayNestedSejours) {
-        if (closeModal('closeModalNestedLinksOff', e)) {
-          setDisplayNestedSejours(false);
+    <div
+      onClick={(e) => {
+        if (displayNestedSejours) {
+          if (closeModal("closeModalNestedLinksOff", e)) {
+            setDisplayNestedSejours(false);
+          }
         }
-      }
-    }}>
+      }}
+    >
       <Head>
         <title>{title}</title>
         <meta charSet="utf-8" />
@@ -87,7 +90,11 @@ const Layout = ({ children, title = "Orientrek" }: Props) => {
               {/* Nested Links */}
               {displayNestedSejours && (
                 <div className="nav-upper-nestedLinks closeModalNestedLinksOff">
-                  <Image src={closeIcon} alt="icone fermeture" onClick={() => setDisplayNestedSejours(false)} />
+                  <Image
+                    src={closeIcon}
+                    alt="icone fermeture"
+                    onClick={() => setDisplayNestedSejours(false)}
+                  />
                   <div className="upper-sejours-yearBtn-container">
                     <button
                       onClick={() => setSejoursYear(2025)}
@@ -109,11 +116,11 @@ const Layout = ({ children, title = "Orientrek" }: Props) => {
 
                   {sejoursYear === 2025 &&
                     sejours2025.map((sejour) => (
-                      <SejourButton sejour={sejour} />
+                      <SejourButton mode="nestedLink" sejour={sejour} />
                     ))}
                   {sejoursYear === 2026 &&
                     sejours2026.map((sejour) => (
-                      <SejourButton sejour={sejour} />
+                      <SejourButton mode="nestedLink" sejour={sejour} />
                     ))}
                 </div>
               )}
@@ -126,7 +133,7 @@ const Layout = ({ children, title = "Orientrek" }: Props) => {
               Nous contacter : 06 59 37 37 03
             </Link>
             {router.pathname === "/" && (
-              <div className="nav-upper-sejours">
+              <div className="nav-upper-sejours drop-shadow">
                 <div className="upper-sejours-yearBtn-container">
                   <button
                     onClick={() => setSejoursYear(2025)}
@@ -146,9 +153,13 @@ const Layout = ({ children, title = "Orientrek" }: Props) => {
                   </button>
                 </div>
                 {sejoursYear === 2025 &&
-                  sejours2025.map((sejour) => <SejourButton sejour={sejour} />)}
+                  sejours2025.map((sejour) => (
+                    <SejourButton mode="homepage" sejour={sejour} />
+                  ))}
                 {sejoursYear === 2026 &&
-                  sejours2026.map((sejour) => <SejourButton sejour={sejour} />)}
+                  sejours2026.map((sejour) => (
+                    <SejourButton mode="homepage" sejour={sejour} />
+                  ))}
               </div>
             )}
           </div>
@@ -188,7 +199,7 @@ const Layout = ({ children, title = "Orientrek" }: Props) => {
 
           {/* NAV SEJOURS MOBILE */}
           {sejours2025.map((sejour) => (
-            <SejourButton sejour={sejour} />
+            <SejourButton mode="homepage" sejour={sejour} />
           ))}
         </div>
       </nav>

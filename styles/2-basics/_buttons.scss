@@ -7,6 +7,11 @@ a.sejour {
   padding: 6px 10px 6px 7.42px;
   @extend %flex-between-center;
   margin-top: 18px;
+  z-index: 4;
+
+  & > * {
+    pointer-events: none;
+  }
 
   &:first-child {
     margin-top: 24px;

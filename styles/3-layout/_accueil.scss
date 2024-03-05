@@ -59,6 +59,11 @@ div.Accueil {
     @extend %drop-shadow;
     margin-top: 60px;
   }
+
+
+  .Accueil-main {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -72,6 +77,10 @@ div.Accueil {
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
+
+    &>.Accueil-main {
+      display: flex;
+    }
   }
 }
 
@@ -92,15 +101,84 @@ div.Accueil {
   @extend %drop-shadow;
   font-size: 20px;
   @extend %flex-center-center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
 .maps-container {
   width: 487px;
   height: 481px;
   margin-top: 20px;
-  & > img {
+  position: relative;
+
+  & > img.map {
+    height: auto;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+  & > img.active {
     width: 100%;
     height: auto;
+    z-index: 2;
+  }
+  & > img.inactive {
+    width: 40%;
+    height: auto;
+    cursor: pointer;
+    z-index: 3;
+
+    &:hover {
+      width: 42%;
+    }
+  }
+
+  & > img.flag {
+    z-index: 4;
+    position: absolute;
+    cursor: pointer;
+
+    &.flagAlpes {
+      top: 280px;
+      left: 228px;
+
+      &:hover, &.selected {
+        animation-duration: 0.5s;
+        animation-name: slideinALpes;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+
+        @keyframes slideinALpes {
+          from {
+            top: 280px;
+          }
+
+          to {
+            top: 275px;
+          }
+        }
+      }
+    }
+    &.flagHoka {
+      top: 33px;
+      left: 397px;
+
+      &:hover, &.selected {
+        animation-duration: 0.5s;
+        animation-name: slidein;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+
+        @keyframes slidein {
+          from {
+            top: 33px;
+          }
+
+          to {
+            top: 27px;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -123,7 +201,15 @@ div.Accueil {
 .Accueil-destinations {
   width: 150px;
   height: 609px;
-  background-color: $red;
   position: absolute;
-  left: 0px;
+  left: -160px;
+  @extend %flex-between-center;
+  flex-direction: column;
+}
+
+.Accueil-destination {
+  width: 100%;
+  height: 109px;
+  background-color: $white;
+  border-radius: 25px;
 }

@@ -6,15 +6,25 @@ import bootsActive from "../public/assets/boots.svg";
 import bootsInactive from "../public/assets/boots-inactive.svg";
 import sejourImg from "../public/assets/sejourimg.png";
 
-const SejourButton = ({ sejour }) => {
-  const { displayNavSejours } = useHomeStateContext();
+const SejourButton = ({ mode, sejour }) => {
+  const { displayNavSejours, setSejourHovering } = useHomeStateContext();
   return (
     <Link
       key={sejour.trek}
       href={sejour.slug}
-      className={`sejour transition hover-shadow transition ${displayNavSejours ? "active" : ""}`}
+      className={`sejour transition hover-shadow transition ${sejour.trek} ${
+        displayNavSejours ? "active" : ""
+      }`}
+      onMouseEnter={() => setSejourHovering(sejour.trek)}
+      onMouseOut={() => setSejourHovering('')}
     >
-      <Image src={sejourImg} alt="image sejour" width={107.6} height={68.91} placeholder="blur" />
+      <Image
+        src={sejourImg}
+        alt="image sejour"
+        width={107.6}
+        height={68.91}
+        placeholder="blur"
+      />
       <div className="sejour-desc">
         <p className="white XXS bold">
           {sejour.trek}
