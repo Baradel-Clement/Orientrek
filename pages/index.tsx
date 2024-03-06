@@ -7,6 +7,11 @@ import mapJaponDesktop from "../public/assets/map-japon-desktop.png";
 import mapFr from "../public/assets/map-fr.png";
 import flag from "../public/assets/flag.png";
 import { useEffect, useState } from "react";
+import { sejours2025 } from "../utils/sejours";
+import { sejours2026 } from "../utils/sejours";
+import SejourButton from "../components/SejourButton";
+import destinationImg from "../public/assets/destinationimg.png";
+import Link from "next/link";
 
 type Props = {};
 
@@ -18,6 +23,7 @@ const Accueil: NextPageWithLayout<Props> = () => {
     setSejourHovering,
   } = useHomeStateContext();
   const [mapJaponActive, setMapJaponActive] = useState(true);
+  const [sejoursYear, setSejoursYear] = useState(2025);
 
   /* useEffect(() => {
     if (sejourHovering === '')
@@ -73,6 +79,35 @@ const Accueil: NextPageWithLayout<Props> = () => {
 
         {/* DESKTOP SECTION */}
         <div className="Accueil-main">
+          {/* RIGHT PANEL */}
+          <div className="nav-upper-sejours drop-shadow">
+            {/* <div className="upper-sejours-yearBtn-container">
+              <button
+                onClick={() => setSejoursYear(2025)}
+                className={`upper-sejours-yearBtn bold hover-shadow transition ${
+                  sejoursYear === 2025 ? "active" : ""
+                }`}
+              >
+                2025
+              </button>
+              <button
+                onClick={() => setSejoursYear(2026)}
+                className={`upper-sejours-yearBtn bold hover-shadow transition ${
+                  sejoursYear === 2026 ? "active" : ""
+                }`}
+              >
+                2026
+              </button>
+            </div> */}
+            {sejoursYear === 2025 &&
+              sejours2025.map((sejour) => (
+                <SejourButton mode="homepage" sejour={sejour} />
+              ))}
+            {/* {sejoursYear === 2026 &&
+              sejours2026.map((sejour) => (
+                <SejourButton mode="homepage" sejour={sejour} />
+              ))} */}
+          </div>
           <div className="maps-hint">
             <p className="bold">
               Survolez la carte et découvrez votre prochain trek au Japon
@@ -157,11 +192,18 @@ const Accueil: NextPageWithLayout<Props> = () => {
 
           {/* Left panel */}
           <div className="Accueil-destinations">
-            <div className="Accueil-destination"></div>
-            <div className="Accueil-destination"></div>
-            <div className="Accueil-destination"></div>
-            <div className="Accueil-destination"></div>
-            <div className="Accueil-destination"></div>
+            {[
+              { img: destinationImg, name: "Hokkaïdo", to: "/" },
+              { img: destinationImg, name: "Alpes Japonaises", to: "/" },
+              { img: destinationImg, name: "Tokyo", to: "/" },
+              { img: destinationImg, name: "Kyoto", to: "/" },
+              { img: destinationImg, name: "Miyajima", to: "/" },
+            ].map((destination) => (
+              <Link href={destination.to} className="Accueil-destination">
+                <Image src={destination.img} alt="Photo destination" />
+                <p>{destination.name}</p>
+              </Link>
+            ))}
           </div>
         </div>
       </div>

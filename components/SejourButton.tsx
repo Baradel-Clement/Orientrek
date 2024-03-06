@@ -28,7 +28,6 @@ const SejourButton = ({ mode, sejour }) => {
       <div className="sejour-desc">
         <p className="white XXS bold">
           {sejour.trek}
-          {sejour.altitudeTrek ? ` (${sejour.altitudeTrek} m)` : ""}
         </p>
         <p className="white XXS bold">{sejour.date}</p>
         <div className="sejour-difficulty">

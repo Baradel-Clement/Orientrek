@@ -78,13 +78,21 @@ const Layout = ({ children, title = "Orientrek" }: Props) => {
               <Image src={logo} alt="logo Orientrek" width="65" height="65" />
             </Link>
             <div className="nav-upper-links">
+              <Link href="/nous-connaitre">Nous connaître</Link>
+              <Link href="/contact">Nous contacter</Link>
+              <Link href="/reservations">Réservation</Link>
+              <Link href="/mentions-legales">Mentions légales</Link>
+
               <p
                 className={`nav-upper-btnDisplayNestedSejours closeModalNestedLinksOff ${
                   displayNestedSejours ? "active" : ""
                 }`}
-                onClick={() => setDisplayNestedSejours(!displayNestedSejours)}
+                onClick={() => {
+                  if (router.pathname !== "/")
+                    setDisplayNestedSejours(!displayNestedSejours);
+                }}
               >
-                Nos Séjours
+                Séjours
               </p>
 
               {/* Nested Links */}
@@ -124,44 +132,7 @@ const Layout = ({ children, title = "Orientrek" }: Props) => {
                     ))}
                 </div>
               )}
-
-              <Link href="/calendrier">Calendrier</Link>
-              <Link href="/reservations">Réservation</Link>
-              <Link href="/nous-connaitre">Nous connaître</Link>
             </div>
-            <Link href="/contact" className="nav-upper-contactBtn drop-shadow">
-              Nous contacter : 06 59 37 37 03
-            </Link>
-            {router.pathname === "/" && (
-              <div className="nav-upper-sejours drop-shadow">
-                <div className="upper-sejours-yearBtn-container">
-                  <button
-                    onClick={() => setSejoursYear(2025)}
-                    className={`upper-sejours-yearBtn bold hover-shadow transition ${
-                      sejoursYear === 2025 ? "active" : ""
-                    }`}
-                  >
-                    2025
-                  </button>
-                  <button
-                    onClick={() => setSejoursYear(2026)}
-                    className={`upper-sejours-yearBtn bold hover-shadow transition ${
-                      sejoursYear === 2026 ? "active" : ""
-                    }`}
-                  >
-                    2026
-                  </button>
-                </div>
-                {sejoursYear === 2025 &&
-                  sejours2025.map((sejour) => (
-                    <SejourButton mode="homepage" sejour={sejour} />
-                  ))}
-                {sejoursYear === 2026 &&
-                  sejours2026.map((sejour) => (
-                    <SejourButton mode="homepage" sejour={sejour} />
-                  ))}
-              </div>
-            )}
           </div>
         </div>
 
