@@ -175,7 +175,8 @@ nav {
           & > p.nav-upper-btnDisplayNestedSejours {
             cursor: pointer;
 
-            &.active, &:hover {
+            &.active,
+            &:hover {
               text-decoration: underline;
               text-shadow: none;
             }
@@ -183,23 +184,24 @@ nav {
 
           .nav-upper-nestedLinks {
             width: 405px;
-            height: 655px;
+            height: 638px;
             position: absolute;
-            top: 56px;
+            top: 54px;
             background-color: $white;
             border-radius: 25px;
-            left: 142px;
+            border-top-right-radius: 0px;
+            right: 0px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 18px 11px 18px 11px;
+            padding: 28px 11px 18px 11px;
 
             & > img {
               position: absolute;
-              width: 40px;
-              height: 40px;
+              width: 30px;
+              height: 30px;
               top: 10px;
-              left: 10px;
+              right: 10px;
               cursor: pointer;
             }
 
@@ -238,7 +240,6 @@ nav {
   }
 }
 
-
 @media screen and (min-width: 1700px) {
   nav {
     .nav-upper {
@@ -258,29 +259,19 @@ nav {
           width: 1510px;
           font-size: 24px;
 
-          /* .nav-upper-nestedLinks {
-            width: 405px;
-            height: 655px;
-            position: absolute;
-            top: 56px;
-            background-color: $white;
-            border-radius: 25px;
-            left: 142px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 18px 11px 18px 11px;
+          .nav-upper-nestedLinks {
+            width: 570.42px;
+            height: 922.5px;
+            top: 71px;
+            padding: 34px 11px 18px 11px;
+            justify-content: space-between;
 
             & > img {
-              position: absolute;
-              width: 40px;
-              height: 40px;
-              top: 10px;
-              left: 10px;
-              cursor: pointer;
+              width: 42px;
+              height: 42px;
             }
 
-            & > .upper-sejours-yearBtn-container {
+            /* & > .upper-sejours-yearBtn-container {
               width: 205px;
               display: flex;
               justify-content: space-between;
@@ -302,8 +293,8 @@ nav {
                   opacity: 0.5;
                 }
               }
-            }
-          } */
+            } */
+          }
         }
       }
     }

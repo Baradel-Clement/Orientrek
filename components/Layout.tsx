@@ -103,7 +103,7 @@ const Layout = ({ children, title = "Orientrek" }: Props) => {
                     alt="icone fermeture"
                     onClick={() => setDisplayNestedSejours(false)}
                   />
-                  <div className="upper-sejours-yearBtn-container">
+                  {/* <div className="upper-sejours-yearBtn-container">
                     <button
                       onClick={() => setSejoursYear(2025)}
                       className={`upper-sejours-yearBtn bold hover-shadow transition ${
@@ -120,7 +120,7 @@ const Layout = ({ children, title = "Orientrek" }: Props) => {
                     >
                       2026
                     </button>
-                  </div>
+                  </div> */}
 
                   {sejoursYear === 2025 &&
                     sejours2025.map((sejour) => (
