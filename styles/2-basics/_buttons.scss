@@ -56,3 +56,45 @@ a.sejour {
     @extend %drop-shadow;
   }
 }
+
+@media screen and (min-width: 1700px) {
+  a.sejour {
+    display: flex;
+    width: 549px;
+    height: 144px;
+    padding: 6px 10px 6px 7.42px;
+    margin-top: 29px;
+
+    &:first-child {
+      margin-top: 34px;
+    }
+
+    & > img {
+      width: 193.78px;
+      height: 127.61px;
+    }
+
+    & > div.sejour-desc {
+      & > p:first-child {
+        min-width: 223px;
+        font-size: 21.12px !important;
+      }
+
+      & > p:nth-child(2) {
+        margin-top: 20px;
+        margin-bottom: 14px;
+        min-width: 306px;
+        font-size: 21.12px !important;
+      }
+
+      & > div.sejour-difficulty {
+        width: 242.59px;
+
+        & > img {
+          width: 33.60px;
+          height: 38px;
+        }
+      }
+    }
+  }
+}
