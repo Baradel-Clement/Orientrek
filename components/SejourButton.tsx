@@ -9,7 +9,7 @@ import sejourImg from "../public/assets/sejourimg.png";
 const SejourButton = ({ mode, sejour }) => {
   const { displayNavSejours, sejourHovering, setSejourHovering } =
     useHomeStateContext();
-    
+
   return (
     <Link
       key={sejour.trek}
@@ -18,7 +18,7 @@ const SejourButton = ({ mode, sejour }) => {
         displayNavSejours ? "active" : ""
       } ${
         mode === "homepage" &&
-        (sejourHovering === sejour.region || sejourHovering === sejour.trek)
+        (sejourHovering === sejour.region || sejourHovering === sejour.trek || sejour.destination.includes(sejourHovering))
           ? "hovering"
           : ""
       }`}

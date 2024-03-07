@@ -11,7 +11,7 @@ div.Accueil {
   padding-top: 70px;
   @extend %flex-start-center;
   flex-direction: column;
-  background-image: url('../../public/assets/waves.png');
+  background-image: url("../../public/assets/waves.png");
 
   .maps-container-mobile {
     width: 100%;
@@ -302,10 +302,22 @@ div.Accueil {
   height: 109px;
   border-radius: 40px;
   position: relative;
+
+  &.hovering {
+    scale: 1.1;
+
+    & > p {
+      text-decoration: underline;
+      text-shadow: none;
+    }
+  }
+  & > p {
+    pointer-events: none;
+  }
   &:hover {
     & > p {
       text-decoration: underline;
-      text-shadow: none ;
+      text-shadow: none;
     }
   }
 
@@ -370,40 +382,39 @@ div.Accueil {
   }
 }
 
-
 @media screen and (min-width: 1700px) {
   .Accueil-main {
     width: 925px;
     margin-top: 65px;
     margin-right: 380px;
   }
-  
+
   .maps-hint {
     width: 100%;
     height: 44px;
     border-radius: 25px;
     font-size: 27px;
   }
-  
+
   .maps-container {
     width: 686px;
     height: 677px;
     margin-top: 28px;
-  
+
     & > img.flag {
       &.flagAlpes {
         top: 419px;
         left: 327px;
-  
+
         &:hover,
         &.selected {
           animation-name: slideinALpes;
-  
+
           @keyframes slideinALpes {
             from {
               top: 419px;
             }
-  
+
             to {
               top: 414px;
             }
@@ -413,16 +424,16 @@ div.Accueil {
       &.flagHoka {
         top: 53px;
         left: 556px;
-  
+
         &:hover,
         &.selected {
           animation-name: slidein;
-  
+
           @keyframes slidein {
             from {
               top: 53px;
             }
-  
+
             to {
               top: 48px;
             }
@@ -432,16 +443,16 @@ div.Accueil {
       &.flagAlpes1 {
         top: 280px;
         left: 228px;
-  
+
         &:hover,
         &.selected {
           animation-name: flagAlpes1;
-  
+
           @keyframes flagAlpes1 {
             from {
               top: 280px;
             }
-  
+
             to {
               top: 275px;
             }
@@ -451,16 +462,16 @@ div.Accueil {
       &.flagAlpes2 {
         top: 60px;
         left: 330px;
-  
+
         &:hover,
         &.selected {
           animation-name: flagAlpes2;
-  
+
           @keyframes flagAlpes2 {
             from {
               top: 60px;
             }
-  
+
             to {
               top: 55px;
             }
@@ -470,16 +481,16 @@ div.Accueil {
       &.flagAlpes3 {
         top: 120px;
         left: 447px;
-  
+
         &:hover,
         &.selected {
           animation-name: flagAlpes3;
-  
+
           @keyframes flagAlpes3 {
             from {
               top: 120px;
             }
-  
+
             to {
               top: 115px;
             }
@@ -489,16 +500,16 @@ div.Accueil {
       &.flagAlpes4 {
         top: 200px;
         left: 447px;
-  
+
         &:hover,
         &.selected {
           animation-name: flagAlpes4;
-  
+
           @keyframes flagAlpes4 {
             from {
               top: 200px;
             }
-  
+
             to {
               top: 195px;
             }
@@ -507,7 +518,7 @@ div.Accueil {
       }
     }
   }
-  
+
   .maps-news {
     margin-top: 64px;
     height: 58px;
@@ -517,30 +528,30 @@ div.Accueil {
       font-size: 18px;
     }
   }
-  
+
   .Accueil-destinations {
-    width: 211Px;
+    width: 211px;
     height: 882px;
     left: -225px;
   }
-  
+
   .Accueil-destination {
     height: 154px;
-  
+
     & > p {
       bottom: 22px;
       font-size: 22px;
     }
   }
-  
+
   .nav-upper-sejours {
     width: 570px;
     height: 870px;
     top: 0px;
     right: -594px;
     padding: 17px 11px 17px 11px;
-  
-   /*  & > .upper-sejours-yearBtn-container {
+
+    /*  & > .upper-sejours-yearBtn-container {
       width: 205px;
       display: flex;
       justify-content: space-between;

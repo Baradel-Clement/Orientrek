@@ -123,7 +123,8 @@ const Accueil: NextPageWithLayout<Props> = () => {
                 <Image
                   className={`flag flagHoka ${
                     sejourHovering === "Hoka" ||
-                    sejourHovering === "Parc national Daisetsuzan"
+                    sejourHovering === "Parc national Daisetsuzan" ||
+                    ["Hokkaïdo"].includes(sejourHovering)
                       ? "selected"
                       : ""
                   }`}
@@ -144,7 +145,12 @@ const Accueil: NextPageWithLayout<Props> = () => {
                     sejourHovering === "Mt Tsubakurodake" ||
                     sejourHovering === "Mt Yarigatake" ||
                     sejourHovering === "Mt Kitadake" ||
-                    sejourHovering === "Couleurs d'automne"
+                    sejourHovering === "Couleurs d'automne" || [
+                      "Alpes Japonaises",
+                      "Tokyo",
+                      "Kyoto",
+                      "Miyajima",
+                    ].includes(sejourHovering)
                       ? "selected"
                       : ""
                   }`}
@@ -269,14 +275,52 @@ const Accueil: NextPageWithLayout<Props> = () => {
           {/* Left panel */}
           <div className="Accueil-destinations">
             {[
-              { img: destinationImg, name: "Hokkaïdo", to: "/" },
-              { img: destinationImg, name: "Alpes Japonaises", to: "/" },
-              { img: destinationImg, name: "Tokyo", to: "/" },
-              { img: destinationImg, name: "Kyoto", to: "/" },
-              { img: destinationImg, name: "Miyajima", to: "/" },
+              {
+                img: destinationImg,
+                name: "Hokkaïdo",
+                to: "/",
+                treks: ["Mt Tsubakurodake"],
+              },
+              {
+                img: destinationImg,
+                name: "Alpes Japonaises",
+                to: "/",
+                treks: ["Mt Yarigatake"],
+              },
+              {
+                img: destinationImg,
+                name: "Tokyo",
+                to: "/",
+                treks: ["Parc national Daisetsuzan"],
+              },
+              {
+                img: destinationImg,
+                name: "Kyoto",
+                to: "/",
+                treks: ["Mt Kitadake"],
+              },
+              {
+                img: destinationImg,
+                name: "Miyajima",
+                to: "/",
+                treks: ["Couleurs d'automne"],
+              },
             ].map((destination) => (
-              <Link href={destination.to} className="Accueil-destination">
-                <Image src={destination.img} alt="Photo destination" />
+              <Link
+                href={destination.to}
+                className={`Accueil-destination ${
+                  sejourHovering === destination.name ||
+                  destination.treks.includes(sejourHovering)
+                    ? "hovering"
+                    : ""
+                }`}
+              >
+                <Image
+                  src={destination.img}
+                  alt="Photo destination"
+                  onMouseEnter={() => setSejourHovering(destination.name)}
+                  onMouseOut={() => setSejourHovering("")}
+                />
                 <p>{destination.name}</p>
               </Link>
             ))}

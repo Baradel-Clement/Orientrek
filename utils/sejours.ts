@@ -6,6 +6,7 @@ const sejours2025 = [
     nbBootsActive: [1, 2, 3],
     nbBootsInactive: [4, 5],
     region: "Alpes",
+    destination: ["Hokkaïdo"],
   },
   {
     slug: "/",
@@ -14,6 +15,7 @@ const sejours2025 = [
     nbBootsActive: [1, 2, 3, 4],
     nbBootsInactive: [5],
     region: "Alpes",
+    destination: ["Alpes Japonaises"],
   },
   {
     slug: "/",
@@ -22,6 +24,7 @@ const sejours2025 = [
     nbBootsActive: [1, 2, 3, 4],
     nbBootsInactive: [5],
     region: "Hoka",
+    destination: ["Tokyo"],
   },
   {
     slug: "/",
@@ -30,6 +33,7 @@ const sejours2025 = [
     nbBootsActive: [1, 2, 3],
     nbBootsInactive: [4, 5],
     region: "Alpes",
+    destination: ["Kyoto"],
   },
   {
     slug: "/",
@@ -38,6 +42,7 @@ const sejours2025 = [
     nbBootsActive: [1, 2, 3],
     nbBootsInactive: [4, 5],
     region: "Alpes",
+    destination: ["Miyajima"],
   },
 ];
 
