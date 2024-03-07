@@ -116,42 +116,118 @@ const Accueil: NextPageWithLayout<Props> = () => {
           <div className="maps-container">
             {/* FLAGS */}
 
-            <Image
-              className={`flag flagHoka ${
-                sejourHovering === "Hoka" ||
-                sejourHovering === "Parc national Daisetsuzan"
-                  ? "selected"
-                  : ""
-              }`}
-              src={flag}
-              alt="drapeau"
-              width="40"
-              height="40"
-              onClick={() => {
-                setDisplayNavList(true);
-                setDisplayNavSejours(true);
-              }}
-              onMouseEnter={() => setSejourHovering("Hoka")}
-              onMouseOut={() => setSejourHovering("")}
-            />
-            <Image
-              className={`flag flagAlpes ${
-                sejourHovering === "Alpes" ||
-                sejourHovering === "Mt Tsubakurodake" ||
-                sejourHovering === "Mt Yarigatake" ||
-                sejourHovering === "Mt Kitadake" ||
-                sejourHovering === "Couleurs d'automne"
-                  ? "selected"
-                  : ""
-              }`}
-              src={flag}
-              alt="drapeau"
-              width="40"
-              height="40"
-              onClick={() => setMapJaponActive(!mapJaponActive)}
-              onMouseEnter={() => setSejourHovering("Alpes")}
-              onMouseOut={() => setSejourHovering("")}
-            />
+            {/* FLAG MAP JAPON */}
+
+            {mapJaponActive && (
+              <>
+                <Image
+                  className={`flag flagHoka ${
+                    sejourHovering === "Hoka" ||
+                    sejourHovering === "Parc national Daisetsuzan"
+                      ? "selected"
+                      : ""
+                  }`}
+                  src={flag}
+                  alt="drapeau"
+                  width="40"
+                  height="40"
+                  onClick={() => {
+                    setDisplayNavList(true);
+                    setDisplayNavSejours(true);
+                  }}
+                  onMouseEnter={() => setSejourHovering("Hoka")}
+                  onMouseOut={() => setSejourHovering("")}
+                />
+                <Image
+                  className={`flag flagAlpes ${
+                    sejourHovering === "Alpes" ||
+                    sejourHovering === "Mt Tsubakurodake" ||
+                    sejourHovering === "Mt Yarigatake" ||
+                    sejourHovering === "Mt Kitadake" ||
+                    sejourHovering === "Couleurs d'automne"
+                      ? "selected"
+                      : ""
+                  }`}
+                  src={flag}
+                  alt="drapeau"
+                  width="40"
+                  height="40"
+                  onClick={() => {
+                    setMapJaponActive(!mapJaponActive);
+                    setSejourHovering("");
+                  }}
+                  onMouseEnter={() => setSejourHovering("Alpes")}
+                  onMouseOut={() => setSejourHovering("")}
+                />
+              </>
+            )}
+
+            {/* FLAG MAP ALPES */}
+
+            {!mapJaponActive && (
+              <>
+                <Image
+                  className={`flag flagAlpes1 ${
+                    sejourHovering === "Mt Tsubakurodake" ? "selected" : ""
+                  }`}
+                  src={flag}
+                  alt="drapeau"
+                  width="40"
+                  height="40"
+                  onClick={() => {
+                    setDisplayNavList(true);
+                    setDisplayNavSejours(true);
+                  }}
+                  onMouseEnter={() => setSejourHovering("Mt Tsubakurodake")}
+                  onMouseOut={() => setSejourHovering("")}
+                />
+                <Image
+                  className={`flag flagAlpes2 ${
+                    sejourHovering === "Mt Yarigatake" ? "selected" : ""
+                  }`}
+                  src={flag}
+                  alt="drapeau"
+                  width="40"
+                  height="40"
+                  onClick={() => {
+                    setMapJaponActive(!mapJaponActive);
+                    setSejourHovering("");
+                  }}
+                  onMouseEnter={() => setSejourHovering("Mt Yarigatake")}
+                  onMouseOut={() => setSejourHovering("")}
+                />
+                <Image
+                  className={`flag flagAlpes3 ${
+                    sejourHovering === "Mt Kitadake" ? "selected" : ""
+                  }`}
+                  src={flag}
+                  alt="drapeau"
+                  width="40"
+                  height="40"
+                  onClick={() => {
+                    setMapJaponActive(!mapJaponActive);
+                    setSejourHovering("");
+                  }}
+                  onMouseEnter={() => setSejourHovering("Mt Kitadake")}
+                  onMouseOut={() => setSejourHovering("")}
+                />
+                <Image
+                  className={`flag flagAlpes4 ${
+                    sejourHovering === "Couleurs d'automne" ? "selected" : ""
+                  }`}
+                  src={flag}
+                  alt="drapeau"
+                  width="40"
+                  height="40"
+                  onClick={() => {
+                    setMapJaponActive(!mapJaponActive);
+                    setSejourHovering("");
+                  }}
+                  onMouseEnter={() => setSejourHovering("Couleurs d'automne")}
+                  onMouseOut={() => setSejourHovering("")}
+                />
+              </>
+            )}
 
             {/* MAP */}
 

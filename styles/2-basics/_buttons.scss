@@ -50,4 +50,9 @@ a.sejour {
       }
     }
   }
+
+  &.hovering {
+    background-color: $aqua;
+    @extend %drop-shadow;
+  }
 }

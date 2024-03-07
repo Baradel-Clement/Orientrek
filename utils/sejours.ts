@@ -5,6 +5,7 @@ const sejours2025 = [
     trek: "Mt Tsubakurodake",
     nbBootsActive: [1, 2, 3],
     nbBootsInactive: [4, 5],
+    region: "Alpes",
   },
   {
     slug: "/",
@@ -12,6 +13,7 @@ const sejours2025 = [
     trek: "Mt Yarigatake",
     nbBootsActive: [1, 2, 3, 4],
     nbBootsInactive: [5],
+    region: "Alpes",
   },
   {
     slug: "/",
@@ -19,6 +21,7 @@ const sejours2025 = [
     trek: "Parc national Daisetsuzan",
     nbBootsActive: [1, 2, 3, 4],
     nbBootsInactive: [5],
+    region: "Hoka",
   },
   {
     slug: "/",
@@ -26,6 +29,7 @@ const sejours2025 = [
     trek: "Mt Kitadake",
     nbBootsActive: [1, 2, 3],
     nbBootsInactive: [4, 5],
+    region: "Alpes",
   },
   {
     slug: "/",
@@ -33,6 +37,7 @@ const sejours2025 = [
     trek: "Couleurs d'automne",
     nbBootsActive: [1, 2, 3],
     nbBootsInactive: [4, 5],
+    region: "Alpes",
   },
 ];
 

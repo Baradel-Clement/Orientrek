@@ -180,6 +180,94 @@ div.Accueil {
         }
       }
     }
+    &.flagAlpes1 {
+      top: 280px;
+      left: 228px;
+
+      &:hover,
+      &.selected {
+        animation-duration: 0.5s;
+        animation-name: flagAlpes1;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+
+        @keyframes flagAlpes1 {
+          from {
+            top: 280px;
+          }
+
+          to {
+            top: 275px;
+          }
+        }
+      }
+    }
+    &.flagAlpes2 {
+      top: 60px;
+      left: 330px;
+
+      &:hover,
+      &.selected {
+        animation-duration: 0.5s;
+        animation-name: flagAlpes2;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+
+        @keyframes flagAlpes2 {
+          from {
+            top: 60px;
+          }
+
+          to {
+            top: 55px;
+          }
+        }
+      }
+    }
+    &.flagAlpes3 {
+      top: 120px;
+      left: 447px;
+
+      &:hover,
+      &.selected {
+        animation-duration: 0.5s;
+        animation-name: flagAlpes3;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+
+        @keyframes flagAlpes3 {
+          from {
+            top: 120px;
+          }
+
+          to {
+            top: 115px;
+          }
+        }
+      }
+    }
+    &.flagAlpes4 {
+      top: 200px;
+      left: 447px;
+
+      &:hover,
+      &.selected {
+        animation-duration: 0.5s;
+        animation-name: flagAlpes4;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+
+        @keyframes flagAlpes4 {
+          from {
+            top: 200px;
+          }
+
+          to {
+            top: 195px;
+          }
+        }
+      }
+    }
   }
 }
 

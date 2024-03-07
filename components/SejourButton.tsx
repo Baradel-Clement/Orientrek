@@ -7,16 +7,23 @@ import bootsInactive from "../public/assets/boots-inactive.svg";
 import sejourImg from "../public/assets/sejourimg.png";
 
 const SejourButton = ({ mode, sejour }) => {
-  const { displayNavSejours, setSejourHovering } = useHomeStateContext();
+  const { displayNavSejours, sejourHovering, setSejourHovering } =
+    useHomeStateContext();
+    
   return (
     <Link
       key={sejour.trek}
       href={sejour.slug}
       className={`sejour transition hover-shadow transition ${sejour.trek} ${
         displayNavSejours ? "active" : ""
+      } ${
+        mode === "homepage" &&
+        (sejourHovering === sejour.region || sejourHovering === sejour.trek)
+          ? "hovering"
+          : ""
       }`}
       onMouseEnter={() => setSejourHovering(sejour.trek)}
-      onMouseOut={() => setSejourHovering('')}
+      onMouseOut={() => setSejourHovering("")}
     >
       <Image
         src={sejourImg}
@@ -26,9 +33,7 @@ const SejourButton = ({ mode, sejour }) => {
         placeholder="blur"
       />
       <div className="sejour-desc">
-        <p className="white XXS bold">
-          {sejour.trek}
-        </p>
+        <p className="white XXS bold">{sejour.trek}</p>
         <p className="white XXS bold">{sejour.date}</p>
         <div className="sejour-difficulty">
           {sejour.nbBootsActive.map(() => (
