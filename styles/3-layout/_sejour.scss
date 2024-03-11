@@ -1,0 +1,492 @@
+.PageSejour {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../../public/assets/waves-white.png");
+  position: absolute;
+  top: 0px;
+
+  & > h1 {
+    position: absolute;
+    top: 90px;
+    font-size: 20px;
+    padding: 0px 20px;
+    height: 39px;
+    background-color: $red;
+    border-radius: 25px;
+    z-index: 2;
+    left: 50%;
+    transform: translateX(-50%);
+    @extend %flex-center-center;
+    width: auto;
+    white-space: nowrap;
+  }
+}
+
+.embla-mobile {
+  margin-top: 75px;
+  --slide-size: 100%;
+  position: relative;
+
+  & > .controllers {
+    @extend %flex-between-center;
+    height: 39px;
+    width: 90%;
+    position: absolute;
+    bottom: -48px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    & > button {
+      @extend %flex-between-center;
+      width: 140px;
+      height: 100%;
+      border-radius: 25px;
+      background-color: $red;
+      @extend %drop-shadow;
+
+      &:first-child {
+        padding: 0px 9px;
+      }
+      &:last-child {
+        padding: 0px 14px;
+      }
+
+      & > p {
+        font-weight: bold;
+      }
+
+      & > img {
+        width: 16px;
+        height: 16px;
+        padding-bottom: 2px;
+      }
+    }
+  }
+  & > .bottom-buttons {
+    @extend %flex-between-center;
+    height: 39px;
+    width: 90%;
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    & > button,
+    & > a {
+      @extend %flex-between-center;
+      width: 140px;
+      height: 100%;
+      border-radius: 25px;
+      background-color: $red;
+      @extend %drop-shadow;
+
+      &:first-child {
+        padding: 0px 10px;
+
+        & > p {
+          font-size: 11px;
+        }
+        & > img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+      &:last-child {
+        padding: 0px 9px;
+        font-size: 13px;
+
+        & > img {
+          width: 26px;
+          height: 26px;
+        }
+      }
+
+      & > p {
+        font-weight: bold;
+      }
+
+      & > img {
+        width: 16px;
+        height: 16px;
+        padding-bottom: 2px;
+      }
+    }
+  }
+
+  & > .embla__viewport {
+    overflow: hidden;
+
+    & > .embla__container {
+      display: flex;
+      touch-action: pan-y;
+
+      & > .embla__slide {
+        flex: 0 0 var(--slide-size);
+        position: relative;
+        width: 100vw;
+        overflow: hidden;
+        height: 456px;
+        flex-flow: column;
+
+        & > img {
+          object-fit: cover;
+          object-position: center;
+          max-height: 237px;
+        }
+
+        & > .slide-description {
+          width: 90%;
+          height: 240px;
+          background-color: #219ebc;
+          border-radius: 25px;
+          @extend %drop-shadow;
+          position: absolute;
+          top: 207px;
+          left: 50%;
+          transform: translateX(-50%);
+          padding: 10px;
+          @extend %flex-start-center;
+          flex-flow: column;
+
+          & > p.day {
+            @extend %flex-center-center;
+            background-color: rgba(241, 250, 238, 0.3);
+            padding: 12px 14px 8px 14px;
+            border-radius: 25px;
+            font-size: 16px;
+            margin-bottom: 20px;
+          }
+
+          & > p.desc {
+            font-size: 12px;
+            text-align: center;
+            line-height: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .PageSejour {
+    & > .embla-mobile,
+    & > h1.title-mobile {
+      display: none;
+    }
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .PageSejour {
+    .sejour-desktop {
+      display: none;
+    }
+  }
+}
+
+.sejour-desktop {
+  width: 1200px;
+  @extend %flex-center-center;
+  flex-direction: column;
+
+  & > .sejour-header {
+    width: 100%;
+    @extend %flex-between-start;
+    height: 440px;
+    margin-top: 110px;
+    position: relative;
+
+    & > div.sejour-header-left {
+      width: 580px;
+      height: 100%;
+      display: flex;
+      justify-content: flex-end;
+      flex-flow: column;
+
+      & > .embla-desktop {
+        --slide-size: 580px;
+        height: 100%;
+        width: 100%;
+
+        & > .embla-desktop__viewport {
+          overflow: hidden;
+          height: 100%;
+          width: 100%;
+
+          & > .embla__container {
+            display: flex;
+            height: 100%;
+            width: 100%;
+
+            & > .embla__slide {
+              flex: 0 0 var(--slide-size);
+              position: relative;
+              width: 100%;
+              overflow: hidden;
+              height: 100%;
+              flex-flow: column;
+
+              & > img {
+                max-width: 580px;
+                max-height: 382px;
+                object-fit: default;
+                object-position: default;
+              }
+
+              & > div {
+                position: absolute;
+                bottom: 0px;
+                right: 0px;
+                width: 580px;
+                height: 183px;
+                @extend %flex-start-center;
+                background-color: $aqua;
+                flex-direction: column;
+                border-radius: 25px;
+                margin-top: 27px;
+                z-index: 4;
+
+                & > p:first-child {
+                  background-color: $red;
+                  text-decoration: underline;
+                  height: 39px;
+                  border-radius: 25px;
+                  width: 100%;
+                  @extend %flex-center-center;
+                }
+                & > p:last-child {
+                  text-align: center;
+                  font-size: 13px;
+                  margin-top: 10px;
+                  line-height: 18px;
+                  padding: 0px 3px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      & > p:last-child {
+        width: 262px;
+        height: 39px;
+        background-color: $red;
+        border-radius: 25px;
+        font-size: 15px;
+        text-decoration: underline;
+        @extend %flex-center-center;
+      }
+    }
+    & > div.sejour-header-right {
+      width: 580px;
+      height: 100%;
+      @extend %flex-start-center;
+      flex-direction: column;
+
+      & > h1.title {
+        font-size: 20px;
+        padding: 0 20px;
+        width: fit-content;
+        height: 39px;
+        @extend %flex-center-center;
+        border-radius: 25px;
+        background-color: $red;
+      }
+
+      & > .sejour-header-infos {
+        margin-top: 16px;
+        width: 100%;
+        @extend %flex-between-center;
+        height: 78px;
+
+        & > .sejour-header-info {
+          width: 233px;
+          height: 100%;
+          @extend %flex-start-center;
+          background-color: $aqua;
+          flex-direction: column;
+          border-radius: 25px;
+
+          & > p {
+            width: 100%;
+            font-size: 15px;
+            @extend %flex-center-center;
+          }
+
+          & > p:first-child {
+            background-color: $red;
+            text-decoration: underline;
+            height: 39px;
+            border-radius: 25px;
+          }
+          & > p:last-child {
+            margin-top: 11px;
+          }
+
+          & > div {
+            width: 172.24px;
+            height: 26.92px;
+            @extend %flex-between-center;
+            margin-top: 7px;
+
+            & > img {
+              width: 23.86px;
+              height: 26.92px;
+            }
+          }
+        }
+      }
+
+      & > .sejour-header-descDay {
+        width: 100%;
+        height: 183px;
+        @extend %flex-start-center;
+        background-color: $aqua;
+        flex-direction: column;
+        border-radius: 25px;
+        margin-top: 22px;
+
+        & > div:first-child {
+          background-color: $red;
+          text-decoration: underline;
+          height: 39px !important;
+          border-radius: 25px;
+          width: 100%;
+          @extend %flex-center-center;
+          position: relative;
+          z-index: 2;
+          font-weight: bold;
+        }
+        & > div:last-child {
+          text-align: center;
+          font-size: 13px;
+          margin-top: 10px;
+          line-height: 18px;
+          padding: 0px 3px;
+        }
+      }
+    }
+  }
+  & > .sejour-phrise {
+    width: 100%;
+    @extend %flex-center-center;
+    height: 72px;
+    margin-top: 16px;
+    position: relative;
+
+    & > img {
+      position: absolute;
+      top: -0px;
+      z-index: 2;
+    }
+
+    & > .sejour-phrise-thumbs {
+      width: 87%;
+      height: 40px;
+      position: absolute;
+      left: 0px;
+      bottom: 0px;
+      margin-left: 50px;
+      @extend %flex-between-end;
+
+      & > .sejour-phrise-thumb {
+        color: black;
+        font-weight: bold;
+        font-size: 15px;
+        position: relative;
+        cursor: pointer;
+        height: 17px;
+        width: auto;
+
+        &.selected {
+          font-size: 17px;
+          text-decoration: underline;
+
+          &::before {
+            background-color: $aqua;
+          }
+        }
+
+        &:hover {
+          & > p {
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.7);
+          }
+
+          &::before {
+            background-color: $aqua;
+          }
+        }
+
+        & > p {
+          @extend %flex-center-center;
+        }
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: -35px;
+          width: 6px;
+          background-color: $red;
+          height: 30px;
+          border-radius: 25px;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+  }
+  & > .sejour-buttons {
+    width: 100%;
+    height: 42px;
+    @extend %flex-between-center;
+    margin-top: 20px;
+
+    & > button,
+    & > a {
+      @extend %flex-between-center;
+      width: auto;
+      height: 100%;
+      border-radius: 25px;
+      background-color: $red;
+      @extend %drop-shadow;
+
+      &:first-child {
+        padding: 0px 20px;
+
+        & > p {
+          font-size: 15px;
+          margin-right: 10px;
+          padding-top: 5px;
+        }
+        & > img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+      &:last-child {
+        padding: 0px 20px;
+        font-size: 15px;
+
+        & > img {
+          width: 26px;
+          height: 26px;
+        }
+      }
+
+      & > p {
+        font-weight: bold;
+        font-size: 15px;
+        margin-right: 7px;
+      }
+
+      & > img {
+        padding-bottom: 2px;
+      }
+    }
+  }
+}

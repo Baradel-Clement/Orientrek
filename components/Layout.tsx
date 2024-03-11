@@ -97,7 +97,7 @@ const Layout = ({ children, title = "Orientrek" }: Props) => {
 
               {/* Nested Links */}
               {displayNestedSejours && (
-                <div className="nav-upper-nestedLinks closeModalNestedLinksOff">
+                <div className="nav-upper-nestedLinks closeModalNestedLinksOff drop-shadow">
                   <Image
                     src={closeIcon}
                     alt="icone fermeture"
@@ -124,11 +124,19 @@ const Layout = ({ children, title = "Orientrek" }: Props) => {
 
                   {sejoursYear === 2025 &&
                     sejours2025.map((sejour) => (
-                      <SejourButton mode="nestedLink" sejour={sejour} />
+                      <SejourButton
+                        key={sejour.slug}
+                        mode="nestedLink"
+                        sejour={sejour}
+                      />
                     ))}
                   {sejoursYear === 2026 &&
                     sejours2026.map((sejour) => (
-                      <SejourButton mode="nestedLink" sejour={sejour} />
+                      <SejourButton
+                        key={sejour.slug}
+                        mode="nestedLink"
+                        sejour={sejour}
+                      />
                     ))}
                 </div>
               )}
@@ -170,7 +178,7 @@ const Layout = ({ children, title = "Orientrek" }: Props) => {
 
           {/* NAV SEJOURS MOBILE */}
           {sejours2025.map((sejour) => (
-            <SejourButton mode="homepage" sejour={sejour} />
+            <SejourButton key={sejour.slug} mode="homepage" sejour={sejour} />
           ))}
         </div>
       </nav>

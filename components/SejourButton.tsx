@@ -18,7 +18,9 @@ const SejourButton = ({ mode, sejour }) => {
         displayNavSejours ? "active" : ""
       } ${
         mode === "homepage" &&
-        (sejourHovering === sejour.region || sejourHovering === sejour.trek || sejour.destination.includes(sejourHovering))
+        (sejourHovering === sejour.region ||
+          sejourHovering === sejour.trek ||
+          sejour.destination.includes(sejourHovering))
           ? "hovering"
           : ""
       }`}
@@ -36,16 +38,18 @@ const SejourButton = ({ mode, sejour }) => {
         <p className="white XXS bold">{sejour.trek}</p>
         <p className="white XXS bold">{sejour.date}</p>
         <div className="sejour-difficulty">
-          {sejour.nbBootsActive.map(() => (
+          {sejour.nbBootsActive.map((index) => (
             <Image
+              key={index}
               src={bootsActive}
               alt="bottes"
               width={18.66}
               height={20.48}
             />
           ))}
-          {sejour.nbBootsInactive.map(() => (
+          {sejour.nbBootsInactive.map((index) => (
             <Image
+            key={index}
               src={bootsInactive}
               alt="bottes"
               width={18.66}
