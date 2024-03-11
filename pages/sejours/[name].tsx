@@ -132,8 +132,7 @@ const Séjour: NextPageWithLayout<Props> = ({ currentSejour }: Props) => {
                         <Image
                           src={`/assets/${currentSejour.slug}/${day.number}-desktop.png`}
                           alt="Map japon"
-                          width={580}
-                          height={382}
+                          fill={true}
                         />
                       </div>
                     ))}
