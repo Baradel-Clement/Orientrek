@@ -39,6 +39,12 @@ const Accueil: NextPageWithLayout<Props> = () => {
             alt="carte du japon"
             width="310"
             height="306"
+            onClick={() => {
+              console.log(mapJaponActive);
+              if (!mapJaponActive) {
+                setMapJaponActive(!mapJaponActive);
+              }
+            }}
           />
           <Image
             className={`map ${!mapJaponActive ? "active" : "inactive"}`}
@@ -46,26 +52,80 @@ const Accueil: NextPageWithLayout<Props> = () => {
             alt="carte du japon"
             width="310"
             height="306"
-          />
-          <Image
-            className="flag flagHoka"
-            src={flag}
-            alt="drapeau"
-            width="40"
-            height="40"
             onClick={() => {
-              setDisplayNavList(true);
-              setDisplayNavSejours(true);
+              console.log(mapJaponActive);
+              if (mapJaponActive) {
+                setMapJaponActive(!mapJaponActive);
+              }
             }}
           />
-          <Image
-            className="flag flagAlpes"
-            src={flag}
-            alt="drapeau"
-            width="40"
-            height="40"
-            onClick={() => setMapJaponActive(!mapJaponActive)}
-          />
+          {mapJaponActive && (
+            <>
+              <Image
+                className="flag flagHoka"
+                src={flag}
+                alt="drapeau"
+                width="40"
+                height="40"
+                onClick={() => {
+                  setDisplayNavList(true);
+                  setDisplayNavSejours(true);
+                }}
+              />
+              <Image
+                className="flag flagAlpes"
+                src={flag}
+                alt="drapeau"
+                width="40"
+                height="40"
+                onClick={() => setMapJaponActive(!mapJaponActive)}
+              />
+            </>
+          )}
+          {!mapJaponActive && (
+            <>
+              <Image
+                className={`flag flagAlpes1`}
+                src={flag}
+                alt="drapeau"
+                width="40"
+                height="40"
+                onClick={() => {
+                  setDisplayNavList(true);
+                }}
+              />
+              <Image
+                className={`flag flagAlpes2`}
+                src={flag}
+                alt="drapeau"
+                width="40"
+                height="40"
+                onClick={() => {
+                  setDisplayNavList(true);
+                }}
+              />
+              <Image
+                className={`flag flagAlpes3`}
+                src={flag}
+                alt="drapeau"
+                width="40"
+                height="40"
+                onClick={() => {
+                  setDisplayNavList(true);
+                }}
+              />
+              <Image
+                className={`flag flagAlpes4`}
+                src={flag}
+                alt="drapeau"
+                width="40"
+                height="40"
+                onClick={() => {
+                  setDisplayNavList(true);
+                }}
+              />
+            </>
+          )}
         </div>
         <button
           onClick={() => {
@@ -133,10 +193,9 @@ const Accueil: NextPageWithLayout<Props> = () => {
                   width="40"
                   height="40"
                   onClick={() => {
-                    setDisplayNavList(true);
-                    setDisplayNavSejours(true);
+                    location.href = "/sejours/parc-national-daisetsuzan";
                   }}
-                  onMouseEnter={() => setSejourHovering("Hoka")}
+                  onMouseEnter={() => setSejourHovering("Hokkaïdo")}
                   onMouseOut={() => setSejourHovering("")}
                 />
                 <Image
@@ -145,12 +204,10 @@ const Accueil: NextPageWithLayout<Props> = () => {
                     sejourHovering === "Mt Tsubakurodake" ||
                     sejourHovering === "Mt Yarigatake" ||
                     sejourHovering === "Mt Kitadake" ||
-                    sejourHovering === "Couleurs d'automne" || [
-                      "Alpes Japonaises",
-                      "Tokyo",
-                      "Kyoto",
-                      "Miyajima",
-                    ].includes(sejourHovering)
+                    sejourHovering === "Couleurs d'automne" ||
+                    ["Alpes Japonaises", "Tokyo", "Kyoto", "Miyajima"].includes(
+                      sejourHovering
+                    )
                       ? "selected"
                       : ""
                   }`}
@@ -181,8 +238,7 @@ const Accueil: NextPageWithLayout<Props> = () => {
                   width="40"
                   height="40"
                   onClick={() => {
-                    setDisplayNavList(true);
-                    setDisplayNavSejours(true);
+                    location.href = "/sejours/mont-tsubakurodake";
                   }}
                   onMouseEnter={() => setSejourHovering("Mt Tsubakurodake")}
                   onMouseOut={() => setSejourHovering("")}
@@ -196,8 +252,7 @@ const Accueil: NextPageWithLayout<Props> = () => {
                   width="40"
                   height="40"
                   onClick={() => {
-                    setMapJaponActive(!mapJaponActive);
-                    setSejourHovering("");
+                    location.href = "/sejours/mont-yarigatake";
                   }}
                   onMouseEnter={() => setSejourHovering("Mt Yarigatake")}
                   onMouseOut={() => setSejourHovering("")}
@@ -211,8 +266,7 @@ const Accueil: NextPageWithLayout<Props> = () => {
                   width="40"
                   height="40"
                   onClick={() => {
-                    setMapJaponActive(!mapJaponActive);
-                    setSejourHovering("");
+                    location.href = "/sejours/mont-kitadake";
                   }}
                   onMouseEnter={() => setSejourHovering("Mt Kitadake")}
                   onMouseOut={() => setSejourHovering("")}
@@ -226,8 +280,7 @@ const Accueil: NextPageWithLayout<Props> = () => {
                   width="40"
                   height="40"
                   onClick={() => {
-                    setMapJaponActive(!mapJaponActive);
-                    setSejourHovering("");
+                    location.href = "/sejours/couleurs-automne";
                   }}
                   onMouseEnter={() => setSejourHovering("Couleurs d'automne")}
                   onMouseOut={() => setSejourHovering("")}
@@ -278,31 +331,31 @@ const Accueil: NextPageWithLayout<Props> = () => {
               {
                 img: destinationImg,
                 name: "Hokkaïdo",
-                to: "/",
-                treks: ["Mt Tsubakurodake"],
-              },
-              {
-                img: destinationImg,
-                name: "Alpes Japonaises",
-                to: "/",
-                treks: ["Mt Yarigatake"],
-              },
-              {
-                img: destinationImg,
-                name: "Tokyo",
-                to: "/",
+                to: "/sejours/parc-national-daisetsuzan",
                 treks: ["Parc national Daisetsuzan"],
               },
               {
                 img: destinationImg,
+                name: "Alpes Japonaises",
+                to: "/sejours/mont-tsubakurodake",
+                treks: ["Mt Tsubakurodake"],
+              },
+              {
+                img: destinationImg,
+                name: "Tokyo",
+                to: "/sejours/mont-yarigatake",
+                treks: ["Mt Yarigatake"],
+              },
+              {
+                img: destinationImg,
                 name: "Kyoto",
-                to: "/",
+                to: "/sejours/mont-kitadake",
                 treks: ["Mt Kitadake"],
               },
               {
                 img: destinationImg,
                 name: "Miyajima",
-                to: "/",
+                to: "/sejours/couleurs-automne",
                 treks: ["Couleurs d'automne"],
               },
             ].map((destination) => (

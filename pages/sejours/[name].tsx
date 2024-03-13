@@ -226,8 +226,9 @@ const Séjour: NextPageWithLayout<Props> = ({ currentSejour }: Props) => {
 export const getStaticProps: GetStaticProps = async (context) => {
   const data = (await import("../../utils/sejours")).sejours2025;
 
+
   const currentSejour = data.find(
-    (sejour) => sejour.slug === context.params.name
+    (sejour) => sejour.slug === `/sejours/${context.params.name}`
   );
 
   return { props: { currentSejour } };
