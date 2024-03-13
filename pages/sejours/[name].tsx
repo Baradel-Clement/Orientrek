@@ -24,6 +24,7 @@ type Props = {
     nbBootsActive: number[];
     nbBootsInactive: number[];
     groupe: string;
+    urlImage: string;
     days: {
       number: number;
       description: string;
@@ -85,7 +86,7 @@ const Séjour: NextPageWithLayout<Props> = ({ currentSejour }: Props) => {
               {currentSejour.days.map((day) => (
                 <div className="embla__slide" key={day.number}>
                   <Image
-                    src={`/assets/${currentSejour.slug}/${day.number}.png`}
+                    src={`${currentSejour.urlImage}/${day.number}.png`}
                     alt="Map japon"
                     fill={true}
                   />
@@ -119,15 +120,17 @@ const Séjour: NextPageWithLayout<Props> = ({ currentSejour }: Props) => {
 
         {/* DESKTOP */}
         <section className="sejour-desktop">
+            <h1 className="bold title">{currentSejour.trek}</h1>
           <div className="sejour-header">
             <div className="sejour-header-left">
+              {<span className="sejour-header-left-shadow"></span>}
               <div className="embla-desktop">
                 <div className="embla-desktop__viewport" ref={emblaRefDesktop}>
                   <div className="embla__container">
                     {currentSejour.days.map((day) => (
                       <div className="embla__slide" key={day.number}>
                         <Image
-                          src={`/assets/${currentSejour.slug}/${day.number}-desktop.png`}
+                          src={`${currentSejour.urlImage}/${day.number}-desktop.png`}
                           alt="Map japon"
                           fill={true}
                         />
@@ -136,10 +139,8 @@ const Séjour: NextPageWithLayout<Props> = ({ currentSejour }: Props) => {
                   </div>
                 </div>
               </div>
-              <p className="bold drop-shadow">Votre voyage jour par jour :</p>
             </div>
             <div className="sejour-header-right">
-              <h1 className="bold title">{currentSejour.trek}</h1>
               <div className="sejour-header-infos">
                 <div className="sejour-header-info drop-shadow">
                   <p className="bold">Dates :</p>
@@ -206,6 +207,7 @@ const Séjour: NextPageWithLayout<Props> = ({ currentSejour }: Props) => {
             </div>
           </div>
           <div className="sejour-buttons">
+            <button>Votre voyage jour par jour</button>
             <button>
               <p>Fiche technique</p>
               <Image src={downloadIcon} alt="downloadIcon" />
@@ -222,7 +224,6 @@ const Séjour: NextPageWithLayout<Props> = ({ currentSejour }: Props) => {
 
 export const getStaticProps: GetStaticProps = async (context) => {
   const data = (await import("../../utils/sejours")).sejours2025;
-
 
   const currentSejour = data.find(
     (sejour) => sejour.slug === `/sejours/${context.params.name}`
