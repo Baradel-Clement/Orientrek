@@ -10,7 +10,11 @@ import { useEffect, useState } from "react";
 import { sejours2025 } from "../utils/sejours";
 import { sejours2026 } from "../utils/sejours";
 import SejourButton from "../components/SejourButton";
-import destinationImg from "../public/assets/destinationimg.png";
+import hokaDestinationImg from "../public/assets/destinations/hoka.png";
+import alpesDestinationImg from "../public/assets/destinations/alpes.png";
+import tokyoDestinationImg from "../public/assets/destinations/tokyo.png";
+import kyotoDestinationImg from "../public/assets/destinations/kyoto.png";
+import miyajimaDestinationImg from "../public/assets/destinations/miyajima.png";
 import Link from "next/link";
 
 type Props = {};
@@ -329,31 +333,31 @@ const Accueil: NextPageWithLayout<Props> = () => {
           <div className="Accueil-destinations">
             {[
               {
-                img: destinationImg,
+                img: hokaDestinationImg,
                 name: "Hokkaïdo",
                 to: "/sejours/parc-national-daisetsuzan",
                 treks: ["Parc national Daisetsuzan"],
               },
               {
-                img: destinationImg,
+                img: alpesDestinationImg,
                 name: "Alpes Japonaises",
                 to: "/sejours/mont-tsubakurodake",
                 treks: ["Mt Tsubakurodake"],
               },
               {
-                img: destinationImg,
+                img: tokyoDestinationImg,
                 name: "Tokyo",
                 to: "/sejours/mont-yarigatake",
                 treks: ["Mt Yarigatake"],
               },
               {
-                img: destinationImg,
+                img: kyotoDestinationImg,
                 name: "Kyoto",
                 to: "/sejours/mont-kitadake",
                 treks: ["Mt Kitadake"],
               },
               {
-                img: destinationImg,
+                img: miyajimaDestinationImg,
                 name: "Miyajima",
                 to: "/sejours/couleurs-automne",
                 treks: ["Couleurs d'automne"],
@@ -371,6 +375,8 @@ const Accueil: NextPageWithLayout<Props> = () => {
                 <Image
                   src={destination.img}
                   alt="Photo destination"
+                  width={603.75}
+                  height={438.92}
                   onMouseEnter={() => setSejourHovering(destination.name)}
                   onMouseOut={() => setSejourHovering("")}
                 />

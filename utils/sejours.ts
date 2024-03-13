@@ -1,6 +1,7 @@
 const sejours2025 = [
   {
     slug: "/sejours/mont-tsubakurodake",
+    urlImage: "/assets/mont-tsubakurodake",
     date: "du 6 au 25 juillet",
     trek: "Mt Tsubakurodake",
     nbBootsActive: [1, 2, 3],
@@ -58,6 +59,7 @@ const sejours2025 = [
   },
   {
     slug: "/sejours/mont-yarigatake",
+    urlImage: "/assets/mont-yarigatake",
     date: "du 20 juillet au 7 août",
     trek: "Mt Yarigatake",
     nbBootsActive: [1, 2, 3, 4],
@@ -79,6 +81,7 @@ const sejours2025 = [
   },
   {
     slug: "/sejours/parc-national-daisetsuzan",
+    urlImage: "/assets/parc-national-daisetsuzan",
     date: "du 10 au 29 août",
     trek: "Parc national Daisetsuzan",
     nbBootsActive: [1, 2, 3, 4],
@@ -100,6 +103,7 @@ const sejours2025 = [
   },
   {
     slug: "/sejours/mont-kitadake",
+    urlImage: "/assets/mont-kitadake",
     date: "du 23 août au 8 septembre",
     trek: "Mt Kitadake",
     nbBootsActive: [1, 2, 3],
@@ -121,6 +125,7 @@ const sejours2025 = [
   },
   {
     slug: "/sejours/couleurs-automne",
+    urlImage: "/assets/couleurs-automne",
     date: "du 6 au 22 septembre",
     trek: "Couleurs d'automne",
     nbBootsActive: [1, 2, 3],
