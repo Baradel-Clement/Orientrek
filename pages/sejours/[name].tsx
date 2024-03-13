@@ -73,9 +73,6 @@ const Séjour: NextPageWithLayout<Props> = ({ currentSejour }: Props) => {
     emblaApiDesktop.on("select", onSelect);
     emblaApiDesktop.on("reInit", onSelect);
   }, [emblaApiDesktop, onSelect]);
-  useEffect(() => {
-    console.log(selectedIndex);
-  }, [selectedIndex]);
 
   return (
     <Layout title={`Trek au ${currentSejour.trek}`}>

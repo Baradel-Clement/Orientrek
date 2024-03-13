@@ -3,8 +3,7 @@ import Layout from "../components/Layout";
 import { useHomeStateContext } from "../context/Home";
 import { NextPageWithLayout } from "./_app";
 import mapJapon from "../public/assets/map-japon.png";
-import mapJaponDesktop from "../public/assets/map-japon-desktop.png";
-import mapFr from "../public/assets/map-fr.png";
+import mapAlpes from "../public/assets/map-alpes.png";
 import flag from "../public/assets/flag.png";
 import { useEffect, useState } from "react";
 import { sejours2025 } from "../utils/sejours";
@@ -41,10 +40,7 @@ const Accueil: NextPageWithLayout<Props> = () => {
             className={`map ${mapJaponActive ? "active" : "inactive"}`}
             src={mapJapon}
             alt="carte du japon"
-            width="310"
-            height="306"
             onClick={() => {
-              console.log(mapJaponActive);
               if (!mapJaponActive) {
                 setMapJaponActive(!mapJaponActive);
               }
@@ -52,12 +48,9 @@ const Accueil: NextPageWithLayout<Props> = () => {
           />
           <Image
             className={`map ${!mapJaponActive ? "active" : "inactive"}`}
-            src={mapFr}
-            alt="carte du japon"
-            width="310"
-            height="306"
+            src={mapAlpes}
+            alt="carte des alpes japonaises"
             onClick={() => {
-              console.log(mapJaponActive);
               if (mapJaponActive) {
                 setMapJaponActive(!mapJaponActive);
               }
@@ -86,7 +79,7 @@ const Accueil: NextPageWithLayout<Props> = () => {
               />
             </>
           )}
-          {!mapJaponActive && (
+          {/* {!mapJaponActive && (
             <>
               <Image
                 className={`flag flagAlpes1`}
@@ -129,7 +122,7 @@ const Accueil: NextPageWithLayout<Props> = () => {
                 }}
               />
             </>
-          )}
+          )} */}
         </div>
         <button
           onClick={() => {
@@ -231,7 +224,7 @@ const Accueil: NextPageWithLayout<Props> = () => {
 
             {/* FLAG MAP ALPES */}
 
-            {!mapJaponActive && (
+            {/* {!mapJaponActive && (
               <>
                 <Image
                   className={`flag flagAlpes1 ${
@@ -290,17 +283,16 @@ const Accueil: NextPageWithLayout<Props> = () => {
                   onMouseOut={() => setSejourHovering("")}
                 />
               </>
-            )}
+            )} */}
 
             {/* MAP */}
 
             <Image
-              className={`map transition ${
+              className={`map transition map-japon ${
                 mapJaponActive ? "active" : "inactive"
               }`}
-              src={mapJaponDesktop}
+              src={mapJapon}
               alt="Map of Japan"
-              sizes="100vw"
               onClick={() => {
                 if (!mapJaponActive) {
                   setMapJaponActive(!mapJaponActive);
@@ -308,12 +300,11 @@ const Accueil: NextPageWithLayout<Props> = () => {
               }}
             />
             <Image
-              className={`map transition ${
+              className={`map transition map-alpes ${
                 mapJaponActive ? "inactive" : "active"
               }`}
-              src={mapFr}
+              src={mapAlpes}
               alt="Map of Japan"
-              sizes="100vw"
               onClick={() => {
                 if (mapJaponActive) {
                   setMapJaponActive(!mapJaponActive);

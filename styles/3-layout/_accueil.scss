@@ -15,8 +15,8 @@ div.Accueil {
 
   .maps-container-mobile {
     width: 100%;
-    max-width: 310px;
-    height: 306px;
+    max-width: 340px;
+    height: 340px;
     margin: 50px 0px;
     position: relative;
 
@@ -29,6 +29,8 @@ div.Accueil {
 
     & > img.active {
       width: 100%;
+      height: auto;
+      max-height: 100%a;
       z-index: 1;
     }
     & > img.inactive {
@@ -74,7 +76,7 @@ div.Accueil {
     width: 218px;
     height: 51px;
     @extend %drop-shadow;
-    margin-top: 60px;
+    margin-top: 30px;
   }
 
   .Accueil-main {
@@ -131,20 +133,31 @@ div.Accueil {
     position: absolute;
     top: 0px;
     left: 0px;
+    margin: 0px;
   }
   & > img.active {
     width: 100%;
     height: auto;
     z-index: 2;
+
+    &.map-japon {
+      width: 115%;
+    }
+
+    &.map-alpes {
+      width: 85%;
+      margin-left: 16%;
+      margin-top: 16%;
+    }
   }
   & > img.inactive {
-    width: 40%;
+    width: 50%;
     height: auto;
     cursor: pointer;
     z-index: 3;
 
     &:hover {
-      width: 42%;
+      width: 52%;
     }
   }
 
@@ -442,6 +455,39 @@ div.Accueil {
     width: 686px;
     height: 677px;
     margin-top: 28px;
+
+    & > img.map {
+      height: auto;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      margin: 0px;
+    }
+    & > img.active {
+      width: 100%;
+      height: auto;
+      z-index: 2;
+  
+      &.map-japon {
+        width: 115%;
+      }
+  
+      &.map-alpes {
+        width: 85%;
+        margin-left: 16%;
+        margin-top: 16%;
+      }
+    }
+    & > img.inactive {
+      width: 50%;
+      height: auto;
+      cursor: pointer;
+      z-index: 3;
+  
+      &:hover {
+        width: 52%;
+      }
+    }
 
     & > img.flag {
       &.flagAlpes {
