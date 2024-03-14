@@ -89,16 +89,15 @@ const Séjour: NextPageWithLayout<Props> = ({ currentSejour }: Props) => {
                 <div className="embla__slide" key={day.number}>
                   <Image
                     src={`${currentSejour.urlImage}/${day.number}.png`}
-                    alt="Map japon"
+                    alt="Image jour par jour"
                     fill={true}
                   />
                   <div className="slide-description">
                     <p className="day bold">
                       {i > 0 &&
                         `Descriptif du ${
-                          currentSejour.days.find(
-                            (e) => e.number === i + 1
-                          ).range
+                          currentSejour.days.find((e) => e.number === i + 1)
+                            .range
                         }`}
                       {i === 0 && `Descriptif du séjour`}
                     </p>
@@ -111,10 +110,12 @@ const Séjour: NextPageWithLayout<Props> = ({ currentSejour }: Props) => {
 
           <div className="controllers">
             <button onClick={scrollPrev}>
-              <Image src={chevronLeft} alt="chevron" /> <p>Jour précédent</p>
+              <Image src={chevronLeft} alt="chevron" />
+              <p>Jour précédent</p>
             </button>
             <button onClick={scrollNext}>
-              <p>Jour suivant</p> <Image src={chevronRight} alt="chevron" />
+              <p>Jour suivant</p>{" "}
+              <Image src={chevronRight} alt="chevron" />
             </button>
           </div>
           <div className="bottom-buttons">
@@ -123,7 +124,8 @@ const Séjour: NextPageWithLayout<Props> = ({ currentSejour }: Props) => {
               <Image src={downloadIcon} alt="downloadIcon" />
             </button>
             <Link href="/reservation">
-              <p>Réservation</p> <Image src={checkIcon} alt="checkIcon" />
+              <p>Réservation</p>{" "}
+              <Image src={checkIcon} alt="checkIcon" />
             </Link>
           </div>
         </section>
@@ -141,7 +143,7 @@ const Séjour: NextPageWithLayout<Props> = ({ currentSejour }: Props) => {
                       <div className="embla__slide" key={day.number}>
                         <Image
                           src={`${currentSejour.urlImage}/${day.number}-desktop.png`}
-                          alt="Map japon"
+                          alt="Image jour par jour du trek"
                           fill={true}
                         />
                       </div>

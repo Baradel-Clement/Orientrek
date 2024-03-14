@@ -39,6 +39,7 @@ const Accueil: NextPageWithLayout<Props> = () => {
           <Image
             className={`map ${mapJaponActive ? "active" : "inactive"}`}
             src={mapJapon}
+            placeholder="blur"
             alt="carte du japon"
             onClick={() => {
               if (!mapJaponActive) {
@@ -49,6 +50,7 @@ const Accueil: NextPageWithLayout<Props> = () => {
           <Image
             className={`map ${!mapJaponActive ? "active" : "inactive"}`}
             src={mapAlpes}
+            placeholder="blur"
             alt="carte des alpes japonaises"
             onClick={() => {
               if (mapJaponActive) {
@@ -59,6 +61,7 @@ const Accueil: NextPageWithLayout<Props> = () => {
           {mapJaponActive && (
             <>
               <Image
+            placeholder="blur"
                 className="flag flagHoka"
                 src={flag}
                 alt="drapeau"
@@ -70,6 +73,7 @@ const Accueil: NextPageWithLayout<Props> = () => {
                 }}
               />
               <Image
+            placeholder="blur"
                 className="flag flagAlpes"
                 src={flag}
                 alt="drapeau"
@@ -84,6 +88,7 @@ const Accueil: NextPageWithLayout<Props> = () => {
               <Image
                 className={`flag flagAlpes1`}
                 src={flag}
+            placeholder="blur"
                 alt="drapeau"
                 width="41"
                 height="62"
@@ -94,6 +99,7 @@ const Accueil: NextPageWithLayout<Props> = () => {
               <Image
                 className={`flag flagAlpes2`}
                 src={flag}
+            placeholder="blur"
                 alt="drapeau"
                 width="41"
                 height="62"
@@ -104,6 +110,7 @@ const Accueil: NextPageWithLayout<Props> = () => {
               <Image
                 className={`flag flagAlpes3`}
                 src={flag}
+            placeholder="blur"
                 alt="drapeau"
                 width="41"
                 height="62"
@@ -114,6 +121,7 @@ const Accueil: NextPageWithLayout<Props> = () => {
               <Image
                 className={`flag flagAlpes4`}
                 src={flag}
+            placeholder="blur"
                 alt="drapeau"
                 width="41"
                 height="62"
@@ -186,6 +194,7 @@ const Accueil: NextPageWithLayout<Props> = () => {
                       : ""
                   }`}
                   src={flag}
+                  placeholder="blur"
                   alt="drapeau"
                   width="41"
                   height="62"
@@ -209,6 +218,7 @@ const Accueil: NextPageWithLayout<Props> = () => {
                       : ""
                   }`}
                   src={flag}
+                  placeholder="blur"
                   alt="drapeau"
                   width="41"
                   height="62"
@@ -231,6 +241,7 @@ const Accueil: NextPageWithLayout<Props> = () => {
                     sejourHovering === "Mt Tsubakurodake" ? "selected" : ""
                   }`}
                   src={flag}
+                  placeholder="blur"
                   alt="drapeau"
                   width="31"
                   height="47"
@@ -245,6 +256,7 @@ const Accueil: NextPageWithLayout<Props> = () => {
                     sejourHovering === "Mt Yarigatake" ? "selected" : ""
                   }`}
                   src={flag}
+                  placeholder="blur"
                   alt="drapeau"
                   width="31"
                   height="47"
@@ -259,6 +271,7 @@ const Accueil: NextPageWithLayout<Props> = () => {
                     sejourHovering === "Mt Kitadake" ? "selected" : ""
                   }`}
                   src={flag}
+                  placeholder="blur"
                   alt="drapeau"
                   width="31"
                   height="47"
@@ -273,6 +286,7 @@ const Accueil: NextPageWithLayout<Props> = () => {
                     sejourHovering === "Couleurs d'automne" ? "selected" : ""
                   }`}
                   src={flag}
+                  placeholder="blur"
                   alt="drapeau"
                   width="31"
                   height="47"
@@ -292,6 +306,7 @@ const Accueil: NextPageWithLayout<Props> = () => {
                 mapJaponActive ? "active" : "inactive"
               }`}
               src={mapJapon}
+              placeholder="blur"
               alt="Map of Japan"
               onClick={() => {
                 if (!mapJaponActive) {
@@ -304,6 +319,7 @@ const Accueil: NextPageWithLayout<Props> = () => {
                 mapJaponActive ? "inactive" : "active"
               }`}
               src={mapAlpes}
+              placeholder="blur"
               alt="Map of Japan"
               onClick={() => {
                 if (mapJaponActive) {
@@ -366,6 +382,7 @@ const Accueil: NextPageWithLayout<Props> = () => {
                 <Image
                   src={destination.img}
                   alt="Photo destination"
+                  placeholder="blur"
                   width={603.75}
                   height={438.92}
                   onMouseEnter={() => setSejourHovering(destination.name)}

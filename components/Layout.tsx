@@ -74,13 +74,13 @@ const Layout = ({ children, title = "Orientrek" }: Props) => {
             toggle={setDisplayNavList}
           />
           <Link href="/" className="logo">
-            <Image src={logo} alt="logo Orientrek" width="65" height="65" />
+            <Image src={logo} alt="logo Orientrek" width="65" height="65" placeholder="blur" />
           </Link>
 
           {/* DESKTOP UPPER SECTION */}
           <div className="nav-upper-container">
             <Link href="/">
-              <Image src={logo} alt="logo Orientrek" width="65" height="65" />
+              <Image src={logo} alt="logo Orientrek" width="65" height="65" placeholder="blur" />
             </Link>
             <div className="nav-upper-links">
               <Link href="/nous-connaitre">Nous connaître</Link>
