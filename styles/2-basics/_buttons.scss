@@ -9,6 +9,10 @@ a.sejour {
   margin-top: 18px;
   z-index: 4;
 
+  &:hover {
+    background-color: $aqua !important;
+  }
+
   & > * {
     pointer-events: none;
   }

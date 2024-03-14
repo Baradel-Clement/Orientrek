@@ -26,6 +26,7 @@ type Props = {
     groupe: string;
     urlImage: string;
     days: {
+      range: string;
       number: number;
       description: string;
     }[];
@@ -91,7 +92,7 @@ const Séjour: NextPageWithLayout<Props> = ({ currentSejour }: Props) => {
                     fill={true}
                   />
                   <div className="slide-description">
-                    <p className="day bold">JOUR {day.number}</p>
+                    <p className="day bold">{day.range}</p>
                     <p className="desc">{day.description}</p>
                   </div>
                 </div>
@@ -201,7 +202,7 @@ const Séjour: NextPageWithLayout<Props> = ({ currentSejour }: Props) => {
                   ${selectedIndex === day.number - 1 ? "selected" : ""}`}
                   onClick={() => onThumbClick(day.number - 1)}
                 >
-                  <p>J {day.number}</p>
+                  <p>{day.range}</p>
                 </div>
               ))}
             </div>
