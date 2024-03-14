@@ -1,0 +1,51 @@
+.PageContact {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../../public/assets/waves-dark_blue.png");
+  position: absolute;
+  top: 0px;
+  @extend %flex-start-center;
+  flex-direction: column;
+  padding-top: 90px;
+
+  & > .PageContact-instructions {
+    @extend %flex-start-start;
+    flex-direction: column;
+    width: 91%;
+    max-width: 328px;
+
+    & > * {
+      font-weight: bold;
+    }
+
+    & > h1 {
+      width: 233px;
+      height: 39px;
+      @extend %flex-center-center;
+      font-size: 20px;
+      border-radius: 25px;
+      background-color: $red;
+      align-self: center;
+      margin-bottom: 15px;
+    }
+
+    & > p {
+      color: black;
+      font-size: 12px;
+
+      &.underline,
+      & > a.underline,
+      & > span.underline {
+        text-decoration: underline;
+      }
+
+      &:not(:first-child) {
+        margin-top: 21px;
+      }
+    }
+  }
+
+  & > form {
+    
+  }
+}

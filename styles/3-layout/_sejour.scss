@@ -469,6 +469,15 @@
     height: 42px;
     @extend %flex-between-center;
     margin-top: 20px;
+    position: relative;
+
+    & > img {
+      position: absolute;
+      top: -11px;
+      left: 258px;
+      width: 60px;
+      height: 45px;
+    }
 
     & > button,
     & > a {
@@ -479,16 +488,17 @@
       background-color: $red;
       @extend %drop-shadow;
 
-      &:hover:not(:first-child) {
+      &:hover:not(:nth-child(2)) {
         text-decoration: underline;
       }
 
-      &:first-child {
+      &:nth-child(2) {
         padding: 0px 20px;
         font-size: 15px;
         font-weight: bold;
+        cursor: default;
       }
-      &:nth-child(2) {
+      &:nth-child(3) {
         padding: 0px 20px;
 
         & > p {
@@ -672,13 +682,20 @@
       height: 59.5px;
       margin-top: 28.33px;
 
+      & > img {
+        top: -17px;
+        left: 369px;
+        width: 84.5px;
+        height: 63.3px;
+      }
+
       & > button,
       & > a {
-        &:first-child {
+        &:nth-child(2) {
           padding: 0px 28.33px;
           font-size: 21.25px;
         }
-        &:nth-child(2) {
+        &:nth-child(3) {
           padding: 0px 28.33px;
 
           & > p {

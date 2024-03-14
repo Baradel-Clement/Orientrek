@@ -14,6 +14,7 @@ import bootsActive from "../../public/assets/boots.svg";
 import bootsInactive from "../../public/assets/boots-inactive.svg";
 import phrise from "../../public/assets/phrise.svg";
 import TextTransition, { presets } from "react-text-transition";
+import curvedArrow from "../../public/assets/sejour_curved_arrow.png";
 
 type Props = {
   currentSejour: {
@@ -84,7 +85,7 @@ const Séjour: NextPageWithLayout<Props> = ({ currentSejour }: Props) => {
         <section className="embla-mobile">
           <div className="embla__viewport" ref={emblaRef}>
             <div className="embla__container">
-              {currentSejour.days.map((day) => (
+              {currentSejour.days.map((day, i) => (
                 <div className="embla__slide" key={day.number}>
                   <Image
                     src={`${currentSejour.urlImage}/${day.number}.png`}
@@ -92,7 +93,15 @@ const Séjour: NextPageWithLayout<Props> = ({ currentSejour }: Props) => {
                     fill={true}
                   />
                   <div className="slide-description">
-                    <p className="day bold">{day.range}</p>
+                    <p className="day bold">
+                      {i > 0 &&
+                        `Descriptif du ${
+                          currentSejour.days.find(
+                            (e) => e.number === i + 1
+                          ).range
+                        }`}
+                      {i === 0 && `Descriptif du séjour`}
+                    </p>
                     <p className="desc">{day.description}</p>
                   </div>
                 </div>
@@ -121,7 +130,7 @@ const Séjour: NextPageWithLayout<Props> = ({ currentSejour }: Props) => {
 
         {/* DESKTOP */}
         <section className="sejour-desktop">
-            <h1 className="bold title">{currentSejour.trek}</h1>
+          <h1 className="bold title">{currentSejour.trek}</h1>
           <div className="sejour-header">
             <div className="sejour-header-left">
               {<span className="sejour-header-left-shadow"></span>}
@@ -184,7 +193,13 @@ const Séjour: NextPageWithLayout<Props> = ({ currentSejour }: Props) => {
               {
                 <div className="sejour-header-descDay drop-shadow">
                   <TextTransition springConfig={presets.gentle}>
-                    Déscription du jour {selectedIndex + 1}
+                    {selectedIndex > 0 &&
+                      `Descriptif du ${
+                        currentSejour.days.find(
+                          (e) => e.number === selectedIndex + 1
+                        ).range
+                      }`}
+                    {selectedIndex === 0 && `Descriptif du séjour`}
                   </TextTransition>
                   <TextTransition springConfig={presets.gentle}>
                     {currentSejour.days[selectedIndex].description}
@@ -196,25 +211,27 @@ const Séjour: NextPageWithLayout<Props> = ({ currentSejour }: Props) => {
           <div className="sejour-phrise">
             <Image src={phrise} alt="phrise" />
             <div className="sejour-phrise-thumbs" ref={emblaThumbsRef}>
-              {currentSejour.days.map((day) => (
+              {currentSejour.days.map((day, i) => (
                 <div
                   className={`sejour-phrise-thumb
                   ${selectedIndex === day.number - 1 ? "selected" : ""}`}
                   onClick={() => onThumbClick(day.number - 1)}
                 >
-                  <p>{day.range}</p>
+                  <p>{i === 0 ? "Descriptif" : day.range}</p>
                 </div>
               ))}
             </div>
           </div>
           <div className="sejour-buttons">
+            <Image src={curvedArrow} alt="checkIcon" />
             <button>Votre voyage jour par jour</button>
             <button>
               <p>Fiche technique</p>
               <Image src={downloadIcon} alt="downloadIcon" />
             </button>
             <Link href="/reservation">
-              <p>Réservation</p> <Image src={checkIcon} alt="checkIcon" />
+              <p>Comment réserver ?</p>{" "}
+              <Image src={checkIcon} alt="checkIcon" />
             </Link>
           </div>
         </section>

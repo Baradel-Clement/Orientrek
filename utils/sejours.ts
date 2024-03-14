@@ -7,7 +7,7 @@ const sejours2025 = [
     nbBootsActive: [1, 2, 3],
     nbBootsInactive: [4, 5],
     region: "Alpes",
-    destination: ["Hokkaïdo"],
+    destination: ["Miyajima", "Tokyo" , "Kyoto", "Alpes japonaises"],
     price: 4950,
     groupe: "6 à 8 personnes",
     days: [
@@ -106,7 +106,7 @@ const sejours2025 = [
     nbBootsActive: [1, 2, 3, 4],
     nbBootsInactive: [5],
     region: "Alpes",
-    destination: ["Alpes Japonaises"],
+    destination: ["Alpes japonaises", "Tokyo" , "Kyoto"],
     price: 5000,
     groupe: "6 à 8 personnes",
     days: [
@@ -130,7 +130,7 @@ const sejours2025 = [
     nbBootsActive: [1, 2, 3, 4],
     nbBootsInactive: [5],
     region: "Hoka",
-    destination: ["Tokyo"],
+    destination: ["Tokyo", "Kyoto", "Hokkaïdo"],
     price: 5000,
     groupe: "6 à 8 personnes",
     days: [
@@ -154,7 +154,7 @@ const sejours2025 = [
     nbBootsActive: [1, 2, 3],
     nbBootsInactive: [4, 5],
     region: "Alpes",
-    destination: ["Kyoto"],
+    destination: ["Tokyo", "Kyoto", "Alpes japonaises"],
     price: 5000,
     groupe: "6 à 8 personnes",
     days: [
@@ -178,7 +178,7 @@ const sejours2025 = [
     nbBootsActive: [1, 2, 3],
     nbBootsInactive: [4, 5],
     region: "Alpes",
-    destination: ["Miyajima"],
+    destination: ["Tokyo" , "Kyoto", "Alpes japonaises"],
     price: 5000,
     groupe: "6 à 8 personnes",
     days: [

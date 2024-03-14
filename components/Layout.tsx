@@ -49,6 +49,11 @@ const Layout = ({ children, title = "Orientrek" }: Props) => {
             setDisplayNestedSejours(false);
           }
         }
+        if (displayNavList) {
+          if (closeModal("closeModalNavListOff", e)) {
+            setDisplayNavList(false);
+          }
+        }
       }}
     >
       <Head>
@@ -92,7 +97,7 @@ const Layout = ({ children, title = "Orientrek" }: Props) => {
                     setDisplayNestedSejours(!displayNestedSejours);
                 }}
               >
-                Séjours
+                Séjours 2025
               </p>
 
               {/* Nested Links */}
@@ -144,12 +149,12 @@ const Layout = ({ children, title = "Orientrek" }: Props) => {
           </div>
         </div>
 
-        <div className={`nav-list ${displayNavList ? "active" : ""}`}>
+        <div className={`nav-list closeModalNavListOff ${displayNavList ? "active" : ""}`}>
           <button
-            className={`btnSejour XL bold ${displayNavSejours ? "active" : ""}`}
+            className={`btnSejour M bold ${displayNavSejours ? "active" : ""}`}
             onClick={() => setDisplayNavSejours(!displayNavSejours)}
           >
-            Nos séjours{" "}
+            Nos séjours 2025{" "}
             <Image
               src={arrowChevron}
               alt="icône flèche"
@@ -162,10 +167,10 @@ const Layout = ({ children, title = "Orientrek" }: Props) => {
 
           {!displayNavSejours &&
             [
-              { label: "Calendrier", to: "/calendrier" },
-              { label: "Réservation", to: "/reservation" },
               { label: "Nous connaître", to: "/nous-connaitre" },
-              { label: "Contact", to: "/contact" },
+              { label: "Nous contacter", to: "/contact" },
+              { label: "Réservation", to: "/reservation" },
+              { label: "Mentions légales", to: "/mentions-legales" },
             ].map((link) => (
               <Link
                 href={link.to}

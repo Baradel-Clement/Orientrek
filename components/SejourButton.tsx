@@ -7,8 +7,14 @@ import bootsInactive from "../public/assets/boots-inactive.svg";
 import sejourImg from "../public/assets/mont-tsubakurodake/vignette.png";
 
 const SejourButton = ({ mode, sejour }) => {
-  const { displayNavSejours, sejourHovering, setSejourHovering } =
-    useHomeStateContext();
+  const {
+    displayNavSejours,
+    sejourHovering,
+    setSejourHovering,
+    setDisplayNavList,
+    setDisplayNavSejours,
+    displayNavList,
+  } = useHomeStateContext();
 
   return (
     <Link
@@ -26,6 +32,12 @@ const SejourButton = ({ mode, sejour }) => {
       }`}
       onMouseEnter={() => setSejourHovering(sejour.trek)}
       onMouseOut={() => setSejourHovering("")}
+      onClick={() => {
+        if (displayNavList) {
+          setDisplayNavList(false);
+          setDisplayNavSejours(false);
+        }
+      }}
     >
       <Image
         src={`${sejour.urlImage}/vignette.png`}
@@ -48,7 +60,7 @@ const SejourButton = ({ mode, sejour }) => {
           ))}
           {sejour.nbBootsInactive.map((index) => (
             <Image
-            key={index}
+              key={index}
               src={bootsInactive}
               alt="bottes"
               width={18.66}

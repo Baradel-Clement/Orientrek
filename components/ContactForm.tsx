@@ -45,11 +45,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div>
-      <Toaster />
-      <br />
-      <br />
-      <label htmlFor="firstName">Prénom: </label>
+    <>
       <form
         name="contactForm"
         onSubmit={(e) => {
@@ -57,38 +53,39 @@ const ContactForm = () => {
           handleSubmit();
         }}
       >
-        <input
-          type="text"
-          aria-label="Nom"
-          name="firstName"
-          id="firstName"
-          value={values.firstName}
-          onChange={(e) => setInputChanges("firstName", e.target.value)}
-        />
-        <br />
-        <br />
-        <label htmlFor="lastName">Nom: </label>
-        <input
-          type="text"
-          aria-label="Prénom"
-          name="lastName"
-          id="lastName"
-          value={values.lastName}
-          onChange={(e) => setInputChanges("lastName", e.target.value)}
-        />
-        <br />
-        <br />
-        <label htmlFor="num">Numéro: </label>
-        <input
-          type="tel"
-          aria-label="Téléphone"
-          name="num"
-          id="num"
-          value={values.num}
-          onChange={(e) => setInputChanges("num", e.target.value)}
-        />
-        <br />
-        <br />
+        <div className="PageContact-input">
+          <label htmlFor="lastName">Nom: </label>
+          <input
+            type="text"
+            aria-label="Prénom"
+            name="lastName"
+            id="lastName"
+            value={values.lastName}
+            onChange={(e) => setInputChanges("lastName", e.target.value)}
+          />
+        </div>
+        <div className="PageContact-input">
+          <label htmlFor="firstName">Prénom: </label>
+          <input
+            type="text"
+            aria-label="Nom"
+            name="firstName"
+            id="firstName"
+            value={values.firstName}
+            onChange={(e) => setInputChanges("firstName", e.target.value)}
+          />
+        </div>
+        <div className="PageContact-input">
+          <label htmlFor="num">Numéro: </label>
+          <input
+            type="tel"
+            aria-label="Téléphone"
+            name="num"
+            id="num"
+            value={values.num}
+            onChange={(e) => setInputChanges("num", e.target.value)}
+          />
+        </div>
         <label htmlFor="email">Email: </label>
         <input
           required
@@ -99,8 +96,6 @@ const ContactForm = () => {
           value={values.email}
           onChange={(e) => setInputChanges("email", e.target.value)}
         />
-        <br />
-        <br />
         <label htmlFor="message">Message: </label>
         <textarea
           required
@@ -110,14 +105,13 @@ const ContactForm = () => {
           value={values.message}
           onChange={(e) => setInputChanges("message", e.target.value)}
         />
-        <br />
-        <br />
         {!isLoading && <input type="submit" value="Envoyer" />}
         {isLoading && (
           <ReactLoading type={"spin"} color={"blue"} height={66} width={37} />
         )}
       </form>
-    </div>
+      <Toaster />
+    </>
   );
 };
 
