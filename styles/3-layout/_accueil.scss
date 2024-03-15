@@ -27,6 +27,7 @@ div.Accueil {
       @extend %transition;
     }
 
+
     & > img.active {
       width: 100%;
       height: auto;
@@ -37,6 +38,11 @@ div.Accueil {
       width: 30%;
       height: 30%;
       z-index: 2;
+    }
+
+    & > img.map-alpes.inactive {
+      width: 45%;
+      height: 45%;
     }
 
     & > img.flag {
@@ -52,20 +58,20 @@ div.Accueil {
         left: 251px;
       }
       &.flagAlpes1 {
-        top: 50px;
-        left: 50px;
+        top: 72px;
+        left: 228px;
       }
       &.flagAlpes2 {
-        top: 50px;
-        left: 150px;
+        top: 98px;
+        left: 79px;
       }
       &.flagAlpes3 {
-        top: 150px;
-        left: 150px;
+        top: 147px;
+        left: 188px;
       }
       &.flagAlpes4 {
-        top: 150px;
-        left: 50px;
+        top: 173px;
+        left: 113px;
       }
     }
   }
@@ -277,14 +283,8 @@ div.Accueil {
       }
     }
     &.flagAlpes4 {
-      top: 271px;
-      left: 120px;
-      -moz-transform: scaleX(-1);
-      -o-transform: scaleX(-1);
-      -webkit-transform: scaleX(-1);
-      transform: scaleX(-1);
-      filter: FlipH;
-      -ms-filter: "FlipH";
+      top: 290px;
+      left: 212px;
 
       &:hover,
       &.selected {
@@ -295,11 +295,11 @@ div.Accueil {
 
         @keyframes flagAlpes4 {
           from {
-            top: 271px;
+            top: 290px;
           }
 
           to {
-            top: 266px;
+            top: 285px;
           }
         }
       }
@@ -592,8 +592,8 @@ div.Accueil {
         }
       }
       &.flagAlpes4 {
-        top: 393px;
-        left: 180px;
+        top: 411px;
+        left: 304px;
 
         &:hover,
         &.selected {
@@ -601,11 +601,11 @@ div.Accueil {
 
           @keyframes flagAlpes4 {
             from {
-              top: 393px;
+              top: 411px;
             }
 
             to {
-              top: 388px;
+              top: 406px;
             }
           }
         }

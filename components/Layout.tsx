@@ -5,6 +5,7 @@ import { sejours2025 } from "../utils/sejours";
 import { sejours2026 } from "../utils/sejours";
 import Image from "next/image";
 import arrowChevron from "../public/assets/arrow-chevron.svg";
+import arrowSejours2025 from "../public/assets/check.svg";
 import Hamburger from "hamburger-react";
 import { useHomeStateContext } from "../context/Home";
 import logo from "../public/assets/logo.png";
@@ -99,6 +100,9 @@ const Layout = ({ children, title = "Orientrek" }: Props) => {
               >
                 Séjours 2025
               </p>
+              {
+                router.pathname === '/' && <Image src={arrowSejours2025} alt="fléche vers le bas" />
+              }
 
               {/* Nested Links */}
               {displayNestedSejours && (

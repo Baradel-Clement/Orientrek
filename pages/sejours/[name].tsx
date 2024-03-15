@@ -155,21 +155,21 @@ const Séjour: NextPageWithLayout<Props> = ({ currentSejour }: Props) => {
             <div className="sejour-header-right">
               <div className="sejour-header-infos">
                 <div className="sejour-header-info drop-shadow">
-                  <p className="bold">Dates :</p>
-                  <p className="bold">{currentSejour.date}</p>
+                  <p className="bold">Dates</p>
+                  <p className="bold">{currentSejour.date} 2025</p>
                 </div>
                 <div className="sejour-header-info drop-shadow">
-                  <p className="bold">Prix :</p>
+                  <p className="bold">Prix</p>
                   <p className="bold">{currentSejour.price} €</p>
                 </div>
               </div>
               <div className="sejour-header-infos">
                 <div className="sejour-header-info drop-shadow">
-                  <p className="bold">Taille du groupe :</p>
+                  <p className="bold">Taille du groupe</p>
                   <p className="bold">{currentSejour.groupe}</p>
                 </div>
                 <div className="sejour-header-info drop-shadow">
-                  <p className="bold">Difficulté :</p>
+                  <p className="bold">Niveau</p>
                   <div>
                     {currentSejour.nbBootsActive.map((index) => (
                       <Image

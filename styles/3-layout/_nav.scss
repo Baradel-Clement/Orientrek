@@ -163,6 +163,7 @@ nav {
 
         & > a:first-child {
           height: 61px;
+          padding-left: 22px;
         }
 
         .nav-upper-links {
@@ -173,6 +174,7 @@ nav {
           font-size: 20px;
           font-weight: bold;
           text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+          position: relative;
 
           // nested link séjour
 
@@ -238,6 +240,15 @@ nav {
             text-decoration: underline;
             text-shadow: none;
           }
+
+          & > img:last-child {
+            position: absolute;
+            right: 118px;
+            bottom: -19px;
+            transform: rotate(120deg);
+            height: auto;
+            width: 19px;
+          }
         }
       }
     }
@@ -254,6 +265,7 @@ nav {
         & > a:first-child {
           height: 85px;
           width: 85px;
+          padding-left: 47px;
           & > img {
             height: 85px;
             width: 85px;
@@ -262,6 +274,13 @@ nav {
         .nav-upper-links {
           width: 1510px;
           font-size: 24px;
+
+          & > img:last-child {
+            right: 140px;
+            bottom: -26px;
+            transform: rotate(120deg);
+            width: 27px;
+          }
 
           .nav-upper-nestedLinks {
             width: 570.42px;
