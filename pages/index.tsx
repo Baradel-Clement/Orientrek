@@ -136,7 +136,7 @@ const Accueil: NextPageWithLayout<Props> = () => {
           }}
           className="bold btn-sejours-mobile"
         >
-          Nos séjours en 2025
+          Séjours 2025
         </button>
 
         {/* DESKTOP SECTION */}

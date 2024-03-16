@@ -171,10 +171,10 @@ const Layout = ({ children, title = "Orientrek" }: Props) => {
           }`}
         >
           <button
-            className={`btnSejour M bold ${displayNavSejours ? "active" : ""}`}
+            className={`btnSejour L bold ${displayNavSejours ? "active" : ""}`}
             onClick={() => setDisplayNavSejours(!displayNavSejours)}
           >
-            Nos séjours 2025{" "}
+            Séjours 2025{" "}
             <Image
               src={arrowChevron}
               alt="icône flèche"
