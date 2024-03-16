@@ -37,7 +37,9 @@ const Accueil: NextPageWithLayout<Props> = () => {
         {/* MOBILE SECTION */}
         <div className="maps-container-mobile">
           <Image
-            className={`map map-japon ${mapJaponActive ? "active" : "inactive"}`}
+            className={`map map-japon ${
+              mapJaponActive ? "active" : "inactive"
+            }`}
             src={mapJapon}
             placeholder="blur"
             alt="carte du japon"
@@ -48,7 +50,9 @@ const Accueil: NextPageWithLayout<Props> = () => {
             }}
           />
           <Image
-            className={`map map-alpes ${!mapJaponActive ? "active" : "inactive"}`}
+            className={`map map-alpes ${
+              !mapJaponActive ? "active" : "inactive"
+            }`}
             src={mapAlpes}
             placeholder="blur"
             alt="carte des alpes japonaises"
@@ -67,7 +71,7 @@ const Accueil: NextPageWithLayout<Props> = () => {
                 width="31"
                 height="47"
                 onClick={() => {
-                  location.href = "/sejours/parc-national-daisetsuzan"
+                  location.href = "/sejours/parc-national-daisetsuzan";
                 }}
               />
               <Image
@@ -85,45 +89,45 @@ const Accueil: NextPageWithLayout<Props> = () => {
               <Image
                 className={`flag flagAlpes1`}
                 src={flag}
-            placeholder="blur"
+                placeholder="blur"
                 alt="drapeau"
                 width="31"
                 height="47"
                 onClick={() => {
-                  location.href = "/sejours/mont-tsubakurodake"
+                  location.href = "/sejours/mont-tsubakurodake";
                 }}
               />
               <Image
                 className={`flag flagAlpes2`}
                 src={flag}
-            placeholder="blur"
+                placeholder="blur"
                 alt="drapeau"
                 width="31"
                 height="47"
                 onClick={() => {
-                  location.href = "/sejours/mont-yarigatake"
+                  location.href = "/sejours/mont-yarigatake";
                 }}
               />
               <Image
                 className={`flag flagAlpes3`}
                 src={flag}
-            placeholder="blur"
+                placeholder="blur"
                 alt="drapeau"
                 width="31"
                 height="47"
                 onClick={() => {
-                  location.href = "/sejours/mont-kitadake"
+                  location.href = "/sejours/mont-kitadake";
                 }}
               />
               <Image
                 className={`flag flagAlpes4`}
                 src={flag}
-            placeholder="blur"
+                placeholder="blur"
                 alt="drapeau"
                 width="31"
                 height="47"
                 onClick={() => {
-                  location.href = "/sejours/couleurs-automne"
+                  location.href = "/sejours/couleurs-automne";
                 }}
               />
             </>
@@ -338,9 +342,20 @@ const Accueil: NextPageWithLayout<Props> = () => {
             {[
               {
                 img: miyajimaDestinationImg,
-                name: "Miyajima",
+                name: "Matsumoto",
                 to: "/sejours/mont-tsubakurodake",
-                treks: ["Mt Tsubakurodake", "Alpes"],
+                treks: ["Mt Tsubakurodake", "Alpes", "Couleurs d'automne"],
+              },
+              {
+                img: alpesDestinationImg,
+                name: "Alpes Nord",
+                to: "/sejours/mont-yarigatake",
+                treks: [
+                  "Mt Tsubakurodake",
+                  "Mt Yarigatake",
+                  "Couleurs d'automne",
+                  "Alpes",
+                ],
               },
               {
                 img: hokaDestinationImg,
@@ -349,14 +364,11 @@ const Accueil: NextPageWithLayout<Props> = () => {
                 treks: ["Parc national Daisetsuzan"],
               },
               {
-                img: alpesDestinationImg,
-                name: "Alpes japonaises",
-                to: "/sejours/mont-yarigatake",
+                img: kyotoDestinationImg,
+                name: "Alpes Sud",
+                to: "/sejours/couleurs-automne",
                 treks: [
                   "Mt Kitadake",
-                  "Mt Yarigatake",
-                  "Mt Tsubakurodake",
-                  "Couleurs d'automne",
                   "Alpes",
                 ],
               },
@@ -364,19 +376,6 @@ const Accueil: NextPageWithLayout<Props> = () => {
                 img: tokyoDestinationImg,
                 name: "Tokyo",
                 to: "/sejours/mont-kitadake",
-                treks: [
-                  "Mt Kitadake",
-                  "Mt Yarigatake",
-                  "Parc national Daisetsuzan",
-                  "Mt Tsubakurodake",
-                  "Couleurs d'automne",
-                  "Alpes",
-                ],
-              },
-              {
-                img: kyotoDestinationImg,
-                name: "Kyoto",
-                to: "/sejours/couleurs-automne",
                 treks: [
                   "Mt Kitadake",
                   "Mt Yarigatake",

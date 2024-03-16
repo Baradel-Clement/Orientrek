@@ -35,18 +35,18 @@ const Nous: NextPageWithLayout<Props> = () => {
           <p>
             Vous souhaitez en savoir plus sur un séjour ou simplement nous
             adresser un message, suivez le lien nous contacter. Vous êtes prêt à
-            partir ?
+            partir ?{" "}
             <Link href={"/difficultes"}>
               Pensez à vérifier le niveau de votre trek ici avant de réserver.
             </Link>
           </p>
           <Image src={samuelImg} alt="image sejour" />
-          <p>
-            «Venez tenter l'aventure à mes côtés pour réaliser un trek dans les
+          <p className="quote">
+            Venez tenter l'aventure à mes côtés pour réaliser un trek dans les
             montagnes Japonaises. Je vous accompagne et partage avec vous mon
-            expérience en toute sécurité. »
+            expérience en toute sécurité.
           </p>
-          <p>Samuel Bernard</p>
+          <p className="quote">Samuel Bernard</p>
         </div>
       </section>
     </Layout>

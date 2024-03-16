@@ -1,5 +1,6 @@
 .PageNous {
   width: 100vw;
+  min-height: 100vh;
   background-image: url("../../public/assets/waves-dark_blue.png");
   position: absolute;
   top: 0px;
@@ -33,7 +34,62 @@
     }
 
     & > p {
-      margin-top: 12px;
+      margin-top: 15px;
+
+      &.quote {
+        font-size: 18px;
+        line-height: 25px;
+      }
+
+      &> a {
+        color: white;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    & > img {
+      width: 266px;
+      height: auto;
+      margin-top: 15px;
     }
   }
+}
+
+@media screen and (min-width: 414px) {
+  .PageNous {
+    padding-top: 107.44186047px;
+  
+    & > .PageNous-container {
+      width: 406.80272109px;
+  
+      & > h1 {
+        width: 278.72340426px;
+        height: 46.80851064px;
+        font-size: 23.88888889px;
+      }
+  
+      & > p,
+      & > a {
+        font-size: 13.1503268px;
+        line-height: 23.92857143px;
+      }
+  
+      & > p {
+        margin-top: 17.90780142px;
+  
+        &.quote {
+          font-size: 21.52777778px;
+          line-height: 30px;
+        }
+      }
+  
+      & > img {
+        width: 318.86363636px;
+        margin-top: 17.90780142px;
+      }
+    }
+  }
+  
 }
