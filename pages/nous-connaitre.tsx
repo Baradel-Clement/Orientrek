@@ -2,6 +2,7 @@ import Layout from "../components/Layout";
 import { NextPageWithLayout } from "./_app";
 import Link from "next/link";
 import samuelImg from "../public/assets/samuel.png";
+import samuelImgDesktop from "../public/assets/samuel-desktop.png";
 import Image from "next/image";
 
 type Props = {};
@@ -22,8 +23,10 @@ const Nous: NextPageWithLayout<Props> = () => {
           <p>
             Par sa connaissance fine du terrain et de la culture japonaise,
             Orientrek développe des séjours alliant la randonnée itinérante et
-            la découverte culturelle du Japon. Lors de votre voyage, vous serez
-            notamment immergé au cœur des cités historiques de Tokyo et Kyoto.
+            la découverte culturelle du Japon. <br />
+            Lors de votre voyage, vous serez notamment immergé au cœur des cités
+            historiques de Tokyo et Kyoto.
+            <br />
             Vous découvrirez également des lieux moins connus de l'archipel
             selon votre séjour.
           </p>
@@ -34,19 +37,34 @@ const Nous: NextPageWithLayout<Props> = () => {
           </p>
           <p>
             Vous souhaitez en savoir plus sur un séjour ou simplement nous
-            adresser un message, suivez le lien nous contacter. Vous êtes prêt à
-            partir ?{" "}
+            adresser un message, suivez le lien nous contacter. <br />
+            Vous êtes prêt à partir ?{" "}
             <Link href={"/difficultes"}>
               Pensez à vérifier le niveau de votre trek ici avant de réserver.
             </Link>
           </p>
-          <Image src={samuelImg} alt="image sejour" />
-          <p className="quote">
+          <Image
+            src={samuelImg}
+            alt="Photo de Samuel bernard"
+            className="mobile"
+          />
+          <p className="quote mobile">
             Venez tenter l'aventure à mes côtés pour réaliser un trek dans les
             montagnes Japonaises. Je vous accompagne et partage avec vous mon
             expérience en toute sécurité.
           </p>
-          <p className="quote">Samuel Bernard</p>
+          <p className="quote mobile">Samuel Bernard</p>
+          <div className="quote-desktop">
+            <div className="quote-desktop-desc">
+              <p>
+                Venez tenter l'aventure à mes côtés pour réaliser un trek dans
+                les montagnes Japonaises. Je vous accompagne et partage avec
+                vous mon expérience en toute sécurité.
+              </p>
+              <p>Samuel Bernard</p>
+            </div>
+            <Image src={samuelImgDesktop} alt="Photo de Samuel bernard" />
+          </div>
         </div>
       </section>
     </Layout>

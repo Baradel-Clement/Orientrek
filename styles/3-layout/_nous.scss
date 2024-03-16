@@ -8,11 +8,16 @@
   flex-direction: column;
   padding-top: 90px;
 
+  .quote-desktop {
+    display: none;
+  }
+
   & > .PageNous-container {
     width: 340px;
     @extend %flex-start-center;
     flex-flow: column;
     color: black;
+    overflow: hidden;
 
     & > h1 {
       width: 233px;
@@ -41,7 +46,7 @@
         line-height: 25px;
       }
 
-      &> a {
+      & > a {
         color: white;
         &:hover {
           text-decoration: underline;
@@ -60,36 +65,198 @@
 @media screen and (min-width: 414px) {
   .PageNous {
     padding-top: 107.44186047px;
-  
+
     & > .PageNous-container {
       width: 406.80272109px;
-  
+
       & > h1 {
         width: 278.72340426px;
         height: 46.80851064px;
         font-size: 23.88888889px;
       }
-  
+
       & > p,
       & > a {
         font-size: 13.1503268px;
         line-height: 23.92857143px;
       }
-  
+
       & > p {
         margin-top: 17.90780142px;
-  
+
         &.quote {
           font-size: 21.52777778px;
           line-height: 30px;
         }
       }
-  
+
       & > img {
         width: 318.86363636px;
         margin-top: 17.90780142px;
       }
     }
   }
-  
+}
+
+@media screen and (min-width: 1200px) {
+  .PageNous {
+    .mobile {
+      display: none;
+    }
+
+    width: 100vw;
+    min-height: unset;
+    height: 100vh;
+    padding-top: 95px;
+
+    & > .PageNous-container {
+      width: 1200px;
+
+      & > h1 {
+        width: 271px;
+        font-size: 28px;
+        height: 39px;
+      }
+
+      & > p,
+      & > a {
+        font-size: 16px;
+        line-height: 26px;
+      }
+
+      & > p {
+        margin-top: 25px;
+
+        & > a {
+          color: white;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+
+      & > .quote-desktop {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 14px 47px;
+        background-color: $red;
+        width: 1140px;
+        border-radius: 50px;
+        margin-top: 36px;
+
+        & > .quote-desktop-desc {
+          display: flex;
+          justify-content: space-between;
+          flex-flow: column;
+          width: 530px;
+
+          & > p {
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            line-height: 26px;
+            width: auto;
+
+            &:last-child {
+              align-self: flex-end;
+            }
+          }
+        }
+
+        & > img {
+          width: 438px;
+          height: auto;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1450px) {
+  .PageNous {
+    padding-top: 114.79289941px;
+
+    & > .PageNous-container {
+      width: 1450.57471264px;
+
+      & > h1 {
+        width: 327.41358025px;
+        font-size: 33.84418902px;
+        height: 47.14351852px;
+      }
+
+      & > p,
+      & > a {
+        font-size: 19.33697106px;
+        line-height: 31.41914225px;
+      }
+
+      & > p {
+        margin-top: 30.17241379px;
+      }
+
+      & > .quote-desktop {
+        padding: 16.91666667px 56.83333333px;
+        width: 1378.78787879px;
+        margin-top: 43.52040816px;
+
+        & > .quote-desktop-desc {
+          width: 641.73387097px;
+
+          & > p {
+            font-size: 21.76507395px;
+            line-height: 31.41914225px;
+          }
+        }
+
+        & > img {
+          width: 528.52726758px;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1700px) {
+  .PageNous {
+    padding-top: 134.89417989px;
+
+    & > .PageNous-container {
+      width: 1701.17647059px;
+
+      & > h1 {
+        width: 384.70588235px;
+        font-size: 39.70588235px;
+        height: 55.37216828px;
+      }
+
+      & > p,
+      & > a {
+        font-size: 22.64705882px;
+        line-height: 36.47058824px;
+      }
+
+      & > p {
+        margin-top: 35.29411765px;
+      }
+
+      & > .quote-desktop {
+        padding: 19.85294118px 66.23529412px;
+        width: 1620px;
+        margin-top: 51.05882353px;
+
+        & > .quote-desktop-desc {
+          width: 752.94117647px;
+
+          & > p {
+            font-size: 25.52941176px;
+            line-height: 36.47058824px;
+          }
+        }
+
+        & > img {
+          width: 621.17647059px;
+        }
+      }
+    }
+  }
 }

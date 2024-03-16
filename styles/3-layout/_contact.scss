@@ -37,6 +37,9 @@
       & > a.underline,
       & > span.underline {
         text-decoration: underline;
+      }
+      & > a,
+      & > span {
         color: $white;
       }
 
