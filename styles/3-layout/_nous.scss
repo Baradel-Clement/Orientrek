@@ -1,0 +1,39 @@
+.PageNous {
+  width: 100vw;
+  background-image: url("../../public/assets/waves-dark_blue.png");
+  position: absolute;
+  top: 0px;
+  @extend %flex-start-center;
+  flex-direction: column;
+  padding-top: 90px;
+
+  & > .PageNous-container {
+    width: 340px;
+    @extend %flex-start-center;
+    flex-flow: column;
+    color: black;
+
+    & > h1 {
+      width: 233px;
+      height: 39px;
+      @extend %flex-center-center;
+      font-size: 20px;
+      font-weight: bold;
+      background-color: $red;
+      color: white;
+      border-radius: 25px;
+    }
+
+    & > p,
+    & > a {
+      font-size: 11px;
+      font-weight: bold;
+      line-height: 20px;
+      text-align: center;
+    }
+
+    & > p {
+      margin-top: 12px;
+    }
+  }
+}
