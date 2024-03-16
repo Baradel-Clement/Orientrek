@@ -75,13 +75,25 @@ const Layout = ({ children, title = "Orientrek" }: Props) => {
             toggle={setDisplayNavList}
           />
           <Link href="/" className="logo">
-            <Image src={logo} alt="logo Orientrek" width="65" height="65" placeholder="blur" />
+            <Image
+              src={logo}
+              alt="logo Orientrek"
+              width="65"
+              height="65"
+              placeholder="blur"
+            />
           </Link>
 
           {/* DESKTOP UPPER SECTION */}
           <div className="nav-upper-container">
             <Link href="/">
-              <Image src={logo} alt="logo Orientrek" width="65" height="65" placeholder="blur" />
+              <Image
+                src={logo}
+                alt="logo Orientrek"
+                width="65"
+                height="65"
+                placeholder="blur"
+              />
             </Link>
             <div className="nav-upper-links">
               <Link href="/nous-connaitre">Nous connaître</Link>
@@ -100,9 +112,9 @@ const Layout = ({ children, title = "Orientrek" }: Props) => {
               >
                 Séjours 2025
               </p>
-              {
-                router.pathname === '/' && <Image src={arrowSejours2025} alt="fléche vers le bas" />
-              }
+              {router.pathname === "/" && (
+                <Image src={arrowSejours2025} alt="fléche vers le bas" />
+              )}
 
               {/* Nested Links */}
               {displayNestedSejours && (
@@ -153,7 +165,11 @@ const Layout = ({ children, title = "Orientrek" }: Props) => {
           </div>
         </div>
 
-        <div className={`nav-list closeModalNavListOff ${displayNavList ? "active" : ""}`}>
+        <div
+          className={`nav-list closeModalNavListOff ${
+            displayNavList ? "active" : ""
+          }`}
+        >
           <button
             className={`btnSejour M bold ${displayNavSejours ? "active" : ""}`}
             onClick={() => setDisplayNavSejours(!displayNavSejours)}
@@ -180,6 +196,10 @@ const Layout = ({ children, title = "Orientrek" }: Props) => {
                 href={link.to}
                 key={link.to}
                 className="navLink bold L bold"
+                onClick={() => {
+                  setDisplayNavList(false);
+                  setDisplayNavSejours(false);
+                }}
               >
                 {link.label}
               </Link>

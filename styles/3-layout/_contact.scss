@@ -37,6 +37,7 @@
       & > a.underline,
       & > span.underline {
         text-decoration: underline;
+        color: $white;
       }
 
       &:not(:nth-child(2)) {
@@ -63,12 +64,13 @@
       label {
         width: auto;
         font-weight: bold;
+        padding-top: 3px;
       }
 
       label,
       input,
       textarea {
-        font-size: 10px;
+        font-size: 12px;
         color: black;
         outline: none;
       }
@@ -84,6 +86,7 @@
         border: none;
         resize: none;
         padding: 0px 6px;
+        height: 25px;
       }
 
       &.message {
@@ -175,9 +178,9 @@
         label {
           width: auto;
           font-weight: bold;
+          font-size: 14px;
         }
   
-        label,
         input,
         textarea {
           font-size: 11.9375px;
@@ -459,79 +462,3 @@
     }
   }
 }
-
-/* @media screen and (min-width: 1700px) {
-  .PageContact {
-    padding-top: 100px;
-  
-    & > .PageContact-instructions {
-      width: 1527.34px;
-  
-      & > h1 {
-        width: 456.21px;
-        height: 63.75px;
-        font-size: 39.67px;
-        margin-bottom: 66.59px;
-      }
-  
-      & > p {
-        font-size: 28px;
-  
-        &:not(:nth-child(2)) {
-          margin-top: 42.5px;
-        }
-      }
-    }
-  
-    & > form {
-      margin-top: 56.6px;
-      width: 1527px;
-  
-      & > .PageContact-input {
-        width: 619.15px;
-        height: 48.17px;
-        margin-top: 0px;
-  
-        &:not(:first-child) {
-          margin-top: 30px;
-        }
-
-        &:nth-child(5) {
-          margin-top: 0px !important;
-        }
-  
-        label {
-          width: auto;
-          font-size: 20px;
-        }
-  
-        input,
-        textarea {
-          width: 100%;
-          max-width: 297px;
-          font-size: 16px;
-          height: 30px;
-        }
-  
-        &.message {
-          height: 224px;
-          position: absolute;
-          right: 0px;
-          top: 0px;
-          width: 483px;
-  
-          & > textarea {
-            height: 179px;
-            border-radius: 12px;
-          }
-        }
-      }
-      & > input.submit {
-        font-size: 17px;
-        margin-top: 25px;
-        width: 125px;
-        height: 39px;
-      }
-    }
-  }
-} */

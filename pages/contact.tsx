@@ -9,14 +9,14 @@ const Contact: NextPageWithLayout<Props> = () => (
     <section className="PageContact">
       <div className="PageContact-instructions">
         <h1>Nous contacter</h1>
-        <p>Vous avez 3 solutions pour échanger avec Orientrek :</p>
+        <p>Trois solutions pour échanger avec Orientrek :</p>
         <p>
-          Nous téléphoner au : <span className="underline">06 59 37 37 03</span>
+          Nous téléphoner au : <span className="underline">04 81 91 31 18</span>
         </p>
         <p>
           Nous envoyer un email à : <a className="underline" href="mailto:contact@orientrek.com">contact@orientrek.com</a>
         </p>
-        <p className="underline">Utiliser le formulaire de contact :</p>
+        <p>Utiliser le formulaire de contact :</p>
       </div>
       <ContactForm />
     </section>
