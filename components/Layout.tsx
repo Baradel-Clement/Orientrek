@@ -14,14 +14,6 @@ import { useRouter } from "next/router";
 import SejourButton from "./SejourButton";
 import { closeModal } from "../utils/closeModal";
 
-/* const navLinks = [
-  { label: "Séjours" },
-  { label: "Calendrier", to: "/calendrier" },
-  { label: "Réservation", to: "/reservation" },
-  { label: "Nous connaître", to: "/nous-connaitre" },
-  { label: "Contact", to: "/contact" },
-]; */
-
 type Props = {
   children?: ReactNode;
   title?: string;
@@ -98,7 +90,7 @@ const Layout = ({ children, title = "Orientrek" }: Props) => {
             <div className="nav-upper-links">
               <Link href="/nous-connaitre">Nous connaître</Link>
               <Link href="/contact">Nous contacter</Link>
-              <Link href="/reservations">Réservation</Link>
+              <Link href="/reservation">Réservation</Link>
               <Link href="/mentions-legales">Mentions légales</Link>
 
               <p

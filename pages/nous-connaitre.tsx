@@ -23,24 +23,24 @@ const Nous: NextPageWithLayout<Props> = () => {
           <p>
             Par sa connaissance fine du terrain et de la culture japonaise,
             Orientrek développe des séjours alliant la randonnée itinérante et
-            la découverte culturelle du Japon. <br />
-            Lors de votre voyage, vous serez notamment immergé au cœur des cités
-            historiques de Tokyo et Kyoto.
+            la découverte culturelle du Japon. Lors de votre voyage, vous serez
+            notamment immergé au cœur de la capitale japonaise.
+            <br />
             <br />
             Vous découvrirez également des lieux moins connus de l'archipel
             selon votre séjour.
           </p>
           <p>
             Une destination a retenu votre attention ? Rendez-vous sur notre
-            page accueil et choisissez votre séjour pour découvrir son contenu
+            page <Link href={"/"}>accueil</Link> et choisissez votre séjour pour découvrir son contenu
             au jour le jour.
           </p>
           <p>
             Vous souhaitez en savoir plus sur un séjour ou simplement nous
-            adresser un message, suivez le lien nous contacter. <br />
-            Vous êtes prêt à partir ?{" "}
+            adresser un message, suivez le lien <Link href={"/contact"}>nous contacter.</Link> <br /><br />
+            Vous êtes prêt à partir ? Pensez à vérifier le{" "}
             <Link href={"/difficultes"}>
-              Pensez à vérifier le niveau de votre trek ici avant de réserver.
+              niveau de votre trek ici avant de réserver.
             </Link>
           </p>
           <Image
@@ -50,7 +50,7 @@ const Nous: NextPageWithLayout<Props> = () => {
           />
           <p className="quote mobile">
             Venez tenter l'aventure à mes côtés pour réaliser un trek dans les
-            montagnes Japonaises. Je vous accompagne et partage avec vous mon
+            montagnes japonaises. Je vous accompagne et partage avec vous mon
             expérience en toute sécurité.
           </p>
           <p className="quote mobile">Samuel Bernard</p>
@@ -58,7 +58,7 @@ const Nous: NextPageWithLayout<Props> = () => {
             <div className="quote-desktop-desc">
               <p>
                 Venez tenter l'aventure à mes côtés pour réaliser un trek dans
-                les montagnes Japonaises. Je vous accompagne et partage avec
+                les montagnes japonaises. Je vous accompagne et partage avec
                 vous mon expérience en toute sécurité.
               </p>
               <p>Samuel Bernard</p>

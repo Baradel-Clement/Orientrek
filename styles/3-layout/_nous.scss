@@ -26,7 +26,7 @@
       font-size: 20px;
       font-weight: bold;
       background-color: $red;
-      color: white;
+      color: $white;
       border-radius: 25px;
     }
 
@@ -47,7 +47,7 @@
       }
 
       & > a {
-        color: white;
+        color: $white;
         &:hover {
           text-decoration: underline;
         }
@@ -106,8 +106,10 @@
 
     width: 100vw;
     min-height: unset;
-    height: 100vh;
+    height: unset;
+    min-height: 100vh;
     padding-top: 95px;
+    padding-bottom: 50px;
 
     & > .PageNous-container {
       width: 1200px;
@@ -128,7 +130,7 @@
         margin-top: 25px;
 
         & > a {
-          color: white;
+          color: $white;
           &:hover {
             text-decoration: underline;
           }
@@ -152,7 +154,7 @@
           width: 530px;
 
           & > p {
-            color: white;
+            color: $white;
             font-size: 18px;
             font-weight: bold;
             line-height: 26px;

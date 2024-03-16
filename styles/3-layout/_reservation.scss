@@ -1,0 +1,692 @@
+.PageReservation {
+  width: 100vw;
+  min-height: 100vh;
+  background-image: url("../../public/assets/waves-dark_blue.png");
+  position: absolute;
+  top: 0px;
+  @extend %flex-start-center;
+  flex-direction: column;
+  padding-top: 90px;
+
+  & > .PageReservation-container {
+    width: 340px;
+    @extend %flex-start-center;
+    flex-flow: column;
+    color: black;
+    overflow: hidden;
+
+    & > h1 {
+      width: 233px;
+      height: 39px;
+      @extend %flex-center-center;
+      font-size: 20px;
+      font-weight: bold;
+      background-color: $red;
+      color: $white;
+      border-radius: 25px;
+    }
+
+    & > p,
+    & > a {
+      font-size: 11px;
+      font-weight: bold;
+      line-height: 20px;
+      text-align: center;
+    }
+
+    & > p {
+      margin-top: 15px;
+
+      & > span {
+        color: $white;
+      }
+
+      & > a {
+        color: $white;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    a.btnEchelle {
+      height: 36px;
+      margin-top: 20px;
+      border-radius: 25px;
+      background-color: $red;
+      @extend %flex-between-center;
+      padding: 3px 25px 0px 25px;
+      font-size: 15px;
+      font-weight: bold;
+      color: $white;
+      text-decoration: underline;
+
+      & > img {
+        width: 30px;
+        height: auto;
+        margin-left: 20px;
+        margin-bottom: 3px;
+      }
+    }
+
+    & > .PageReservation-sejours {
+      width: 100%;
+      height: 500px;
+      @extend %flex-between-start;
+      margin-top: 30px;
+      margin-bottom: 10px;
+      flex-flow: column;
+
+      & > a {
+        width: 100%;
+        height: 80px;
+        border-radius: 25px;
+        background-color: $red;
+        padding: 8px 22px 8px 5px;
+        @extend %flex-between-center;
+        z-index: 4;
+
+        & > img {
+          width: 95px;
+          height: auto;
+          border-radius: 25px;
+        }
+
+        & > .sejour-infos {
+          @extend %flex-between-center;
+          flex-flow: column;
+          width: 206px;
+          height: 66px;
+
+          & > .sejour-desc {
+            font-size: 12px;
+            font-weight: bold;
+            color: $white;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+            width: 100%;
+            height: 36px;
+            padding-top: 4px;
+            @extend %flex-between-center;
+            flex-flow: column;
+          }
+
+          & > .sejour-bottom {
+            width: 100%;
+            @extend %flex-between-center;
+
+            & > div {
+              width: 100px;
+              @extend %flex-between-center;
+
+              & > img {
+                width: 13.85px;
+                height: 15.72;
+              }
+            }
+
+            & > p {
+              width: 92px;
+              height: 24px;
+              border-radius: 25px;
+              font-weight: bold;
+              font-size: 14px;
+              @extend %flex-center-center;
+              background-color: $white;
+            }
+          }
+        }
+
+        &.btnEchelle {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 414px) {
+  .PageReservation {
+    padding-top: 112.5px;
+
+    & > .PageReservation-container {
+      width: 425px;
+
+      & > h1 {
+        width: auto;
+        height: 48.75px;
+        font-size: 25px;
+        padding: 5px 40px 0px 40px;
+      }
+
+      & > p,
+      & > a {
+        font-size: 13.75px;
+        line-height: 25px;
+      }
+
+      & > p {
+        margin-top: 18.75px;
+      }
+
+      a.btnEchelle {
+        height: 45px;
+        margin-top: 25px;
+        padding: 3.75px 31.25px 0px 31.25px;
+        font-size: 18.75px;
+
+        & > img {
+          width: 37.5px;
+          margin-left: 25px;
+          margin-bottom: 3.75px;
+        }
+      }
+
+      & > .PageReservation-sejours {
+        height: 625px;
+        margin-top: 37.5px;
+        margin-bottom: 12.5px;
+
+        & > a {
+          height: 100px;
+          border-radius: 31.25px;
+          padding: 10px 27.5px 10px 6.25px;
+
+          & > img {
+            width: 118.75px;
+          }
+
+          & > .sejour-infos {
+            width: 257.5px;
+            height: 82.5px;
+
+            & > .sejour-desc {
+              font-size: 15px;
+              text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+              height: 45px;
+              padding-top: 5px;
+            }
+
+            & > .sejour-bottom {
+              & > div {
+                width: 125px;
+                & > img {
+                  width: 17.3125px;
+                  height: 19.65px;
+                }
+              }
+
+              & > p {
+                width: 115px;
+                height: 30px;
+                font-size: 17.5px;
+                padding-top: 4px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .PageReservation {
+    padding-top: 112.5px;
+
+    & > .PageReservation-container {
+      width: 1190px;
+
+      & > h1 {
+        width: auto;
+        height: 48.75px;
+        font-size: 28px;
+        padding: 5px 40px 0px 40px;
+      }
+
+      & > p,
+      & > a {
+        font-size: 14px;
+        line-height: 25px;
+      }
+
+      & > p {
+        margin-top: 18.75px;
+      }
+
+      & > a.btnEchelle {
+        display: none;
+      }
+
+      & > .PageReservation-sejours {
+        width: 100%;
+        height: 239px;
+        margin-top: 25px;
+        margin-bottom: 0px;
+        flex-flow: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        position: relative;
+
+        & > a {
+          width: 48%;
+          height: 67px;
+          border-radius: 25px;
+          background-color: $red;
+          padding: 8px 22px 8px 105px;
+          @extend %flex-between-center;
+          z-index: 4;
+          position: relative;
+
+          &:first-child {
+            margin-right: 44px;
+          }
+
+          &:hover {
+            & > .sejour-infos {
+              & > .sejour-bottom {
+                & > p {
+                  background-color: black !important;
+                  text-decoration-color: black;
+                  color: $white;
+                  text-decoration: underline;
+                }
+              }
+            }
+          }
+
+          &:not(:nth-child(1), :nth-child(4)) {
+            margin-top: 15px;
+          }
+
+          & > img {
+            width: 100px;
+            height: 67px;
+            border-radius: 25px;
+            position: absolute;
+            left: 0px;
+          }
+
+          & > .sejour-infos {
+            @extend %flex-between-center;
+            display: inline-flex;
+            flex-flow: row;
+            width: 100%;
+            height: 66px;
+
+            & > .sejour-desc {
+              & > p:first-child {
+                font-size: 14px;
+              }
+              & > p:last-child {
+                font-size: 13px;
+              }
+              font-weight: bold;
+              color: $white;
+              text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+              width: 189px;
+              height: 45px;
+              padding-top: 4px;
+              @extend %flex-between-center;
+              flex-flow: column;
+            }
+
+            & > .sejour-bottom {
+              width: 244px;
+              @extend %flex-between-center;
+
+              & > div {
+                width: 125px;
+                @extend %flex-between-center;
+
+                & > img {
+                  width: 18.8px;
+                  height: 21.73px;
+                }
+              }
+
+              & > p {
+                width: 103px;
+                height: 37px;
+                border-radius: 25px;
+                font-weight: bold;
+                font-size: 15px;
+                @extend %flex-center-center;
+                background-color: $white;
+              }
+            }
+          }
+
+          &.btnEchelle {
+            display: flex;
+            width: unset;
+            height: 36px;
+            padding: 0px 30px;
+            z-index: 1;
+            font-size: 15px;
+            margin-top: unset;
+            text-decoration: unset;
+            position: absolute;
+            bottom: 6px;
+            right: 3px;
+
+            &:hover {
+              text-decoration: underline;
+            }
+            & > img {
+              width: 30px;
+              height: auto;
+              margin-left: 20px;
+              margin-bottom: unset;
+              position: relative;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1450px) {
+  .PageReservation {
+    padding-top: 136px;
+
+    & > .PageReservation-container {
+      width: 1437px;
+
+      & > h1 {
+        width: auto;
+        height: 58.81px;
+        font-size: 33.85px;
+        padding: 6.04px 48.31px 0px 48.31px;
+      }
+
+      & > p,
+      & > a {
+        font-size: 16.91px;
+        line-height: 30.18px;
+      }
+
+      & > p {
+        margin-top: 22.63px;
+      }
+
+      & > a.btnEchelle {
+        display: none;
+      }
+
+      & > .PageReservation-sejours {
+        width: 100%;
+        height: 288.67px;
+        margin-top: 30.18px;
+        margin-bottom: 0px;
+        flex-flow: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        position: relative;
+
+        & > a {
+          height: 81.07px;
+          border-radius: 30.18px;
+          background-color: $red;
+          padding: 9.66px 26.11px 9.66px 126.96px;
+
+          z-index: 4;
+          position: relative;
+
+          &:first-child {
+            margin-right: 53.23px;
+          }
+
+          &:hover {
+            & > .sejour-infos {
+              & > .sejour-bottom {
+                & > p {
+                  background-color: black !important;
+                  text-decoration-color: black;
+                  color: $white;
+                  text-decoration: underline;
+                }
+              }
+            }
+          }
+
+          &:not(:nth-child(1), :nth-child(4)) {
+            margin-top: 18.75px;
+          }
+
+          & > img {
+            width: 121px;
+            height: 81.07px;
+            border-radius: 30.18px;
+            position: absolute;
+            left: 0px;
+          }
+
+          & > .sejour-infos {
+            display: inline-flex;
+            flex-flow: row;
+            width: 100%;
+            height: 79.84px;
+
+            & > .sejour-desc {
+              & > p:first-child {
+                font-size: 16.91px;
+              }
+              & > p:last-child {
+                font-size: 15.64px;
+              }
+              font-weight: bold;
+              color: $white;
+              text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+              width: 229.01px;
+              height: 54.63px;
+              padding-top: 4.04px;
+
+              flex-flow: column;
+            }
+
+            & > .sejour-bottom {
+              width: 294.99px;
+
+              & > div {
+                width: 151.05px;
+
+                & > img {
+                  width: 22.71px;
+                  height: 26.24px;
+                }
+              }
+
+              & > p {
+                width: 124.62px;
+                height: 44.73px;
+                border-radius: 30.18px;
+                font-weight: bold;
+                font-size: 18.13px;
+                background-color: $white;
+              }
+            }
+          }
+
+          &.btnEchelle {
+            display: flex;
+            width: unset;
+            height: 43.49px;
+            padding: 0px 36.27px;
+            padding-top: 3px;
+            z-index: 1;
+            font-size: 18.13px;
+            margin-top: unset;
+            text-decoration: unset;
+            position: absolute;
+            bottom: 7.25px;
+            right: 3.62px;
+
+            &:hover {
+              text-decoration: underline;
+            }
+            & > img {
+              width: 36.27px;
+              height: auto;
+              margin-left: 24.2px;
+              margin-bottom: 3px;
+              position: relative;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .PageReservation {
+    padding-top: 159.86px;
+
+    & > .PageReservation-container {
+      width: 1687.05px;
+
+      & > h1 {
+        width: auto;
+        height: 69.14px;
+        font-size: 39.69px;
+        padding: 7.06px 56.35px 0px 56.35px;
+      }
+
+      & > p,
+      & > a {
+        font-size: 19.85px;
+        line-height: 35.41px;
+      }
+
+      & > p {
+        margin-top: 25.5px;
+      }
+
+      & > a.btnEchelle {
+        display: none;
+      }
+
+      & > .PageReservation-sejours {
+        width: 100%;
+        height: 339.28px;
+        margin-top: 35.41px;
+        margin-bottom: 0px;
+        flex-flow: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        position: relative;
+
+        & > a {
+          height: 95.1px;
+          border-radius: 35.41px;
+          background-color: $red;
+          padding: 11.31px 30.92px 11.31px 152.94px;
+
+          z-index: 4;
+          position: relative;
+
+          &:first-child {
+            margin-right: 59.66px;
+          }
+
+          &:hover {
+            & > .sejour-infos {
+              & > .sejour-bottom {
+                & > p {
+                  background-color: black !important;
+                  text-decoration-color: black;
+                  color: $white;
+                  text-decoration: underline;
+                }
+              }
+            }
+          }
+
+          &:not(:nth-child(1), :nth-child(4)) {
+            margin-top: 21.21px;
+          }
+
+          & > img {
+            width: 135.29px;
+            height: 95.1px;
+            border-radius: 35.41px;
+            position: absolute;
+            left: 0px;
+          }
+
+          & > .sejour-infos {
+            display: inline-flex;
+            flex-flow: row;
+            width: 100%;
+            height: 94.08px;
+
+            & > .sejour-desc {
+              & > p:first-child {
+                font-size: 19.85px;
+              }
+              & > p:last-child {
+                font-size: 18.56px;
+              }
+              font-weight: bold;
+              color: $white;
+              text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+              width: 267.93px;
+              height: 63.08px;
+              padding-top: 4.85px;
+
+              flex-flow: column;
+            }
+
+            & > .sejour-bottom {
+              width: 348.13px;
+
+              & > div {
+                width: 177.42px;
+
+                & > img {
+                  width: 26.7px;
+                  height: 30.78px;
+                }
+              }
+
+              & > p {
+                width: 146.23px;
+                height: 52.41px;
+                border-radius: 35.41px;
+                font-weight: bold;
+                font-size: 22.44px;
+                background-color: $white;
+              }
+            }
+          }
+
+          &.btnEchelle {
+            display: flex;
+            width: unset;
+            height: 51.07px;
+            padding: 0px 42.35px;
+            z-index: 1;
+            font-size: 22.44px;
+            margin-top: unset;
+            text-decoration: unset;
+            position: absolute;
+            bottom: 8.45px;
+            right: 4.22px;
+
+            &:hover {
+              text-decoration: underline;
+            }
+            & > img {
+              width: 42.35px;
+              height: auto;
+              margin-left: 28.24px;
+              margin-bottom: unset;
+              position: relative;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -15,10 +15,11 @@
 @import "./3-layout/sejour";
 @import "./3-layout/contact";
 @import "./3-layout/nous";
+@import "./3-layout/reservation";
 
 
 input, textarea {
   background-color: grey;
-  color: white;
+  color: $white;
   margin-left: 20px;
 }
