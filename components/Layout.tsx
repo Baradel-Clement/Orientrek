@@ -13,6 +13,7 @@ import closeIcon from "../public/assets/close.svg";
 import { useRouter } from "next/router";
 import SejourButton from "./SejourButton";
 import { closeModal } from "../utils/closeModal";
+import CookieBanner from "./CookieBanner";
 
 type Props = {
   children?: ReactNode;
@@ -204,6 +205,7 @@ const Layout = ({ children, title = "Orientrek" }: Props) => {
         </div>
       </nav>
       {children}
+      <CookieBanner />
     </div>
   );
 };
