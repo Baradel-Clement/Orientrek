@@ -12,14 +12,6 @@ export default function GoogleAnalytics({
 }) {
   const pathname = usePathname();
   const searchParams = useSearchParams();
-  useEffect(() => {
-    console.log('useEffect');
-    console.log(pathname + searchParams.toString());
-    
-    window.gtag("config", "G-VQH3J3ZR1Z", {
-      page_path: pathname + searchParams.toString(),
-    });
-  });
 
   useEffect(() => {
     const url = pathname + searchParams.toString();
@@ -41,7 +33,7 @@ export default function GoogleAnalytics({
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
                 
-                gtag('config', 'G-VQH3J3ZR1Z', {
+                gtag('config', '${GA_MEASUREMENT_ID}', {
                     page_path: window.location.pathname,
                 });
                 `,
