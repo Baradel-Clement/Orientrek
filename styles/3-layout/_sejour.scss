@@ -180,6 +180,9 @@
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
+    height: unset;
+    min-height: 100vh;
+    padding-bottom: 50px;
   }
 }
 @media screen and (max-width: 1200px) {

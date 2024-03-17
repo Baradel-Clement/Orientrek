@@ -21,7 +21,7 @@ const niveaux = [
     nbBootsActive: [1, 2, 3, 4],
     nbBootsInactive: [5],
     title: "Avancé",
-    description: "Le trek est exigeant physiquement et requiert un entraînement préalable à votre participation. Une bonne agilité est nécessaire pour progresser sereinement sur les terrains techniques. Pour les treks avec portage, vous devez être habitué à porter une charge d'environ 7 à 8 kg en plus de vos effets personnels sur une durée d'une semaine (nourriture et matériel commun de bivouac). Les étapes peuvent cumuler 1200 m de dénivelé et durer 8 heures de marche.",
+    description: "Le trek est exigeant physiquement et requiert un entraînement préalable à votre participation. Une bonne agilité est nécessaire pour progresser sereinement sur les terrains techniques. Pour les treks avec portage, vous devez être habitué à porter une charge d'environ 7 à 8 kg en plus de vos effets personnels sur une durée d'une semaine (nourriture et matériel commun de bivouac). Les étapes peuvent cumuler 1300 m de dénivelé et durer 8 heures de marche.",
   },
   {
     nbBootsActive: [1, 2, 3, 4, 5],

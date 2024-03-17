@@ -31,7 +31,7 @@ const Reservation: NextPageWithLayout<Props> = () => {
   return (
     <Layout title="Niveaux des treks | Orientrek">
       <div className="PageNiveaux">
-        <h1 className="bold title-mobile">Niveau</h1>
+        <h1 className="bold title-mobile">Niveau des treks</h1>
 
         {/* MOBILE */}
         <section className="embla-mobile">

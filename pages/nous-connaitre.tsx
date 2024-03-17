@@ -41,8 +41,8 @@ const Nous: NextPageWithLayout<Props> = () => {
             <Link href={"/contact"}>nous contacter.</Link> <br />
             <br />
             Vous êtes prêt à partir ? Pensez à vérifier le{" "}
-            <Link href={"/niveaux"}>niveau de votre trek</Link> ici avant de
-            réserver.
+            <Link href={"/niveaux"}>niveau de votre trek</Link> ici avant de{" "}
+            <Link href={"/reservation"}>réserver.</Link>
           </p>
           <Image
             src={samuelImg}

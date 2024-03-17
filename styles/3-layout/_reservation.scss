@@ -84,7 +84,7 @@
         background-color: $red;
         padding: 8px 22px 8px 5px;
         @extend %flex-between-center;
-        z-index: 4;
+        z-index: 2;
 
         & > img {
           width: 95px;
@@ -232,6 +232,7 @@
 @media screen and (min-width: 1200px) {
   .PageReservation {
     padding-top: 112.5px;
+    padding-bottom: 50px;
 
     & > .PageReservation-container {
       width: 1190px;
@@ -274,7 +275,7 @@
           background-color: $red;
           padding: 8px 22px 8px 105px;
           @extend %flex-between-center;
-          z-index: 4;
+          z-index: 2;
           position: relative;
 
           &:first-child {
@@ -285,8 +286,7 @@
             & > .sejour-infos {
               & > .sejour-bottom {
                 & > p {
-                  background-color: black !important;
-                  text-decoration-color: black;
+                  background-color: $aqua !important;
                   color: $white;
                   text-decoration: underline;
                 }
@@ -388,7 +388,7 @@
 
 @media screen and (min-width: 1450px) {
   .PageReservation {
-    padding-top: 136px;
+    padding-top: 108px;
 
     & > .PageReservation-container {
       width: 1437px;
@@ -430,24 +430,11 @@
           background-color: $red;
           padding: 9.66px 26.11px 9.66px 126.96px;
 
-          z-index: 4;
+          z-index: 2;
           position: relative;
 
           &:first-child {
             margin-right: 53.23px;
-          }
-
-          &:hover {
-            & > .sejour-infos {
-              & > .sejour-bottom {
-                & > p {
-                  background-color: black !important;
-                  text-decoration-color: black;
-                  color: $white;
-                  text-decoration: underline;
-                }
-              }
-            }
           }
 
           &:not(:nth-child(1), :nth-child(4)) {
@@ -522,9 +509,6 @@
             bottom: 7.25px;
             right: 3.62px;
 
-            &:hover {
-              text-decoration: underline;
-            }
             & > img {
               width: 36.27px;
               height: auto;
@@ -541,7 +525,7 @@
 
 @media screen and (min-width: 1700px) {
   .PageReservation {
-    padding-top: 159.86px;
+    padding-top: 136.86px;
 
     & > .PageReservation-container {
       width: 1687.05px;
@@ -583,24 +567,11 @@
           background-color: $red;
           padding: 11.31px 30.92px 11.31px 152.94px;
 
-          z-index: 4;
+          z-index: 2;
           position: relative;
 
           &:first-child {
             margin-right: 59.66px;
-          }
-
-          &:hover {
-            & > .sejour-infos {
-              & > .sejour-bottom {
-                & > p {
-                  background-color: black !important;
-                  text-decoration-color: black;
-                  color: $white;
-                  text-decoration: underline;
-                }
-              }
-            }
           }
 
           &:not(:nth-child(1), :nth-child(4)) {

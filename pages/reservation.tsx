@@ -41,7 +41,7 @@ const Reservation: NextPageWithLayout<Props> = () => {
             <Link href={"/contact"}>contactez-nous</Link>.
           </p>
           <Link href={"/niveaux"} className="btnEchelle drop-shadow">
-            Échelle des niveaux <Image src={arrow} alt="Icône flèche" />
+            Niveaux des treks <Image src={arrow} alt="Icône flèche" />
           </Link>
           <div className="PageReservation-sejours">
             {sejours2025.map((sejour) => (
@@ -89,7 +89,7 @@ const Reservation: NextPageWithLayout<Props> = () => {
             ))}
 
             <Link href={"/niveaux"} className="btnEchelle drop-shadow">
-              Échelle des niveaux <Image src={arrow} alt="Icône flèche" />
+              Niveaux des treks <Image src={arrow} alt="Icône flèche" />
             </Link>
           </div>
         </div>
