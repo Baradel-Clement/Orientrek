@@ -32,16 +32,17 @@ const Nous: NextPageWithLayout<Props> = () => {
           </p>
           <p>
             Une destination a retenu votre attention ? Rendez-vous sur notre
-            page <Link href={"/"}>accueil</Link> et choisissez votre séjour pour découvrir son contenu
-            au jour le jour.
+            page <Link href={"/"}>accueil</Link> et choisissez votre séjour pour
+            découvrir son contenu au jour le jour.
           </p>
           <p>
             Vous souhaitez en savoir plus sur un séjour ou simplement nous
-            adresser un message, suivez le lien <Link href={"/contact"}>nous contacter.</Link> <br /><br />
+            adresser un message, suivez le lien{" "}
+            <Link href={"/contact"}>nous contacter.</Link> <br />
+            <br />
             Vous êtes prêt à partir ? Pensez à vérifier le{" "}
-            <Link href={"/difficultes"}>
-              niveau de votre trek ici avant de réserver.
-            </Link>
+            <Link href={"/niveaux"}>niveau de votre trek</Link> ici avant de
+            réserver.
           </p>
           <Image
             src={samuelImg}

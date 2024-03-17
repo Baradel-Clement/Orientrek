@@ -1,0 +1,537 @@
+.PageNiveaux {
+  width: 100vw;
+  min-height: 100vh;
+  padding-bottom: 50px;
+  background-image: url("../../public/assets/waves-dark_blue.png");
+  position: absolute;
+  top: 0px;
+  @extend %flex-start-center;
+  flex-direction: column;
+  padding-top: 90px;
+
+  & > .niveaux-container {
+    display: none;
+  }
+
+  & > button {
+    @extend %flex-between-center;
+    width: auto;
+    height: 39px;
+    font-size: 15px;
+    padding: 0px 20px;
+    background-color: $red;
+    border-radius: 25px;
+    margin-top: 30px;
+    text-decoration: underline;
+
+    & > img {
+      width: 20px;
+      height: auto;
+      margin-right: 10px;
+      transform: rotate(180deg);
+    }
+  }
+
+  & > h1 {
+    font-size: 20px;
+    padding: 0px 30px;
+    height: 39px;
+    background-color: $red;
+    border-radius: 25px;
+    @extend %flex-center-center;
+    width: auto;
+  }
+
+  & > .embla-mobile {
+    margin-top: 15px;
+    --slide-size: 100%;
+    max-width: 360px;
+    position: relative;
+
+    & > span.shadow {
+      width: 100%;
+      max-width: 360px;
+      height: 100%;
+      position: absolute;
+      top: 0px;
+      border-radius: 25px;
+
+      box-shadow: 0px 0px 11px 5px rgba(0, 0, 0, 0.38);
+    }
+
+    & > .controllers {
+      @extend %flex-between-center;
+      height: 36px;
+      width: 313px;
+      position: absolute;
+      bottom: 25px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      & > button {
+        @extend %flex-between-center;
+        width: auto;
+        min-width: 125px;
+        height: 100%;
+        border-radius: 25px;
+        background-color: $red;
+        @extend %drop-shadow;
+
+        & > p {
+          font-weight: bold;
+          font-size: 15px;
+        }
+
+        & > img {
+          width: 16px;
+          height: 16px;
+          padding-bottom: 2px;
+        }
+      }
+    }
+
+    & > .embla__viewport {
+      overflow: hidden;
+
+      & > .embla__container {
+        display: flex;
+        touch-action: pan-y;
+
+        & > .embla__slide {
+          flex: 0 0 var(--slide-size);
+          display: flex;
+          position: relative;
+          width: 100vw;
+          overflow: hidden;
+          height: 448px;
+          flex-flow: column;
+          align-items: center !important;
+          padding: 20px 10px;
+          justify-content: flex-start;
+          background-color: $white;
+          border-radius: 25px;
+
+          & > .slide-header {
+            @extend %flex-between-center;
+            flex-flow: column;
+            padding: 13px 28px 13px 28px;
+            background-color: $aqua;
+            border-radius: 25px;
+            margin-bottom: 20px;
+            width: auto;
+            height: 80px;
+
+            & > p {
+              font-size: 18px;
+              color: $white;
+              font-weight: bold;
+              width: auto;
+            }
+
+            & > div {
+              width: 135px;
+              @extend %flex-between-center;
+              & > img {
+                width: 18.8px;
+                height: 21.73px;
+              }
+            }
+          }
+          & > p.desc {
+            font-size: 14px;
+            text-align: center;
+            line-height: 22px;
+            width: 340px;
+            color: black;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 450px) {
+  .PageNiveaux {
+    padding-top: 112.5px;
+
+    & > button {
+      height: 48.75px;
+      font-size: 18.75px;
+      padding: 0px 25px;
+      margin-top: 37.5px;
+
+      & > img {
+        width: 25px;
+        margin-right: 12.5px;
+      }
+    }
+
+    & > h1 {
+      font-size: 25px;
+      padding: 0px 37.5px;
+      height: 48.75px;
+    }
+
+    & > .embla-mobile {
+      margin-top: 18.75px;
+      max-width: 450px;
+
+      & > span.shadow {
+        max-width: 450px;
+        box-shadow: 0px 0px 13.75px 6.25px rgba(0, 0, 0, 0.38);
+      }
+
+      & > .controllers {
+        height: 45px;
+        width: 391.25px;
+        bottom: 31.25px;
+
+        & > button {
+          min-width: 156.25px;
+          & > p {
+            font-size: 18.75px;
+          }
+
+          & > img {
+            width: 20px;
+            height: 20px;
+            padding-bottom: 2.5px;
+          }
+        }
+      }
+
+      & > .embla__viewport {
+        & > .embla__container {
+          & > .embla__slide {
+            height: 560px;
+            padding: 25px 12.5px;
+
+            & > .slide-header {
+              padding: 16.25px 35px 16.25px 35px;
+              margin-bottom: 25px;
+              height: 100px;
+
+              & > p {
+                font-size: 22.5px;
+              }
+
+              & > div {
+                width: 168.75px;
+                & > img {
+                  width: 23.5px;
+                  height: 27.16px;
+                }
+              }
+            }
+            & > p.desc {
+              font-size: 17.5px;
+              line-height: 27.5px;
+              width: 425px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .PageNiveaux {
+    padding-top: 129.5px;
+    & > .embla-mobile {
+      display: none;
+    }
+
+    & > .niveaux-container {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-flow: column;
+      width: 1140px;
+      margin-top: 24px;
+
+      & > div {
+        background-color: $white;
+        border-radius: 25px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 7px 33px;
+        width: 100%;
+
+        &:not(:first-child) {
+          margin-top: 30px;
+        }
+
+        & > div {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 135.75px;
+          height: 21.73px;
+
+          & > img {
+            width: 18.8px;
+            height: 21.73px;
+          }
+        }
+
+        & > p.title {
+          color: $white;
+          font-size: 20px;
+          background-color: $aqua;
+          margin-left: 44px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 157px;
+          height: 39px;
+          border-radius: 25px;
+        }
+
+        &.niveau-1 {
+          & > p.desc {
+            width: 370px;
+            margin-left: 201px;
+          }
+        }
+        &.niveau-2 {
+          & > p.desc {
+            width: 505px;
+            margin-left: 132px;
+          }
+        }
+        &.niveau-3 {
+          & > p.desc {
+            width: 581px;
+            margin-left: 92px;
+          }
+        }
+        &.niveau-4 {
+          & > p.desc {
+            width: 623px;
+            margin-left: 72px;
+          }
+        }
+        &.niveau-5 {
+          & > p.desc {
+            width: 572px;
+            margin-left: 99px;
+          }
+        }
+
+        & > p.desc {
+          font-size: 12px;
+          text-align: center;
+          color: black;
+          line-height: 20px;
+        }
+      }
+    }
+
+    & > button {
+      height: 48.75px;
+      font-size: 18.75px;
+      padding: 0px 25px;
+      margin-top: 20px;
+      margin-right: 896px;
+      text-decoration: unset;
+
+      &:hover {
+        text-decoration: underline;
+      }
+      & > img {
+        width: 25px;
+        margin-right: 12.5px;
+      }
+    }
+
+    & > h1 {
+      font-size: 28px;
+      padding: 0px 50px;
+      height: 48.75px;
+    }
+  }
+}
+
+@media screen and (min-width: 1450px) {
+  .PageNiveaux {
+    padding-top: 156.61px;
+
+    & > .niveaux-container {
+      width: 1379.31px;
+      margin-top: 28.99px;
+
+      & > div {
+        padding: 8.46px 39.86px;
+
+        &:not(:first-child) {
+          margin-top: 36.28px;
+        }
+
+        & > div {
+          width: 164.15px;
+          height: 26.26px;
+
+          & > img {
+            width: 22.71px;
+            height: 26.26px;
+          }
+        }
+
+        & > p.title {
+          font-size: 24.16px;
+          margin-left: 53.24px;
+          width: 190.07px;
+          height: 47.14px;
+        }
+
+        &.niveau-1 {
+          & > p.desc {
+            width: 447.31px;
+            margin-left: 243.09px;
+          }
+        }
+        &.niveau-2 {
+          & > p.desc {
+            width: 610.48px;
+            margin-left: 161.57px;
+          }
+        }
+        &.niveau-3 {
+          & > p.desc {
+            width: 701.38px;
+            margin-left: 111.03px;
+          }
+        }
+        &.niveau-4 {
+          & > p.desc {
+            width: 750.85px;
+            margin-left: 87.16px;
+          }
+        }
+        &.niveau-5 {
+          & > p.desc {
+            width: 690.79px;
+            margin-left: 119.74px;
+          }
+        }
+
+        & > p.desc {
+          font-size: 14.51px;
+          line-height: 24.16px;
+        }
+      }
+    }
+
+    & > button {
+      height: 58.91px;
+      font-size: 22.67px;
+      padding: 0px 30.21px;
+      margin-top: 24.16px;
+      margin-right: 1082.29px;
+
+      & > img {
+        width: 30.21px;
+        margin-right: 15.11px;
+      }
+    }
+
+    & > h1 {
+      font-size: 33.85px;
+      padding: 0px 60.38px;
+      height: 58.91px;
+    }
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .PageNiveaux {
+    padding-top: 183.63px;
+
+    & > .niveaux-container {
+      width: 1618.43px;
+      margin-top: 34.04px;
+
+      & > div {
+        padding: 9.92px 46.93px;
+
+        &:not(:first-child) {
+          margin-top: 42.53px;
+        }
+
+        & > div {
+          width: 192.64px;
+          height: 30.8px;
+
+          & > img {
+            width: 26.66px;
+            height: 30.8px;
+          }
+        }
+
+        & > p.title {
+          font-size: 28.34px;
+          margin-left: 63.03px;
+          width: 222.52px;
+          height: 55.3px;
+        }
+
+        &.niveau-1 {
+          & > p.desc {
+            width: 524.47px;
+            margin-left: 283.4px;
+          }
+        }
+        &.niveau-2 {
+          & > p.desc {
+            width: 711.76px;
+            margin-left: 188.23px;
+          }
+        }
+        &.niveau-3 {
+          & > p.desc {
+            width: 820.7px;
+            margin-left: 132.48px;
+          }
+        }
+        &.niveau-4 {
+          & > p.desc {
+            width: 879.58px;
+            margin-left: 104.73px;
+          }
+        }
+        &.niveau-5 {
+          & > p.desc {
+            width: 806.67px;
+            margin-left: 144.4px;
+          }
+        }
+
+        & > p.desc {
+          font-size: 16.99px;
+          line-height: 28.34px;
+        }
+      }
+    }
+
+    & > button {
+      height: 69px;
+      font-size: 26.56px;
+      padding: 0px 35.44px;
+      margin-top: 28.34px;
+      margin-right: 1270.12px;
+
+      & > img {
+        width: 35.44px;
+        margin-right: 17.72px;
+      }
+    }
+
+    & > h1 {
+      font-size: 39.75px;
+      padding: 0px 70.87px;
+      height: 69px;
+    }
+  }
+}
