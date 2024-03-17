@@ -167,7 +167,11 @@ const Accueil: NextPageWithLayout<Props> = () => {
             </div> */}
             {sejoursYear === 2025 &&
               sejours2025.map((sejour) => (
-                <SejourButton mode="homepage" sejour={sejour} />
+                <SejourButton
+                  mode="homepage"
+                  sejour={sejour}
+                  key={sejour.trek}
+                />
               ))}
             {/* {sejoursYear === 2026 &&
               sejours2026.map((sejour) => (
@@ -367,10 +371,7 @@ const Accueil: NextPageWithLayout<Props> = () => {
                 img: kyotoDestinationImg,
                 name: "Alpes Sud",
                 to: "/sejours/couleurs-automne",
-                treks: [
-                  "Mt Kitadake",
-                  "Alpes",
-                ],
+                treks: ["Mt Kitadake", "Alpes"],
               },
               {
                 img: tokyoDestinationImg,
@@ -387,6 +388,7 @@ const Accueil: NextPageWithLayout<Props> = () => {
               },
             ].map((destination) => (
               <Link
+                key={destination.name}
                 href={destination.to}
                 className={`Accueil-destination ${
                   sejourHovering === destination.name ||

@@ -13,6 +13,7 @@ import closeIcon from "../public/assets/close.svg";
 import { useRouter } from "next/router";
 import SejourButton from "./SejourButton";
 import { closeModal } from "../utils/closeModal";
+import GoogleAnalytics from "./GoogleAnalytics";
 
 type Props = {
   children?: ReactNode;
@@ -53,6 +54,7 @@ const Layout = ({ children, title = "Orientrek" }: Props) => {
         <title>{title}</title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <GoogleAnalytics GA_MEASUREMENT_ID="G-VQH3J3ZR1Z" />
       </Head>
 
       <nav>
