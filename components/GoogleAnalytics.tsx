@@ -40,12 +40,8 @@ export default function GoogleAnalytics({
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
-
-                gtag('consent', 'default', {
-                    'analytics_storage': 'denied'
-                });
                 
-                gtag('config', '${GA_MEASUREMENT_ID}', {
+                gtag('config', 'G-VQH3J3ZR1Z', {
                     page_path: window.location.pathname,
                 });
                 `,
