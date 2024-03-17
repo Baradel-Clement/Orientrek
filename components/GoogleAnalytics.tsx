@@ -12,6 +12,13 @@ export default function GoogleAnalytics({
 }) {
   const pathname = usePathname();
   const searchParams = useSearchParams();
+  useEffect(() => {
+    console.log(('azda'));
+    
+    window.gtag("config", GA_MEASUREMENT_ID, {
+      page_path: pathname + searchParams.toString(),
+    });
+  });
 
   useEffect(() => {
     const url = pathname + searchParams.toString();

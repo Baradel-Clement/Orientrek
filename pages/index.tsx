@@ -28,9 +28,6 @@ const Accueil: NextPageWithLayout<Props> = () => {
   const [mapJaponActive, setMapJaponActive] = useState(true);
   const [sejoursYear, setSejoursYear] = useState(2025);
 
-  /* useEffect(() => {
-    if (sejourHovering === '')
-  }, [sejourHovering]) */
   return (
     <Layout title="Accueil | Orientrek">
       <div className="Accueil">
