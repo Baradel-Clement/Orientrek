@@ -8,6 +8,8 @@
   @extend %flex-start-center;
   flex-direction: column;
   padding-top: 90px;
+  max-width: 100%;
+
 
   & > .niveaux-container {
     display: none;
@@ -76,6 +78,8 @@
         border-radius: 25px;
         background-color: $red;
         @extend %drop-shadow;
+        padding-top: 2px;
+        padding: 2px 20px 0px 20px;
 
         & > p {
           font-weight: bold;
@@ -84,7 +88,7 @@
 
         & > img {
           width: 16px;
-          height: 16px;
+          height: auto;
           padding-bottom: 2px;
         }
       }
@@ -309,7 +313,7 @@
         }
         &.niveau-4 {
           & > p.desc {
-            width: 623px;
+            width: 625px;
             margin-left: 72px;
           }
         }

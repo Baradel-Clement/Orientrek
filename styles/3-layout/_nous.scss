@@ -7,6 +7,7 @@
   @extend %flex-start-center;
   flex-direction: column;
   padding-top: 90px;
+  max-width: 100%;
 
   .quote-desktop {
     display: none;

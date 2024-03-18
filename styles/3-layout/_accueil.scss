@@ -2,7 +2,7 @@ div.Accueil {
   position: absolute;
   top: 0px;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   z-index: 1;
   background-color: $aqua;
 }
@@ -101,6 +101,8 @@ div.Accueil {
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
+    max-width: 100%;
+    padding-bottom: 50px;
 
     & > .Accueil-main {
       display: flex;
@@ -625,7 +627,7 @@ div.Accueil {
 
   .Accueil-destinations {
     width: 211px;
-    height: 882px;
+    height: 877px;
     left: -225px;
   }
 

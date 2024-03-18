@@ -4,8 +4,9 @@
   background-image: url("../../public/assets/waves-white.png");
   position: absolute;
   top: 0px;
+  max-width: 100%;
 
-  & > h1 {
+  &>h1 {
     position: absolute;
     top: 90px;
     font-size: 20px;
@@ -27,7 +28,7 @@
   --slide-size: 100%;
   position: relative;
 
-  & > .controllers {
+  &>.controllers {
     @extend %flex-between-center;
     height: 39px;
     width: 90%;
@@ -36,7 +37,7 @@
     left: 50%;
     transform: translateX(-50%);
 
-    & > button {
+    &>button {
       @extend %flex-between-center;
       width: 140px;
       height: 100%;
@@ -47,22 +48,24 @@
       &:first-child {
         padding: 0px 9px;
       }
+
       &:last-child {
         padding: 0px 14px;
       }
 
-      & > p {
+      &>p {
         font-weight: bold;
       }
 
-      & > img {
+      &>img {
         width: 16px;
         height: 16px;
         padding-bottom: 2px;
       }
     }
   }
-  & > .bottom-buttons {
+
+  &>.bottom-buttons {
     @extend %flex-between-center;
     height: 39px;
     width: 90%;
@@ -71,8 +74,8 @@
     left: 50%;
     transform: translateX(-50%);
 
-    & > button,
-    & > a {
+    &>button,
+    &>a {
       @extend %flex-between-center;
       width: 140px;
       height: 100%;
@@ -83,29 +86,31 @@
       &:first-child {
         padding: 0px 10px;
 
-        & > p {
+        &>p {
           font-size: 11px;
         }
-        & > img {
+
+        &>img {
           width: 20px;
           height: 20px;
         }
       }
+
       &:last-child {
         padding: 0px 9px;
         font-size: 13px;
 
-        & > img {
+        &>img {
           width: 26px;
           height: 26px;
         }
       }
 
-      & > p {
+      &>p {
         font-weight: bold;
       }
 
-      & > img {
+      &>img {
         width: 16px;
         height: 16px;
         padding-bottom: 2px;
@@ -113,14 +118,14 @@
     }
   }
 
-  & > .embla__viewport {
+  &>.embla__viewport {
     overflow: hidden;
 
-    & > .embla__container {
+    &>.embla__container {
       display: flex;
       touch-action: pan-y;
 
-      & > .embla__slide {
+      &>.embla__slide {
         flex: 0 0 var(--slide-size);
         position: relative;
         width: 100vw;
@@ -128,13 +133,13 @@
         height: 456px;
         flex-flow: column;
 
-        & > img {
+        &>img {
           object-fit: cover;
           object-position: center;
           max-height: 237px;
         }
 
-        & > .slide-description {
+        &>.slide-description {
           width: 90%;
           height: 240px;
           background-color: #219ebc;
@@ -148,7 +153,7 @@
           @extend %flex-start-center;
           flex-flow: column;
 
-          & > p.day {
+          &>p.day {
             @extend %flex-center-center;
             background-color: rgba(241, 250, 238, 0.3);
             padding: 12px 14px 8px 14px;
@@ -157,7 +162,7 @@
             margin-bottom: 12px;
           }
 
-          & > p.desc {
+          &>p.desc {
             font-size: 15px;
             text-align: center;
             line-height: 20px;
@@ -170,8 +175,9 @@
 
 @media screen and (min-width: 1200px) {
   .PageSejour {
-    & > .embla-mobile,
-    & > h1.title-mobile {
+
+    &>.embla-mobile,
+    &>h1.title-mobile {
       display: none;
     }
 
@@ -185,6 +191,7 @@
     padding-bottom: 50px;
   }
 }
+
 @media screen and (max-width: 1200px) {
   .PageSejour {
     .sejour-desktop {
@@ -198,7 +205,7 @@
   @extend %flex-center-center;
   flex-direction: column;
 
-  & > h1.title {
+  &>h1.title {
     font-size: 28px;
     padding: 0 40px;
     width: fit-content;
@@ -209,14 +216,14 @@
     margin-top: 110px;
   }
 
-  & > .sejour-header {
+  &>.sejour-header {
     width: 100%;
     @extend %flex-between-start;
     height: 382px;
     margin-top: 30px;
     position: relative;
 
-    & > div.sejour-header-left {
+    &>div.sejour-header-left {
       width: 580px;
       height: 100%;
       display: flex;
@@ -224,7 +231,7 @@
       flex-flow: column;
       position: relative;
 
-      & > .sejour-header-left-shadow {
+      &>.sejour-header-left-shadow {
         width: 579px;
         height: 381px;
         position: absolute;
@@ -236,7 +243,7 @@
         box-shadow: 0px 0px 11px 5px rgba(0, 0, 0, 0.38);
       }
 
-      & > .embla-desktop {
+      &>.embla-desktop {
         --slide-size: 580px;
         height: 100%;
         width: 100%;
@@ -244,17 +251,17 @@
         z-index: 2;
         height: 382px;
 
-        & > .embla-desktop__viewport {
+        &>.embla-desktop__viewport {
           overflow: hidden;
           height: 100%;
           width: 100%;
 
-          & > .embla__container {
+          &>.embla__container {
             display: flex;
             height: 100%;
             width: 100%;
 
-            & > .embla__slide {
+            &>.embla__slide {
               flex: 0 0 var(--slide-size);
               position: relative;
               width: 100%;
@@ -263,7 +270,7 @@
               flex-flow: column;
               border-radius: 25px;
 
-              & > img {
+              &>img {
                 max-width: 580px;
                 max-height: 382px;
                 object-fit: default;
@@ -271,7 +278,7 @@
                 cursor: grab;
               }
 
-              & > div {
+              &>div {
                 position: absolute;
                 bottom: 0px;
                 right: 0px;
@@ -284,7 +291,7 @@
                 margin-top: 27px;
                 z-index: 4;
 
-                & > p:first-child {
+                &>p:first-child {
                   background-color: $red;
                   text-decoration: underline;
                   height: 39px;
@@ -292,7 +299,8 @@
                   width: 100%;
                   @extend %flex-center-center;
                 }
-                & > p:last-child {
+
+                &>p:last-child {
                   text-align: center;
                   font-size: 13px;
                   margin-top: 10px;
@@ -305,7 +313,7 @@
         }
       }
 
-      & > p:last-child {
+      &>p:last-child {
         width: 262px;
         height: 39px;
         background-color: $red;
@@ -315,13 +323,14 @@
         @extend %flex-center-center;
       }
     }
-    & > div.sejour-header-right {
+
+    &>div.sejour-header-right {
       width: 580px;
       height: 100%;
       @extend %flex-between-center;
       flex-direction: column;
 
-      & > .sejour-header-infos {
+      &>.sejour-header-infos {
         width: 100%;
         @extend %flex-between-center;
         height: 78px;
@@ -330,7 +339,7 @@
           margin-top: 16px;
         }
 
-        & > .sejour-header-info {
+        &>.sejour-header-info {
           width: 233px;
           height: 100%;
           @extend %flex-start-center;
@@ -338,29 +347,37 @@
           flex-direction: column;
           border-radius: 25px;
 
-          & > p {
+          &>p,
+          &>a {
             width: 100%;
             font-size: 15px;
             @extend %flex-center-center;
           }
 
-          & > p:first-child {
+          &>a:hover {
+            text-decoration: underline;
+          }
+
+          &>p:first-child,
+          &>a:first-child {
             background-color: $red;
             height: 39px;
             border-radius: 25px;
           }
-          & > p:last-child {
+
+          &>p:last-child,
+          &>a:last-child {
             margin-top: 11px;
             color: black;
           }
 
-          & > div {
+          &>div {
             width: 172.24px;
             height: 26.92px;
             @extend %flex-between-center;
             margin-top: 7px;
 
-            & > img {
+            &>img {
               width: 23.86px;
               height: 26.92px;
             }
@@ -368,7 +385,7 @@
         }
       }
 
-      & > .sejour-header-descDay {
+      &>.sejour-header-descDay {
         width: 100%;
         height: 183px;
         @extend %flex-start-center;
@@ -377,7 +394,7 @@
         border-radius: 25px;
         margin-top: 22px;
 
-        & > div:first-child {
+        &>div:first-child {
           background-color: $red;
           height: 39px !important;
           border-radius: 25px;
@@ -387,7 +404,8 @@
           z-index: 2;
           font-weight: bold;
         }
-        & > div:last-child {
+
+        &>div:last-child {
           text-align: center;
           font-size: 13px;
           margin-top: 10px;
@@ -399,20 +417,21 @@
       }
     }
   }
-  & > .sejour-phrise {
+
+  &>.sejour-phrise {
     width: 100%;
     @extend %flex-center-center;
     height: 72px;
     margin-top: 16px;
     position: relative;
 
-    & > img {
+    &>img {
       position: absolute;
       top: -0px;
       z-index: 2;
     }
 
-    & > .sejour-phrise-thumbs {
+    &>.sejour-phrise-thumbs {
       width: 87%;
       height: 40px;
       position: absolute;
@@ -421,7 +440,7 @@
       margin-left: 50px;
       @extend %flex-between-end;
 
-      & > .sejour-phrise-thumb {
+      &>.sejour-phrise-thumb {
         color: black;
         font-weight: bold;
         font-size: 15px;
@@ -440,7 +459,7 @@
         }
 
         &:hover {
-          & > p {
+          &>p {
             text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.7);
           }
 
@@ -449,7 +468,7 @@
           }
         }
 
-        & > p {
+        &>p {
           @extend %flex-center-center;
         }
 
@@ -467,14 +486,15 @@
       }
     }
   }
-  & > .sejour-buttons {
+
+  &>.sejour-buttons {
     width: 100%;
     height: 42px;
     @extend %flex-between-center;
     margin-top: 20px;
     position: relative;
 
-    & > img {
+    &>img {
       position: absolute;
       top: -11px;
       left: 258px;
@@ -482,8 +502,8 @@
       height: 45px;
     }
 
-    & > button,
-    & > a {
+    &>button,
+    &>a {
       @extend %flex-between-center;
       width: auto;
       height: 100%;
@@ -501,36 +521,39 @@
         font-weight: bold;
         cursor: default;
       }
+
       &:nth-child(3) {
         padding: 0px 20px;
 
-        & > p {
+        &>p {
           font-size: 15px;
           margin-right: 14px;
           padding-top: 5px;
         }
-        & > img {
+
+        &>img {
           width: 20px;
           height: 20px;
         }
       }
+
       &:last-child {
         padding: 0px 20px;
         font-size: 15px;
 
-        & > img {
+        &>img {
           width: 26px;
           height: 26px;
         }
       }
 
-      & > p {
+      &>p {
         font-weight: bold;
         font-size: 15px;
         margin-right: 14px;
       }
 
-      & > img {
+      &>img {
         padding-bottom: 2px;
       }
     }
@@ -541,46 +564,47 @@
   .sejour-desktop {
     width: 1700px;
 
-    & > h1.title {
+    &>h1.title {
       font-size: 39.9px;
       padding: 4px 39.9px 0px 39.9px;
       height: 63px;
       margin-top: 155px;
     }
 
-    & > .sejour-header {
+    &>.sejour-header {
       height: 541.16px;
       margin-top: 42px;
 
-      & > div.sejour-header-left {
+      &>div.sejour-header-left {
         width: 826.66px;
 
-        & > .sejour-header-left-shadow {
+        &>.sejour-header-left-shadow {
           width: 825.66px;
           height: 540.16px;
         }
 
-        & > .embla-desktop {
+        &>.embla-desktop {
           --slide-size: 826.66px;
           height: 541.16px;
 
-          & > .embla-desktop__viewport {
-            & > .embla__container {
-              & > .embla__slide {
-                & > img {
+          &>.embla-desktop__viewport {
+            &>.embla__container {
+              &>.embla__slide {
+                &>img {
                   max-width: 826.66px;
                   max-height: 541.16px;
                 }
 
-                & > div {
+                &>div {
                   width: 826.66px;
                   height: 259.25px;
                   margin-top: 38.25px;
 
-                  & > p:first-child {
+                  &>p:first-child {
                     height: 55.25px;
                   }
-                  & > p:last-child {
+
+                  &>p:last-child {
                     font-size: 18.41px;
                     margin-top: 14.16px;
                     line-height: 25.5px;
@@ -592,41 +616,46 @@
           }
         }
 
-        & > p:last-child {
+        &>p:last-child {
           width: 371.16px;
           height: 55.25px;
           font-size: 21.25px;
         }
       }
-      & > div.sejour-header-right {
+
+      &>div.sejour-header-right {
         width: 821.66px;
 
-        & > .sejour-header-infos {
+        &>.sejour-header-infos {
           height: 133.16px;
 
           &:not(:first-child) {
             margin-top: 22.66px;
           }
 
-          & > .sejour-header-info {
+          &>.sejour-header-info {
             width: 330px;
 
-            & > p {
+            &>p,
+            &>a {
               font-size: 21.25px;
             }
 
-            & > p:first-child {
+            &>p:first-child,
+            &>a:first-child {
               height: 55.25px;
             }
-            & > p:last-child {
+
+            &>p:last-child,
+            &>a:last-child {
               margin-top: 24.58px;
             }
 
-            & > div {
+            &>div {
               margin-top: 17.91px;
               width: 244.31px;
 
-              & > img {
+              &>img {
                 width: 33.6px;
                 height: 38px;
               }
@@ -634,15 +663,16 @@
           }
         }
 
-        & > .sejour-header-descDay {
+        &>.sejour-header-descDay {
           height: 259.25px;
           margin-top: 31.16px;
 
-          & > div:first-child {
+          &>div:first-child {
             height: 55.25px !important;
             font-size: 22.69px;
           }
-          & > div:last-child {
+
+          &>div:last-child {
             font-size: 18.41px;
             margin-top: 14.16px;
             line-height: 35.2px;
@@ -651,21 +681,22 @@
         }
       }
     }
-    & > .sejour-phrise {
+
+    &>.sejour-phrise {
       height: 102px;
       margin-top: 22.66px;
 
-      & > img {
+      &>img {
         width: 1600px;
         height: 65px;
       }
 
-      & > .sejour-phrise-thumbs {
+      &>.sejour-phrise-thumbs {
         width: 87%;
         height: 56.66px;
         margin-left: 70.83px;
 
-        & > .sejour-phrise-thumb {
+        &>.sejour-phrise-thumb {
           font-size: 21.25px;
           height: 24.08px;
 
@@ -681,53 +712,57 @@
         }
       }
     }
-    & > .sejour-buttons {
+
+    &>.sejour-buttons {
       height: 59.5px;
       margin-top: 28.33px;
 
-      & > img {
+      &>img {
         top: -17px;
         left: 369px;
         width: 84.5px;
         height: 63.3px;
       }
 
-      & > button,
-      & > a {
+      &>button,
+      &>a {
         &:nth-child(2) {
           padding: 0px 28.33px;
           font-size: 21.25px;
         }
+
         &:nth-child(3) {
           padding: 0px 28.33px;
 
-          & > p {
+          &>p {
             font-size: 21.25px;
             margin-right: 23.16px;
             padding-top: 7.08px;
           }
-          & > img {
+
+          &>img {
             width: 28.33px;
             height: 28.33px;
           }
         }
+
         &:last-child {
           padding: 0px 28.33px;
           font-size: 21.25px;
 
-          & > img {
+          &>img {
             width: 36.8px;
             height: 36.8px;
           }
         }
 
-        & > p {
+        &>p {
           font-weight: bold;
           font-size: 21.25px;
           margin-right: 21.91px;
         }
 
-        & > img {
+        &>img {
           padding-bottom: 4px;
         }
       }

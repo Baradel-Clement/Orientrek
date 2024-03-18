@@ -14,6 +14,7 @@ const SejourButton = ({ mode, sejour }) => {
     setDisplayNavList,
     setDisplayNavSejours,
     displayNavList,
+    setDisplayNestedSejours
   } = useHomeStateContext();
 
   return (
@@ -33,6 +34,7 @@ const SejourButton = ({ mode, sejour }) => {
       onMouseEnter={() => setSejourHovering(sejour.trek)}
       onMouseOut={() => setSejourHovering("")}
       onClick={() => {
+        setDisplayNestedSejours(false);
         if (displayNavList) {
           setDisplayNavList(false);
           setDisplayNavSejours(false);

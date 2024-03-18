@@ -169,7 +169,7 @@ const Séjour: NextPageWithLayout<Props> = ({ currentSejour }: Props) => {
                   <p className="bold">{currentSejour.groupe}</p>
                 </div>
                 <div className="sejour-header-info drop-shadow">
-                  <p className="bold">Niveau</p>
+                  <Link href={"/niveaux"} className="bold">Niveau</Link>
                   <div>
                     {currentSejour.nbBootsActive.map((index) => (
                       <Image

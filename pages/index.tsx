@@ -34,9 +34,8 @@ const Accueil: NextPageWithLayout<Props> = () => {
         {/* MOBILE SECTION */}
         <div className="maps-container-mobile">
           <Image
-            className={`map map-japon ${
-              mapJaponActive ? "active" : "inactive"
-            }`}
+            className={`map map-japon ${mapJaponActive ? "active" : "inactive"
+              }`}
             src={mapJapon}
             placeholder="blur"
             alt="carte du japon"
@@ -47,9 +46,8 @@ const Accueil: NextPageWithLayout<Props> = () => {
             }}
           />
           <Image
-            className={`map map-alpes ${
-              !mapJaponActive ? "active" : "inactive"
-            }`}
+            className={`map map-alpes ${!mapJaponActive ? "active" : "inactive"
+              }`}
             src={mapAlpes}
             placeholder="blur"
             alt="carte des alpes japonaises"
@@ -188,13 +186,12 @@ const Accueil: NextPageWithLayout<Props> = () => {
             {mapJaponActive && (
               <>
                 <Image
-                  className={`flag flagHoka ${
-                    sejourHovering === "Hoka" ||
+                  className={`flag flagHoka ${sejourHovering === "Hoka" ||
                     sejourHovering === "Parc national Daisetsuzan" ||
                     ["Hokkaïdo"].includes(sejourHovering)
-                      ? "selected"
-                      : ""
-                  }`}
+                    ? "selected"
+                    : ""
+                    }`}
                   src={flag}
                   placeholder="blur"
                   alt="drapeau"
@@ -207,8 +204,7 @@ const Accueil: NextPageWithLayout<Props> = () => {
                   onMouseOut={() => setSejourHovering("")}
                 />
                 <Image
-                  className={`flag flagAlpes ${
-                    sejourHovering === "Alpes" ||
+                  className={`flag flagAlpes ${sejourHovering === "Alpes" ||
                     sejourHovering === "Mt Tsubakurodake" ||
                     sejourHovering === "Mt Yarigatake" ||
                     sejourHovering === "Mt Kitadake" ||
@@ -216,9 +212,9 @@ const Accueil: NextPageWithLayout<Props> = () => {
                     ["Alpes japonaises", "Tokyo", "Kyoto", "Miyajima"].includes(
                       sejourHovering
                     )
-                      ? "selected"
-                      : ""
-                  }`}
+                    ? "selected"
+                    : ""
+                    }`}
                   src={flag}
                   placeholder="blur"
                   alt="drapeau"
@@ -239,9 +235,8 @@ const Accueil: NextPageWithLayout<Props> = () => {
             {!mapJaponActive && (
               <>
                 <Image
-                  className={`flag flagAlpes1 ${
-                    sejourHovering === "Mt Tsubakurodake" ? "selected" : ""
-                  }`}
+                  className={`flag flagAlpes1 ${sejourHovering === "Mt Tsubakurodake" ? "selected" : ""
+                    }`}
                   src={flag}
                   placeholder="blur"
                   alt="drapeau"
@@ -254,9 +249,8 @@ const Accueil: NextPageWithLayout<Props> = () => {
                   onMouseOut={() => setSejourHovering("")}
                 />
                 <Image
-                  className={`flag flagAlpes2 ${
-                    sejourHovering === "Mt Yarigatake" ? "selected" : ""
-                  }`}
+                  className={`flag flagAlpes2 ${sejourHovering === "Mt Yarigatake" ? "selected" : ""
+                    }`}
                   src={flag}
                   placeholder="blur"
                   alt="drapeau"
@@ -269,9 +263,8 @@ const Accueil: NextPageWithLayout<Props> = () => {
                   onMouseOut={() => setSejourHovering("")}
                 />
                 <Image
-                  className={`flag flagAlpes3 ${
-                    sejourHovering === "Mt Kitadake" ? "selected" : ""
-                  }`}
+                  className={`flag flagAlpes3 ${sejourHovering === "Mt Kitadake" ? "selected" : ""
+                    }`}
                   src={flag}
                   placeholder="blur"
                   alt="drapeau"
@@ -284,9 +277,8 @@ const Accueil: NextPageWithLayout<Props> = () => {
                   onMouseOut={() => setSejourHovering("")}
                 />
                 <Image
-                  className={`flag flagAlpes4 ${
-                    sejourHovering === "Couleurs d'automne" ? "selected" : ""
-                  }`}
+                  className={`flag flagAlpes4 ${sejourHovering === "Couleurs d'automne" ? "selected" : ""
+                    }`}
                   src={flag}
                   placeholder="blur"
                   alt="drapeau"
@@ -304,9 +296,8 @@ const Accueil: NextPageWithLayout<Props> = () => {
             {/* MAP */}
 
             <Image
-              className={`map transition map-japon ${
-                mapJaponActive ? "active" : "inactive"
-              }`}
+              className={`map transition map-japon ${mapJaponActive ? "active" : "inactive"
+                }`}
               src={mapJapon}
               placeholder="blur"
               alt="Map of Japan"
@@ -317,9 +308,8 @@ const Accueil: NextPageWithLayout<Props> = () => {
               }}
             />
             <Image
-              className={`map transition map-alpes ${
-                mapJaponActive ? "inactive" : "active"
-              }`}
+              className={`map transition map-alpes ${mapJaponActive ? "inactive" : "active"
+                }`}
               src={mapAlpes}
               placeholder="blur"
               alt="Map of Japan"
@@ -387,12 +377,11 @@ const Accueil: NextPageWithLayout<Props> = () => {
               <Link
                 key={destination.name}
                 href={destination.to}
-                className={`Accueil-destination ${
-                  sejourHovering === destination.name ||
+                className={`Accueil-destination ${sejourHovering === destination.name ||
                   destination.treks.includes(sejourHovering)
-                    ? "hovering"
-                    : ""
-                }`}
+                  ? "hovering"
+                  : ""
+                  }`}
               >
                 <Image
                   src={destination.img}
@@ -400,7 +389,15 @@ const Accueil: NextPageWithLayout<Props> = () => {
                   placeholder="blur"
                   width={603.75}
                   height={438.92}
-                  onMouseEnter={() => setSejourHovering(destination.name)}
+                  onMouseEnter={() => {
+                    if (destination.name === "Hokkaïdo") {
+                      setMapJaponActive(true);
+                    }
+                    if (destination.name.includes("Alpes")) {
+                      setMapJaponActive(false);
+                    }
+                    setSejourHovering(destination.name);
+                  }}
                   onMouseOut={() => setSejourHovering("")}
                 />
                 <p>{destination.name}</p>

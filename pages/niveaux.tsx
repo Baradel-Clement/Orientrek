@@ -7,8 +7,8 @@ import bootsInactive from "../public/assets/boots-inactive.svg";
 import { EmblaOptionsType } from "embla-carousel";
 import { useCallback } from "react";
 import niveaux from "../utils/niveaux";
-import chevronRight from "../public/assets/controller-chevron-right.svg";
-import chevronLeft from "../public/assets/controller-chevron-left.svg";
+import plusIcon from "../public/assets/plus.png";
+import minusIcon from "../public/assets/minus.png";
 import useEmblaCarousel from "embla-carousel-react";
 import checkIcon from "../public/assets/check.svg";
 import { useRouter } from "next/router";
@@ -31,7 +31,7 @@ const Reservation: NextPageWithLayout<Props> = () => {
   return (
     <Layout title="Niveaux des treks | Orientrek">
       <div className="PageNiveaux">
-        <h1 className="bold title-mobile">Niveau des treks</h1>
+        <h1 className="bold title-mobile">Niveaux des treks</h1>
 
         {/* MOBILE */}
         <section className="embla-mobile">
@@ -71,11 +71,11 @@ const Reservation: NextPageWithLayout<Props> = () => {
 
           <div className="controllers">
             <button onClick={scrollPrev}>
-              <Image src={chevronLeft} alt="chevron" />
-              <p>Plus facile</p>
+              <Image src={minusIcon} alt="chevron" />
+              <p>Niveau</p>
             </button>
             <button onClick={scrollNext}>
-              <p>Plus dur</p> <Image src={chevronRight} alt="chevron" />
+              <p>Niveau</p> <Image src={plusIcon} alt="chevron" />
             </button>
           </div>
         </section>
