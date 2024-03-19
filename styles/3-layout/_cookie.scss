@@ -17,7 +17,7 @@
   width: 90vw;
   background-color: $white;
   border-radius: 25px;
-  height: 120px;
+  height: auto;
   position: fixed;
   bottom: 30px;
   left: 50%;
@@ -28,19 +28,24 @@
   font-size: 14px;
   padding: 20px;
   text-align: center;
-  max-width: 336px;
+  max-width: 496px;
+  & > p {
+    line-height: 20px;
+  }
 
   &.none {
     display: none;
   }
 
-  .aqua {
+  a {
     text-decoration: underline;
   }
 
   & > div {
-    width: 87%;
+    width: 75%;
     @extend %flex-between-center;
+    margin: 20px 0px;
+    max-width: 279px;
     & > button {
       height: 35px;
       color: white;
@@ -68,15 +73,20 @@
   }
 
   .CookieBanner {
-    flex-flow: row;
     width: 700px;
-    height: 80px;
     bottom: 70px;
     font-size: 18px;
     max-width: unset;
 
+    & > p {
+      line-height: 26px;
+    }
+
     .aqua {
       text-decoration: unset;
+      &:hover {
+        text-decoration: underline;
+      }
     }
 
     & > div {

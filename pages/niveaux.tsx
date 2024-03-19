@@ -111,7 +111,7 @@ const Reservation: NextPageWithLayout<Props> = () => {
         </section>
         <button className="drop-shadow" onClick={() => router.back()}>
           <Image src={checkIcon} alt="checkIcon" />
-          <p className="bold">Retour en arrière</p>
+          <p className="bold">Retour</p>
         </button>
       </div>
     </Layout>

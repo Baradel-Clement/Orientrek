@@ -39,19 +39,20 @@ export default function CookieBanner() {
             cookieConsent != null || bannerDisplay === false ? "none" : ""
           } `}
         >
-          <Link href="/mentions-legales">
-            Nous utilisons des <span className="aqua">cookies</span> sur notre
-            site.
-          </Link>
+          <p>
+            L'éditeur du site souhaite utiliser des cookies de mesure de trafic
+            afin d'améliorer et faciliter votre navigation future. <br />
+            Autorisez-vous l'utilisation de ces indicateurs ?
+          </p>
 
-          <div className="">
-            <button className="" onClick={() => setCookieConsent(false)}>
-              Refuser
-            </button>
-            <button className="" onClick={() => setCookieConsent(true)}>
-              Accepter
-            </button>
+          <div>
+            <button onClick={() => setCookieConsent(false)}>Refuser</button>
+            <button onClick={() => setCookieConsent(true)}>Accepter</button>
           </div>
+          <p>Orientrek respecte votre vie privée et vous informe.</p>
+          <Link href="/mentions-legales" className="aqua">
+            En savoir plus sur les cookies de mesure.
+          </Link>
         </div>
       </>
     );
