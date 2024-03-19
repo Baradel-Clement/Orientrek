@@ -101,7 +101,41 @@ const Séjour: NextPageWithLayout<Props> = ({ currentSejour }: Props) => {
                         }`}
                       {i === 0 && `Descriptif du séjour`}
                     </p>
-                    <p className="desc">{day.description}</p>
+                    {i > 0 && <p className="desc">{day.description}</p>}
+                    {i === 0 && (
+                      <div className="desc-J0">
+                        <div className="desc-J0-infos">
+                          <div className="desc-J0-info drop-shadow">
+                            <p className="bold">Dates</p>
+                            <p className="bold">{currentSejour.date}</p>
+                          </div>
+                          <div className="desc-J0-info drop-shadow">
+                            <p className="bold">Prix</p>
+                            <p className="bold">{currentSejour.price} €</p>
+                          </div>
+                        </div>
+                        <div className="desc-J0-infos">
+                          <div className="desc-J0-info drop-shadow">
+                            <p className="bold">Taille du groupe</p>
+                            <p className="bold">{currentSejour.groupe}</p>
+                          </div>
+                          <div className="desc-J0-info drop-shadow">
+                            <Link href={"/niveaux"} className="bold">
+                              Niveau
+                            </Link>
+                            <div>
+                              <p>{currentSejour.nbBootsActive.slice(-1)}</p>
+                              <Image
+                                src={bootsActive}
+                                alt="bottes"
+                                width={18.66}
+                                height={20.48}
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    )}
                   </div>
                 </div>
               ))}
@@ -114,8 +148,7 @@ const Séjour: NextPageWithLayout<Props> = ({ currentSejour }: Props) => {
               <p>Jour précédent</p>
             </button>
             <button onClick={scrollNext}>
-              <p>Jour suivant</p>{" "}
-              <Image src={chevronRight} alt="chevron" />
+              <p>Jour suivant</p> <Image src={chevronRight} alt="chevron" />
             </button>
           </div>
           <div className="bottom-buttons">
@@ -124,8 +157,7 @@ const Séjour: NextPageWithLayout<Props> = ({ currentSejour }: Props) => {
               <Image src={downloadIcon} alt="downloadIcon" />
             </button>
             <Link href="/reservation">
-              <p>Réservation</p>{" "}
-              <Image src={checkIcon} alt="checkIcon" />
+              <p>Réservation</p> <Image src={checkIcon} alt="checkIcon" />
             </Link>
           </div>
         </section>
@@ -169,7 +201,9 @@ const Séjour: NextPageWithLayout<Props> = ({ currentSejour }: Props) => {
                   <p className="bold">{currentSejour.groupe}</p>
                 </div>
                 <div className="sejour-header-info drop-shadow">
-                  <Link href={"/niveaux"} className="bold">Niveau</Link>
+                  <Link href={"/niveaux"} className="bold">
+                    Niveau
+                  </Link>
                   <div>
                     {currentSejour.nbBootsActive.map((index) => (
                       <Image
