@@ -109,6 +109,12 @@ const sejours2025 = [
       },
       {
         number: 17,
+        range: "Itinéraire",
+        description:
+          "C'est l'heure du retour... Vous rejoignez l'aéroport et prenez votre vol pour Paris.",
+      },
+      {
+        number: 18,
         range: "J20",
         description:
           "C'est l'heure du retour... Vous rejoignez l'aéroport et prenez votre vol pour Paris.",

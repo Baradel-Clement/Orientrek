@@ -346,6 +346,7 @@ const Accueil: NextPageWithLayout<Props> = () => {
                   "Mt Yarigatake",
                   "Couleurs d'automne",
                   "Alpes",
+                  "Mt Kitadake",
                 ],
               },
               {

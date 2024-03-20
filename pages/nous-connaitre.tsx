@@ -55,7 +55,7 @@ const Nous: NextPageWithLayout<Props> = () => {
             expérience en toute sécurité.
           </p>
           <p className="quote mobile">Samuel Bernard</p>
-          <div className="quote-desktop">
+          <div className="quote-desktop drop-shadow">
             <div className="quote-desktop-desc">
               <p>
                 Venez tenter l'aventure à mes côtés pour réaliser un trek dans

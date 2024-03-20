@@ -13,6 +13,7 @@ import Link from "next/link";
 import bootsActive from "../../public/assets/boots.svg";
 import bootsInactive from "../../public/assets/boots-inactive.svg";
 import phrise from "../../public/assets/phrise.svg";
+import roadmap from "../../public/assets/roadmap.svg";
 import TextTransition, { presets } from "react-text-transition";
 import curvedArrow from "../../public/assets/sejour_curved_arrow.png";
 
@@ -77,6 +78,8 @@ const Séjour: NextPageWithLayout<Props> = ({ currentSejour }: Props) => {
     emblaApiDesktop.on("reInit", onSelect);
   }, [emblaApiDesktop, onSelect]);
 
+  const [currentRoadmapFullscreen, setCurrentRoadmapFullscreen] = useState(0);
+
   return (
     <Layout title={`Trek au ${currentSejour.trek}`}>
       <div className="PageSejour">
@@ -95,13 +98,17 @@ const Séjour: NextPageWithLayout<Props> = ({ currentSejour }: Props) => {
                   <div className="slide-description">
                     <p className="day bold">
                       {i > 0 &&
+                        day.range !== "Itinéraire" &&
                         `Descriptif du ${
                           currentSejour.days.find((e) => e.number === i + 1)
                             .range
                         }`}
                       {i === 0 && `Descriptif du séjour`}
+                      {day.range === "Itinéraire" && day.range}
                     </p>
-                    {i > 0 && <p className="desc">{day.description}</p>}
+                    {i > 0 && day.range !== "Itinéraire" && (
+                      <p className="desc">{day.description}</p>
+                    )}
                     {i === 0 && (
                       <div className="desc-J0">
                         <div className="desc-J0-infos">
@@ -136,6 +143,12 @@ const Séjour: NextPageWithLayout<Props> = ({ currentSejour }: Props) => {
                         </div>
                       </div>
                     )}
+                    {day.range === "Itinéraire" && (
+                      <button className="roadmapBtn" onClick={() => setCurrentRoadmapFullscreen(day.number)}>
+                        <p>Consultez l'itinéraire</p>
+                        <Image src={roadmap} alt="icône Itinéraire" />
+                      </button>
+                    )}
                   </div>
                 </div>
               ))}
@@ -152,10 +165,13 @@ const Séjour: NextPageWithLayout<Props> = ({ currentSejour }: Props) => {
             </button>
           </div>
           <div className="bottom-buttons">
-            <button>
+            <a
+              download={`Fiche technique ${currentSejour.trek}`}
+              href={`${currentSejour.urlImage}/fiche-technique.pdf`}
+            >
               <p>Fiche technique</p>
               <Image src={downloadIcon} alt="downloadIcon" />
-            </button>
+            </a>
             <Link href="/reservation">
               <p>Réservation</p> <Image src={checkIcon} alt="checkIcon" />
             </Link>
@@ -261,17 +277,47 @@ const Séjour: NextPageWithLayout<Props> = ({ currentSejour }: Props) => {
           <div className="sejour-buttons">
             <Image src={curvedArrow} alt="checkIcon" />
             <button>Votre voyage jour par jour</button>
-            <button>
+            <a
+              download={`Fiche technique ${currentSejour.trek}`}
+              href={`${currentSejour.urlImage}/fiche-technique.pdf`}
+            >
               <p>Fiche technique</p>
-              <Image src={downloadIcon} alt="downloadIcon" />
+              <Image src={downloadIcon} alt="Icône téléchargement" />
+            </a>
+            <button onClick={() => setCurrentRoadmapFullscreen(1)}>
+              <p>Itinéraire</p>
+              <Image src={roadmap} alt="Icône itinéraire" />
             </button>
             <Link href="/reservation">
               <p>Comment réserver ?</p>{" "}
-              <Image src={checkIcon} alt="checkIcon" />
+              <Image src={checkIcon} alt="Icône confirmation" />
             </Link>
           </div>
         </section>
       </div>
+      {currentRoadmapFullscreen !== 0 && (
+        <>
+          <div className="PageSejour-fullscreenImg">
+            <div
+              className="PageSejour-fullscreenImg-shadow"
+              onClick={() => setCurrentRoadmapFullscreen(0)}
+            />
+            <Image
+              src={`${currentSejour.urlImage}/itineraires/0.png`}
+              alt="Image jour par jour"
+              fill={true}
+              onClick={() => setCurrentRoadmapFullscreen(0)}
+            />
+            <a
+              download={`Itinéraire ${currentRoadmapFullscreen} ${currentSejour.trek}`}
+              href={`${currentSejour.urlImage}/itineraires/0.png`}
+            >
+              <p>Télécharger l'itinéraire</p>
+              <Image src={downloadIcon} alt="Icône téléchargement" />
+            </a>
+          </div>
+        </>
+      )}
     </Layout>
   );
 };
