@@ -46,9 +46,10 @@ const Reservation: NextPageWithLayout<Props> = () => {
           <div className="PageReservation-sejours">
             {sejours2025.map((sejour) => (
               <Link
-                href={sejour.slug}
+                href={sejour.serac}
                 key={sejour.trek}
                 className="drop-shadow"
+                target="blank"
               >
                 <Image
                   src={`${sejour.urlImage}/vignette.png`}
