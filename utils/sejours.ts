@@ -7,7 +7,7 @@ const sejours2025 = [
     nbBootsActive: [1, 2, 3],
     nbBootsInactive: [4, 5],
     region: "Alpes",
-    destination: ["Matsumoto", "Tokyo", "Alpes Nord"],
+    destination: ["Matsumoto", "Kyoto", "Alpes japonaises"],
     price: 4950,
     groupe: "6 à 8 personnes",
     days: [
@@ -123,7 +123,7 @@ const sejours2025 = [
     nbBootsActive: [1, 2, 3, 4],
     nbBootsInactive: [5],
     region: "Alpes",
-    destination: ["Alpes Nord", "Tokyo"],
+    destination: ["Alpes japonaises", "Tokyo"],
     price: 5000,
     groupe: "6 à 8 personnes",
     days: [
@@ -171,7 +171,7 @@ const sejours2025 = [
     nbBootsActive: [1, 2, 3],
     nbBootsInactive: [4, 5],
     region: "Alpes",
-    destination: ["Tokyo", "Alpes Sud"],
+    destination: ["Tokyo", "Alpes japonaises"],
     price: 5000,
     groupe: "6 à 8 personnes",
     days: [
@@ -195,7 +195,7 @@ const sejours2025 = [
     nbBootsActive: [1, 2, 3],
     nbBootsInactive: [4, 5],
     region: "Alpes",
-    destination: ["Matsumoto", "Tokyo", "Alpes Nord"],
+    destination: ["Matsumoto", "Alpes japonaises", "Kyoto"],
     price: 5000,
     groupe: "6 à 8 personnes",
     days: [

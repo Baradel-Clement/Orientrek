@@ -29,7 +29,7 @@ const Accueil: NextPageWithLayout<Props> = () => {
   const [sejoursYear, setSejoursYear] = useState(2025);
 
   return (
-    <Layout title="Accueil | Orientrek">
+    <Layout title="Séjours avec trekking au Japon / Orientrek">
       <div className="Accueil">
         {/* MOBILE SECTION */}
         <div className="maps-container-mobile">
@@ -175,7 +175,7 @@ const Accueil: NextPageWithLayout<Props> = () => {
           </div>
           <div className="maps-hint">
             <p className="bold">
-              Survolez la carte et découvrez votre prochain trek au Japon
+              Baladez-vous sur les cartes et choissisez votre prochain trek au Japon
             </p>
           </div>
           <div className="maps-container">
@@ -339,7 +339,7 @@ const Accueil: NextPageWithLayout<Props> = () => {
               },
               {
                 img: alpesDestinationImg,
-                name: "Alpes Nord",
+                name: "Alpes japonaises",
                 to: "/sejours/mont-yarigatake",
                 treks: [
                   "Mt Tsubakurodake",
@@ -355,12 +355,6 @@ const Accueil: NextPageWithLayout<Props> = () => {
                 treks: ["Parc national Daisetsuzan"],
               },
               {
-                img: kyotoDestinationImg,
-                name: "Alpes Sud",
-                to: "/sejours/couleurs-automne",
-                treks: ["Mt Kitadake", "Alpes"],
-              },
-              {
                 img: tokyoDestinationImg,
                 name: "Tokyo",
                 to: "/sejours/mont-kitadake",
@@ -368,10 +362,14 @@ const Accueil: NextPageWithLayout<Props> = () => {
                   "Mt Kitadake",
                   "Mt Yarigatake",
                   "Parc national Daisetsuzan",
-                  "Mt Tsubakurodake",
-                  "Couleurs d'automne",
                   "Alpes",
                 ],
+              },
+              {
+                img: kyotoDestinationImg,
+                name: "Kyoto",
+                to: "/sejours/couleurs-automne",
+                treks: ["Mt Tsubakurodake", "Alpes", "Couleurs d'automne"],
               },
             ].map((destination) => (
               <Link
