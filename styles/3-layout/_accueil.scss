@@ -318,6 +318,7 @@ div.Accueil {
   color: black;
   text-align: center;
   @extend %flex-center-center;
+  font-size: 16px;
 
   & > p {
     width: 634px;
@@ -618,10 +619,11 @@ div.Accueil {
   .maps-news {
     margin-top: 64px;
     height: 58px;
+    font-size: 23px;
+
     & > p {
       width: 893px;
       line-height: 22px;
-      font-size: 18px;
     }
   }
 

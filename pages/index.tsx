@@ -321,10 +321,8 @@ const Accueil: NextPageWithLayout<Props> = () => {
             />
           </div>
           <div className="maps-news drop-shadow">
-            <p className="bold XS">
-              Venez rendre visite à l'équipe ORIENTREK au SALON DU RANDONNEUR à
-              LYON les 22,23 et 24 mars 2024. Nous vous accueillerons sur le
-              stand JAP007 !!
+            <p className="bold">
+              Le soleil n'est jamais si beau qu’un jour où l'on se met en route. Jean Giono
             </p>
           </div>
 
