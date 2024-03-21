@@ -9,114 +9,84 @@ const sejours2025 = [
     nbBootsInactive: [4, 5],
     region: "Alpes",
     destination: ["Matsumoto", "Kyoto", "Alpes japonaises"],
-    price: 4950,
+    price: 3985,
     groupe: "6 à 8 personnes",
     days: [
       {
         number: 1,
-        range: "J1/J2",
+        range: "Descriptif",
         description:
-          "Vol direct entre Paris et Tokyo. Accueil à l'aéroport par votre guide tokyoïte, qui vous accompagne à votre hôtel.",
+          "Votre séjour débute par une exploration de Kyoto, ancienne capitale impériale du Japon, célèbre pour ses temples et ses quartiers historiques. La destination suivante vous emmène au cœur des Alpes japonaises, pour un trek en haute montagne.",
       },
       {
         number: 2,
-        range: "J2/J4",
+        range: "J1-J2",
         description:
-          "Vous retrouvez votre guide local qui vous familiarise avec les transports. Vous découvrez avec lui les premiers lieux emblématiques de la mégapole. Vous passez votre troisième journée en liberté dans la capitale et poursuivez vos activités.",
+          "Vol direct pour Osaka. Le lendemain, votre guide local vous accueille à l'aéroport et vous accompagne à l'hôtel à Kyoto.",
       },
       {
         number: 3,
-        range: "J5",
+        range: "J3",
         description:
-          "Vous prenez le train pour Matsumoto, où votre guide de trek français vous attend à la sortie de la gare. Vous visitez ensemble le château de Matsumoto et rejoignez Nakabusa onsen, lieu de départ du trek.",
+          "Vous retrouvez votre guide kyotoïte, qui partage la journée avec vous. Il vous familiarise avec les transports et vous découvrez avec lui les premiers lieux emblématiques de l'ancienne capitale impériale.",
       },
       {
         number: 4,
-        range: "J6/J10",
+        range: "J4",
         description:
-          "Au sein du parc national de Chubu-Sangaku, votre guide vous accompagne dans une traversée méridionale des Alpes japonaises du nord. Vous découvrez avec lui les sublimes paysages préservés avec sa faune et sa flore locales. Vous expérimentez les nuits dans les refuges situés entre 2600 et 2900 mètres d'altitude.",
+          "A bord du « shinkansen », le train rapide japonais, vous filez vers Nagoya, où Samuel vous accueille à la gare. Vous voyagez ensemble en train jusqu’à Matsumoto, puis rejoignez  Nakabusa onsen, lieu de départ du trek. Dans l'intervalle, votre guide vous fait découvrir le château de Matsumoto.",
       },
       {
         number: 5,
-        range: "J6",
+        range: "Itinéraire",
         description:
-          "Votre trek débute par une montée régulière en forêt jusqu'au refuge Enzanso. Premiers panoramas sur les chaînes alpines et premier sommet avec le Mont Tsubakurodake à 2763 m d’altitude et ses roches granitiques aux formes évocatoires.",
+          "Cette traversée méridionale des Alpes du nord offre un condensé des paysages, de la faune et de la flore de la haute montagne japonaise. Ce trek comprend également l’ascension d’un sommet à plus de 3000 mètres d’altitude.",
       },
       {
         number: 6,
-        range: "J7",
+        range: "J5",
         description:
-          "Poursuite du trek par une magnifique ligne de crête avec vue sur le sommet de Yarigatake (objectif du surlendemain - jour 9).",
+          "Votre itinérance débute par une montée régulière en forêt jusqu'au refuge Enzanso. Vous contemplez vos premiers panoramas sur les chaînes alpines et gagnez le Mont Tsubakurodake, connu pour ses roches granitiques aux formes évocatoires.",
       },
       {
         number: 7,
-        range: "J8",
+        range: "J6",
         description:
-          "Cette étape s'annonce comme la plus longue du trek. Nous traversons des forêts d'altitude et pourrons observer, selon les conditions, des macaques japonais et des lagopèdes alpins présents dans cette zone à l'état sauvage.",
+          "Vous poursuivez votre trek par une magnifique ligne de crête avec vue sur le sommet de Yarigatake (objectif du surlendemain - jour 9).",
       },
       {
         number: 8,
-        range: "J9",
+        range: "J7",
         description:
-          "Nous rejoignons le refuge Yarigatake et selon les conditions, envisageons un aller-retour au point culminant du trek, à 3180 mètres d'altitude : le Mont Yarigatake, cinquième plus haut sommet de l'archipel. Nous poursuivons ensuite vers le refuge Sugoroku.",
+          "Cette étape s'annonce comme la plus longue du trek. Nous traversons des forêts d'altitude et pourrons observer, selon les conditions, des macaques japonais et des lagopèdes alpins, présents dans cette zone à l'état sauvage.",
       },
       {
         number: 9,
-        range: "J10",
+        range: "J8",
         description:
-          "Nous rejoignons la vallée après 5 jours à évoluer à plus de 2500 mètres d'altitude. Nous évoluons parmi les lacs et rivières dans une végétation alpine. Le retour à la civilisation se fait en douceur et nous profitons des thermes japonaises, dites « onsen » au sein d'une belle auberge de montagne.",
+          "Depuis le refuge Yarigatake, et selon les conditions, nous envisageons un aller-retour au point culminant du trek à 3180 mètres d'altitude : le Mont Yarigatake, cinquième plus haut sommet de l'archipel. L'étape se poursuit en crête jusqu'au refuge Sugoroku.",
       },
       {
         number: 10,
-        range: "J11",
+        range: "J9",
         description:
-          "Transfert au village d'altitude de Kamikochi, et découverte de la « capitale » des Alpes japonaises. Voyage en car à Kyoto suivie de installation à votre hôtel.",
+          "Nous retrouvons la vallée après cinq jours à randonner à plus de 2500 mètres d'altitude. Lors de la descente, nous évoluons parmi une végétation alpine avec ses lacs et rivières. Le retour à la civilisation se fait en douceur et nous profitons des thermes japonaises , dites « onsen » au sein d'une belle auberge de montagne.",
       },
       {
         number: 11,
-        range: "J12/J14",
+        range: "J10",
         description:
-          "Vous disposez de 3 jours pour découvrir en toute liberté la ville aux mille temples et savourer notamment la gastronomie de la région du Kansai aux saveurs raffinées.",
+          "Transfert au village d'altitude de Kamikochi, et découverte de la « capitale » des Alpes japonaises. Retour à Kyoto en car et installation à votre hôtel.",
       },
       {
         number: 12,
-        range: "J15",
-        description:
-          "Vous voyagez en « shinkansen », le train rapide japonais, entre Kyoto et Hiroshima. A destination, vous prenez le ferry pour la magnifique île de Miyajima avec sa nature préservée et son immense torii  flottant sur les eaux. Vous découvrez l'île à votre rythme.",
-      },
-      {
-        number: 13,
-        range: "J16",
-        description:
-          "Après vos dernières flâneries sur l'île de Miyajima, vous rejoignez Hiroshima en ferry. La visite du mémorial de la Paix et du musée de la bombe atomique est une expérience qui vous marquera pour longtemps.",
-      },
-      {
-        number: 14,
-        range: "J17",
-        description:
-          "Vous rejoignez Kyoto en shinkansen avec la visite possible du splendide château dit du « héron blanc » à Himeji, ville étape entre Hiroshima et Kyoto.",
-      },
-      {
-        number: 15,
-        range: "J18",
-        description:
-          "Vous profitez de vos dernières activités à Kyoto avant de rejoindre la capitale en shinkansen.",
-      },
-      {
-        number: 16,
-        range: "J19",
+        range: "J11",
         description:
           "Vous appréciez votre dernière journée sur le sol japonais pour faire le plein de souvenirs !",
       },
       {
-        number: 17,
-        range: "Itinéraire",
-        description:
-          "C'est l'heure du retour... Vous rejoignez l'aéroport et prenez votre vol pour Paris.",
-      },
-      {
-        number: 18,
-        range: "J20",
+        number: 13,
+        range: "J12",
         description:
           "C'est l'heure du retour... Vous rejoignez l'aéroport et prenez votre vol pour Paris.",
       },

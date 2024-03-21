@@ -306,7 +306,8 @@
             background-color: $red;
             @extend %drop-shadow;
             padding: 0px 20px;
-            margin-top: 54px;
+            margin-top: 15px;
+            margin-bottom: 15px;
 
             & > p {
               font-weight: bold;
@@ -425,8 +426,8 @@
               & > img {
                 max-width: 580px;
                 max-height: 382px;
-                object-fit: default;
-                object-position: default;
+                object-fit: cover;
+                object-position: center;
                 cursor: grab;
               }
 

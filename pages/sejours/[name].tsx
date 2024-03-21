@@ -144,10 +144,18 @@ const Séjour: NextPageWithLayout<Props> = ({ currentSejour }: Props) => {
                       </div>
                     )}
                     {day.range === "Itinéraire" && (
-                      <button className="roadmapBtn" onClick={() => setCurrentRoadmapFullscreen(day.number)}>
-                        <p>Consultez l'itinéraire</p>
-                        <Image src={roadmap} alt="icône Itinéraire" />
-                      </button>
+                      <>
+                        <button
+                          className="roadmapBtn"
+                          onClick={() =>
+                            setCurrentRoadmapFullscreen(day.number)
+                          }
+                        >
+                          <p>Consultez l'itinéraire</p>
+                          <Image src={roadmap} alt="icône Itinéraire" />
+                        </button>
+                        <p className="desc">{day.description}</p>
+                      </>
                     )}
                   </div>
                 </div>
