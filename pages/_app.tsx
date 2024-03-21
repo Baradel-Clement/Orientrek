@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps: { ...pageProps } }: AppPropsWithLayout) {
   const getLayout = Component.getLayout ?? ((page) => page);
   return (
     <>
-      <GoogleAnalytics GA_MEASUREMENT_ID="G-VQH3J3ZR1Z" />
+      <GoogleAnalytics GA_MEASUREMENT_ID="G-88JTZML9Q3" />
       <HomeContextProvider>
         {getLayout(<Component {...pageProps} />)}
       </HomeContextProvider>
