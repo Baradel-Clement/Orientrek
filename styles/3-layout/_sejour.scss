@@ -306,8 +306,8 @@
             background-color: $red;
             @extend %drop-shadow;
             padding: 0px 20px;
-            margin-top: 15px;
-            margin-bottom: 15px;
+            margin-top: 0px;
+            margin-bottom: 8px;
 
             & > p {
               font-weight: bold;
@@ -487,6 +487,14 @@
         width: 100%;
         @extend %flex-between-center;
         height: 78px;
+
+        &:first-child {
+          & > .sejour-header-info:first-child {
+            & > p:last-child {
+              font-size: 13px;
+            }
+          }
+        }
 
         &:not(:first-child) {
           margin-top: 16px;
@@ -796,6 +804,14 @@
         & > .sejour-header-infos {
           height: 133.16px;
 
+          &:first-child {
+            & > .sejour-header-info:first-child {
+              & > p:last-child {
+                font-size: 18px;
+              }
+            }
+          }
+
           &:not(:first-child) {
             margin-top: 22.66px;
           }
@@ -915,13 +931,13 @@
 
         &:nth-child(4) {
           padding: 0px 28.33px;
-  
+
           & > p {
             font-size: 21.25px;
             margin-right: 23.16px;
             padding-top: 7.08px;
           }
-  
+
           & > img {
             width: 38px;
           }

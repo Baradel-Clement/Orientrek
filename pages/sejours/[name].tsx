@@ -253,13 +253,18 @@ const Séjour: NextPageWithLayout<Props> = ({ currentSejour }: Props) => {
               {
                 <div className="sejour-header-descDay drop-shadow">
                   <TextTransition springConfig={presets.gentle}>
-                    {selectedIndex > 0 &&
+                    {selectedIndex > 0 && currentSejour.days.find(
+                      (e) => e.number === selectedIndex + 1
+                    ).range !== "Itinéraire" &&
                       `Descriptif du ${
                         currentSejour.days.find(
                           (e) => e.number === selectedIndex + 1
                         ).range
                       }`}
                     {selectedIndex === 0 && `Descriptif du séjour`}
+                    {selectedIndex > 0 && currentSejour.days.find(
+                      (e) => e.number === selectedIndex + 1
+                    ).range === "Itinéraire" && `Itinéraire`}
                   </TextTransition>
                   <TextTransition springConfig={presets.gentle}>
                     {currentSejour.days[selectedIndex].description}
