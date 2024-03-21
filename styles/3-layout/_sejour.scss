@@ -198,7 +198,8 @@
 
         & > .slide-description {
           width: 90%;
-          height: 240px;
+          height: auto;
+          min-height: 240px;
           background-color: #219ebc;
           border-radius: 25px;
           @extend %drop-shadow;

@@ -207,18 +207,80 @@ const sejours2025 = [
     nbBootsInactive: [5],
     region: "Hoka",
     destination: ["Tokyo", "Hokkaïdo"],
-    price: 5000,
+    price: 5195,
     groupe: "6 à 8 personnes",
     days: [
       {
         number: 1,
+        range: "Descriptif",
         description:
-          "Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe even",
+          "Votre séjour débute par une escale à l'aéroport Haneda de Tokyo. Vous rejoignez ensuite l'île septentrionale d'Hokkaïdo pour votre trek dans le parc national Daisetsuzan. A l'issue de l'itinérance, votre guide vous emmène découvrir quelques merveilles naturelles de l'île avant de rejoindre Tokyo.",
       },
       {
         number: 2,
+        range: "J1-J2",
         description:
-          " mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know ",
+          "Vol direct pour Tokyo.Le lendemain, votre guide local vous retrouve à l'aéroport et vous assiste pour prendre votre vol pour Hokkaïdo. A l'aéroport Asahikawa, vous retrouvez Samuel, qui vous accompagne jusqu'à l'hôtel.",
+      },
+      {
+        number: 3,
+        range: "Itinéraire",
+        description: "Cette traversée intégrale du parc national Daisetsuzan est un must de la randonnée sur l'île d'Hokkaïdo. Vous évoluerez dans des lieux très peu fréquentés. Ce trek exigeant requiert un très bon entraînement préalable. L'absence de refuges sur le parcours implique de porter le matériel et le ravitaillement sur la durée de l'itinérance. Si vous êtes prêt à l'aventure, optez définitivement pour ce trek !",
+      },
+      {
+        number: 4,
+        range: "J3",
+        description: "Nous rejoignons Asahidake onsen, lieu de départ du trek. Cette première étape sollicite les organismes et le bivouac de Kurodake ishimuro permet de recharger les batteries. ",
+      },
+      {
+        number: 5,
+        range: "J4",
+        description: " Nous repartons plus léger pour une étape au cœur du parc national de Daisetsuzan. La perspective du  bivouac à Chubetsudake s'annonce des plus réjouissantes.",
+      },
+      {
+        number: 6,
+        range: "J5",
+        description: "Cette troisième étape s'avère nettement plus facile que les deux précédentes. Cette journée vous  permet d'apprécier la richesse et la diversité de l'environnement spécifique au parc national. Nous bivouaquons à Minamiuma.",
+      },
+      {
+        number: 7,
+        range: "J6",
+        description: "Cette journée est définitivement la plus relevée de l'itinérance. Mais quelle récompense à l'arrivée ! Le bivouac se déroule à Biei Fuji.",
+      },
+      {
+        number: 8,
+        range: "J7",
+        description: "La perspective des thermes à l'arrivée du trek soulage déjà nos muscles grandement sollicités depuis le début de la randonnée. L'arrivée à Takachidake onsen marque la fin de cette traversée du parc national Daisetsuzan.",
+      },
+      {
+        number: 9,
+        range: "J8",
+        description: "Votre guide vous conduit jusqu'au lac Shikotsu et ses 265 mètres de profondeur moyenne ! En chemin, nous découvrons une œuvre singulière de l'architecte Tadao Ando, réalisée dans la banlieue de Sapporo.",
+      },
+      {
+        number: 10,
+        range: "J9",
+        description: "Avant de rejoindre Toyako, nous montons jusqu'au sommet du Mt Tarumae pour profiter du paysage environnant. En soirée, nous profitons du spectacle des feux d'artifice sur les eaux limpides du lac Toya.",
+      },
+      {
+        number: 11,
+        range: "J10",
+        description: "Après la terre du parc national, l'eau des lacs, que diriez-vous de découvrir l'activité volcanique d'une caldeira ? Confrontez-vous à la « vallée de l'enfer » de Noboribetsu...",
+      },
+      {
+        number: 12,
+        range: "J11",
+        description: "Notre découverte d'Hokkaïdo arrive à son terme et nous rejoignons l'aéroport de Chitose, où nous prenons notre vol pour l'île principale. Vous allez enfin parcourir le ville bouillonnante de Tokyo !",
+      },
+      {
+        number: 13,
+        range: "J12",
+        description: "Vous appréciez votre dernière journée sur le sol japonais pour faire le plein de souvenirs !",
+      },
+      {
+        number: 14,
+        range: "J13",
+        description: "C'est l'heure de rentrer... Vous rejoignez l'aéroport et prenez votre vol retour.",
       },
     ],
   },
@@ -232,73 +294,86 @@ const sejours2025 = [
     nbBootsInactive: [4, 5],
     region: "Alpes",
     destination: ["Tokyo", "Alpes japonaises"],
-    price: 5000,
+    price: 3460,
     groupe: "6 à 8 personnes",
     days: [
       {
         number: 1,
         range: "Descriptif",
-        description: "Votre séjour commence par une déambulation dans Tokyo, mégalopole aux multiples facettes. Vous rejoignez ensuite les Alpes du sud, pour un trek au cœur d'une nature sauvage et préservée.",
+        description:
+          "Votre séjour commence par une déambulation dans Tokyo, mégalopole aux multiples facettes. Vous rejoignez ensuite les Alpes du sud, pour un trek au cœur d'une nature sauvage et préservée.",
       },
       {
         number: 2,
         range: "J1-J2",
-        description: "Vol direct pour Tokyo. Le lendemain, votre guide local vous accueille à l'aéroport et vous accompagne à votre hôtel.",
+        description:
+          "Vol direct pour Tokyo. Le lendemain, votre guide local vous accueille à l'aéroport et vous accompagne à votre hôtel.",
       },
       {
         number: 3,
         range: "J3",
-        description: "Vous retrouvez votre guide tokyoïte, qui partage la journée avec vous. Il vous familiarise avec les transports et vous fait découvrir les lieux emblématiques de la ville.",
+        description:
+          "Vous retrouvez votre guide tokyoïte, qui partage la journée avec vous. Il vous familiarise avec les transports et vous fait découvrir les lieux emblématiques de la ville.",
       },
       {
         number: 4,
         range: "J4",
-        description: "Ce matin, Samuel vous retrouve à votre hôtel à Tokyo. Vous voyagez ensemble jusqu’à Hirogawara, lieu de départ du trek. ",
+        description:
+          "Ce matin, Samuel vous retrouve à votre hôtel à Tokyo. Vous voyagez ensemble jusqu’à Hirogawara, lieu de départ du trek. ",
       },
       {
         number: 5,
         range: "Itinéraire",
-        description: "Cette traversée intégrale des Alpes du sud vous offrira de splendides panoramas sur le Mont Fuji. Au sein de ce massif alpin préservé, vous arpenterez dans un écosystème préservé. Cette itinérance comprend l'ascension du Mt Kitadake, deuxième plus haut sommet du Japon.",
+        description:
+          "Cette traversée intégrale des Alpes du sud vous offrira de splendides panoramas sur le Mont Fuji. Au sein de ce massif alpin préservé, vous arpenterez dans un écosystème préservé. Cette itinérance comprend l'ascension du Mt Kitadake, deuxième plus haut sommet du Japon.",
       },
       {
         number: 6,
         range: "J5",
-        description: "Nous débutons l'itinérance pour une montée en forêt pour nous élever progressivement à 3000 mètres d'altitude et rejoindre le premier refuge Kata-no-koya.",
+        description:
+          "Nous débutons l'itinérance pour une montée en forêt pour nous élever progressivement à 3000 mètres d'altitude et rejoindre le premier refuge Kata-no-koya.",
       },
       {
         number: 7,
         range: "J6",
-        description: "Vous vous réveillez avec l'objectif de la journée sous les yeux : le Mt Kitadake, deuxième plus haut sommet du pays, culminant à 3193 mètres. La journée se prolonge jusqu'au refuge Kuma-no-daira-goya.",
+        description:
+          "Vous vous réveillez avec l'objectif de la journée sous les yeux : le Mt Kitadake, deuxième plus haut sommet du pays, culminant à 3193 mètres. La journée se prolonge jusqu'au refuge Kuma-no-daira-goya.",
       },
       {
         number: 8,
         range: "J7",
-        description: "Nous évoluons en crête à 3000 mètres d'altitude avec le Mont Fuji en perspective. Situé à quelques kilomètres à vol d'oiseau, la plus haute montagne du Japon offre à notre vue sa silhouette de « cône parfait ». La journée s'achève au refuge Sanpuku.",
+        description:
+          "Nous évoluons en crête à 3000 mètres d'altitude avec le Mont Fuji en perspective. Situé à quelques kilomètres à vol d'oiseau, la plus haute montagne du Japon offre à notre vue sa silhouette de « cône parfait ». La journée s'achève au refuge Sanpuku.",
       },
       {
         number: 9,
         range: "J8",
-        description: "Une belle étape de transition pour aborder la seconde partie de l'itinérance, où nous filons vers le refuge Arakawa.",
+        description:
+          "Une belle étape de transition pour aborder la seconde partie de l'itinérance, où nous filons vers le refuge Arakawa.",
       },
       {
         number: 10,
         range: "J9",
-        description: "Cette étape s'annonce comme la plus relevée du trek. La beauté du spectacle occulte la longueur et les dénivelés de la journée. Nous rejoignons le refuge Hijiri-daira.",
+        description:
+          "Cette étape s'annonce comme la plus relevée du trek. La beauté du spectacle occulte la longueur et les dénivelés de la journée. Nous rejoignons le refuge Hijiri-daira.",
       },
       {
         number: 11,
         range: "J10",
-        description: "Il est l'heure de regagner la vallée. Sawara-jima marque la fin de ce trek dans les Alpes du sud. Nous voyageons en car jusqu'à Shizuoka, avant de filer en « shinkansen »,  à grande vitesse  jusqu'à Tokyo.",
+        description:
+          "Il est l'heure de regagner la vallée. Sawara-jima marque la fin de ce trek dans les Alpes du sud. Nous voyageons en car jusqu'à Shizuoka, avant de filer en « shinkansen »,  à grande vitesse  jusqu'à Tokyo.",
       },
       {
         number: 12,
         range: "J11",
-        description: "Vous appréciez votre dernière journée sur le sol japonais pour faire le plein de souvenirs !",
+        description:
+          "Vous appréciez votre dernière journée sur le sol japonais pour faire le plein de souvenirs !",
       },
       {
         number: 13,
         range: "J12",
-        description: "C'est l'heure du retour... Vous rejoignez l'aéroport et prenez votre vol pour Paris.",
+        description:
+          "C'est l'heure du retour... Vous rejoignez l'aéroport et prenez votre vol pour Paris.",
       },
     ],
   },
@@ -312,7 +387,7 @@ const sejours2025 = [
     nbBootsInactive: [4, 5],
     region: "Alpes",
     destination: ["Matsumoto", "Alpes japonaises", "Kyoto"],
-    price: 5000,
+    price: 3985,
     groupe: "6 à 8 personnes",
     days: [
       {
