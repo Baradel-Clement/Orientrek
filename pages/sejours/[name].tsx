@@ -16,6 +16,7 @@ import phrise from "../../public/assets/phrise.svg";
 import roadmap from "../../public/assets/roadmap.svg";
 import TextTransition, { presets } from "react-text-transition";
 import curvedArrow from "../../public/assets/sejour_curved_arrow.png";
+import { usePathname } from "next/navigation";
 
 type Props = {
   currentSejour: {
@@ -80,6 +81,17 @@ const Séjour: NextPageWithLayout<Props> = ({ currentSejour }: Props) => {
 
   const [currentRoadmapFullscreen, setCurrentRoadmapFullscreen] = useState(0);
 
+  const pathname = usePathname();
+
+  useEffect(() => {
+    console.log("emblaApi.reInit();")
+    if (emblaApi && emblaApiDesktop) {
+      emblaApi.scrollTo(0);
+      emblaApiDesktop.scrollTo(0);
+    }
+
+  }, [pathname])
+
   return (
     <Layout title={`Trek au ${currentSejour.trek}`}>
       <div className="PageSejour">
@@ -99,9 +111,8 @@ const Séjour: NextPageWithLayout<Props> = ({ currentSejour }: Props) => {
                     <p className="day bold">
                       {i > 0 &&
                         day.range !== "Itinéraire" &&
-                        `Descriptif du ${
-                          currentSejour.days.find((e) => e.number === i + 1)
-                            .range
+                        `Descriptif du ${currentSejour.days.find((e) => e.number === i + 1)
+                          .range
                         }`}
                       {i === 0 && `Descriptif du séjour`}
                       {day.range === "Itinéraire" && day.range}
@@ -256,10 +267,9 @@ const Séjour: NextPageWithLayout<Props> = ({ currentSejour }: Props) => {
                     {selectedIndex > 0 && currentSejour.days.find(
                       (e) => e.number === selectedIndex + 1
                     ).range !== "Itinéraire" &&
-                      `Descriptif du ${
-                        currentSejour.days.find(
-                          (e) => e.number === selectedIndex + 1
-                        ).range
+                      `Descriptif du ${currentSejour.days.find(
+                        (e) => e.number === selectedIndex + 1
+                      ).range
                       }`}
                     {selectedIndex === 0 && `Descriptif du séjour`}
                     {selectedIndex > 0 && currentSejour.days.find(
