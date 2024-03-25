@@ -362,6 +362,7 @@ const Accueil: NextPageWithLayout<Props> = () => {
                   "Mt Yarigatake",
                   "Parc national Daisetsuzan",
                   "Alpes",
+                  "Hokkaïdo"
                 ],
               },
               {
