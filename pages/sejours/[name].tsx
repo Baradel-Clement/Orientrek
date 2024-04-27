@@ -185,8 +185,8 @@ const Séjour: NextPageWithLayout<Props> = ({ currentSejour }: Props) => {
           </div>
           <div className="bottom-buttons">
             <a
-              download={`Fiche technique ${currentSejour.trek}`}
-              href={`${currentSejour.urlImage}/fiche-technique.pdf`}
+              download={`Fiche technique séjour ${currentSejour.trek}`}
+              href={`${currentSejour.urlImage}/Fiche technique séjour ${currentSejour.trek}.pdf`}
             >
               <p>Fiche technique</p>
               <Image src={downloadIcon} alt="downloadIcon" />
@@ -305,8 +305,8 @@ const Séjour: NextPageWithLayout<Props> = ({ currentSejour }: Props) => {
               <Image src={roadmap} alt="Icône Trek" />
             </button>
             <a
-              download={`Fiche technique ${currentSejour.trek}`}
-              href={`${currentSejour.urlImage}/fiche-technique.pdf`}
+              download={`Fiche technique séjour ${currentSejour.trek}`}
+              href={`${currentSejour.urlImage}/Fiche technique séjour ${currentSejour.trek}.pdf`}
             >
               <p>Fiche technique</p>
               <Image src={downloadIcon} alt="Icône téléchargement" />
@@ -326,14 +326,14 @@ const Séjour: NextPageWithLayout<Props> = ({ currentSejour }: Props) => {
               onClick={() => setCurrentRoadmapFullscreen(0)}
             />
             <Image
-              src={`${currentSejour.urlImage}/itineraires/0.png`}
+              src={`${currentSejour.urlImage}/itineraires/Trek ${currentSejour.trek}.png`}
               alt="Image jour par jour"
               fill={true}
               onClick={() => setCurrentRoadmapFullscreen(0)}
             />
             <a
-              download={`Trek ${currentRoadmapFullscreen} ${currentSejour.trek}`}
-              href={`${currentSejour.urlImage}/itineraires/0.png`}
+              download={`Trek ${currentSejour.trek}`}
+              href={`${currentSejour.urlImage}/itineraires/Trek ${currentSejour.trek}.png`}
             >
               <p>Télécharger le trek</p>
               <Image src={downloadIcon} alt="Icône téléchargement" />

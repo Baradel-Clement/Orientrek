@@ -32,6 +32,7 @@ const SejourButton = ({ mode, sejour }) => {
           : ""
       } ${
         mode === "homepage" &&
+        sejourHovering !== "false" &&
         sejourHovering !== "" &&
         sejourHovering !== sejour.trek &&
         !sejour.destination.includes(sejourHovering) &&
