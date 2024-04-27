@@ -9,7 +9,7 @@ const sejours2025 = [
     nbBootsInactive: [4, 5],
     region: "Alpes",
     destination: ["Matsumoto", "Kyoto", "Alpes japonaises"],
-    price: 3985,
+    price: 3990,
     groupe: "6 à 8 personnes",
     days: [
       {
@@ -95,7 +95,7 @@ const sejours2025 = [
   {
     slug: "/sejours/mont-yarigatake",
     urlImage: "/assets/mont-yarigatake",
-    serac: "https://www.serac-montagne.com/details.php?productCode=14317",
+    serac: "https://www.serac-montagne.com/details.php?productCode=14320",
     date: "du 20 juillet au 2 août",
     trek: "Mt Yarigatake",
     nbBootsActive: [1, 2, 3, 4],
@@ -200,14 +200,14 @@ const sejours2025 = [
   {
     slug: "/sejours/parc-national-daisetsuzan",
     urlImage: "/assets/parc-national-daisetsuzan",
-    serac: "https://www.serac-montagne.com/details.php?productCode=14317",
+    serac: "https://www.serac-montagne.com/details.php?productCode=14321",
     date: "du 10 au 22 août",
     trek: "Parc national Daisetsuzan",
     nbBootsActive: [1, 2, 3, 4],
     nbBootsInactive: [5],
     region: "Hoka",
     destination: ["Tokyo", "Hokkaïdo"],
-    price: 5195,
+    price: 4990,
     groupe: "6 à 8 personnes",
     days: [
       {
@@ -290,8 +290,8 @@ const sejours2025 = [
     serac: "https://www.serac-montagne.com/details.php?productCode=14317",
     date: "du 24 août au 4 septembre",
     trek: "Mt Kitadake",
-    nbBootsActive: [1, 2, 3],
-    nbBootsInactive: [4, 5],
+    nbBootsActive: [1, 2, 3, 4],
+    nbBootsInactive: [5],
     region: "Alpes",
     destination: ["Tokyo", "Alpes japonaises"],
     price: 3460,

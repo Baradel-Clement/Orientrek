@@ -283,6 +283,17 @@
             margin-right: 44px;
           }
 
+          &:nth-child(4) {
+            & > .sejour-infos {
+              & > .sejour-desc {
+                height: 40px;
+                & > p:last-child {
+                  font-size: 11px;
+                }
+              }
+            }
+          }
+
           &:hover {
             & > .sejour-infos {
               & > .sejour-bottom {
@@ -438,6 +449,17 @@
             margin-right: 53.23px;
           }
 
+          &:nth-child(4) {
+            & > .sejour-infos {
+              & > .sejour-desc {
+                height: 50px;
+                & > p:last-child {
+                  font-size: 13px;
+                }
+              }
+            }
+          }
+
           &:not(:nth-child(1), :nth-child(4)) {
             margin-top: 18.75px;
           }
@@ -577,6 +599,17 @@
 
           &:not(:nth-child(1), :nth-child(4)) {
             margin-top: 21.21px;
+          }
+
+          &:nth-child(4) {
+            & > .sejour-infos {
+              & > .sejour-desc {
+                height: 58px;
+                & > p:last-child {
+                  font-size: 16px;
+                }
+              }
+            }
           }
 
           & > img {

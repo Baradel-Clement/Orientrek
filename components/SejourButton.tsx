@@ -44,6 +44,7 @@ const SejourButton = ({ mode, sejour }) => {
       onMouseOut={() => setSejourHovering("")}
       onClick={() => {
         setDisplayNestedSejours(false);
+        setSejourHovering("");
         if (displayNavList) {
           setDisplayNavList(false);
           setDisplayNavSejours(false);

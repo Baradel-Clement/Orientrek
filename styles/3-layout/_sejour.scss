@@ -77,6 +77,7 @@
     @extend %flex-center-center;
     width: auto;
     white-space: nowrap;
+    padding-top: 5px;
   }
 }
 
@@ -368,6 +369,7 @@
     border-radius: 25px;
     background-color: $red;
     margin-top: 110px;
+    padding-top: 5px;
   }
 
   & > .sejour-header {
@@ -745,6 +747,7 @@
       padding: 4px 39.9px 0px 39.9px;
       height: 63px;
       margin-top: 155px;
+      padding-top: 10px;
     }
 
     & > .sejour-header {

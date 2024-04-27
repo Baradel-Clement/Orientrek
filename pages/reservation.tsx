@@ -60,7 +60,7 @@ const Reservation: NextPageWithLayout<Props> = () => {
                 <div className="sejour-infos">
                   <div className="sejour-desc">
                     <p>{sejour.trek}</p>
-                    <p>{sejour.date}</p>
+                    <p>{sejour.date} 2025</p>
                   </div>
                   <div className="sejour-bottom">
                     <div>
