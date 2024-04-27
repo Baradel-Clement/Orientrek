@@ -60,6 +60,9 @@ a.sejour {
     background-color: $aqua;
     @extend %drop-shadow;
   }
+  &.notHovering {
+    opacity: 0.5;
+  }
 }
 
 @media screen and (min-width: 1700px) {

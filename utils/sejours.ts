@@ -38,7 +38,7 @@ const sejours2025 = [
       },
       {
         number: 5,
-        range: "Itinéraire",
+        range: "Trek",
         description:
           "Cette traversée méridionale des Alpes du nord offre un condensé des paysages, de la faune et de la flore de la haute montagne japonaise. Ce trek comprend également l’ascension d’un sommet à plus de 3000 mètres d’altitude.",
       },
@@ -131,7 +131,7 @@ const sejours2025 = [
       },
       {
         number: 5,
-        range: "Itinéraire",
+        range: "Trek",
         description:
           "Cette traversée septentrionale des Alpes du nord compte parmi les treks les plus renommés du pays. Au sein de la haute montagne japonaise, vous découvrirez des paysages et un écosystème préservés. Cette itinérance comprend plusieurs ascensions à plus de 3000 mètres d’altitude.",
       },
@@ -224,7 +224,7 @@ const sejours2025 = [
       },
       {
         number: 3,
-        range: "Itinéraire",
+        range: "Trek",
         description: "Cette traversée intégrale du parc national Daisetsuzan est un must de la randonnée sur l'île d'Hokkaïdo. Vous évoluerez dans des lieux très peu fréquentés. Ce trek exigeant requiert un très bon entraînement préalable. L'absence de refuges sur le parcours implique de porter le matériel et le ravitaillement sur la durée de l'itinérance. Si vous êtes prêt à l'aventure, optez définitivement pour ce trek !",
       },
       {
@@ -323,7 +323,7 @@ const sejours2025 = [
       },
       {
         number: 5,
-        range: "Itinéraire",
+        range: "Trek",
         description:
           "Cette traversée intégrale des Alpes du sud vous offrira de splendides panoramas sur le Mont Fuji. Au sein de ce massif alpin préservé, vous arpenterez dans un écosystème préservé. Cette itinérance comprend l'ascension du Mt Kitadake, deuxième plus haut sommet du Japon.",
       },
@@ -416,7 +416,7 @@ const sejours2025 = [
       },
       {
         number: 5,
-        range: "Itinéraire",
+        range: "Trek",
         description:
           "Cette traversée méridionale des Alpes du nord offre un condensé des paysages, de la faune et de la flore de la haute montagne japonaise. Ce trek comprend également l’ascension d’un sommet à plus de 3000 mètres d’altitude.",
       },

@@ -110,14 +110,14 @@ const Séjour: NextPageWithLayout<Props> = ({ currentSejour }: Props) => {
                   <div className="slide-description">
                     <p className="day bold">
                       {i > 0 &&
-                        day.range !== "Itinéraire" &&
+                        day.range !== "Trek" &&
                         `Descriptif du ${currentSejour.days.find((e) => e.number === i + 1)
                           .range
                         }`}
                       {i === 0 && `Descriptif du séjour`}
-                      {day.range === "Itinéraire" && day.range}
+                      {day.range === "Trek" && day.range}
                     </p>
-                    {i > 0 && day.range !== "Itinéraire" && (
+                    {i > 0 && day.range !== "Trek" && (
                       <p className="desc">{day.description}</p>
                     )}
                     {i === 0 && (
@@ -154,7 +154,7 @@ const Séjour: NextPageWithLayout<Props> = ({ currentSejour }: Props) => {
                         </div>
                       </div>
                     )}
-                    {day.range === "Itinéraire" && (
+                    {day.range === "Trek" && (
                       <>
                         <button
                           className="roadmapBtn"
@@ -162,8 +162,8 @@ const Séjour: NextPageWithLayout<Props> = ({ currentSejour }: Props) => {
                             setCurrentRoadmapFullscreen(day.number)
                           }
                         >
-                          <p>Consultez l'itinéraire</p>
-                          <Image src={roadmap} alt="icône Itinéraire" />
+                          <p>Consultez le trek</p>
+                          <Image src={roadmap} alt="icône Trek" />
                         </button>
                         <p className="desc">{day.description}</p>
                       </>
@@ -266,7 +266,7 @@ const Séjour: NextPageWithLayout<Props> = ({ currentSejour }: Props) => {
                   <TextTransition springConfig={presets.gentle}>
                     {selectedIndex > 0 && currentSejour.days.find(
                       (e) => e.number === selectedIndex + 1
-                    ).range !== "Itinéraire" &&
+                    ).range !== "Trek" &&
                       `Descriptif du ${currentSejour.days.find(
                         (e) => e.number === selectedIndex + 1
                       ).range
@@ -274,7 +274,7 @@ const Séjour: NextPageWithLayout<Props> = ({ currentSejour }: Props) => {
                     {selectedIndex === 0 && `Descriptif du séjour`}
                     {selectedIndex > 0 && currentSejour.days.find(
                       (e) => e.number === selectedIndex + 1
-                    ).range === "Itinéraire" && `Itinéraire`}
+                    ).range === "Trek" && `Trek`}
                   </TextTransition>
                   <TextTransition springConfig={presets.gentle}>
                     {currentSejour.days[selectedIndex].description}
@@ -300,6 +300,10 @@ const Séjour: NextPageWithLayout<Props> = ({ currentSejour }: Props) => {
           <div className="sejour-buttons">
             <Image src={curvedArrow} alt="checkIcon" />
             <button>Votre voyage jour par jour</button>
+            <button onClick={() => setCurrentRoadmapFullscreen(1)}>
+              <p>Trek</p>
+              <Image src={roadmap} alt="Icône Trek" />
+            </button>
             <a
               download={`Fiche technique ${currentSejour.trek}`}
               href={`${currentSejour.urlImage}/fiche-technique.pdf`}
@@ -307,10 +311,6 @@ const Séjour: NextPageWithLayout<Props> = ({ currentSejour }: Props) => {
               <p>Fiche technique</p>
               <Image src={downloadIcon} alt="Icône téléchargement" />
             </a>
-            <button onClick={() => setCurrentRoadmapFullscreen(1)}>
-              <p>Itinéraire</p>
-              <Image src={roadmap} alt="Icône itinéraire" />
-            </button>
             <Link href="/reservation">
               <p>Comment réserver ?</p>{" "}
               <Image src={checkIcon} alt="Icône confirmation" />
@@ -332,10 +332,10 @@ const Séjour: NextPageWithLayout<Props> = ({ currentSejour }: Props) => {
               onClick={() => setCurrentRoadmapFullscreen(0)}
             />
             <a
-              download={`Itinéraire ${currentRoadmapFullscreen} ${currentSejour.trek}`}
+              download={`Trek ${currentRoadmapFullscreen} ${currentSejour.trek}`}
               href={`${currentSejour.urlImage}/itineraires/0.png`}
             >
-              <p>Télécharger l'itinéraire</p>
+              <p>Télécharger le trek</p>
               <Image src={downloadIcon} alt="Icône téléchargement" />
             </a>
           </div>

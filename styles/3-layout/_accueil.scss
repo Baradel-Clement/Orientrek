@@ -128,6 +128,7 @@ div.Accueil {
   font-size: 17px;
   @extend %flex-center-center;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  padding-top: 3px;
 }
 
 .maps-container {
@@ -319,6 +320,7 @@ div.Accueil {
   text-align: center;
   @extend %flex-center-center;
   font-size: 16px;
+  padding-top: 3px;
 
   & > p {
     width: 634px;
@@ -458,6 +460,7 @@ div.Accueil {
     height: 44px;
     border-radius: 25px;
     font-size: 25px;
+    padding-top: 4px;
   }
 
   .maps-container {
@@ -620,6 +623,7 @@ div.Accueil {
     margin-top: 64px;
     height: 58px;
     font-size: 23px;
+    padding-top: 6px;
 
     & > p {
       width: 893px;

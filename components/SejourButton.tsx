@@ -14,7 +14,7 @@ const SejourButton = ({ mode, sejour }) => {
     setDisplayNavList,
     setDisplayNavSejours,
     displayNavList,
-    setDisplayNestedSejours
+    setDisplayNestedSejours,
   } = useHomeStateContext();
 
   return (
@@ -29,6 +29,14 @@ const SejourButton = ({ mode, sejour }) => {
           sejourHovering === sejour.trek ||
           sejour.destination.includes(sejourHovering))
           ? "hovering"
+          : ""
+      } ${
+        mode === "homepage" &&
+        sejourHovering !== "" &&
+        sejourHovering !== sejour.trek &&
+        !sejour.destination.includes(sejourHovering) &&
+        sejourHovering !== sejour.region
+          ? "notHovering"
           : ""
       }`}
       onMouseEnter={() => setSejourHovering(sejour.trek)}
