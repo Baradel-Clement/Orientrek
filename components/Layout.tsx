@@ -1,3 +1,5 @@
+'use client'
+
 import React, { ReactNode, useState } from "react";
 import Link from "next/link";
 import Head from "next/head";
@@ -10,7 +12,7 @@ import Hamburger from "hamburger-react";
 import { useHomeStateContext } from "../context/Home";
 import logo from "../public/assets/logo.png";
 import closeIcon from "../public/assets/close.svg";
-import { useRouter } from "next/router";
+import { usePathname } from "next/navigation";
 import SejourButton from "./SejourButton";
 import { closeModal } from "../utils/closeModal";
 import CookieBanner from "./CookieBanner";
@@ -18,9 +20,14 @@ import CookieBanner from "./CookieBanner";
 type Props = {
   children?: ReactNode;
   title?: string;
+  description?: string;
 };
 
-const Layout = ({ children, title = "Orientrek" }: Props) => {
+const Layout = ({
+  children,
+  title = "Orientrek",
+  description = "",
+}: Props) => {
   const {
     displayNavList,
     setDisplayNavList,
@@ -30,10 +37,9 @@ const Layout = ({ children, title = "Orientrek" }: Props) => {
     setDisplayNestedSejours,
     setSejourHovering,
   } = useHomeStateContext();
+  const pathname = usePathname()
 
   const [sejoursYear, setSejoursYear] = useState(2025);
-
-  const router = useRouter();
 
   return (
     <div
@@ -50,13 +56,6 @@ const Layout = ({ children, title = "Orientrek" }: Props) => {
         }
       }}
     >
-      <Head>
-        <title>{title}</title>
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta name="description" content="Découvrez le Japon authentique avec Orientrek ! Treks guidés par Samuel Bernard dans les Alpes Japonaises et Hokkaido. Explorez, vivez, partagez !" />
-      </Head>
-
       <nav>
         <div className="nav-upper">
           {/* MOBILE UPPER SECTION */}
@@ -100,13 +99,13 @@ const Layout = ({ children, title = "Orientrek" }: Props) => {
                   displayNestedSejours ? "active" : ""
                 }`}
                 onClick={() => {
-                  if (router.pathname !== "/")
+                  if (pathname !== "/")
                     setDisplayNestedSejours(!displayNestedSejours);
                 }}
               >
                 Séjours 2025
               </p>
-              {router.pathname === "/" && (
+              {pathname === "/" && (
                 <Image src={arrowSejours2025} alt="fléche vers le bas" />
               )}
 
@@ -145,14 +144,14 @@ const Layout = ({ children, title = "Orientrek" }: Props) => {
                         sejour={sejour}
                       />
                     ))}
-                  {sejoursYear === 2026 &&
+                  {/* {sejoursYear === 2026 &&
                     sejours2026.map((sejour) => (
                       <SejourButton
                         key={sejour.slug}
                         mode="nestedLink"
                         sejour={sejour}
                       />
-                    ))}
+                    ))} */}
                 </div>
               )}
             </div>

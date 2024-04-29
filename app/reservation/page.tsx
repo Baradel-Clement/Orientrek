@@ -1,17 +1,16 @@
-import Layout from "../components/Layout";
-import { NextPageWithLayout } from "./_app";
+import Layout from "../../components/Layout";
 import Link from "next/link";
 import Image from "next/image";
 import arrow from "../public/assets/check.svg";
-import { sejours2025 } from "../utils/sejours";
+import { sejours2025 } from "../../utils/sejours";
 import bootsActive from "../public/assets/boots.svg";
 import bootsInactive from "../public/assets/boots-inactive.svg";
 
 type Props = {};
 
-const Reservation: NextPageWithLayout<Props> = () => {
+export default function Reservation() {
   return (
-    <Layout title="Réservation | Orientrek">
+    <Layout title="Réservation | Orientrek" description="adazda">
       <section className="PageReservation">
         <div className="PageReservation-container">
           <h1>Réservation</h1>
@@ -98,5 +97,3 @@ const Reservation: NextPageWithLayout<Props> = () => {
     </Layout>
   );
 };
-
-export default Reservation;

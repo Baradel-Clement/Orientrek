@@ -1,22 +1,22 @@
-import Layout from "../components/Layout";
-import { NextPageWithLayout } from "./_app";
-import Link from "next/link";
+'use client'
+
+import Layout from "../../components/Layout";
 import Image from "next/image";
 import bootsActive from "../public/assets/boots.svg";
 import bootsInactive from "../public/assets/boots-inactive.svg";
 import { EmblaOptionsType } from "embla-carousel";
 import { useCallback } from "react";
-import niveaux from "../utils/niveaux";
+import niveaux from "../../utils/niveaux";
 import plusIcon from "../public/assets/plus.png";
 import minusIcon from "../public/assets/minus.png";
 import useEmblaCarousel from "embla-carousel-react";
 import checkIcon from "../public/assets/check.svg";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 
 type Props = {};
 const OPTIONS: EmblaOptionsType = { loop: true };
 
-const Reservation: NextPageWithLayout<Props> = () => {
+export default function Niveaux() {
   const [emblaRef, emblaApi] = useEmblaCarousel(OPTIONS);
 
   const scrollPrev = useCallback(() => {
@@ -117,5 +117,3 @@ const Reservation: NextPageWithLayout<Props> = () => {
     </Layout>
   );
 };
-
-export default Reservation;

@@ -1,13 +1,10 @@
-import Layout from "../components/Layout";
-import { NextPageWithLayout } from "./_app";
+import Layout from "../../components/Layout";
 import Link from "next/link";
-import samuelImg from "../public/assets/samuel.png";
-import samuelImgDesktop from "../public/assets/samuel-desktop.png";
+import samuelImg from "../../public/assets/samuel.png";
+import samuelImgDesktop from "../../public/assets/samuel-desktop.png";
 import Image from "next/image";
 
-type Props = {};
-
-const Nous: NextPageWithLayout<Props> = () => {
+export default function Nous() {
   return (
     <Layout title="Nous Connaître | Orientrek">
       <section className="PageNous">
@@ -71,5 +68,3 @@ const Nous: NextPageWithLayout<Props> = () => {
     </Layout>
   );
 };
-
-export default Nous;

@@ -1,13 +1,13 @@
-import Layout from "../components/Layout";
-import { NextPageWithLayout } from "./_app";
-import Link from "next/link";
+'use client'
+
+import Layout from "../../components/Layout";
 import Image from "next/image";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import checkIcon from "../public/assets/check.svg";
 
 type Props = {};
 
-const MentionsLegales: NextPageWithLayout<Props> = () => {
+export default function MentionsLegales() {
   const router = useRouter();
   return (
     <Layout title="Mentions Légales | Orientrek">
@@ -138,5 +138,3 @@ const MentionsLegales: NextPageWithLayout<Props> = () => {
     </Layout>
   );
 };
-
-export default MentionsLegales;

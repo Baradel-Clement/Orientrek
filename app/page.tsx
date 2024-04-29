@@ -1,13 +1,13 @@
+'use client'
+
 import Image from "next/image";
 import Layout from "../components/Layout";
 import { useHomeStateContext } from "../context/Home";
-import { NextPageWithLayout } from "./_app";
 import mapJapon from "../public/assets/map-japon.png";
 import mapAlpes from "../public/assets/map-alpes.png";
 import flag from "../public/assets/flag.png";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { sejours2025 } from "../utils/sejours";
-import { sejours2026 } from "../utils/sejours";
 import SejourButton from "../components/SejourButton";
 import hokaDestinationImg from "../public/assets/destinations/hoka.png";
 import alpesDestinationImg from "../public/assets/destinations/alpes.png";
@@ -16,9 +16,7 @@ import kyotoDestinationImg from "../public/assets/destinations/kyoto.png";
 import miyajimaDestinationImg from "../public/assets/destinations/miyajima.png";
 import Link from "next/link";
 
-type Props = {};
-
-const Accueil: NextPageWithLayout<Props> = () => {
+export default function Accueil() {
   const {
     setDisplayNavList,
     setDisplayNavSejours,
@@ -407,5 +405,3 @@ const Accueil: NextPageWithLayout<Props> = () => {
     </Layout>
   );
 };
-
-export default Accueil;

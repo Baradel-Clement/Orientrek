@@ -1,10 +1,10 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { getLocalStorage, setLocalStorage } from "../lib/storageHelper";
-import { useRouter } from "next/router";
+import { usePathname } from "next/navigation";
 
 export default function CookieBanner() {
-  const router = useRouter();
+  const pathname = usePathname()
 
   const [cookieConsent, setCookieConsent] = useState(false);
   const [bannerDisplay, setBannerDisplay] = useState(true);
@@ -25,7 +25,7 @@ export default function CookieBanner() {
     setLocalStorage("cookie_consent", cookieConsent);
   }, [cookieConsent]);
 
-  if (router.pathname !== "/mentions-legales") {
+  if (pathname !== "/mentions-legales") {
     return (
       <>
         <div
@@ -57,4 +57,5 @@ export default function CookieBanner() {
       </>
     );
   }
+  return null;
 }
