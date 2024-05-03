@@ -15,9 +15,9 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body>
-        {/* <Suspense fallback>
+        <Suspense fallback>
           <GoogleAnalytics GA_MEASUREMENT_ID="G-88JTZML9Q3" />
-        </Suspense> */}
+        </Suspense>
         <HomeContextProvider>{children}</HomeContextProvider>
       </body>
     </html>
