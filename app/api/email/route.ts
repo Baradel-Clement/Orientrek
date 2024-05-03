@@ -1,12 +1,9 @@
-import { NextApiRequest } from "next";
 import { resend } from "../../../lib/resend";
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 
 export async function POST(
-  req: NextApiRequest
+  req: Request
 ) {
-  console.log(req.body);
-
   const date = new Date();
   const months = [
     "janvier",
@@ -22,6 +19,9 @@ export async function POST(
     "novembre",
     "décembre",
   ];
+  console.log('lala');
+  console.log(req);
+  
   const mailToOrientrek = await resend.emails.send({
     from: req.body.firstName !== '' && req.body.lastName !== '' ? `${req.body.firstName} ${req.body.lastName} <contact@orientrek.com>` : 'contact@orientrek.com',
     to: ["contact@orientrek.com"], // contact@orientrek.com
