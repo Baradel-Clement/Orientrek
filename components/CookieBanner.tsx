@@ -1,9 +1,12 @@
+"use client"
+
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { getLocalStorage, setLocalStorage } from "../lib/storageHelper";
 import { usePathname } from "next/navigation";
 
 export default function CookieBanner() {
+  if (typeof window === "undefined") return null;
   const pathname = usePathname()
 
   const [cookieConsent, setCookieConsent] = useState(false);
@@ -30,14 +33,12 @@ export default function CookieBanner() {
       <>
         <div
           onClick={() => setBannerDisplay(false)}
-          className={`CookieBanner-shadow ${
-            cookieConsent != null || bannerDisplay === false ? "none" : ""
-          } `}
-        />
+          className={`CookieBanner-shadow ${cookieConsent != null || bannerDisplay === false ? "none" : ""
+            } `}
+        ></div>
         <div
-          className={`CookieBanner ${
-            cookieConsent != null || bannerDisplay === false ? "none" : ""
-          } `}
+          className={`CookieBanner ${cookieConsent != null || bannerDisplay === false ? "none" : ""
+            } `}
         >
           <p>
             L'éditeur du site souhaite utiliser des cookies de mesure de trafic

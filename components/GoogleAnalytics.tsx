@@ -10,6 +10,8 @@ export default function GoogleAnalytics({
 }: {
   GA_MEASUREMENT_ID: string;
 }) {
+  if (typeof window === "undefined") return null;
+
   const pathname = usePathname();
   const searchParams = useSearchParams();
 
