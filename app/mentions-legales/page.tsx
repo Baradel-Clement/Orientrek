@@ -3,7 +3,7 @@
 import Layout from "../../components/Layout";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import checkIcon from "../public/assets/check.svg";
+import checkIcon from "../../public/assets/check.svg";
 
 type Props = {};
 

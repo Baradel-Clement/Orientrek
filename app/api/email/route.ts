@@ -1,7 +1,7 @@
 import { NextApiRequest, NextApiResponse } from "next";
-import { resend } from "../../lib/resend";
+import { resend } from "../../../lib/resend";
 
-export default async function handler(
+export default async function POST(
   req: NextApiRequest,
   res: NextApiResponse
 ) {

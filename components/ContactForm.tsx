@@ -1,3 +1,5 @@
+"use client"
+
 import React, { useState } from "react";
 import { sendEmail } from "../utils/sendEmail";
 import ReactLoading from "react-loading";

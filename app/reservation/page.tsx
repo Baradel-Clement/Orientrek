@@ -1,10 +1,10 @@
 import Layout from "../../components/Layout";
 import Link from "next/link";
 import Image from "next/image";
-import arrow from "../public/assets/check.svg";
+import arrow from "../../public/assets/check.svg";
 import { sejours2025 } from "../../utils/sejours";
-import bootsActive from "../public/assets/boots.svg";
-import bootsInactive from "../public/assets/boots-inactive.svg";
+import bootsActive from "../../public/assets/boots.svg";
+import bootsInactive from "../../public/assets/boots-inactive.svg";
 
 type Props = {};
 
