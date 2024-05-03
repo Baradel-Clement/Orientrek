@@ -1,9 +1,9 @@
-import { NextApiRequest, NextApiResponse } from "next";
+import { NextApiRequest } from "next";
 import { resend } from "../../../lib/resend";
+import { NextResponse } from "next/server";
 
 export async function POST(
-  req: NextApiRequest,
-  res: NextApiResponse
+  req: NextApiRequest
 ) {
   console.log(req.body);
 
@@ -37,7 +37,7 @@ export async function POST(
   });
 
   if (mailToOrientrek.error) {
-    return res.status(400).json(mailToOrientrek.error);
+    return NextResponse.json({ message: mailToOrientrek.error }, { status: 400 });
   }
 
   const datePlus3 = new Date(date);
@@ -61,7 +61,7 @@ export async function POST(
   });
 
   if (mailToClient.error) {
-    return res.status(400).json(mailToClient.error);
+    return NextResponse.json({ message: mailToClient.error }, { status: 400 });
   }
-  return res.status(200).json([mailToClient.data, mailToOrientrek.data]);
+  return NextResponse.json({ message: mailToClient.data }, { status: 200 });
 }
