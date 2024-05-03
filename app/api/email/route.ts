@@ -19,21 +19,20 @@ export async function POST(
     "novembre",
     "décembre",
   ];
-  console.log('lala');
-  console.log(req);
+  const body = await req.json();
   
   const mailToOrientrek = await resend.emails.send({
-    from: req.body.firstName !== '' && req.body.lastName !== '' ? `${req.body.firstName} ${req.body.lastName} <contact@orientrek.com>` : 'contact@orientrek.com',
+    from: body.firstName !== '' && body.lastName !== '' ? `${body.firstName} ${body.lastName} <contact@orientrek.com>` : 'contact@orientrek.com',
     to: ["contact@orientrek.com"], // contact@orientrek.com
-    subject: `La demande de ${req.body.firstName} ${req.body.lastName
+    subject: `La demande de ${body.firstName} ${body.lastName
       } en date du ${new Date().getDate()} ${months[new Date().getMonth()]
       } ${new Date().getFullYear()}`,
-    html: `Votre nom : ${req.body.lastName}<br />
-      Votre prénom : ${req.body.firstName}<br />
-      Votre email : ${req.body.email}<br />
-      Votre téléphone : ${req.body.num}<br />
+    html: `Votre nom : ${body.lastName}<br />
+      Votre prénom : ${body.firstName}<br />
+      Votre email : ${body.email}<br />
+      Votre téléphone : ${body.num}<br />
       Votre message : <br /> <br />
-      ${req.body.message}`,
+      ${body.message}`,
   });
 
   if (mailToOrientrek.error) {
@@ -45,14 +44,14 @@ export async function POST(
 
   const mailToClient = await resend.emails.send({
     from: "Samuel Bernard <ne-pas-repondre@orientrek.com>",
-    to: [req.body.email],
+    to: [body.email],
     subject: "Orientrek a bien reçu votre message",
-    html: `Bonjour ${req.body.firstName},<br /><br />
+    html: `Bonjour ${body.firstName},<br /><br />
   
       
       Vous nous avez adressé le message ci-dessous via notre formulaire de contact : <br /><br />
       
-      ${req.body.message}<br /> <br />
+      ${body.message}<br /> <br />
       
       Orientrek a pris en compte votre demande et vous remercie. Notre équipe met tout en œuvre pour y répondre avant le ${datePlus3.getDate()} ${months[datePlus3.getMonth()]
       }.<br /><br />

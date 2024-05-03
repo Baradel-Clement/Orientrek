@@ -6,7 +6,7 @@ export const sendEmail = async (inputValues: {
   email: String;
 }): Promise<{ message: string }> => {
   try {
-    let res = await fetch("api/email", {
+    let res = await fetch("/api/email", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(inputValues),
