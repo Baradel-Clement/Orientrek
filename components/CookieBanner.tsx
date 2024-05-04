@@ -18,7 +18,7 @@ export default function CookieBanner() {
     const storedCookieConsent = getLocalStorage("cookie_consent", null);
 
     setCookieConsent(storedCookieConsent);
-  }, [cookieConsent, setCookieConsent]);
+  }, [setCookieConsent]);
 
   useEffect(() => {
     console.log('in useeffect');
@@ -30,7 +30,7 @@ export default function CookieBanner() {
     });
 
     setLocalStorage("cookie_consent", cookieConsent);
-  }, [cookieConsent, setCookieConsent]);
+  }, [cookieConsent]);
 
   if (pathname !== "/mentions-legales") {
     return (
