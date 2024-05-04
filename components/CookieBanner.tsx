@@ -13,12 +13,16 @@ export default function CookieBanner() {
   const [bannerDisplay, setBannerDisplay] = useState(true);
 
   useEffect(() => {
+    console.log('in useeffect');
+    
     const storedCookieConsent = getLocalStorage("cookie_consent", null);
 
     setCookieConsent(storedCookieConsent);
-  }, [setCookieConsent]);
+  }, [cookieConsent, setCookieConsent]);
 
   useEffect(() => {
+    console.log('in useeffect');
+    
     const newValue = cookieConsent ? "granted" : "denied";
 
     window.gtag("consent", "update", {
@@ -26,19 +30,17 @@ export default function CookieBanner() {
     });
 
     setLocalStorage("cookie_consent", cookieConsent);
-  }, [cookieConsent]);
+  }, [cookieConsent, setCookieConsent]);
 
   if (pathname !== "/mentions-legales") {
     return (
       <>
         <div
           onClick={() => setBannerDisplay(false)}
-          className={`CookieBanner-shadow ${cookieConsent != null || bannerDisplay === false ? "none" : ""
-            } `}
+          className={`CookieBanner-shadow ${cookieConsent !== null || bannerDisplay === false ? "none" : ""} `}
         ></div>
         <div
-          className={`CookieBanner ${cookieConsent != null || bannerDisplay === false ? "none" : ""
-            } `}
+          className={`CookieBanner ${cookieConsent !== null || bannerDisplay === false ? "none" : ""} `}
         >
           <p>
             L'éditeur du site souhaite utiliser des cookies de mesure de trafic

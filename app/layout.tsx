@@ -6,6 +6,7 @@ import { Metadata, NextPage } from "next";
 import { ReactElement, ReactNode, Suspense } from "react";
 import { HomeContextProvider } from "../context/Home";
 import GoogleAnalytics from "../components/GoogleAnalytics";
+import NoSsr from "../components/NoSsr";
 
 export default function RootLayout({
   children,
@@ -15,9 +16,7 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body>
-        <Suspense fallback>
-          <GoogleAnalytics GA_MEASUREMENT_ID="G-88JTZML9Q3" />
-        </Suspense>
+        <GoogleAnalytics GA_MEASUREMENT_ID="G-88JTZML9Q3" />
         <HomeContextProvider>{children}</HomeContextProvider>
       </body>
     </html>

@@ -16,6 +16,7 @@ import { usePathname } from "next/navigation";
 import SejourButton from "./SejourButton";
 import { closeModal } from "../utils/closeModal";
 import CookieBanner from "./CookieBanner";
+import NoSsr from "./NoSsr";
 
 type Props = {
   children?: ReactNode;
@@ -95,9 +96,8 @@ const Layout = ({
               <Link href="/mentions-legales">Mentions légales</Link>
 
               <p
-                className={`nav-upper-btnDisplayNestedSejours closeModalNestedLinksOff ${
-                  displayNestedSejours ? "active" : ""
-                }`}
+                className={`nav-upper-btnDisplayNestedSejours closeModalNestedLinksOff ${displayNestedSejours ? "active" : ""
+                  }`}
                 onClick={() => {
                   if (pathname !== "/")
                     setDisplayNestedSejours(!displayNestedSejours);
@@ -159,9 +159,8 @@ const Layout = ({
         </div>
 
         <div
-          className={`nav-list closeModalNavListOff ${
-            displayNavList ? "active" : ""
-          }`}
+          className={`nav-list closeModalNavListOff ${displayNavList ? "active" : ""
+            }`}
         >
           <button
             className={`btnSejour L bold ${displayNavSejours ? "active" : ""}`}
@@ -205,7 +204,9 @@ const Layout = ({
         </div>
       </nav>
       {children}
-      <CookieBanner />
+      <NoSsr>
+        <CookieBanner />
+      </NoSsr>
     </div>
   );
 };
