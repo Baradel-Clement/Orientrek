@@ -14,6 +14,7 @@ import bootsActive from "../../public/assets/boots.svg";
 import bootsInactive from "../../public/assets/boots-inactive.svg";
 import phrise from "../../public/assets/phrise.svg";
 import roadmap from "../../public/assets/roadmap.svg";
+import closeIcon from "../../public/assets/close_white.svg";
 import TextTransition, { presets } from "react-text-transition";
 import curvedArrow from "../../public/assets/sejour_curved_arrow.png";
 import { usePathname } from "next/navigation";
@@ -93,7 +94,7 @@ const Séjour: NextPageWithLayout<Props> = ({ currentSejour }: Props) => {
   }, [pathname])
 
   return (
-    <Layout title={`Trek au ${currentSejour.trek}`}>
+    <Layout title={`Trek ${currentSejour.trek === "Couleurs d'automne" ? "aux" : "au"} ${currentSejour.trek}`}>
       <div className="PageSejour">
         {/* MOBILE */}
         <h1 className="bold title-mobile">{currentSejour.trek}</h1>
@@ -325,11 +326,15 @@ const Séjour: NextPageWithLayout<Props> = ({ currentSejour }: Props) => {
               className="PageSejour-fullscreenImg-shadow"
               onClick={() => setCurrentRoadmapFullscreen(0)}
             />
+            <button
+              onClick={() => setCurrentRoadmapFullscreen(0)}><Image
+                src={closeIcon}
+                alt="icone fermeture"
+              /></button>
             <Image
               src={`${currentSejour.urlImage}/itineraires/Trek ${currentSejour.trek}.png`}
               alt="Image jour par jour"
               fill={true}
-              onClick={() => setCurrentRoadmapFullscreen(0)}
             />
             <a
               download={`Trek ${currentSejour.trek}`}

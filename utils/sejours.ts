@@ -387,7 +387,7 @@ const sejours2025 = [
     nbBootsInactive: [4, 5],
     region: "Alpes",
     destination: ["Matsumoto", "Alpes japonaises", "Kyoto"],
-    price: 3985,
+    price: 3990,
     groupe: "6 à 8 personnes",
     days: [
       {

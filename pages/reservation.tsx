@@ -44,12 +44,12 @@ const Reservation: NextPageWithLayout<Props> = () => {
             Niveaux des treks <Image src={arrow} alt="Icône flèche" />
           </Link>
           <div className="PageReservation-sejours">
-            {sejours2025.map((sejour) => (
+            {sejours2025.map((sejour, i) => (
               <Link
-                href={sejour.serac}
+                href={sejours2025[i].serac}
                 key={sejour.trek}
                 className="drop-shadow"
-                target="blank"
+                target="_blank"
               >
                 <Image
                   src={`${sejour.urlImage}/vignette.png`}
