@@ -322,7 +322,7 @@ const Accueil: NextPageWithLayout<Props> = () => {
           </div>
           <div className="maps-news drop-shadow">
             <p className="bold">
-              Le soleil n'est jamais si beau qu’un jour où l'on se met en route. Jean Giono
+            Quand le corps se meut, l'esprit vagabonde, la pensée explore des recoins intouchés. Sylvain Tesson
             </p>
           </div>
 
