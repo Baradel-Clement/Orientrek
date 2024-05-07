@@ -36,16 +36,17 @@ const Accueil: NextPageWithLayout<Props> = () => {
         description="Découvrez le Japon authentique avec Orientrek ! Treks guidés par Samuel Bernard dans les Alpes Japonaises et Hokkaido. Explorez, vivez, partagez !"
         canonical="https://www.orientrek.com/"
         openGraph={{
-          type: 'website',
-          url: 'https://www.orientrek.com/',
-          title: 'Séjours avec trekking au Japon / Orientrek',
-          description: 'Découvrez le Japon authentique avec Orientrek ! Treks guidés par Samuel Bernard dans les Alpes Japonaises et Hokkaido. Explorez, vivez, partagez !',
+          type: "website",
+          url: "https://www.orientrek.com/",
+          title: "Séjours avec trekking au Japon / Orientrek",
+          description:
+            "Découvrez le Japon authentique avec Orientrek ! Treks guidés par Samuel Bernard dans les Alpes Japonaises et Hokkaido. Explorez, vivez, partagez !",
           images: [
             {
-              url: 'https://www.orientrek.com/assets/remote/opengraph.png',
+              url: "https://www.orientrek.com/assets/remote/opengraph.png",
               width: 1200,
               height: 630,
-              alt: 'Découvrez le Japon authentique avec Orientrek ! Treks guidés par Samuel Bernard dans les Alpes Japonaises et Hokkaido. Explorez, vivez, partagez !',
+              alt: "Découvrez le Japon authentique avec Orientrek ! Treks guidés par Samuel Bernard dans les Alpes Japonaises et Hokkaido. Explorez, vivez, partagez !",
             },
           ],
         }}
