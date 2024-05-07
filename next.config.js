@@ -4,6 +4,16 @@ const nextConfig = {
     locales: ["fr"],
     defaultLocale: "fr",
   },
-}
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "orientrek.com",
+        port: "",
+        pathname: "/remote/**",
+      },
+    ],
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
