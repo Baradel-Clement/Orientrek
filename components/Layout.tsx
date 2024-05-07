@@ -50,12 +50,12 @@ const Layout = ({ children, title = "Orientrek" }: Props) => {
         }
       }}
     >
-      <Head>
+      {/* <Head>
         <title>{title}</title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="description" content="Découvrez le Japon authentique avec Orientrek ! Treks guidés par Samuel Bernard dans les Alpes Japonaises et Hokkaido. Explorez, vivez, partagez !" />
-      </Head>
+      </Head> */}
 
       <nav>
         <div className="nav-upper">
