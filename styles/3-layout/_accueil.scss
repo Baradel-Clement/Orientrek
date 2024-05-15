@@ -27,7 +27,6 @@ div.Accueil {
       @extend %transition;
     }
 
-
     & > img.active {
       width: 100%;
       height: auto;
@@ -45,31 +44,42 @@ div.Accueil {
       height: 45%;
     }
 
-    & > img.flag {
+    & > a > img {
+      position: absolute;
+    }
+
+    & > img.flag,
+    & > a {
       position: absolute;
       z-index: 3;
 
-      &.flagAlpes {
+      &.flagAlpes,
+      & > img.flagAlpes {
         top: 138px;
         left: 144px;
       }
-      &.flagHoka {
+      &.flagHoka,
+      & > img.flagHoka {
         top: -18px;
         left: 251px;
       }
-      &.flagAlpes1 {
+      &.flagAlpes1,
+      & > img.flagAlpes1 {
         top: 72px;
         left: 228px;
       }
-      &.flagAlpes2 {
+      &.flagAlpes2,
+      & > img.flagAlpes2 {
         top: 98px;
         left: 79px;
       }
-      &.flagAlpes3 {
+      &.flagAlpes3,
+      & > img.flagAlpes3 {
         top: 147px;
         left: 188px;
       }
-      &.flagAlpes4 {
+      &.flagAlpes4,
+      & > img.flagAlpes4 {
         top: 173px;
         left: 113px;
       }
@@ -170,7 +180,15 @@ div.Accueil {
     }
   }
 
-  & > img.flag {
+  & > a {
+    & > img {
+      width: 31px;
+      height: 47px;
+    }
+  }
+
+  & > img.flag,
+  & > a {
     z-index: 4;
     position: absolute;
     cursor: pointer;
@@ -501,7 +519,8 @@ div.Accueil {
       }
     }
 
-    & > img.flag {
+    & > img.flag,
+    & > a {
       &.flagAlpes {
         top: 381px;
         left: 327px;

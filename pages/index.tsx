@@ -83,16 +83,15 @@ const Accueil: NextPageWithLayout<Props> = () => {
             />
             {mapJaponActive && (
               <>
-                <Image
-                  className="flag flagHoka"
-                  src={flag}
-                  alt="drapeau"
-                  width="31"
-                  height="47"
-                  onClick={() => {
-                    location.href = "/sejours/parc-national-daisetsuzan";
-                  }}
-                />
+                <Link href="/sejours/parc-national-daisetsuzan">
+                  <Image
+                    className="flag flagHoka"
+                    src={flag}
+                    alt="drapeau"
+                    width="31"
+                    height="47"
+                  />
+                </Link>
                 <Image
                   className="flag flagAlpes"
                   src={flag}
@@ -105,50 +104,46 @@ const Accueil: NextPageWithLayout<Props> = () => {
             )}
             {!mapJaponActive && (
               <>
-                <Image
-                  className={`flag flagAlpes1`}
-                  src={flag}
-                  placeholder="blur"
-                  alt="drapeau"
-                  width="31"
-                  height="47"
-                  onClick={() => {
-                    location.href = "/sejours/mont-tsubakurodake";
-                  }}
-                />
-                <Image
-                  className={`flag flagAlpes2`}
-                  src={flag}
-                  placeholder="blur"
-                  alt="drapeau"
-                  width="31"
-                  height="47"
-                  onClick={() => {
-                    location.href = "/sejours/mont-yarigatake";
-                  }}
-                />
-                <Image
-                  className={`flag flagAlpes3`}
-                  src={flag}
-                  placeholder="blur"
-                  alt="drapeau"
-                  width="31"
-                  height="47"
-                  onClick={() => {
-                    location.href = "/sejours/mont-kitadake";
-                  }}
-                />
-                <Image
-                  className={`flag flagAlpes4`}
-                  src={flag}
-                  placeholder="blur"
-                  alt="drapeau"
-                  width="31"
-                  height="47"
-                  onClick={() => {
-                    location.href = "/sejours/couleurs-automne";
-                  }}
-                />
+                <Link href="/sejours/mont-tsubakurodake">
+                  <Image
+                    className={`flag flagAlpes1`}
+                    src={flag}
+                    placeholder="blur"
+                    alt="drapeau"
+                    width="31"
+                    height="47"
+                  />
+                </Link>
+                <Link href="/sejours/mont-yarigatake">
+                  <Image
+                    className={`flag flagAlpes2`}
+                    src={flag}
+                    placeholder="blur"
+                    alt="drapeau"
+                    width="31"
+                    height="47"
+                  />
+                </Link>
+                <Link href="/sejours/mont-kitadake">
+                  <Image
+                    className={`flag flagAlpes3`}
+                    src={flag}
+                    placeholder="blur"
+                    alt="drapeau"
+                    width="31"
+                    height="47"
+                  />
+                </Link>
+                <Link href="/sejours/couleurs-automne">
+                  <Image
+                    className={`flag flagAlpes4`}
+                    src={flag}
+                    placeholder="blur"
+                    alt="drapeau"
+                    width="31"
+                    height="47"
+                  />
+                </Link>
               </>
             )}
           </div>
@@ -210,25 +205,27 @@ const Accueil: NextPageWithLayout<Props> = () => {
 
               {mapJaponActive && (
                 <>
-                  <Image
-                    className={`flag flagHoka ${
-                      sejourHovering === "Hoka" ||
-                      sejourHovering === "Parc national Daisetsuzan" ||
-                      ["Hokkaïdo"].includes(sejourHovering)
-                        ? "selected"
-                        : ""
-                    }`}
-                    src={flag}
-                    placeholder="blur"
-                    alt="drapeau"
-                    width="41"
-                    height="62"
-                    onClick={() => {
-                      location.href = "/sejours/parc-national-daisetsuzan";
-                    }}
-                    onMouseEnter={() => setSejourHovering("Hokkaïdo")}
-                    onMouseOut={() => setSejourHovering("")}
-                  />
+                  <Link
+                    className="flagHoka"
+                    href="/sejours/parc-national-daisetsuzan"
+                  >
+                    <Image
+                      className={`flag flagHoka ${
+                        sejourHovering === "Hoka" ||
+                        sejourHovering === "Parc national Daisetsuzan" ||
+                        ["Hokkaïdo"].includes(sejourHovering)
+                          ? "selected"
+                          : ""
+                      }`}
+                      src={flag}
+                      placeholder="blur"
+                      alt="drapeau"
+                      width="41"
+                      height="62"
+                      onMouseEnter={() => setSejourHovering("Hokkaïdo")}
+                      onMouseOut={() => setSejourHovering("")}
+                    />
+                  </Link>
                   <Image
                     className={`flag flagAlpes ${
                       sejourHovering === "Alpes" ||
@@ -264,66 +261,69 @@ const Accueil: NextPageWithLayout<Props> = () => {
 
               {!mapJaponActive && (
                 <>
-                  <Image
-                    className={`flag flagAlpes1 ${
-                      sejourHovering === "Mt Tsubakurodake" ? "selected" : ""
-                    }`}
-                    src={flag}
-                    placeholder="blur"
-                    alt="drapeau"
-                    width="31"
-                    height="47"
-                    onClick={() => {
-                      location.href = "/sejours/mont-tsubakurodake";
-                    }}
-                    onMouseEnter={() => setSejourHovering("Mt Tsubakurodake")}
-                    onMouseOut={() => setSejourHovering("")}
-                  />
-                  <Image
-                    className={`flag flagAlpes2 ${
-                      sejourHovering === "Mt Yarigatake" ? "selected" : ""
-                    }`}
-                    src={flag}
-                    placeholder="blur"
-                    alt="drapeau"
-                    width="31"
-                    height="47"
-                    onClick={() => {
-                      location.href = "/sejours/mont-yarigatake";
-                    }}
-                    onMouseEnter={() => setSejourHovering("Mt Yarigatake")}
-                    onMouseOut={() => setSejourHovering("")}
-                  />
-                  <Image
-                    className={`flag flagAlpes3 ${
-                      sejourHovering === "Mt Kitadake" ? "selected" : ""
-                    }`}
-                    src={flag}
-                    placeholder="blur"
-                    alt="drapeau"
-                    width="31"
-                    height="47"
-                    onClick={() => {
-                      location.href = "/sejours/mont-kitadake";
-                    }}
-                    onMouseEnter={() => setSejourHovering("Mt Kitadake")}
-                    onMouseOut={() => setSejourHovering("")}
-                  />
-                  <Image
-                    className={`flag flagAlpes4 ${
-                      sejourHovering === "Couleurs d'automne" ? "selected" : ""
-                    }`}
-                    src={flag}
-                    placeholder="blur"
-                    alt="drapeau"
-                    width="31"
-                    height="47"
-                    onClick={() => {
-                      location.href = "/sejours/couleurs-automne";
-                    }}
-                    onMouseEnter={() => setSejourHovering("Couleurs d'automne")}
-                    onMouseOut={() => setSejourHovering("")}
-                  />
+                  <Link
+                    className="flagAlpes1"
+                    href="/sejours/mont-tsubakurodake"
+                  >
+                    <Image
+                      className={`flag flagAlpes1 ${
+                        sejourHovering === "Mt Tsubakurodake" ? "selected" : ""
+                      }`}
+                      src={flag}
+                      placeholder="blur"
+                      alt="drapeau"
+                      width="41"
+                      height="62"
+                      onMouseEnter={() => setSejourHovering("Mt Tsubakurodake")}
+                      onMouseOut={() => setSejourHovering("")}
+                    />
+                  </Link>
+                  <Link className="flagAlpes2" href="/sejours/mont-yarigatake">
+                    <Image
+                      className={`flag flagAlpes2 ${
+                        sejourHovering === "Mt Yarigatake" ? "selected" : ""
+                      }`}
+                      src={flag}
+                      placeholder="blur"
+                      alt="drapeau"
+                      width="41"
+                      height="62"
+                      onMouseEnter={() => setSejourHovering("Mt Yarigatake")}
+                      onMouseOut={() => setSejourHovering("")}
+                    />
+                  </Link>
+                  <Link className="flagAlpes3" href="/sejours/mont-kitadake">
+                    <Image
+                      className={`flag flagAlpes3 ${
+                        sejourHovering === "Mt Kitadake" ? "selected" : ""
+                      }`}
+                      src={flag}
+                      placeholder="blur"
+                      alt="drapeau"
+                      width="41"
+                      height="62"
+                      onMouseEnter={() => setSejourHovering("Mt Kitadake")}
+                      onMouseOut={() => setSejourHovering("")}
+                    />
+                  </Link>
+                  <Link className="flagAlpes4" href="/sejours/couleurs-automne">
+                    <Image
+                      className={`flag flagAlpes4 ${
+                        sejourHovering === "Couleurs d'automne"
+                          ? "selected"
+                          : ""
+                      }`}
+                      src={flag}
+                      placeholder="blur"
+                      alt="drapeau"
+                      width="41"
+                      height="62"
+                      onMouseEnter={() =>
+                        setSejourHovering("Couleurs d'automne")
+                      }
+                      onMouseOut={() => setSejourHovering("")}
+                    />
+                  </Link>
                 </>
               )}
 

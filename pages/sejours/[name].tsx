@@ -52,8 +52,6 @@ const Séjour: NextPageWithLayout<Props> = ({ currentSejour }: Props) => {
     if (emblaApi) emblaApi.scrollNext();
   }, [emblaApi]);
 
-  console.log(currentSejour.days[0].description.length);
-
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [emblaThumbsRef, emblaThumbsApi] = useEmblaCarousel({
     containScroll: "keepSnaps",
@@ -86,7 +84,6 @@ const Séjour: NextPageWithLayout<Props> = ({ currentSejour }: Props) => {
   const pathname = usePathname();
 
   useEffect(() => {
-    console.log("emblaApi.reInit();");
     if (emblaApi && emblaApiDesktop) {
       emblaApi.scrollTo(0);
       emblaApiDesktop.scrollTo(0);
