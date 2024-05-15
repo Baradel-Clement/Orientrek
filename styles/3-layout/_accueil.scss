@@ -180,7 +180,10 @@ div.Accueil {
     }
   }
 
-  & > a {
+  & > a,
+  & > img {
+    width: 31px;
+    height: 47px;
     & > img {
       width: 31px;
       height: 47px;
@@ -194,7 +197,7 @@ div.Accueil {
     cursor: pointer;
 
     &.flagAlpes {
-      top: 252px;
+      top: 262px;
       left: 235px;
 
       &:hover,
@@ -206,17 +209,17 @@ div.Accueil {
 
         @keyframes slideinALpes {
           from {
-            top: 252px;
+            top: 262px;
           }
 
           to {
-            top: 247px;
+            top: 257px;
           }
         }
       }
     }
     &.flagHoka {
-      top: -7px;
+      top: 7px;
       left: 417px;
 
       &:hover,
@@ -228,11 +231,11 @@ div.Accueil {
 
         @keyframes slidein {
           from {
-            top: -7px;
+            top: 7px;
           }
 
           to {
-            top: -12px;
+            top: 2px;
           }
         }
       }
@@ -522,7 +525,7 @@ div.Accueil {
     & > img.flag,
     & > a {
       &.flagAlpes {
-        top: 381px;
+        top: 391px;
         left: 327px;
 
         &:hover,
@@ -531,18 +534,18 @@ div.Accueil {
 
           @keyframes slideinALpes {
             from {
-              top: 381px;
+              top: 391px;
             }
 
             to {
-              top: 376px;
+              top: 386px;
             }
           }
         }
       }
       &.flagHoka {
-        top: 21px;
-        left: 600px;
+        top: 31px;
+        left: 590px;
 
         &:hover,
         &.selected {
@@ -550,11 +553,11 @@ div.Accueil {
 
           @keyframes slidein {
             from {
-              top: 21px;
+              top: 31px;
             }
 
             to {
-              top: 16px;
+              top: 26px;
             }
           }
         }
