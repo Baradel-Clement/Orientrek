@@ -358,8 +358,8 @@ const Accueil: NextPageWithLayout<Props> = () => {
             </div>
             <div className="maps-news drop-shadow">
               <p className="bold">
-                Quand le corps se meut, l'esprit vagabonde, la pensée explore
-                des recoins intouchés. Sylvain Tesson
+                Le vrai domicile de l'homme n'est pas une maison mais la route,
+                et la vie elle-même est un voyage à faire à pied. Bruce Chartwin
               </p>
             </div>
 
