@@ -50,6 +50,12 @@ const Accueil: NextPageWithLayout<Props> = () => {
             },
           ],
         }}
+        additionalLinkTags={[
+          {
+            rel: 'icon',
+            href: '/favicon.ico',
+          },
+        ]}
       />
       <Layout title="Séjours avec trekking au Japon / Orientrek">
         <div className="Accueil">
