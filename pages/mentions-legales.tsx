@@ -30,6 +30,12 @@ const MentionsLegales: NextPageWithLayout<Props> = () => {
             },
           ],
         }}
+        additionalLinkTags={[
+          {
+            rel: 'icon',
+            href: '/favicon.ico',
+          },
+        ]}
       />
       <Layout title="Mentions Légales | Orientrek">
         <section className="PageMentions">

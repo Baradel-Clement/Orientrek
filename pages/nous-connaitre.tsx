@@ -30,6 +30,12 @@ const Nous: NextPageWithLayout<Props> = () => {
             },
           ],
         }}
+        additionalLinkTags={[
+          {
+            rel: 'icon',
+            href: '/favicon.ico',
+          },
+        ]}
       />
       <Layout title="Nous Connaître | Orientrek">
         <section className="PageNous">

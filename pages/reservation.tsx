@@ -32,6 +32,12 @@ const Reservation: NextPageWithLayout<Props> = () => {
             },
           ],
         }}
+        additionalLinkTags={[
+          {
+            rel: 'icon',
+            href: '/favicon.ico',
+          },
+        ]}
       />
       <Layout title="Réservation | Orientrek">
         <section className="PageReservation">

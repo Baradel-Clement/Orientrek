@@ -50,6 +50,12 @@ const Reservation: NextPageWithLayout<Props> = () => {
             },
           ],
         }}
+        additionalLinkTags={[
+          {
+            rel: 'icon',
+            href: '/favicon.ico',
+          },
+        ]}
       />
       <Layout title="Niveaux des treks | Orientrek">
         <div className="PageNiveaux">

@@ -26,6 +26,12 @@ const Contact: NextPageWithLayout<Props> = () => (
           },
         ],
       }}
+      additionalLinkTags={[
+        {
+          rel: 'icon',
+          href: '/favicon.ico',
+        },
+      ]}
     />
     <Layout title="Contact | Orientrek">
       <section className="PageContact">
