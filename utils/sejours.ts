@@ -287,7 +287,7 @@ const sejours2025 = [
   {
     slug: "/sejours/mont-kitadake",
     urlImage: "/assets/mont-kitadake",
-    serac: "https://www.serac-montagne.com/details.php?productCode=14317",
+    serac: "https://www.serac-montagne.com/details.php?productCode=14328",
     date: "du 24 août au 4 septembre",
     trek: "Mt Kitadake",
     nbBootsActive: [1, 2, 3, 4],
@@ -380,7 +380,7 @@ const sejours2025 = [
   {
     slug: "/sejours/couleurs-automne",
     urlImage: "/assets/couleurs-automne",
-    serac: "https://www.serac-montagne.com/details.php?productCode=14317",
+    serac: "https://www.serac-montagne.com/details.php?productCode=14329",
     date: "du 7 au 18 septembre",
     trek: "Couleurs d'automne",
     nbBootsActive: [1, 2, 3],

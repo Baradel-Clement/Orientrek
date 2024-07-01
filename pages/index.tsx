@@ -364,8 +364,7 @@ const Accueil: NextPageWithLayout<Props> = () => {
             </div>
             <div className="maps-news drop-shadow">
               <p className="bold">
-                Le vrai domicile de l'homme n'est pas une maison mais la route,
-                et la vie elle-même est un voyage à faire à pied. Bruce Chartwin
+              Le bonheur ne se trouve pas au sommet de la montagne, mais dans la façon de la gravir. Confucius
               </p>
             </div>
 
