@@ -364,7 +364,7 @@ const Accueil: NextPageWithLayout<Props> = () => {
             </div>
             <div className="maps-news drop-shadow">
               <p className="bold">
-              Le bonheur ne se trouve pas au sommet de la montagne, mais dans la façon de la gravir. Confucius
+              L'aventure est un engagement de l'être tout entier et sait aller chercher dans les profondeurs ce qui est resté de meilleur et d'humain en nous. Walter Bonatti
               </p>
             </div>
 
