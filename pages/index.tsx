@@ -364,7 +364,7 @@ const Accueil: NextPageWithLayout<Props> = () => {
             </div>
             <div className="maps-news drop-shadow">
               <p className="bold">
-              L'aventure est un engagement de l'être tout entier et sait aller chercher dans les profondeurs ce qui est resté de meilleur et d'humain en nous. Walter Bonatti
+              Escaladez les montagnes et écoutez leurs bonnes nouvelles. Les vents vous souflleront leur fraîcheur et les tempêtes leur énergie, tandis que les soucis s'éparpilleront comme les feuilles de l'automne. John Muir
               </p>
             </div>
 
