@@ -9,7 +9,7 @@ const sejours2025 = [
     nbBootsInactive: [4, 5],
     region: "Alpes",
     destination: ["Matsumoto", "Kyoto", "Alpes japonaises"],
-    price: 3990,
+    price: 4390,
     groupe: "6 à 8 personnes",
     days: [
       {
@@ -96,13 +96,13 @@ const sejours2025 = [
     slug: "/sejours/mont-yarigatake",
     urlImage: "/assets/mont-yarigatake",
     serac: "https://www.serac-montagne.com/details.php?productCode=14320",
-    date: "du 20 juillet au 2 août",
+    date: "du 24 août au 6 septembre",
     trek: "Mt Yarigatake",
     nbBootsActive: [1, 2, 3, 4],
     nbBootsInactive: [5],
     region: "Alpes",
     destination: ["Alpes japonaises", "Tokyo"],
-    price: 4350,
+    price: 4750,
     groupe: "6 à 8 personnes",
     days: [
       {
@@ -201,13 +201,13 @@ const sejours2025 = [
     slug: "/sejours/parc-national-daisetsuzan",
     urlImage: "/assets/parc-national-daisetsuzan",
     serac: "https://www.serac-montagne.com/details.php?productCode=14321",
-    date: "du 10 au 22 août",
+    date: "du 20 juillet au 1er août",
     trek: "Parc national Daisetsuzan",
-    nbBootsActive: [1, 2, 3, 4],
-    nbBootsInactive: [5],
+    nbBootsActive: [1, 2, 3, 4, 5],
+    nbBootsInactive: [],
     region: "Hoka",
     destination: ["Tokyo", "Hokkaïdo"],
-    price: 4990,
+    price: 5580,
     groupe: "6 à 8 personnes",
     days: [
       {
@@ -288,13 +288,13 @@ const sejours2025 = [
     slug: "/sejours/mont-kitadake",
     urlImage: "/assets/mont-kitadake",
     serac: "https://www.serac-montagne.com/details.php?productCode=14328",
-    date: "du 24 août au 4 septembre",
+    date: "du 10 au 21 août",
     trek: "Mt Kitadake",
     nbBootsActive: [1, 2, 3, 4],
     nbBootsInactive: [5],
     region: "Alpes",
     destination: ["Tokyo", "Alpes japonaises"],
-    price: 3460,
+    price: 3990,
     groupe: "6 à 8 personnes",
     days: [
       {
@@ -381,13 +381,13 @@ const sejours2025 = [
     slug: "/sejours/couleurs-automne",
     urlImage: "/assets/couleurs-automne",
     serac: "https://www.serac-montagne.com/details.php?productCode=14329",
-    date: "du 7 au 18 septembre",
+    date: "du 14 au 25 septembre",
     trek: "Couleurs d'automne",
     nbBootsActive: [1, 2, 3],
     nbBootsInactive: [4, 5],
     region: "Alpes",
     destination: ["Matsumoto", "Alpes japonaises", "Kyoto"],
-    price: 3990,
+    price: 4390,
     groupe: "6 à 8 personnes",
     days: [
       {
