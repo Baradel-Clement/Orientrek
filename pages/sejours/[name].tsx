@@ -346,7 +346,7 @@ const Séjour: NextPageWithLayout<Props> = ({ currentSejour }: Props) => {
                 <Image src={downloadIcon} alt="Icône téléchargement" />
               </a>
               <Link href="/reservation">
-                <p>Comment réserver ?</p>{" "}
+                <p>S'inscrire</p>{" "}
                 <Image src={checkIcon} alt="Icône confirmation" />
               </Link>
             </div>

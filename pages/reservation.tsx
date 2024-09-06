@@ -44,31 +44,14 @@ const Reservation: NextPageWithLayout<Props> = () => {
           <div className="PageReservation-container">
             <h1>Réservation</h1>
             <p>
-              Orientrek conçoit et propose des séjours innovants avec trekking
-              au Japon. Chaque circuit intègre une randonnée itinérante encadrée
-              par un accompagnateur en montagne français expérimenté, et ce dans
-              différents massifs de l'archipel nippon.
+              Orientrek conçoit et propose des séjours innovants avec trekking au Japon. Chaque circuit intègre une randonnée itinérante encadrée par un accompagnateur en montagne français expérimenté, et ce dans différents massifs de l'archipel nippon.
+            </p>
+
+            <p>
+              Si vous avez la moindre question sur la réservation de votre séjour, nous sommes présents pour vous accompagner et vous remercions de <Link href={"/contact"}>nous contacter</Link>.
             </p>
             <p>
-              Pour la réservation, Orientrek fonctionne en partenariat avec{" "}
-              <span>SERAC</span>, spécialiste des séjours en montagne. Son
-              équipe répondra à toutes vos interrogations concernant
-              l'inscription à votre séjour. Vous pouvez les joindre par
-              téléphone au 04 76 86 46 84, par mail à l'adresse
-              contact@serac-montagne.com ou visiter leur site internet
-              www.serac-montagne.com.
-            </p>
-            <p>
-              En cliquant sur le bouton <span>S'inscrire</span> du séjour de
-              votre choix vous serez redirigé vers la page d'inscription
-              correspondant à ce circuit chez notre partenaire{" "}
-              <span>SERAC</span>. Vous pourrez alors vous inscrire en toute
-              confiance à votre prochain voyage.
-            </p>
-            <p>
-              Si vous avez une interrogation sur la réservation de votre séjour,
-              nous sommes présents pour vous accompagner,{" "}
-              <Link href={"/contact"}>contactez-nous</Link>.
+              Pour réserver votre séjour, cliquez sur le bouton <span>S'inscrire</span> à droite du circuit correspondant.
             </p>
             <Link href={"/niveaux"} className="btnEchelle drop-shadow">
               Niveaux des treks <Image src={arrow} alt="Icône flèche" />
