@@ -3431,6 +3431,7 @@ div.Accueil {
   background-color: #C21E2B;
   padding: 8px 22px 8px 5px;
   z-index: 2;
+  cursor: pointer;
 }
 
 .PageReservation > .PageReservation-container > .PageReservation-sejours > div > img {
@@ -3581,6 +3582,7 @@ div.Accueil {
   font-weight: bold;
   -ms-flex-item-align: end;
       align-self: flex-end;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 414px) {

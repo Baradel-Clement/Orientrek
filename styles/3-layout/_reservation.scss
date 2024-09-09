@@ -90,6 +90,7 @@
         padding: 8px 22px 8px 5px;
         @extend %flex-between-center;
         z-index: 2;
+        cursor: pointer;
 
         & > img {
           width: 95px;
@@ -171,22 +172,22 @@
       width: 328px;
       @extend %flex-start-start;
       flex-flow: column;
-  
+
       & > .PageContact-input {
         width: 100%;
         @extend %flex-between-center;
         height: 28px;
-  
+
         &:not(:first-child) {
           margin-top: 16px;
         }
-  
+
         label {
           width: auto;
           font-weight: bold;
           padding-top: 3px;
         }
-  
+
         label,
         input,
         textarea {
@@ -194,7 +195,7 @@
           color: black;
           outline: none;
         }
-  
+
         input,
         textarea {
           margin: 0px;
@@ -208,12 +209,12 @@
           padding: 0px 6px;
           height: 25px;
         }
-  
+
         &.message {
           align-items: start;
           flex-flow: column;
           height: 111px;
-  
+
           & > textarea {
             width: 100%;
             max-width: unset;
@@ -232,6 +233,7 @@
         border-radius: 25px;
         font-weight: bold;
         align-self: flex-end;
+        cursor: pointer;
       }
     }
   }
@@ -328,27 +330,27 @@
         width: 391.93939394px;
         height: 396px;
         flex-flow: column;
-    
+
         & > .PageContact-input {
           height: 33.48958333px;
-    
+
           &:not(:first-child) {
             margin-top: 19.11111111px;
           }
-    
+
           label {
             width: auto;
             font-weight: bold;
             font-size: 14px;
           }
-    
+
           input,
           textarea {
             font-size: 11.9375px;
             color: black;
             outline: none;
           }
-    
+
           input,
           textarea {
             margin: 0px;
@@ -360,12 +362,12 @@
             resize: none;
             padding: 0px 7.16085271px;
           }
-    
+
           &.message {
             align-items: start;
             flex-flow: column;
             height: 132.29166667px;
-    
+
             & > textarea {
               max-width: unset;
               height: 107.40625px;
@@ -558,32 +560,31 @@
         &:hover {
           text-decoration: underline;
         }
-        
       }
 
       & > form {
         margin-top: 40px;
         width: 1078px;
         position: relative;
-    
+
         & > .PageContact-input {
           width: 437px;
           height: 34px;
           margin-top: 0px;
-    
+
           &:not(:first-child) {
             margin-top: 30px;
           }
-  
+
           &:nth-child(5) {
             margin-top: 0px !important;
           }
-    
+
           label {
             width: auto;
             font-size: 20px;
           }
-    
+
           input,
           textarea {
             width: 100%;
@@ -591,14 +592,14 @@
             font-size: 16px;
             height: 30px;
           }
-    
+
           &.message {
             height: 224px;
             position: absolute;
             right: 0px;
             top: 0px;
             width: 483px;
-    
+
             & > textarea {
               height: 179px;
               border-radius: 12px;
@@ -764,25 +765,25 @@
         margin-top: 48.275862069px;
         width: 1302.5862069px;
         position: relative;
-    
+
         & > .PageContact-input {
           width: 527.586206897px;
           height: 41.034482759px;
           margin-top: 0px;
-    
+
           &:not(:first-child) {
             margin-top: 36.206896551px;
           }
-  
+
           &:nth-child(5) {
             margin-top: 0px !important;
           }
-    
+
           label {
             width: auto;
             font-size: 24.137931034px;
           }
-    
+
           input,
           textarea {
             width: 100%;
@@ -790,14 +791,14 @@
             font-size: 19.342359767px;
             height: 36.206896551px;
           }
-    
+
           &.message {
             height: 270.344827586px;
             position: absolute;
             right: 0px;
             top: 0px;
             width: 583.103448276px;
-    
+
             & > textarea {
               height: 216.551724138px;
               border-radius: 14.482758621px;
