@@ -125,12 +125,10 @@
     background-image: url("../../public/assets/waves-dark_blue.png");
     position: absolute;
     top: 0px;
-    @extend %flex-start-center;
     flex-direction: column;
     padding-top: 107.55813954px;
   
     & > .PageContact-instructions {
-      @extend %flex-start-start;
       flex-direction: column;
       max-width: 391.93939394px;
   
@@ -141,7 +139,6 @@
       & > h1 {
         width: 278.40909091px;
         height: 46.59090909px;
-        @extend %flex-center-center;
         font-size: 23.90340909px;
         border-radius: 29.88068182px;
         background-color: $red;
@@ -168,11 +165,9 @@
     & > form {
       margin-top: 23.875px;
       width: 391.93939394px;
-      @extend %flex-start-start;
       flex-flow: column;
   
       & > .PageContact-input {
-        @extend %flex-between-center;
         height: 33.48958333px;
   
         &:not(:first-child) {
@@ -219,7 +214,6 @@
       & > input.submit {
         font-size: 17.91208791px;
         background-color: $red;
-        @extend %flex-center-center;
         margin-top: 11.9375px;
         margin-left: 0px;
         width: 149.22727273px;

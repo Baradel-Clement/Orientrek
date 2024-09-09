@@ -78,7 +78,11 @@
       margin-bottom: 10px;
       flex-flow: column;
 
-      & > a {
+      &.displayNone {
+        display: none;
+      }
+
+      & > div {
         width: 100%;
         height: 80px;
         border-radius: 25px;
@@ -142,6 +146,94 @@
         }
       }
     }
+
+    & > button.backButton {
+      @extend %flex-between-center;
+      width: auto;
+      height: 39px;
+      font-size: 15px;
+      padding: 0px 20px;
+      background-color: $red;
+      border-radius: 25px;
+      margin: 20px 0px;
+      text-decoration: underline;
+
+      & > img {
+        width: 20px;
+        height: auto;
+        margin-right: 10px;
+        transform: rotate(180deg);
+      }
+    }
+
+    & > form {
+      margin-top: 20px;
+      width: 328px;
+      @extend %flex-start-start;
+      flex-flow: column;
+  
+      & > .PageContact-input {
+        width: 100%;
+        @extend %flex-between-center;
+        height: 28px;
+  
+        &:not(:first-child) {
+          margin-top: 16px;
+        }
+  
+        label {
+          width: auto;
+          font-weight: bold;
+          padding-top: 3px;
+        }
+  
+        label,
+        input,
+        textarea {
+          font-size: 12px;
+          color: black;
+          outline: none;
+        }
+  
+        input,
+        textarea {
+          margin: 0px;
+          background-color: $white;
+          border-radius: 25px;
+          width: 100%;
+          color: black !important;
+          max-width: 258px;
+          border: none;
+          resize: none;
+          padding: 0px 6px;
+          height: 25px;
+        }
+  
+        &.message {
+          align-items: start;
+          flex-flow: column;
+          height: 111px;
+  
+          & > textarea {
+            width: 100%;
+            max-width: unset;
+            height: 90px;
+            border-radius: 12px;
+          }
+        }
+      }
+      & > input.submit {
+        font-size: 15px;
+        background-color: $red;
+        @extend %flex-center-center;
+        margin-top: 10px;
+        margin-left: 0px;
+        width: 125px;
+        border-radius: 25px;
+        font-weight: bold;
+        align-self: flex-end;
+      }
+    }
   }
 }
 
@@ -187,7 +279,11 @@
         margin-top: 37.5px;
         margin-bottom: 12.5px;
 
-        & > a {
+        & > a.btnEchelle {
+          display: none;
+        }
+
+        & > div {
           height: 100px;
           border-radius: 31.25px;
           padding: 10px 27.5px 10px 6.25px;
@@ -224,6 +320,68 @@
               }
             }
           }
+        }
+      }
+
+      & > form {
+        margin-top: 23.875px;
+        width: 391.93939394px;
+        height: 396px;
+        flex-flow: column;
+    
+        & > .PageContact-input {
+          height: 33.48958333px;
+    
+          &:not(:first-child) {
+            margin-top: 19.11111111px;
+          }
+    
+          label {
+            width: auto;
+            font-weight: bold;
+            font-size: 14px;
+          }
+    
+          input,
+          textarea {
+            font-size: 11.9375px;
+            color: black;
+            outline: none;
+          }
+    
+          input,
+          textarea {
+            margin: 0px;
+            background-color: $white;
+            border-radius: 29.88068182px;
+            color: black !important;
+            max-width: 308.75px;
+            border: none;
+            resize: none;
+            padding: 0px 7.16085271px;
+          }
+    
+          &.message {
+            align-items: start;
+            flex-flow: column;
+            height: 132.29166667px;
+    
+            & > textarea {
+              max-width: unset;
+              height: 107.40625px;
+              border-radius: 14.34375px;
+            }
+          }
+        }
+        & > input.submit {
+          font-size: 17.91208791px;
+          background-color: $red;
+          margin-top: 11.9375px;
+          margin-left: 0px;
+          width: 149.22727273px;
+          border-radius: 29.88068182px;
+          font-weight: bold;
+          align-self: flex-end;
         }
       }
     }
@@ -269,13 +427,16 @@
         justify-content: flex-start;
         position: relative;
 
-        & > a {
+        & > a.btnEchelle {
+          display: flex;
+        }
+
+        & > div {
           width: 48%;
           height: 67px;
           border-radius: 25px;
           background-color: $red;
           padding: 8px 22px 8px 105px;
-          @extend %flex-between-center;
           z-index: 2;
           position: relative;
 
@@ -319,7 +480,6 @@
           }
 
           & > .sejour-infos {
-            @extend %flex-between-center;
             display: inline-flex;
             flex-flow: row;
             width: 100%;
@@ -338,17 +498,14 @@
               width: 189px;
               height: 45px;
               padding-top: 4px;
-              @extend %flex-between-center;
               flex-flow: column;
             }
 
             & > .sejour-bottom {
               width: 244px;
-              @extend %flex-between-center;
 
               & > div {
                 width: 125px;
-                @extend %flex-between-center;
 
                 & > img {
                   width: 18.8px;
@@ -362,7 +519,6 @@
                 border-radius: 25px;
                 font-weight: bold;
                 font-size: 15px;
-                @extend %flex-center-center;
                 background-color: $white;
               }
             }
@@ -392,6 +548,68 @@
               position: relative;
             }
           }
+        }
+      }
+
+      & > button.backButton {
+        text-decoration: unset;
+        margin: 30px 0px;
+
+        &:hover {
+          text-decoration: underline;
+        }
+        
+      }
+
+      & > form {
+        margin-top: 40px;
+        width: 1078px;
+        position: relative;
+    
+        & > .PageContact-input {
+          width: 437px;
+          height: 34px;
+          margin-top: 0px;
+    
+          &:not(:first-child) {
+            margin-top: 30px;
+          }
+  
+          &:nth-child(5) {
+            margin-top: 0px !important;
+          }
+    
+          label {
+            width: auto;
+            font-size: 20px;
+          }
+    
+          input,
+          textarea {
+            width: 100%;
+            max-width: 297px;
+            font-size: 16px;
+            height: 30px;
+          }
+    
+          &.message {
+            height: 224px;
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            width: 483px;
+    
+            & > textarea {
+              height: 179px;
+              border-radius: 12px;
+            }
+          }
+        }
+        & > input.submit {
+          font-size: 17px;
+          margin-top: 25px;
+          width: 125px;
+          height: 39px;
         }
       }
     }
@@ -436,7 +654,7 @@
         justify-content: flex-start;
         position: relative;
 
-        & > a {
+        & > div {
           height: 81.07px;
           border-radius: 30.18px;
           background-color: $red;
@@ -542,6 +760,57 @@
           }
         }
       }
+      & > form {
+        margin-top: 48.275862069px;
+        width: 1302.5862069px;
+        position: relative;
+    
+        & > .PageContact-input {
+          width: 527.586206897px;
+          height: 41.034482759px;
+          margin-top: 0px;
+    
+          &:not(:first-child) {
+            margin-top: 36.206896551px;
+          }
+  
+          &:nth-child(5) {
+            margin-top: 0px !important;
+          }
+    
+          label {
+            width: auto;
+            font-size: 24.137931034px;
+          }
+    
+          input,
+          textarea {
+            width: 100%;
+            max-width: 358.620689655px;
+            font-size: 19.342359767px;
+            height: 36.206896551px;
+          }
+    
+          &.message {
+            height: 270.344827586px;
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            width: 583.103448276px;
+    
+            & > textarea {
+              height: 216.551724138px;
+              border-radius: 14.482758621px;
+            }
+          }
+        }
+        & > input.submit {
+          font-size: 20.548360866px;
+          margin-top: 30.172413793px;
+          width: 151.034482759px;
+          height: 47.155425219px;
+        }
+      }
     }
   }
 }
@@ -584,7 +853,7 @@
         justify-content: flex-start;
         position: relative;
 
-        & > a {
+        & > div {
           height: 95.1px;
           border-radius: 35.41px;
           background-color: $red;

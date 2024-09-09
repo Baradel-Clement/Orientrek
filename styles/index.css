@@ -1,0 +1,5121 @@
+@charset "UTF-8";
+/* $black2: #0C0E16; */
+/* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 */
+@import url("https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Améliorations */
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+a,
+del,
+ins {
+  text-decoration: none;
+}
+
+a {
+  color: inherit;
+}
+
+label,
+button {
+  cursor: pointer;
+}
+
+input,
+button {
+  outline: 0;
+  border: none;
+}
+
+picture, picture > img {
+  width: 100%;
+  height: 100%;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.block {
+  cursor: not-allowed;
+}
+
+label {
+  cursor: text;
+}
+
+.hover-shadow {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.hover-shadow:hover {
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
+}
+
+.transition {
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+@media screen and (min-width: 200px) {
+  a.sejour, a.sejour > div.sejour-desc > div.sejour-difficulty, nav div.nav-list > button.btnSejour,
+  nav div.nav-list > a.navLink, nav div.nav-list > a.sejour, nav div.nav-list > a.sejour > div.sejour-desc > div.sejour-difficulty, .Accueil-destinations, .PageSejour-fullscreenImg > a, .embla-mobile > .controllers, .embla-mobile > .controllers > button, .embla-mobile > .bottom-buttons, .embla-mobile > .bottom-buttons > button,
+  .embla-mobile > .bottom-buttons > a, .embla-mobile > .embla__viewport > .embla__container > .embla__slide > .slide-description > .desc-J0, .embla-mobile > .embla__viewport > .embla__container > .embla__slide > .slide-description > .desc-J0 > .desc-J0-infos, .embla-mobile > .embla__viewport > .embla__container > .embla__slide > .slide-description > .desc-J0 > .desc-J0-infos > .desc-J0-info > div, .embla-mobile > .embla__viewport > .embla__container > .embla__slide > .slide-description > .roadmapBtn, .sejour-desktop > .sejour-header > div.sejour-header-right, .sejour-desktop > .sejour-header > div.sejour-header-right > .sejour-header-infos, .sejour-desktop > .sejour-header > div.sejour-header-right > .sejour-header-infos > .sejour-header-info > div, .sejour-desktop > .sejour-buttons, .sejour-desktop > .sejour-buttons > button,
+  .sejour-desktop > .sejour-buttons > a, .PageContact > form > .PageContact-input, .PageReservation > .PageReservation-container a.btnEchelle, .PageReservation > .PageReservation-container > .PageReservation-sejours > div, .PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos, .PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos > .sejour-desc, .PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos > .sejour-bottom, .PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos > .sejour-bottom > div, .PageReservation > .PageReservation-container > button.backButton, .PageReservation > .PageReservation-container > form > .PageContact-input, .PageNiveaux > button, .PageNiveaux > .embla-mobile > .controllers, .PageNiveaux > .embla-mobile > .controllers > button, .PageNiveaux > .embla-mobile > .embla__viewport > .embla__container > .embla__slide > .slide-header, .PageNiveaux > .embla-mobile > .embla__viewport > .embla__container > .embla__slide > .slide-header > div, .CookieBanner, .CookieBanner > div, .PageMentions > .PageMentions-container > button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  a.sejour > div.sejour-desc,
+  nav div.nav-list > a.navLink, nav div.nav-list > a.sejour > div.sejour-desc, .maps-hint, .maps-news, .PageSejour-fullscreenImg, .PageSejour-fullscreenImg > button, .PageSejour > h1, .embla-mobile > .embla__viewport > .embla__container > .embla__slide > .slide-description > p.day, .embla-mobile > .embla__viewport > .embla__container > .embla__slide > .slide-description > .desc-J0 > .desc-J0-infos > .desc-J0-info > p,
+  .embla-mobile > .embla__viewport > .embla__container > .embla__slide > .slide-description > .desc-J0 > .desc-J0-infos > .desc-J0-info > a, .embla-mobile > .embla__viewport > .embla__container > .embla__slide > .slide-description > .desc-J0 > .desc-J0-infos > .desc-J0-info > div > p, .sejour-desktop, .sejour-desktop > h1.title, .sejour-desktop > .sejour-header > div.sejour-header-left > .embla-desktop > .embla-desktop__viewport > .embla__container > .embla__slide > div > p:first-child, .sejour-desktop > .sejour-header > div.sejour-header-left > p:last-child, .sejour-desktop > .sejour-header > div.sejour-header-right > .sejour-header-infos > .sejour-header-info > p,
+  .sejour-desktop > .sejour-header > div.sejour-header-right > .sejour-header-infos > .sejour-header-info > a, .sejour-desktop > .sejour-header > div.sejour-header-right > .sejour-header-descDay > div:first-child, .sejour-desktop > .sejour-phrise, .sejour-desktop > .sejour-phrise > .sejour-phrise-thumbs > .sejour-phrise-thumb > p, .PageContact > .PageContact-instructions > h1, .PageContact > form > input.submit, .PageNous > .PageNous-container > h1, .PageReservation > .PageReservation-container > h1, .PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos > .sejour-bottom > p, .PageReservation > .PageReservation-container > form > input.submit, .PageNiveaux > h1, .PageMentions > h1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  nav .nav-upper, nav div.nav-list, .Accueil, .Accueil-main, .embla-mobile > .embla__viewport > .embla__container > .embla__slide > .slide-description, .embla-mobile > .embla__viewport > .embla__container > .embla__slide > .slide-description > .desc-J0 > .desc-J0-infos > .desc-J0-info, .sejour-desktop > .sejour-header > div.sejour-header-left > .embla-desktop > .embla-desktop__viewport > .embla__container > .embla__slide > div, .sejour-desktop > .sejour-header > div.sejour-header-right > .sejour-header-infos > .sejour-header-info, .sejour-desktop > .sejour-header > div.sejour-header-right > .sejour-header-descDay, .PageContact, .PageNous, .PageNous > .PageNous-container, .PageReservation, .PageReservation > .PageReservation-container, .PageNiveaux, .PageMentions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .sejour-desktop > .sejour-header, .PageReservation > .PageReservation-container > .PageReservation-sejours {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .sejour-desktop > .sejour-phrise > .sejour-phrise-thumbs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .PageContact > .PageContact-instructions, .PageContact > form, .PageReservation > .PageReservation-container > form, .PageMentions > .PageMentions-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  nav div.nav-list, nav div.nav-list.active, nav div.nav-list > button.btnSejour > img,
+  nav div.nav-list > a.navLink > img, .Accueil .maps-container-mobile > img.map {
+    -webkit-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+  }
+  .drop-shadow, a.sejour.hovering, nav .nav-upper, nav div.nav-list, nav div.nav-list > button.btnSejour,
+  nav div.nav-list > a.navLink, .Accueil > button, .maps-hint, .PageSejour-fullscreenImg > a, .embla-mobile > .controllers > button, .embla-mobile > .bottom-buttons > button,
+  .embla-mobile > .bottom-buttons > a, .embla-mobile > .embla__viewport > .embla__container > .embla__slide > .slide-description, .embla-mobile > .embla__viewport > .embla__container > .embla__slide > .slide-description > .roadmapBtn, .sejour-desktop > .sejour-buttons > button,
+  .sejour-desktop > .sejour-buttons > a, .PageNiveaux > .embla-mobile > .controllers > button {
+    -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.7);
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.7);
+  }
+}
+
+body,
+button,
+input,
+textarea {
+  font-family: "Marhey", sans-serif !important;
+  font-weight: 400;
+  color: #f1faee;
+  font-style: normal;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.XXXL {
+  font-size: 36px;
+}
+
+.XXL {
+  font-size: 26px;
+}
+
+.XL {
+  font-size: 24px;
+}
+
+.L {
+  font-size: 22px;
+}
+
+.M {
+  font-size: 16px;
+}
+
+.S {
+  font-size: 13px;
+}
+
+.XS {
+  font-size: 12px;
+}
+
+.XXS {
+  font-size: 11px;
+}
+
+.white {
+  color: #f1faee;
+}
+
+.aqua {
+  color: #219EBC;
+}
+
+a.sejour {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 383px;
+  height: 102px;
+  border-radius: 25px;
+  background-color: #C21E2B;
+  padding: 6px 10px 6px 7.42px;
+  margin-top: 18px;
+  z-index: 4;
+}
+
+a.sejour:hover {
+  background-color: #219EBC !important;
+}
+
+a.sejour > * {
+  pointer-events: none;
+}
+
+a.sejour:first-child {
+  margin-top: 24px;
+}
+
+a.sejour > img {
+  width: 137.59px;
+  height: 90.61px;
+  border-radius: 25px;
+}
+
+a.sejour > div.sejour-desc {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+a.sejour > div.sejour-desc > p:first-child {
+  min-width: 159px;
+  font-size: 15px !important;
+}
+
+a.sejour > div.sejour-desc > p:nth-child(2) {
+  margin-top: 14px;
+  margin-bottom: 10px;
+  min-width: 217px;
+  font-size: 15px !important;
+}
+
+a.sejour > div.sejour-desc > div.sejour-difficulty {
+  width: 172.24px;
+}
+
+a.sejour > div.sejour-desc > div.sejour-difficulty > img {
+  width: 23.86px;
+  height: 26.92px;
+}
+
+a.sejour.hovering {
+  background-color: #219EBC;
+}
+
+a.sejour.notHovering {
+  opacity: 0.5;
+}
+
+@media screen and (min-width: 1700px) {
+  a.sejour {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 549px;
+    height: 144px;
+    padding: 6px 10px 6px 7.42px;
+    margin-top: 29px;
+  }
+  a.sejour:first-child {
+    margin-top: 34px;
+  }
+  a.sejour > img {
+    width: 193.78px;
+    height: 127.61px;
+  }
+  a.sejour > div.sejour-desc > p:first-child {
+    min-width: 223px;
+    font-size: 21.12px !important;
+  }
+  a.sejour > div.sejour-desc > p:nth-child(2) {
+    margin-top: 20px;
+    margin-bottom: 14px;
+    min-width: 306px;
+    font-size: 21.12px !important;
+  }
+  a.sejour > div.sejour-desc > div.sejour-difficulty {
+    width: 242.59px;
+  }
+  a.sejour > div.sejour-desc > div.sejour-difficulty > img {
+    width: 33.60px;
+    height: 38px;
+  }
+}
+
+nav {
+  width: 100%;
+  position: relative;
+  z-index: 3;
+}
+
+nav .nav-upper {
+  background-color: #C21E2B;
+  width: 100%;
+  height: 75px;
+  position: relative;
+  z-index: 4;
+}
+
+nav .nav-upper .nav-upper-container {
+  display: none;
+}
+
+nav .nav-upper div.hamburger-react {
+  margin-left: 20px;
+}
+
+nav .nav-upper > a.logo {
+  margin: 0px 50%;
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 65px;
+  height: 65px;
+}
+
+nav .nav-upper > a.logo > img {
+  width: 100%;
+  height: 100%;
+}
+
+nav div.nav-list {
+  position: absolute;
+  top: -100vh;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  background-color: #f1faee;
+  width: 315px;
+  padding: 15px 0px;
+  z-index: 2;
+  border-radius: 25px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+nav div.nav-list.active {
+  top: 90px;
+}
+
+nav div.nav-list > button.btnSejour,
+nav div.nav-list > a.navLink {
+  position: relative;
+  width: 255px;
+  background-color: #C21E2B;
+  height: 42px;
+  border-radius: 25px;
+  color: #f1faee;
+  padding: 0px 27px;
+  text-align: center;
+}
+
+nav div.nav-list > button.btnSejour:first-child,
+nav div.nav-list > a.navLink:first-child {
+  padding-top: 5px;
+}
+
+nav div.nav-list > button.btnSejour:nth-child(5),
+nav div.nav-list > a.navLink:nth-child(5) {
+  font-size: 21px;
+}
+
+nav div.nav-list > button.btnSejour > img,
+nav div.nav-list > a.navLink > img {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  margin-bottom: 5px;
+}
+
+nav div.nav-list > button.btnSejour.active > img,
+nav div.nav-list > a.navLink.active > img {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+nav div.nav-list > a.navLink {
+  margin-top: 20px;
+  text-decoration: underline;
+}
+
+nav div.nav-list > a.sejour {
+  display: none;
+  margin-top: 13px;
+  width: 300px;
+  border-radius: 25px;
+  background-color: #C21E2B;
+  padding: 5px 10px;
+  height: auto;
+}
+
+nav div.nav-list > a.sejour.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav div.nav-list > a.sejour > img {
+  width: 107.6px;
+  height: 68.91px;
+}
+
+nav div.nav-list > a.sejour > div.sejour-desc {
+  height: 69px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+nav div.nav-list > a.sejour > div.sejour-desc > p:first-child {
+  min-width: 159px;
+  font-size: 11px !important;
+}
+
+nav div.nav-list > a.sejour > div.sejour-desc > p:nth-child(2) {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  min-width: 154px;
+  font-size: 11px !important;
+}
+
+nav div.nav-list > a.sejour > div.sejour-desc > div.sejour-difficulty {
+  width: 134.69px;
+}
+
+nav div.nav-list > a.sejour > div.sejour-desc > div.sejour-difficulty > img {
+  width: 18.66px;
+  height: 20.48px;
+}
+
+@media screen and (min-width: 1200px) {
+  div.hamburger-react,
+  div.nav-list,
+  a.logo {
+    display: none !important;
+  }
+  nav .nav-upper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  nav .nav-upper .nav-upper-container {
+    width: 1205px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+  }
+  nav .nav-upper .nav-upper-container > a:first-child {
+    height: 61px;
+    padding-left: 22px;
+  }
+  nav .nav-upper .nav-upper-container .nav-upper-links {
+    width: 1064px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    position: relative;
+  }
+  nav .nav-upper .nav-upper-container .nav-upper-links > p.nav-upper-btnDisplayNestedSejours {
+    cursor: pointer;
+  }
+  nav .nav-upper .nav-upper-container .nav-upper-links > p.nav-upper-btnDisplayNestedSejours.active, nav .nav-upper .nav-upper-container .nav-upper-links > p.nav-upper-btnDisplayNestedSejours:hover {
+    text-decoration: underline;
+    text-shadow: none;
+  }
+  nav .nav-upper .nav-upper-container .nav-upper-links .nav-upper-nestedLinks {
+    width: 405px;
+    height: 638px;
+    position: absolute;
+    top: 54px;
+    background-color: #f1faee;
+    border-radius: 25px;
+    border-top-right-radius: 0px;
+    right: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 28px 11px 18px 11px;
+  }
+  nav .nav-upper .nav-upper-container .nav-upper-links .nav-upper-nestedLinks > img {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  nav .nav-upper .nav-upper-container .nav-upper-links .nav-upper-nestedLinks > .upper-sejours-yearBtn-container {
+    width: 205px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  nav .nav-upper .nav-upper-container .nav-upper-links .nav-upper-nestedLinks > .upper-sejours-yearBtn-container > .upper-sejours-yearBtn {
+    width: 96px;
+    height: 27px;
+    background-color: #C21E2B;
+    margin: 0px;
+    border-radius: 25px;
+    font-size: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  }
+  nav .nav-upper .nav-upper-container .nav-upper-links .nav-upper-nestedLinks > .upper-sejours-yearBtn-container > .upper-sejours-yearBtn.active {
+    opacity: 0.5;
+  }
+  nav .nav-upper .nav-upper-container .nav-upper-links > a:hover {
+    text-decoration: underline;
+    text-shadow: none;
+  }
+  nav .nav-upper .nav-upper-container .nav-upper-links > img:last-child {
+    position: absolute;
+    right: 118px;
+    bottom: -19px;
+    -webkit-transform: rotate(120deg);
+            transform: rotate(120deg);
+    height: auto;
+    width: 19px;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  nav .nav-upper {
+    height: 100px;
+  }
+  nav .nav-upper .nav-upper-container {
+    width: 1725px;
+  }
+  nav .nav-upper .nav-upper-container > a:first-child {
+    height: 85px;
+    width: 85px;
+    padding-left: 47px;
+  }
+  nav .nav-upper .nav-upper-container > a:first-child > img {
+    height: 85px;
+    width: 85px;
+  }
+  nav .nav-upper .nav-upper-container .nav-upper-links {
+    width: 1510px;
+    font-size: 24px;
+  }
+  nav .nav-upper .nav-upper-container .nav-upper-links > img:last-child {
+    right: 140px;
+    bottom: -26px;
+    -webkit-transform: rotate(120deg);
+            transform: rotate(120deg);
+    width: 27px;
+  }
+  nav .nav-upper .nav-upper-container .nav-upper-links .nav-upper-nestedLinks {
+    width: 570.42px;
+    height: 922.5px;
+    top: 71px;
+    padding: 34px 11px 18px 11px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    /* & > .upper-sejours-yearBtn-container {
+              width: 205px;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+
+              & > .upper-sejours-yearBtn {
+                width: 96px;
+                height: 27px;
+                background-color: $red;
+                margin: 0px;
+                border-radius: 25px;
+                font-size: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+
+                &.active {
+                  opacity: 0.5;
+                }
+              }
+            } */
+  }
+  nav .nav-upper .nav-upper-container .nav-upper-links .nav-upper-nestedLinks > img {
+    width: 42px;
+    height: 42px;
+  }
+}
+
+div.Accueil {
+  position: absolute;
+  top: 0px;
+  width: 100vw;
+  min-height: 100vh;
+  z-index: 1;
+  background-color: #219EBC;
+}
+
+.Accueil {
+  padding-top: 70px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: url("../../public/assets/waves.png");
+}
+
+.Accueil .maps-container-mobile {
+  width: 100%;
+  max-width: 340px;
+  height: 340px;
+  margin: 50px 0px;
+  position: relative;
+}
+
+.Accueil .maps-container-mobile > img.map {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.Accueil .maps-container-mobile > img.active {
+  width: 100%;
+  height: auto;
+  max-height: 100%a;
+  z-index: 1;
+}
+
+.Accueil .maps-container-mobile > img.inactive {
+  width: 30%;
+  height: 30%;
+  z-index: 2;
+}
+
+.Accueil .maps-container-mobile > img.map-alpes.inactive {
+  width: 45%;
+  height: 45%;
+}
+
+.Accueil .maps-container-mobile > a > img {
+  position: absolute;
+}
+
+.Accueil .maps-container-mobile > img.flag,
+.Accueil .maps-container-mobile > a {
+  position: absolute;
+  z-index: 3;
+}
+
+.Accueil .maps-container-mobile > img.flag.flagAlpes,
+.Accueil .maps-container-mobile > img.flag > img.flagAlpes,
+.Accueil .maps-container-mobile > a.flagAlpes,
+.Accueil .maps-container-mobile > a > img.flagAlpes {
+  top: 138px;
+  left: 144px;
+}
+
+.Accueil .maps-container-mobile > img.flag.flagHoka,
+.Accueil .maps-container-mobile > img.flag > img.flagHoka,
+.Accueil .maps-container-mobile > a.flagHoka,
+.Accueil .maps-container-mobile > a > img.flagHoka {
+  top: -18px;
+  left: 251px;
+}
+
+.Accueil .maps-container-mobile > img.flag.flagAlpes1,
+.Accueil .maps-container-mobile > img.flag > img.flagAlpes1,
+.Accueil .maps-container-mobile > a.flagAlpes1,
+.Accueil .maps-container-mobile > a > img.flagAlpes1 {
+  top: 72px;
+  left: 228px;
+}
+
+.Accueil .maps-container-mobile > img.flag.flagAlpes2,
+.Accueil .maps-container-mobile > img.flag > img.flagAlpes2,
+.Accueil .maps-container-mobile > a.flagAlpes2,
+.Accueil .maps-container-mobile > a > img.flagAlpes2 {
+  top: 98px;
+  left: 79px;
+}
+
+.Accueil .maps-container-mobile > img.flag.flagAlpes3,
+.Accueil .maps-container-mobile > img.flag > img.flagAlpes3,
+.Accueil .maps-container-mobile > a.flagAlpes3,
+.Accueil .maps-container-mobile > a > img.flagAlpes3 {
+  top: 147px;
+  left: 188px;
+}
+
+.Accueil .maps-container-mobile > img.flag.flagAlpes4,
+.Accueil .maps-container-mobile > img.flag > img.flagAlpes4,
+.Accueil .maps-container-mobile > a.flagAlpes4,
+.Accueil .maps-container-mobile > a > img.flagAlpes4 {
+  top: 173px;
+  left: 113px;
+}
+
+.Accueil > button {
+  font-size: 18px;
+  background-color: #C21E2B;
+  border-radius: 25px;
+  width: 218px;
+  height: 51px;
+  margin-top: 30px;
+}
+
+.Accueil .Accueil-main {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .maps-container-mobile,
+  button.btn-sejours-mobile {
+    display: none !important;
+  }
+  .Accueil {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 100%;
+    padding-bottom: 50px;
+  }
+  .Accueil > .Accueil-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.Accueil-main {
+  width: 656px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 20px;
+  margin-right: 270px;
+  position: relative;
+}
+
+.maps-hint {
+  width: 100%;
+  height: 31px;
+  background-color: #C21E2B;
+  border-radius: 25px;
+  font-size: 17px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  padding-top: 3px;
+}
+
+.maps-container {
+  width: 487px;
+  height: 481px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.maps-container > img.map {
+  height: auto;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  margin: 0px;
+}
+
+.maps-container > img.active {
+  width: 100%;
+  height: auto;
+  z-index: 2;
+}
+
+.maps-container > img.active.map-japon {
+  width: 115%;
+}
+
+.maps-container > img.active.map-alpes {
+  width: 85%;
+  margin-left: 16%;
+  margin-top: 16%;
+}
+
+.maps-container > img.inactive {
+  width: 50%;
+  height: auto;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.maps-container > img.inactive:hover {
+  width: 52%;
+}
+
+.maps-container > a,
+.maps-container > img {
+  width: 31px;
+  height: 47px;
+}
+
+.maps-container > a > img,
+.maps-container > img > img {
+  width: 31px;
+  height: 47px;
+}
+
+.maps-container > img.flag,
+.maps-container > a {
+  z-index: 4;
+  position: absolute;
+  cursor: pointer;
+}
+
+.maps-container > img.flag.flagAlpes,
+.maps-container > a.flagAlpes {
+  top: 262px;
+  left: 235px;
+}
+
+.maps-container > img.flag.flagAlpes:hover, .maps-container > img.flag.flagAlpes.selected,
+.maps-container > a.flagAlpes:hover,
+.maps-container > a.flagAlpes.selected {
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-name: slideinALpes;
+          animation-name: slideinALpes;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes slideinALpes {
+  from {
+    top: 262px;
+  }
+  to {
+    top: 257px;
+  }
+}
+
+@keyframes slideinALpes {
+  from {
+    top: 262px;
+  }
+  to {
+    top: 257px;
+  }
+}
+
+.maps-container > img.flag.flagHoka,
+.maps-container > a.flagHoka {
+  top: 7px;
+  left: 417px;
+}
+
+.maps-container > img.flag.flagHoka:hover, .maps-container > img.flag.flagHoka.selected,
+.maps-container > a.flagHoka:hover,
+.maps-container > a.flagHoka.selected {
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes slidein {
+  from {
+    top: 7px;
+  }
+  to {
+    top: 2px;
+  }
+}
+
+@keyframes slidein {
+  from {
+    top: 7px;
+  }
+  to {
+    top: 2px;
+  }
+}
+
+.maps-container > img.flag.flagAlpes1,
+.maps-container > a.flagAlpes1 {
+  top: 189px;
+  left: 277px;
+}
+
+.maps-container > img.flag.flagAlpes1:hover, .maps-container > img.flag.flagAlpes1.selected,
+.maps-container > a.flagAlpes1:hover,
+.maps-container > a.flagAlpes1.selected {
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-name: flagAlpes1;
+          animation-name: flagAlpes1;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes flagAlpes1 {
+  from {
+    top: 189px;
+  }
+  to {
+    top: 184px;
+  }
+}
+
+@keyframes flagAlpes1 {
+  from {
+    top: 189px;
+  }
+  to {
+    top: 184px;
+  }
+}
+
+.maps-container > img.flag.flagAlpes2,
+.maps-container > a.flagAlpes2 {
+  top: 195px;
+  left: 208px;
+}
+
+.maps-container > img.flag.flagAlpes2:hover, .maps-container > img.flag.flagAlpes2.selected,
+.maps-container > a.flagAlpes2:hover,
+.maps-container > a.flagAlpes2.selected {
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-name: flagAlpes2;
+          animation-name: flagAlpes2;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes flagAlpes2 {
+  from {
+    top: 195px;
+  }
+  to {
+    top: 190px;
+  }
+}
+
+@keyframes flagAlpes2 {
+  from {
+    top: 195px;
+  }
+  to {
+    top: 190px;
+  }
+}
+
+.maps-container > img.flag.flagAlpes3,
+.maps-container > a.flagAlpes3 {
+  top: 263px;
+  left: 307px;
+}
+
+.maps-container > img.flag.flagAlpes3:hover, .maps-container > img.flag.flagAlpes3.selected,
+.maps-container > a.flagAlpes3:hover,
+.maps-container > a.flagAlpes3.selected {
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-name: flagAlpes3;
+          animation-name: flagAlpes3;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes flagAlpes3 {
+  from {
+    top: 263px;
+  }
+  to {
+    top: 258px;
+  }
+}
+
+@keyframes flagAlpes3 {
+  from {
+    top: 263px;
+  }
+  to {
+    top: 258px;
+  }
+}
+
+.maps-container > img.flag.flagAlpes4,
+.maps-container > a.flagAlpes4 {
+  top: 290px;
+  left: 212px;
+}
+
+.maps-container > img.flag.flagAlpes4:hover, .maps-container > img.flag.flagAlpes4.selected,
+.maps-container > a.flagAlpes4:hover,
+.maps-container > a.flagAlpes4.selected {
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-name: flagAlpes4;
+          animation-name: flagAlpes4;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes flagAlpes4 {
+  from {
+    top: 290px;
+  }
+  to {
+    top: 285px;
+  }
+}
+
+@keyframes flagAlpes4 {
+  from {
+    top: 290px;
+  }
+  to {
+    top: 285px;
+  }
+}
+
+.maps-news {
+  margin-top: 36px;
+  width: 100%;
+  height: 50px;
+  background-color: #f1faee;
+  border-radius: 25px;
+  color: black;
+  text-align: center;
+  font-size: 16px;
+  padding-top: 3px;
+}
+
+.maps-news > p {
+  width: 634px;
+  line-height: 17px;
+  font-size: 11px;
+}
+
+.Accueil-destinations {
+  width: 150px;
+  height: 623px;
+  position: absolute;
+  left: -160px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.Accueil-destination {
+  width: 100%;
+  height: 109px;
+  border-radius: 40px;
+  position: relative;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.Accueil-destination > p {
+  text-shadow: black 3px 0px 0px, black 2.83487px 0.98158px 0px, black 2.35766px 1.85511px 0px, black 1.62091px 2.52441px 0px, black 0.70571px 2.91581px 0px, black -0.28717px 2.98622px 0px, black -1.24844px 2.72789px 0px, black -2.07227px 2.16926px 0px, black -2.66798px 1.37182px 0px, black -2.96998px 0.42336px 0px, black -2.94502px -0.5717px 0px, black -2.59586px -1.50383px 0px, black -1.96093px -2.27041px 0px, black -1.11013px -2.78704px 0px, black -0.13712px -2.99686px 0px, black 0.85099px -2.87677px 0px, black 1.74541px -2.43999px 0px, black 2.44769px -1.73459px 0px, black 2.88051px -0.83825px 0px;
+}
+
+.Accueil-destination.hovering {
+  scale: 1.1;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.Accueil-destination.hovering > p {
+  text-decoration: underline;
+}
+
+.Accueil-destination > p {
+  pointer-events: none;
+}
+
+.Accueil-destination:hover > p {
+  text-decoration: underline;
+}
+
+.Accueil-destination > img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+}
+
+.Accueil-destination > p {
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+  text-shadow: black 1px 0px 0px, black 0.5403px 0.84147px 0px, black -0.41615px 0.9093px 0px, black -0.98999px 0.14112px 0px, black -0.65364px -0.7568px 0px, black 0.28366px -0.95892px 0px, black 0.96017px -0.27942px 0px;
+}
+
+.nav-upper-sejours {
+  width: 405px;
+  height: 618px;
+  background-color: #f1faee;
+  border-radius: 25px;
+  position: absolute;
+  top: 0px;
+  right: -422px;
+  z-index: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 17px 11px 17px 11px;
+}
+
+.nav-upper-sejours > a:first-child {
+  margin-top: 0px;
+}
+
+.nav-upper-sejours > .upper-sejours-yearBtn-container {
+  width: 205px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-upper-sejours > .upper-sejours-yearBtn-container > .upper-sejours-yearBtn {
+  width: 96px;
+  height: 27px;
+  background-color: #C21E2B;
+  margin: 0px;
+  border-radius: 25px;
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.nav-upper-sejours > .upper-sejours-yearBtn-container > .upper-sejours-yearBtn.active {
+  opacity: 0.5;
+}
+
+@media screen and (min-width: 1700px) {
+  .Accueil-main {
+    width: 925px;
+    margin-top: 65px;
+    margin-right: 380px;
+  }
+  .maps-hint {
+    width: 100%;
+    height: 44px;
+    border-radius: 25px;
+    font-size: 25px;
+    padding-top: 4px;
+  }
+  .maps-container {
+    width: 686px;
+    height: 677px;
+    margin-top: 28px;
+  }
+  .maps-container > img.map {
+    height: auto;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+  }
+  .maps-container > img.active {
+    width: 100%;
+    height: auto;
+    z-index: 2;
+  }
+  .maps-container > img.active.map-japon {
+    width: 115%;
+  }
+  .maps-container > img.active.map-alpes {
+    width: 85%;
+    margin-left: 16%;
+    margin-top: 16%;
+  }
+  .maps-container > img.inactive {
+    width: 50%;
+    height: auto;
+    cursor: pointer;
+    z-index: 3;
+  }
+  .maps-container > img.inactive:hover {
+    width: 52%;
+  }
+  .maps-container > img.flag.flagAlpes,
+  .maps-container > a.flagAlpes {
+    top: 391px;
+    left: 327px;
+  }
+  .maps-container > img.flag.flagAlpes:hover, .maps-container > img.flag.flagAlpes.selected,
+  .maps-container > a.flagAlpes:hover,
+  .maps-container > a.flagAlpes.selected {
+    -webkit-animation-name: slideinALpes;
+            animation-name: slideinALpes;
+  }
+  @-webkit-keyframes slideinALpes {
+    from {
+      top: 391px;
+    }
+    to {
+      top: 386px;
+    }
+  }
+  @keyframes slideinALpes {
+    from {
+      top: 391px;
+    }
+    to {
+      top: 386px;
+    }
+  }
+  .maps-container > img.flag.flagHoka,
+  .maps-container > a.flagHoka {
+    top: 31px;
+    left: 590px;
+  }
+  .maps-container > img.flag.flagHoka:hover, .maps-container > img.flag.flagHoka.selected,
+  .maps-container > a.flagHoka:hover,
+  .maps-container > a.flagHoka.selected {
+    -webkit-animation-name: slidein;
+            animation-name: slidein;
+  }
+  @-webkit-keyframes slidein {
+    from {
+      top: 31px;
+    }
+    to {
+      top: 26px;
+    }
+  }
+  @keyframes slidein {
+    from {
+      top: 31px;
+    }
+    to {
+      top: 26px;
+    }
+  }
+  .maps-container > img.flag.flagAlpes1,
+  .maps-container > a.flagAlpes1 {
+    top: 267px;
+    left: 503px;
+  }
+  .maps-container > img.flag.flagAlpes1:hover, .maps-container > img.flag.flagAlpes1.selected,
+  .maps-container > a.flagAlpes1:hover,
+  .maps-container > a.flagAlpes1.selected {
+    -webkit-animation-name: flagAlpes1;
+            animation-name: flagAlpes1;
+  }
+  @-webkit-keyframes flagAlpes1 {
+    from {
+      top: 267px;
+    }
+    to {
+      top: 262px;
+    }
+  }
+  @keyframes flagAlpes1 {
+    from {
+      top: 267px;
+    }
+    to {
+      top: 262px;
+    }
+  }
+  .maps-container > img.flag.flagAlpes2,
+  .maps-container > a.flagAlpes2 {
+    top: 319px;
+    left: 246px;
+  }
+  .maps-container > img.flag.flagAlpes2:hover, .maps-container > img.flag.flagAlpes2.selected,
+  .maps-container > a.flagAlpes2:hover,
+  .maps-container > a.flagAlpes2.selected {
+    -webkit-animation-name: flagAlpes2;
+            animation-name: flagAlpes2;
+  }
+  @-webkit-keyframes flagAlpes2 {
+    from {
+      top: 319px;
+    }
+    to {
+      top: 314px;
+    }
+  }
+  @keyframes flagAlpes2 {
+    from {
+      top: 319px;
+    }
+    to {
+      top: 314px;
+    }
+  }
+  .maps-container > img.flag.flagAlpes3,
+  .maps-container > a.flagAlpes3 {
+    top: 398px;
+    left: 428px;
+  }
+  .maps-container > img.flag.flagAlpes3:hover, .maps-container > img.flag.flagAlpes3.selected,
+  .maps-container > a.flagAlpes3:hover,
+  .maps-container > a.flagAlpes3.selected {
+    -webkit-animation-name: flagAlpes3;
+            animation-name: flagAlpes3;
+  }
+  @-webkit-keyframes flagAlpes3 {
+    from {
+      top: 398px;
+    }
+    to {
+      top: 393px;
+    }
+  }
+  @keyframes flagAlpes3 {
+    from {
+      top: 398px;
+    }
+    to {
+      top: 393px;
+    }
+  }
+  .maps-container > img.flag.flagAlpes4,
+  .maps-container > a.flagAlpes4 {
+    top: 411px;
+    left: 304px;
+  }
+  .maps-container > img.flag.flagAlpes4:hover, .maps-container > img.flag.flagAlpes4.selected,
+  .maps-container > a.flagAlpes4:hover,
+  .maps-container > a.flagAlpes4.selected {
+    -webkit-animation-name: flagAlpes4;
+            animation-name: flagAlpes4;
+  }
+  @-webkit-keyframes flagAlpes4 {
+    from {
+      top: 411px;
+    }
+    to {
+      top: 406px;
+    }
+  }
+  @keyframes flagAlpes4 {
+    from {
+      top: 411px;
+    }
+    to {
+      top: 406px;
+    }
+  }
+  .maps-news {
+    margin-top: 45px;
+    height: 77px;
+    font-size: 23px;
+    padding-top: 6px;
+  }
+  .maps-news > p {
+    width: 893px;
+    line-height: 27px;
+    font-size: 16px;
+  }
+  .Accueil-destinations {
+    width: 211px;
+    height: 877px;
+    left: -225px;
+  }
+  .Accueil-destination {
+    height: 154px;
+  }
+  .Accueil-destination > p {
+    bottom: 22px;
+    font-size: 22px;
+  }
+  .nav-upper-sejours {
+    width: 570px;
+    height: 870px;
+    top: 0px;
+    right: -594px;
+    padding: 17px 11px 17px 11px;
+    /*  & > .upper-sejours-yearBtn-container {
+      width: 205px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  
+      & > .upper-sejours-yearBtn {
+        width: 96px;
+        height: 27px;
+        background-color: $red;
+        margin: 0px;
+        border-radius: 25px;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  
+        &.active {
+          opacity: 0.5;
+        }
+      }
+    } */
+  }
+}
+
+.PageSejour-fullscreenImg {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 98;
+  top: 0px;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.PageSejour-fullscreenImg > .PageSejour-fullscreenImg-shadow {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 97;
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 0px;
+}
+
+.PageSejour-fullscreenImg > button {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  width: 80px;
+  height: 80px;
+  background-color: #C21E2B;
+  border-radius: 100%;
+  z-index: 100;
+}
+
+.PageSejour-fullscreenImg > button > img {
+  width: 40px;
+  height: 40px;
+}
+
+.PageSejour-fullscreenImg > img {
+  height: auto;
+  width: 90% !important;
+  max-height: 80vh !important;
+  justify-self: flex-start;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  z-index: 99;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: relative !important;
+}
+
+.PageSejour-fullscreenImg > a {
+  height: 45px;
+  width: auto;
+  border-radius: 25px;
+  background-color: #C21E2B;
+  padding: 0px 20px;
+  margin-top: 54px;
+  position: relative;
+  z-index: 98;
+}
+
+.PageSejour-fullscreenImg > a > p {
+  font-weight: bold;
+  margin-right: 15px;
+  font-size: 15px;
+  text-decoration: underline;
+}
+
+.PageSejour-fullscreenImg > a > img {
+  width: 36px;
+  padding-bottom: 2px;
+}
+
+.PageSejour {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../../public/assets/waves-white.png");
+  position: absolute;
+  top: 0px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.PageSejour > h1 {
+  position: absolute;
+  top: 90px;
+  font-size: 20px;
+  padding: 0px 20px;
+  height: 39px;
+  background-color: #C21E2B;
+  border-radius: 25px;
+  z-index: 2;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: auto;
+  white-space: nowrap;
+  padding-top: 5px;
+}
+
+.embla-mobile {
+  margin-top: 75px;
+  --slide-size: 100%;
+  position: relative;
+}
+
+.embla-mobile > .controllers {
+  height: 39px;
+  width: 90%;
+  position: absolute;
+  bottom: -48px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.embla-mobile > .controllers > button {
+  width: 140px;
+  height: 100%;
+  border-radius: 25px;
+  background-color: #C21E2B;
+}
+
+.embla-mobile > .controllers > button:first-child {
+  padding: 0px 9px;
+}
+
+.embla-mobile > .controllers > button:last-child {
+  padding: 0px 14px;
+}
+
+.embla-mobile > .controllers > button > p {
+  font-weight: bold;
+}
+
+.embla-mobile > .controllers > button > img {
+  width: 16px;
+  height: 16px;
+  padding-bottom: 2px;
+}
+
+.embla-mobile > .bottom-buttons {
+  height: 39px;
+  width: 90%;
+  position: absolute;
+  bottom: -100px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.embla-mobile > .bottom-buttons > button,
+.embla-mobile > .bottom-buttons > a {
+  width: 140px;
+  height: 100%;
+  border-radius: 25px;
+  background-color: #C21E2B;
+}
+
+.embla-mobile > .bottom-buttons > button:first-child,
+.embla-mobile > .bottom-buttons > a:first-child {
+  padding: 0px 10px;
+}
+
+.embla-mobile > .bottom-buttons > button:first-child > p,
+.embla-mobile > .bottom-buttons > a:first-child > p {
+  font-size: 11px;
+}
+
+.embla-mobile > .bottom-buttons > button:first-child > img,
+.embla-mobile > .bottom-buttons > a:first-child > img {
+  width: 20px;
+  height: 20px;
+}
+
+.embla-mobile > .bottom-buttons > button:last-child,
+.embla-mobile > .bottom-buttons > a:last-child {
+  padding: 0px 9px;
+  font-size: 13px;
+}
+
+.embla-mobile > .bottom-buttons > button:last-child > img,
+.embla-mobile > .bottom-buttons > a:last-child > img {
+  width: 26px;
+  height: 26px;
+}
+
+.embla-mobile > .bottom-buttons > button > p,
+.embla-mobile > .bottom-buttons > a > p {
+  font-weight: bold;
+}
+
+.embla-mobile > .bottom-buttons > button > img,
+.embla-mobile > .bottom-buttons > a > img {
+  width: 16px;
+  height: 16px;
+  padding-bottom: 2px;
+}
+
+.embla-mobile > .embla__viewport {
+  overflow: hidden;
+}
+
+.embla-mobile > .embla__viewport > .embla__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-touch-action: pan-y;
+      touch-action: pan-y;
+}
+
+.embla-mobile > .embla__viewport > .embla__container > .embla__slide {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 var(--slide-size);
+          flex: 0 0 var(--slide-size);
+  position: relative;
+  width: 100vw;
+  overflow: hidden;
+  height: 456px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.embla-mobile > .embla__viewport > .embla__container > .embla__slide > img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  max-height: 237px;
+}
+
+.embla-mobile > .embla__viewport > .embla__container > .embla__slide > .slide-description {
+  width: 90%;
+  height: auto;
+  min-height: 240px;
+  background-color: #219ebc;
+  border-radius: 25px;
+  position: absolute;
+  top: 207px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding: 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.embla-mobile > .embla__viewport > .embla__container > .embla__slide > .slide-description > p.day {
+  background-color: rgba(241, 250, 238, 0.3);
+  padding: 12px 14px 8px 14px;
+  border-radius: 25px;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.embla-mobile > .embla__viewport > .embla__container > .embla__slide > .slide-description > p.desc {
+  font-size: 15px;
+  text-align: center;
+  line-height: 20px;
+}
+
+.embla-mobile > .embla__viewport > .embla__container > .embla__slide > .slide-description > .desc-J0 {
+  width: 100%;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  max-width: 345px;
+}
+
+.embla-mobile > .embla__viewport > .embla__container > .embla__slide > .slide-description > .desc-J0 > .desc-J0-infos {
+  width: 100%;
+}
+
+.embla-mobile > .embla__viewport > .embla__container > .embla__slide > .slide-description > .desc-J0 > .desc-J0-infos:first-child > .desc-J0-info:first-child > p:last-child {
+  font-size: 12px;
+}
+
+.embla-mobile > .embla__viewport > .embla__container > .embla__slide > .slide-description > .desc-J0 > .desc-J0-infos > .desc-J0-info {
+  width: 160px;
+  height: 100%;
+  background-color: #f1faee;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 25px;
+}
+
+.embla-mobile > .embla__viewport > .embla__container > .embla__slide > .slide-description > .desc-J0 > .desc-J0-infos > .desc-J0-info > p,
+.embla-mobile > .embla__viewport > .embla__container > .embla__slide > .slide-description > .desc-J0 > .desc-J0-infos > .desc-J0-info > a {
+  width: 100%;
+  font-size: 14px;
+}
+
+.embla-mobile > .embla__viewport > .embla__container > .embla__slide > .slide-description > .desc-J0 > .desc-J0-infos > .desc-J0-info > a {
+  text-decoration: underline;
+}
+
+.embla-mobile > .embla__viewport > .embla__container > .embla__slide > .slide-description > .desc-J0 > .desc-J0-infos > .desc-J0-info > p:first-child,
+.embla-mobile > .embla__viewport > .embla__container > .embla__slide > .slide-description > .desc-J0 > .desc-J0-infos > .desc-J0-info > a:first-child {
+  background-color: #C21E2B;
+  height: 39px;
+  border-radius: 25px;
+}
+
+.embla-mobile > .embla__viewport > .embla__container > .embla__slide > .slide-description > .desc-J0 > .desc-J0-infos > .desc-J0-info > p:last-child,
+.embla-mobile > .embla__viewport > .embla__container > .embla__slide > .slide-description > .desc-J0 > .desc-J0-infos > .desc-J0-info > a:last-child {
+  margin-top: 5px;
+  color: black;
+  font-size: 13px;
+  height: 29px;
+  text-align: center;
+}
+
+.embla-mobile > .embla__viewport > .embla__container > .embla__slide > .slide-description > .desc-J0 > .desc-J0-infos > .desc-J0-info > div {
+  width: 27%;
+  height: 26.92px;
+  margin-top: 7px;
+  color: black;
+  font-weight: bold;
+}
+
+.embla-mobile > .embla__viewport > .embla__container > .embla__slide > .slide-description > .desc-J0 > .desc-J0-infos > .desc-J0-info > div > img {
+  width: 23.86px;
+  height: 26.92px;
+}
+
+.embla-mobile > .embla__viewport > .embla__container > .embla__slide > .slide-description > .roadmapBtn {
+  height: 45px;
+  width: auto;
+  border-radius: 25px;
+  background-color: #C21E2B;
+  padding: 0px 20px;
+  margin-top: 0px;
+  margin-bottom: 8px;
+}
+
+.embla-mobile > .embla__viewport > .embla__container > .embla__slide > .slide-description > .roadmapBtn > p {
+  font-weight: bold;
+  margin-right: 20px;
+  font-size: 15px;
+  text-decoration: underline;
+}
+
+.embla-mobile > .embla__viewport > .embla__container > .embla__slide > .slide-description > .roadmapBtn > img {
+  width: 36px;
+  padding-bottom: 2px;
+}
+
+@media screen and (min-width: 1200px) {
+  .PageSejour {
+    background-image: url("../../public/assets/waves-dark_blue.png");
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: unset;
+    min-height: 100vh;
+    padding-bottom: 50px;
+  }
+  .PageSejour > .embla-mobile,
+  .PageSejour > h1.title-mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .PageSejour .sejour-desktop {
+    display: none;
+  }
+}
+
+.sejour-desktop {
+  width: 1200px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sejour-desktop > h1.title {
+  font-size: 28px;
+  padding: 0 40px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 45px;
+  border-radius: 25px;
+  background-color: #C21E2B;
+  margin-top: 110px;
+  padding-top: 5px;
+}
+
+.sejour-desktop > .sejour-header {
+  width: 100%;
+  height: 382px;
+  margin-top: 30px;
+  position: relative;
+}
+
+.sejour-desktop > .sejour-header > div.sejour-header-left {
+  width: 580px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  position: relative;
+}
+
+.sejour-desktop > .sejour-header > div.sejour-header-left > .sejour-header-left-shadow {
+  width: 579px;
+  height: 381px;
+  position: absolute;
+  bottom: 1px;
+  left: 0px;
+  border-radius: 25px;
+  z-index: 1;
+  background-color: transparent;
+  -webkit-box-shadow: 0px 0px 11px 5px rgba(0, 0, 0, 0.38);
+          box-shadow: 0px 0px 11px 5px rgba(0, 0, 0, 0.38);
+}
+
+.sejour-desktop > .sejour-header > div.sejour-header-left > .embla-desktop {
+  --slide-size: 580px;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  height: 382px;
+}
+
+.sejour-desktop > .sejour-header > div.sejour-header-left > .embla-desktop > .embla-desktop__viewport {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.sejour-desktop > .sejour-header > div.sejour-header-left > .embla-desktop > .embla-desktop__viewport > .embla__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.sejour-desktop > .sejour-header > div.sejour-header-left > .embla-desktop > .embla-desktop__viewport > .embla__container > .embla__slide {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 var(--slide-size);
+          flex: 0 0 var(--slide-size);
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  border-radius: 25px;
+}
+
+.sejour-desktop > .sejour-header > div.sejour-header-left > .embla-desktop > .embla-desktop__viewport > .embla__container > .embla__slide > img {
+  max-width: 580px;
+  max-height: 382px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.sejour-desktop > .sejour-header > div.sejour-header-left > .embla-desktop > .embla-desktop__viewport > .embla__container > .embla__slide > div {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 580px;
+  height: 183px;
+  background-color: #219EBC;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 25px;
+  margin-top: 27px;
+  z-index: 4;
+}
+
+.sejour-desktop > .sejour-header > div.sejour-header-left > .embla-desktop > .embla-desktop__viewport > .embla__container > .embla__slide > div > p:first-child {
+  background-color: #C21E2B;
+  text-decoration: underline;
+  height: 39px;
+  border-radius: 25px;
+  width: 100%;
+}
+
+.sejour-desktop > .sejour-header > div.sejour-header-left > .embla-desktop > .embla-desktop__viewport > .embla__container > .embla__slide > div > p:last-child {
+  text-align: center;
+  font-size: 13px;
+  margin-top: 10px;
+  line-height: 18px;
+  padding: 0px 3px;
+}
+
+.sejour-desktop > .sejour-header > div.sejour-header-left > p:last-child {
+  width: 262px;
+  height: 39px;
+  background-color: #C21E2B;
+  border-radius: 25px;
+  font-size: 15px;
+  text-decoration: underline;
+}
+
+.sejour-desktop > .sejour-header > div.sejour-header-right {
+  width: 580px;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sejour-desktop > .sejour-header > div.sejour-header-right > .sejour-header-infos {
+  width: 100%;
+  height: 78px;
+}
+
+.sejour-desktop > .sejour-header > div.sejour-header-right > .sejour-header-infos:first-child > .sejour-header-info:first-child > p:last-child {
+  font-size: 13px;
+}
+
+.sejour-desktop > .sejour-header > div.sejour-header-right > .sejour-header-infos:not(:first-child) {
+  margin-top: 16px;
+}
+
+.sejour-desktop > .sejour-header > div.sejour-header-right > .sejour-header-infos > .sejour-header-info {
+  width: 233px;
+  height: 100%;
+  background-color: #f1faee;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 25px;
+}
+
+.sejour-desktop > .sejour-header > div.sejour-header-right > .sejour-header-infos > .sejour-header-info > p,
+.sejour-desktop > .sejour-header > div.sejour-header-right > .sejour-header-infos > .sejour-header-info > a {
+  width: 100%;
+  font-size: 15px;
+}
+
+.sejour-desktop > .sejour-header > div.sejour-header-right > .sejour-header-infos > .sejour-header-info > a:hover {
+  text-decoration: underline;
+}
+
+.sejour-desktop > .sejour-header > div.sejour-header-right > .sejour-header-infos > .sejour-header-info > p:first-child,
+.sejour-desktop > .sejour-header > div.sejour-header-right > .sejour-header-infos > .sejour-header-info > a:first-child {
+  background-color: #C21E2B;
+  height: 39px;
+  border-radius: 25px;
+}
+
+.sejour-desktop > .sejour-header > div.sejour-header-right > .sejour-header-infos > .sejour-header-info > p:last-child,
+.sejour-desktop > .sejour-header > div.sejour-header-right > .sejour-header-infos > .sejour-header-info > a:last-child {
+  margin-top: 11px;
+  color: black;
+}
+
+.sejour-desktop > .sejour-header > div.sejour-header-right > .sejour-header-infos > .sejour-header-info > div {
+  width: 172.24px;
+  height: 26.92px;
+  margin-top: 7px;
+}
+
+.sejour-desktop > .sejour-header > div.sejour-header-right > .sejour-header-infos > .sejour-header-info > div > img {
+  width: 23.86px;
+  height: 26.92px;
+}
+
+.sejour-desktop > .sejour-header > div.sejour-header-right > .sejour-header-descDay {
+  width: 100%;
+  height: 183px;
+  background-color: #f1faee;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 25px;
+  margin-top: 22px;
+}
+
+.sejour-desktop > .sejour-header > div.sejour-header-right > .sejour-header-descDay > div:first-child {
+  background-color: #C21E2B;
+  height: 39px !important;
+  border-radius: 25px;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  font-weight: bold;
+}
+
+.sejour-desktop > .sejour-header > div.sejour-header-right > .sejour-header-descDay > div:last-child {
+  text-align: center;
+  font-size: 13px;
+  margin-top: 10px;
+  line-height: 25px;
+  padding: 0px 3px;
+  font-weight: bold;
+  color: black;
+}
+
+.sejour-desktop > .sejour-phrise {
+  width: 100%;
+  height: 72px;
+  margin-top: 16px;
+  position: relative;
+}
+
+.sejour-desktop > .sejour-phrise > img {
+  position: absolute;
+  top: -0px;
+  z-index: 2;
+}
+
+.sejour-desktop > .sejour-phrise > .sejour-phrise-thumbs {
+  width: 87%;
+  height: 40px;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  margin-left: 50px;
+}
+
+.sejour-desktop > .sejour-phrise > .sejour-phrise-thumbs > .sejour-phrise-thumb {
+  color: black;
+  font-weight: bold;
+  font-size: 15px;
+  position: relative;
+  cursor: pointer;
+  height: 17px;
+  width: auto;
+}
+
+.sejour-desktop > .sejour-phrise > .sejour-phrise-thumbs > .sejour-phrise-thumb.selected {
+  font-size: 17px;
+  text-decoration: underline;
+}
+
+.sejour-desktop > .sejour-phrise > .sejour-phrise-thumbs > .sejour-phrise-thumb.selected::before {
+  background-color: #f1faee;
+}
+
+.sejour-desktop > .sejour-phrise > .sejour-phrise-thumbs > .sejour-phrise-thumb:hover > p {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.7);
+}
+
+.sejour-desktop > .sejour-phrise > .sejour-phrise-thumbs > .sejour-phrise-thumb:hover::before {
+  background-color: #f1faee;
+}
+
+.sejour-desktop > .sejour-phrise > .sejour-phrise-thumbs > .sejour-phrise-thumb::before {
+  content: "";
+  position: absolute;
+  top: -35px;
+  width: 6px;
+  background-color: #C21E2B;
+  height: 30px;
+  border-radius: 25px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.sejour-desktop > .sejour-buttons {
+  width: 100%;
+  height: 42px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.sejour-desktop > .sejour-buttons > img {
+  position: absolute;
+  top: -11px;
+  left: 258px;
+  width: 60px;
+  height: 45px;
+}
+
+.sejour-desktop > .sejour-buttons > button,
+.sejour-desktop > .sejour-buttons > a {
+  width: auto;
+  height: 100%;
+  border-radius: 25px;
+  background-color: #C21E2B;
+}
+
+.sejour-desktop > .sejour-buttons > button:hover:not(:nth-child(2)),
+.sejour-desktop > .sejour-buttons > a:hover:not(:nth-child(2)) {
+  text-decoration: underline;
+}
+
+.sejour-desktop > .sejour-buttons > button:nth-child(2),
+.sejour-desktop > .sejour-buttons > a:nth-child(2) {
+  padding: 0px 20px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: default;
+}
+
+.sejour-desktop > .sejour-buttons > button:nth-child(3),
+.sejour-desktop > .sejour-buttons > a:nth-child(3) {
+  padding: 0px 20px;
+}
+
+.sejour-desktop > .sejour-buttons > button:nth-child(3) > p,
+.sejour-desktop > .sejour-buttons > a:nth-child(3) > p {
+  font-size: 15px;
+  margin-right: 14px;
+  padding-top: 5px;
+}
+
+.sejour-desktop > .sejour-buttons > button:nth-child(3) > img,
+.sejour-desktop > .sejour-buttons > a:nth-child(3) > img {
+  width: 30px;
+  max-height: 42px;
+}
+
+.sejour-desktop > .sejour-buttons > button:last-child,
+.sejour-desktop > .sejour-buttons > a:last-child {
+  padding: 0px 20px;
+  font-size: 15px;
+}
+
+.sejour-desktop > .sejour-buttons > button:last-child > img,
+.sejour-desktop > .sejour-buttons > a:last-child > img {
+  width: 26px;
+  height: 26px;
+}
+
+.sejour-desktop > .sejour-buttons > button:nth-child(4),
+.sejour-desktop > .sejour-buttons > a:nth-child(4) {
+  padding: 0px 20px;
+}
+
+.sejour-desktop > .sejour-buttons > button:nth-child(4) > p,
+.sejour-desktop > .sejour-buttons > a:nth-child(4) > p {
+  font-size: 15px;
+  margin-right: 14px;
+  padding-top: 5px;
+}
+
+.sejour-desktop > .sejour-buttons > button:nth-child(4) > img,
+.sejour-desktop > .sejour-buttons > a:nth-child(4) > img {
+  width: 20px;
+  height: 20px;
+}
+
+.sejour-desktop > .sejour-buttons > button > p,
+.sejour-desktop > .sejour-buttons > a > p {
+  font-weight: bold;
+  font-size: 15px;
+  margin-right: 14px;
+}
+
+.sejour-desktop > .sejour-buttons > button > img,
+.sejour-desktop > .sejour-buttons > a > img {
+  padding-bottom: 2px;
+}
+
+@media screen and (min-width: 1700px) {
+  .sejour-desktop {
+    width: 1700px;
+  }
+  .sejour-desktop > h1.title {
+    font-size: 39.9px;
+    padding: 4px 39.9px 0px 39.9px;
+    height: 63px;
+    margin-top: 155px;
+    padding-top: 10px;
+  }
+  .sejour-desktop > .sejour-header {
+    height: 541.16px;
+    margin-top: 42px;
+  }
+  .sejour-desktop > .sejour-header > div.sejour-header-left {
+    width: 826.66px;
+  }
+  .sejour-desktop > .sejour-header > div.sejour-header-left > .sejour-header-left-shadow {
+    width: 825.66px;
+    height: 540.16px;
+  }
+  .sejour-desktop > .sejour-header > div.sejour-header-left > .embla-desktop {
+    --slide-size: 826.66px;
+    height: 541.16px;
+  }
+  .sejour-desktop > .sejour-header > div.sejour-header-left > .embla-desktop > .embla-desktop__viewport > .embla__container > .embla__slide > img {
+    max-width: 826.66px;
+    max-height: 541.16px;
+  }
+  .sejour-desktop > .sejour-header > div.sejour-header-left > .embla-desktop > .embla-desktop__viewport > .embla__container > .embla__slide > div {
+    width: 826.66px;
+    height: 259.25px;
+    margin-top: 38.25px;
+  }
+  .sejour-desktop > .sejour-header > div.sejour-header-left > .embla-desktop > .embla-desktop__viewport > .embla__container > .embla__slide > div > p:first-child {
+    height: 55.25px;
+  }
+  .sejour-desktop > .sejour-header > div.sejour-header-left > .embla-desktop > .embla-desktop__viewport > .embla__container > .embla__slide > div > p:last-child {
+    font-size: 18.41px;
+    margin-top: 14.16px;
+    line-height: 25.5px;
+    padding: 0px 4.25px;
+  }
+  .sejour-desktop > .sejour-header > div.sejour-header-left > p:last-child {
+    width: 371.16px;
+    height: 55.25px;
+    font-size: 21.25px;
+  }
+  .sejour-desktop > .sejour-header > div.sejour-header-right {
+    width: 821.66px;
+  }
+  .sejour-desktop > .sejour-header > div.sejour-header-right > .sejour-header-infos {
+    height: 133.16px;
+  }
+  .sejour-desktop > .sejour-header > div.sejour-header-right > .sejour-header-infos:first-child > .sejour-header-info:first-child > p:last-child {
+    font-size: 18px;
+  }
+  .sejour-desktop > .sejour-header > div.sejour-header-right > .sejour-header-infos:not(:first-child) {
+    margin-top: 22.66px;
+  }
+  .sejour-desktop > .sejour-header > div.sejour-header-right > .sejour-header-infos > .sejour-header-info {
+    width: 330px;
+  }
+  .sejour-desktop > .sejour-header > div.sejour-header-right > .sejour-header-infos > .sejour-header-info > p,
+  .sejour-desktop > .sejour-header > div.sejour-header-right > .sejour-header-infos > .sejour-header-info > a {
+    font-size: 21.25px;
+  }
+  .sejour-desktop > .sejour-header > div.sejour-header-right > .sejour-header-infos > .sejour-header-info > p:first-child,
+  .sejour-desktop > .sejour-header > div.sejour-header-right > .sejour-header-infos > .sejour-header-info > a:first-child {
+    height: 55.25px;
+  }
+  .sejour-desktop > .sejour-header > div.sejour-header-right > .sejour-header-infos > .sejour-header-info > p:last-child,
+  .sejour-desktop > .sejour-header > div.sejour-header-right > .sejour-header-infos > .sejour-header-info > a:last-child {
+    margin-top: 24.58px;
+  }
+  .sejour-desktop > .sejour-header > div.sejour-header-right > .sejour-header-infos > .sejour-header-info > div {
+    margin-top: 17.91px;
+    width: 244.31px;
+  }
+  .sejour-desktop > .sejour-header > div.sejour-header-right > .sejour-header-infos > .sejour-header-info > div > img {
+    width: 33.6px;
+    height: 38px;
+  }
+  .sejour-desktop > .sejour-header > div.sejour-header-right > .sejour-header-descDay {
+    height: 259.25px;
+    margin-top: 31.16px;
+  }
+  .sejour-desktop > .sejour-header > div.sejour-header-right > .sejour-header-descDay > div:first-child {
+    height: 55.25px !important;
+    font-size: 22.69px;
+  }
+  .sejour-desktop > .sejour-header > div.sejour-header-right > .sejour-header-descDay > div:last-child {
+    font-size: 18.41px;
+    margin-top: 14.16px;
+    line-height: 35.2px;
+    padding: 0px 4.25px;
+  }
+  .sejour-desktop > .sejour-phrise {
+    height: 102px;
+    margin-top: 22.66px;
+  }
+  .sejour-desktop > .sejour-phrise > img {
+    width: 1600px;
+    height: 65px;
+  }
+  .sejour-desktop > .sejour-phrise > .sejour-phrise-thumbs {
+    width: 87%;
+    height: 56.66px;
+    margin-left: 70.83px;
+  }
+  .sejour-desktop > .sejour-phrise > .sejour-phrise-thumbs > .sejour-phrise-thumb {
+    font-size: 21.25px;
+    height: 24.08px;
+  }
+  .sejour-desktop > .sejour-phrise > .sejour-phrise-thumbs > .sejour-phrise-thumb.selected {
+    font-size: 24.08px;
+  }
+  .sejour-desktop > .sejour-phrise > .sejour-phrise-thumbs > .sejour-phrise-thumb::before {
+    top: -48px;
+    width: 8.5px;
+    height: 42.5px;
+  }
+  .sejour-desktop > .sejour-buttons {
+    height: 59.5px;
+    margin-top: 28.33px;
+  }
+  .sejour-desktop > .sejour-buttons > img {
+    top: -17px;
+    left: 369px;
+    width: 84.5px;
+    height: 63.3px;
+  }
+  .sejour-desktop > .sejour-buttons > button:nth-child(2),
+  .sejour-desktop > .sejour-buttons > a:nth-child(2) {
+    padding: 0px 28.33px;
+    font-size: 21.25px;
+  }
+  .sejour-desktop > .sejour-buttons > button:nth-child(3),
+  .sejour-desktop > .sejour-buttons > a:nth-child(3) {
+    padding: 0px 28.33px;
+  }
+  .sejour-desktop > .sejour-buttons > button:nth-child(3) > p,
+  .sejour-desktop > .sejour-buttons > a:nth-child(3) > p {
+    font-size: 21.25px;
+    margin-right: 23.16px;
+    padding-top: 7.08px;
+  }
+  .sejour-desktop > .sejour-buttons > button:nth-child(3) > img,
+  .sejour-desktop > .sejour-buttons > a:nth-child(3) > img {
+    width: 38px;
+    max-height: 60px;
+  }
+  .sejour-desktop > .sejour-buttons > button:nth-child(4),
+  .sejour-desktop > .sejour-buttons > a:nth-child(4) {
+    padding: 0px 28.33px;
+  }
+  .sejour-desktop > .sejour-buttons > button:nth-child(4) > p,
+  .sejour-desktop > .sejour-buttons > a:nth-child(4) > p {
+    font-size: 21.25px;
+    margin-right: 23.16px;
+    padding-top: 7.08px;
+  }
+  .sejour-desktop > .sejour-buttons > button:nth-child(4) > img,
+  .sejour-desktop > .sejour-buttons > a:nth-child(4) > img {
+    width: 28.33px;
+    height: 28.33px;
+  }
+  .sejour-desktop > .sejour-buttons > button:last-child,
+  .sejour-desktop > .sejour-buttons > a:last-child {
+    padding: 0px 28.33px;
+    font-size: 21.25px;
+  }
+  .sejour-desktop > .sejour-buttons > button:last-child > img,
+  .sejour-desktop > .sejour-buttons > a:last-child > img {
+    width: 36.8px;
+    height: 36.8px;
+  }
+  .sejour-desktop > .sejour-buttons > button > p,
+  .sejour-desktop > .sejour-buttons > a > p {
+    font-weight: bold;
+    font-size: 21.25px;
+    margin-right: 21.91px;
+  }
+  .sejour-desktop > .sejour-buttons > button > img,
+  .sejour-desktop > .sejour-buttons > a > img {
+    padding-bottom: 4px;
+  }
+}
+
+.PageContact {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../../public/assets/waves-dark_blue.png");
+  position: absolute;
+  top: 0px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 90px;
+  max-width: 100%;
+}
+
+.PageContact > .PageContact-instructions {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 91%;
+  max-width: 328px;
+}
+
+.PageContact > .PageContact-instructions > * {
+  font-weight: bold;
+}
+
+.PageContact > .PageContact-instructions > h1 {
+  width: 233px;
+  height: 39px;
+  font-size: 20px;
+  border-radius: 25px;
+  background-color: #C21E2B;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-bottom: 15px;
+}
+
+.PageContact > .PageContact-instructions > p {
+  color: black;
+  font-size: 12px;
+}
+
+.PageContact > .PageContact-instructions > p.underline,
+.PageContact > .PageContact-instructions > p > a.underline,
+.PageContact > .PageContact-instructions > p > span.underline {
+  text-decoration: underline;
+}
+
+.PageContact > .PageContact-instructions > p > a,
+.PageContact > .PageContact-instructions > p > span {
+  color: #f1faee;
+}
+
+.PageContact > .PageContact-instructions > p:not(:nth-child(2)) {
+  margin-top: 21px;
+}
+
+.PageContact > form {
+  margin-top: 20px;
+  width: 328px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.PageContact > form > .PageContact-input {
+  width: 100%;
+  height: 28px;
+}
+
+.PageContact > form > .PageContact-input:not(:first-child) {
+  margin-top: 16px;
+}
+
+.PageContact > form > .PageContact-input label {
+  width: auto;
+  font-weight: bold;
+  padding-top: 3px;
+}
+
+.PageContact > form > .PageContact-input label,
+.PageContact > form > .PageContact-input input,
+.PageContact > form > .PageContact-input textarea {
+  font-size: 12px;
+  color: black;
+  outline: none;
+}
+
+.PageContact > form > .PageContact-input input,
+.PageContact > form > .PageContact-input textarea {
+  margin: 0px;
+  background-color: #f1faee;
+  border-radius: 25px;
+  width: 100%;
+  color: black !important;
+  max-width: 258px;
+  border: none;
+  resize: none;
+  padding: 0px 6px;
+  height: 25px;
+}
+
+.PageContact > form > .PageContact-input.message {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  height: 111px;
+}
+
+.PageContact > form > .PageContact-input.message > textarea {
+  width: 100%;
+  max-width: unset;
+  height: 90px;
+  border-radius: 12px;
+}
+
+.PageContact > form > input.submit {
+  font-size: 15px;
+  background-color: #C21E2B;
+  margin-top: 10px;
+  margin-left: 0px;
+  width: 125px;
+  border-radius: 25px;
+  font-weight: bold;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+@media screen and (min-width: 414px) {
+  .PageContact {
+    background-image: url("../../public/assets/waves-dark_blue.png");
+    position: absolute;
+    top: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 107.55813954px;
+  }
+  .PageContact > .PageContact-instructions {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 391.93939394px;
+  }
+  .PageContact > .PageContact-instructions > * {
+    font-weight: bold;
+  }
+  .PageContact > .PageContact-instructions > h1 {
+    width: 278.40909091px;
+    height: 46.59090909px;
+    font-size: 23.90340909px;
+    border-radius: 29.88068182px;
+    background-color: #C21E2B;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-bottom: 20.34883721px;
+  }
+  .PageContact > .PageContact-instructions > p {
+    color: black;
+    font-size: 14.34375px;
+  }
+  .PageContact > .PageContact-instructions > p.underline,
+  .PageContact > .PageContact-instructions > p > a.underline,
+  .PageContact > .PageContact-instructions > p > span.underline {
+    text-decoration: underline;
+  }
+  .PageContact > .PageContact-instructions > p:not(:nth-child(2)) {
+    margin-top: 25.11111111px;
+  }
+  .PageContact > form {
+    margin-top: 23.875px;
+    width: 391.93939394px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .PageContact > form > .PageContact-input {
+    height: 33.48958333px;
+  }
+  .PageContact > form > .PageContact-input:not(:first-child) {
+    margin-top: 19.11111111px;
+  }
+  .PageContact > form > .PageContact-input label {
+    width: auto;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  .PageContact > form > .PageContact-input input,
+  .PageContact > form > .PageContact-input textarea {
+    font-size: 11.9375px;
+    color: black;
+    outline: none;
+  }
+  .PageContact > form > .PageContact-input input,
+  .PageContact > form > .PageContact-input textarea {
+    margin: 0px;
+    background-color: #f1faee;
+    border-radius: 29.88068182px;
+    color: black !important;
+    max-width: 308.75px;
+    border: none;
+    resize: none;
+    padding: 0px 7.16085271px;
+  }
+  .PageContact > form > .PageContact-input.message {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    height: 132.29166667px;
+  }
+  .PageContact > form > .PageContact-input.message > textarea {
+    max-width: unset;
+    height: 107.40625px;
+    border-radius: 14.34375px;
+  }
+  .PageContact > form > input.submit {
+    font-size: 17.91208791px;
+    background-color: #C21E2B;
+    margin-top: 11.9375px;
+    margin-left: 0px;
+    width: 149.22727273px;
+    border-radius: 29.88068182px;
+    font-weight: bold;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .PageContact {
+    padding-top: 100px;
+    height: unset;
+    min-height: 100vh;
+    padding-bottom: 50px;
+  }
+  .PageContact > .PageContact-instructions {
+    width: 1078px;
+    max-width: unset;
+  }
+  .PageContact > .PageContact-instructions > h1 {
+    width: 322px;
+    height: 45px;
+    font-size: 28px;
+    margin-bottom: 47px;
+  }
+  .PageContact > .PageContact-instructions > p {
+    font-size: 20px;
+  }
+  .PageContact > .PageContact-instructions > p:not(:nth-child(2)) {
+    margin-top: 30px;
+  }
+  .PageContact > form {
+    margin-top: 40px;
+    width: 1078px;
+    position: relative;
+  }
+  .PageContact > form > .PageContact-input {
+    width: 437px;
+    height: 34px;
+    margin-top: 0px;
+  }
+  .PageContact > form > .PageContact-input:not(:first-child) {
+    margin-top: 30px;
+  }
+  .PageContact > form > .PageContact-input:nth-child(5) {
+    margin-top: 0px !important;
+  }
+  .PageContact > form > .PageContact-input label {
+    width: auto;
+    font-size: 20px;
+  }
+  .PageContact > form > .PageContact-input input,
+  .PageContact > form > .PageContact-input textarea {
+    width: 100%;
+    max-width: 297px;
+    font-size: 16px;
+    height: 30px;
+  }
+  .PageContact > form > .PageContact-input.message {
+    height: 224px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 483px;
+  }
+  .PageContact > form > .PageContact-input.message > textarea {
+    height: 179px;
+    border-radius: 12px;
+  }
+  .PageContact > form > input.submit {
+    font-size: 17px;
+    margin-top: 25px;
+    width: 125px;
+    height: 39px;
+  }
+}
+
+@media screen and (min-width: 1450px) {
+  .PageContact {
+    padding-top: 120.763537822px;
+  }
+  .PageContact > .PageContact-instructions {
+    width: 1302.5862069px;
+    max-width: unset;
+  }
+  .PageContact > .PageContact-instructions > h1 {
+    width: 389.655172414px;
+    height: 54.347826087px;
+    font-size: 33.826638477px;
+    margin-bottom: 56.733446519px;
+  }
+  .PageContact > .PageContact-instructions > p {
+    font-size: 24.137931034px;
+  }
+  .PageContact > .PageContact-instructions > p:not(:nth-child(2)) {
+    margin-top: 36.206896551px;
+  }
+  .PageContact > form {
+    margin-top: 48.275862069px;
+    width: 1302.5862069px;
+    position: relative;
+  }
+  .PageContact > form > .PageContact-input {
+    width: 527.586206897px;
+    height: 41.034482759px;
+    margin-top: 0px;
+  }
+  .PageContact > form > .PageContact-input:not(:first-child) {
+    margin-top: 36.206896551px;
+  }
+  .PageContact > form > .PageContact-input:nth-child(5) {
+    margin-top: 0px !important;
+  }
+  .PageContact > form > .PageContact-input label {
+    width: auto;
+    font-size: 24.137931034px;
+  }
+  .PageContact > form > .PageContact-input input,
+  .PageContact > form > .PageContact-input textarea {
+    width: 100%;
+    max-width: 358.620689655px;
+    font-size: 19.342359767px;
+    height: 36.206896551px;
+  }
+  .PageContact > form > .PageContact-input.message {
+    height: 270.344827586px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 583.103448276px;
+  }
+  .PageContact > form > .PageContact-input.message > textarea {
+    height: 216.551724138px;
+    border-radius: 14.482758621px;
+  }
+  .PageContact > form > input.submit {
+    font-size: 20.548360866px;
+    margin-top: 30.172413793px;
+    width: 151.034482759px;
+    height: 47.155425219px;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .PageContact {
+    padding-top: 141.84397163px;
+  }
+  .PageContact > .PageContact-instructions {
+    width: 1528.36879433px;
+    max-width: unset;
+  }
+  .PageContact > .PageContact-instructions > h1 {
+    width: 457.44680851px;
+    height: 63.82978723px;
+    font-size: 39.71631206px;
+    margin-bottom: 66.66666667px;
+  }
+  .PageContact > .PageContact-instructions > p {
+    font-size: 28.36879433px;
+  }
+  .PageContact > .PageContact-instructions > p:not(:nth-child(2)) {
+    margin-top: 42.55319149px;
+  }
+  .PageContact > form {
+    margin-top: 56.73758865px;
+    width: 1528.36879433px;
+    position: relative;
+  }
+  .PageContact > form > .PageContact-input {
+    width: 620.56737589px;
+    height: 48.22695035px;
+    margin-top: 0px;
+  }
+  .PageContact > form > .PageContact-input:not(:first-child) {
+    margin-top: 42.55319149px;
+  }
+  .PageContact > form > .PageContact-input:nth-child(5) {
+    margin-top: 0px !important;
+  }
+  .PageContact > form > .PageContact-input label {
+    width: auto;
+    font-size: 28.36879433px;
+  }
+  .PageContact > form > .PageContact-input input,
+  .PageContact > form > .PageContact-input textarea {
+    width: 100%;
+    max-width: 421.9858156px;
+    font-size: 22.69503546px;
+    height: 42.55319149px;
+  }
+  .PageContact > form > .PageContact-input.message {
+    height: 317.0212766px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 684.39716312px;
+  }
+  .PageContact > form > .PageContact-input.message > textarea {
+    height: 253.54609929px;
+    border-radius: 16.95035461px;
+  }
+  .PageContact > form > input.submit {
+    font-size: 24.11347518px;
+    margin-top: 35.46099291px;
+    width: 177.30496454px;
+    height: 55.31914894px;
+  }
+}
+
+.PageNous {
+  width: 100vw;
+  min-height: 100vh;
+  background-image: url("../../public/assets/waves-dark_blue.png");
+  position: absolute;
+  top: 0px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 90px;
+  max-width: 100%;
+}
+
+.PageNous .quote-desktop {
+  display: none;
+}
+
+.PageNous > .PageNous-container {
+  width: 340px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  color: black;
+  overflow: hidden;
+}
+
+.PageNous > .PageNous-container > h1 {
+  width: 233px;
+  height: 39px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #C21E2B;
+  color: #f1faee;
+  border-radius: 25px;
+}
+
+.PageNous > .PageNous-container > p,
+.PageNous > .PageNous-container > a {
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 20px;
+  text-align: center;
+}
+
+.PageNous > .PageNous-container > p {
+  margin-top: 15px;
+}
+
+.PageNous > .PageNous-container > p.quote {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.PageNous > .PageNous-container > p > a {
+  color: #f1faee;
+}
+
+.PageNous > .PageNous-container > p > a:hover {
+  text-decoration: underline;
+}
+
+.PageNous > .PageNous-container > img {
+  width: 266px;
+  height: auto;
+  margin-top: 15px;
+}
+
+@media screen and (min-width: 414px) {
+  .PageNous {
+    padding-top: 107.44186047px;
+  }
+  .PageNous > .PageNous-container {
+    width: 406.80272109px;
+  }
+  .PageNous > .PageNous-container > h1 {
+    width: 278.72340426px;
+    height: 46.80851064px;
+    font-size: 23.88888889px;
+  }
+  .PageNous > .PageNous-container > p,
+  .PageNous > .PageNous-container > a {
+    font-size: 13.1503268px;
+    line-height: 23.92857143px;
+  }
+  .PageNous > .PageNous-container > p {
+    margin-top: 17.90780142px;
+  }
+  .PageNous > .PageNous-container > p.quote {
+    font-size: 21.52777778px;
+    line-height: 30px;
+  }
+  .PageNous > .PageNous-container > img {
+    width: 318.86363636px;
+    margin-top: 17.90780142px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .PageNous {
+    width: 100vw;
+    min-height: unset;
+    height: unset;
+    min-height: 100vh;
+    padding-top: 95px;
+    padding-bottom: 50px;
+  }
+  .PageNous .mobile {
+    display: none;
+  }
+  .PageNous > .PageNous-container {
+    width: 1200px;
+  }
+  .PageNous > .PageNous-container > h1 {
+    width: 271px;
+    font-size: 28px;
+    height: 39px;
+  }
+  .PageNous > .PageNous-container > p,
+  .PageNous > .PageNous-container > a {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .PageNous > .PageNous-container > p {
+    margin-top: 25px;
+  }
+  .PageNous > .PageNous-container > p > a {
+    color: #f1faee;
+  }
+  .PageNous > .PageNous-container > p > a:hover {
+    text-decoration: underline;
+  }
+  .PageNous > .PageNous-container > .quote-desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 14px 47px;
+    background-color: #C21E2B;
+    width: 1140px;
+    border-radius: 50px;
+    margin-top: 36px;
+    margin-bottom: 7px;
+  }
+  .PageNous > .PageNous-container > .quote-desktop > .quote-desktop-desc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    width: 530px;
+  }
+  .PageNous > .PageNous-container > .quote-desktop > .quote-desktop-desc > p {
+    color: #f1faee;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 26px;
+    width: auto;
+  }
+  .PageNous > .PageNous-container > .quote-desktop > .quote-desktop-desc > p:last-child {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  .PageNous > .PageNous-container > .quote-desktop > img {
+    width: 438px;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 1450px) {
+  .PageNous {
+    padding-top: 114.79289941px;
+  }
+  .PageNous > .PageNous-container {
+    width: 1450.57471264px;
+  }
+  .PageNous > .PageNous-container > h1 {
+    width: 327.41358025px;
+    font-size: 33.84418902px;
+    height: 47.14351852px;
+  }
+  .PageNous > .PageNous-container > p,
+  .PageNous > .PageNous-container > a {
+    font-size: 19.33697106px;
+    line-height: 31.41914225px;
+  }
+  .PageNous > .PageNous-container > p {
+    margin-top: 30.17241379px;
+  }
+  .PageNous > .PageNous-container > .quote-desktop {
+    padding: 16.91666667px 56.83333333px;
+    width: 1378.78787879px;
+    margin-top: 43.52040816px;
+  }
+  .PageNous > .PageNous-container > .quote-desktop > .quote-desktop-desc {
+    width: 641.73387097px;
+  }
+  .PageNous > .PageNous-container > .quote-desktop > .quote-desktop-desc > p {
+    font-size: 21.76507395px;
+    line-height: 31.41914225px;
+  }
+  .PageNous > .PageNous-container > .quote-desktop > img {
+    width: 528.52726758px;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .PageNous {
+    padding-top: 134.89417989px;
+  }
+  .PageNous > .PageNous-container {
+    width: 1701.17647059px;
+  }
+  .PageNous > .PageNous-container > h1 {
+    width: 384.70588235px;
+    font-size: 39.70588235px;
+    height: 55.37216828px;
+  }
+  .PageNous > .PageNous-container > p,
+  .PageNous > .PageNous-container > a {
+    font-size: 22.64705882px;
+    line-height: 36.47058824px;
+  }
+  .PageNous > .PageNous-container > p {
+    margin-top: 35.29411765px;
+  }
+  .PageNous > .PageNous-container > .quote-desktop {
+    padding: 19.85294118px 66.23529412px;
+    width: 1620px;
+    margin-top: 51.05882353px;
+  }
+  .PageNous > .PageNous-container > .quote-desktop > .quote-desktop-desc {
+    width: 752.94117647px;
+  }
+  .PageNous > .PageNous-container > .quote-desktop > .quote-desktop-desc > p {
+    font-size: 25.52941176px;
+    line-height: 36.47058824px;
+  }
+  .PageNous > .PageNous-container > .quote-desktop > img {
+    width: 621.17647059px;
+  }
+}
+
+.PageReservation {
+  width: 100vw;
+  min-height: 100vh;
+  background-image: url("../../public/assets/waves-dark_blue.png");
+  position: absolute;
+  top: 0px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 90px;
+  max-width: 100%;
+}
+
+.PageReservation > .PageReservation-container {
+  width: 340px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  color: black;
+  overflow: hidden;
+}
+
+.PageReservation > .PageReservation-container > h1 {
+  width: 233px;
+  height: 39px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #C21E2B;
+  color: #f1faee;
+  border-radius: 25px;
+}
+
+.PageReservation > .PageReservation-container > p,
+.PageReservation > .PageReservation-container > a {
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 20px;
+  text-align: center;
+}
+
+.PageReservation > .PageReservation-container > p {
+  margin-top: 15px;
+}
+
+.PageReservation > .PageReservation-container > p > span {
+  color: #f1faee;
+}
+
+.PageReservation > .PageReservation-container > p > a {
+  color: #f1faee;
+}
+
+.PageReservation > .PageReservation-container > p > a:hover {
+  text-decoration: underline;
+}
+
+.PageReservation > .PageReservation-container a.btnEchelle {
+  height: 36px;
+  margin-top: 20px;
+  border-radius: 25px;
+  background-color: #C21E2B;
+  padding: 3px 25px 0px 25px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #f1faee;
+  text-decoration: underline;
+}
+
+.PageReservation > .PageReservation-container a.btnEchelle > img {
+  width: 30px;
+  height: auto;
+  margin-left: 20px;
+  margin-bottom: 3px;
+}
+
+.PageReservation > .PageReservation-container > .PageReservation-sejours {
+  width: 100%;
+  height: 500px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.PageReservation > .PageReservation-container > .PageReservation-sejours.displayNone {
+  display: none;
+}
+
+.PageReservation > .PageReservation-container > .PageReservation-sejours > div {
+  width: 100%;
+  height: 80px;
+  border-radius: 25px;
+  background-color: #C21E2B;
+  padding: 8px 22px 8px 5px;
+  z-index: 2;
+}
+
+.PageReservation > .PageReservation-container > .PageReservation-sejours > div > img {
+  width: 95px;
+  height: auto;
+  border-radius: 25px;
+}
+
+.PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  width: 206px;
+  height: 66px;
+}
+
+.PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos > .sejour-desc {
+  font-size: 12px;
+  font-weight: bold;
+  color: #f1faee;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 36px;
+  padding-top: 4px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos > .sejour-bottom {
+  width: 100%;
+}
+
+.PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos > .sejour-bottom > div {
+  width: 100px;
+}
+
+.PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos > .sejour-bottom > div > img {
+  width: 13.85px;
+  height: 15.72;
+}
+
+.PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos > .sejour-bottom > p {
+  width: 92px;
+  height: 24px;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 14px;
+  background-color: #f1faee;
+}
+
+.PageReservation > .PageReservation-container > .PageReservation-sejours > div.btnEchelle {
+  display: none;
+}
+
+.PageReservation > .PageReservation-container > button.backButton {
+  width: auto;
+  height: 39px;
+  font-size: 15px;
+  padding: 0px 20px;
+  background-color: #C21E2B;
+  border-radius: 25px;
+  margin: 20px 0px;
+  text-decoration: underline;
+}
+
+.PageReservation > .PageReservation-container > button.backButton > img {
+  width: 20px;
+  height: auto;
+  margin-right: 10px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.PageReservation > .PageReservation-container > form {
+  margin-top: 20px;
+  width: 328px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.PageReservation > .PageReservation-container > form > .PageContact-input {
+  width: 100%;
+  height: 28px;
+}
+
+.PageReservation > .PageReservation-container > form > .PageContact-input:not(:first-child) {
+  margin-top: 16px;
+}
+
+.PageReservation > .PageReservation-container > form > .PageContact-input label {
+  width: auto;
+  font-weight: bold;
+  padding-top: 3px;
+}
+
+.PageReservation > .PageReservation-container > form > .PageContact-input label,
+.PageReservation > .PageReservation-container > form > .PageContact-input input,
+.PageReservation > .PageReservation-container > form > .PageContact-input textarea {
+  font-size: 12px;
+  color: black;
+  outline: none;
+}
+
+.PageReservation > .PageReservation-container > form > .PageContact-input input,
+.PageReservation > .PageReservation-container > form > .PageContact-input textarea {
+  margin: 0px;
+  background-color: #f1faee;
+  border-radius: 25px;
+  width: 100%;
+  color: black !important;
+  max-width: 258px;
+  border: none;
+  resize: none;
+  padding: 0px 6px;
+  height: 25px;
+}
+
+.PageReservation > .PageReservation-container > form > .PageContact-input.message {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  height: 111px;
+}
+
+.PageReservation > .PageReservation-container > form > .PageContact-input.message > textarea {
+  width: 100%;
+  max-width: unset;
+  height: 90px;
+  border-radius: 12px;
+}
+
+.PageReservation > .PageReservation-container > form > input.submit {
+  font-size: 15px;
+  background-color: #C21E2B;
+  margin-top: 10px;
+  margin-left: 0px;
+  width: 125px;
+  border-radius: 25px;
+  font-weight: bold;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+@media screen and (min-width: 414px) {
+  .PageReservation {
+    padding-top: 112.5px;
+  }
+  .PageReservation > .PageReservation-container {
+    width: 425px;
+  }
+  .PageReservation > .PageReservation-container > h1 {
+    width: auto;
+    height: 48.75px;
+    font-size: 25px;
+    padding: 5px 40px 0px 40px;
+  }
+  .PageReservation > .PageReservation-container > p,
+  .PageReservation > .PageReservation-container > a {
+    font-size: 13.75px;
+    line-height: 25px;
+  }
+  .PageReservation > .PageReservation-container > p {
+    margin-top: 18.75px;
+  }
+  .PageReservation > .PageReservation-container a.btnEchelle {
+    height: 45px;
+    margin-top: 25px;
+    padding: 3.75px 31.25px 0px 31.25px;
+    font-size: 18.75px;
+  }
+  .PageReservation > .PageReservation-container a.btnEchelle > img {
+    width: 37.5px;
+    margin-left: 25px;
+    margin-bottom: 3.75px;
+  }
+  .PageReservation > .PageReservation-container > .PageReservation-sejours {
+    height: 625px;
+    margin-top: 37.5px;
+    margin-bottom: 12.5px;
+  }
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > a.btnEchelle {
+    display: none;
+  }
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div {
+    height: 100px;
+    border-radius: 31.25px;
+    padding: 10px 27.5px 10px 6.25px;
+  }
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div > img {
+    width: 118.75px;
+  }
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos {
+    width: 257.5px;
+    height: 82.5px;
+  }
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos > .sejour-desc {
+    font-size: 15px;
+    text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+    height: 45px;
+    padding-top: 5px;
+  }
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos > .sejour-bottom > div {
+    width: 125px;
+  }
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos > .sejour-bottom > div > img {
+    width: 17.3125px;
+    height: 19.65px;
+  }
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos > .sejour-bottom > p {
+    width: 115px;
+    height: 30px;
+    font-size: 17.5px;
+    padding-top: 4px;
+  }
+  .PageReservation > .PageReservation-container > form {
+    margin-top: 23.875px;
+    width: 391.93939394px;
+    height: 396px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .PageReservation > .PageReservation-container > form > .PageContact-input {
+    height: 33.48958333px;
+  }
+  .PageReservation > .PageReservation-container > form > .PageContact-input:not(:first-child) {
+    margin-top: 19.11111111px;
+  }
+  .PageReservation > .PageReservation-container > form > .PageContact-input label {
+    width: auto;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  .PageReservation > .PageReservation-container > form > .PageContact-input input,
+  .PageReservation > .PageReservation-container > form > .PageContact-input textarea {
+    font-size: 11.9375px;
+    color: black;
+    outline: none;
+  }
+  .PageReservation > .PageReservation-container > form > .PageContact-input input,
+  .PageReservation > .PageReservation-container > form > .PageContact-input textarea {
+    margin: 0px;
+    background-color: #f1faee;
+    border-radius: 29.88068182px;
+    color: black !important;
+    max-width: 308.75px;
+    border: none;
+    resize: none;
+    padding: 0px 7.16085271px;
+  }
+  .PageReservation > .PageReservation-container > form > .PageContact-input.message {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    height: 132.29166667px;
+  }
+  .PageReservation > .PageReservation-container > form > .PageContact-input.message > textarea {
+    max-width: unset;
+    height: 107.40625px;
+    border-radius: 14.34375px;
+  }
+  .PageReservation > .PageReservation-container > form > input.submit {
+    font-size: 17.91208791px;
+    background-color: #C21E2B;
+    margin-top: 11.9375px;
+    margin-left: 0px;
+    width: 149.22727273px;
+    border-radius: 29.88068182px;
+    font-weight: bold;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .PageReservation {
+    padding-top: 112.5px;
+    padding-bottom: 50px;
+  }
+  .PageReservation > .PageReservation-container {
+    width: 1190px;
+  }
+  .PageReservation > .PageReservation-container > h1 {
+    width: auto;
+    height: 48.75px;
+    font-size: 28px;
+    padding: 5px 40px 0px 40px;
+  }
+  .PageReservation > .PageReservation-container > p,
+  .PageReservation > .PageReservation-container > a {
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .PageReservation > .PageReservation-container > p {
+    margin-top: 18.75px;
+  }
+  .PageReservation > .PageReservation-container > a.btnEchelle {
+    display: none;
+  }
+  .PageReservation > .PageReservation-container > .PageReservation-sejours {
+    width: 100%;
+    height: 239px;
+    margin-top: 25px;
+    margin-bottom: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    position: relative;
+  }
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > a.btnEchelle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div {
+    width: 48%;
+    height: 67px;
+    border-radius: 25px;
+    background-color: #C21E2B;
+    padding: 8px 22px 8px 105px;
+    z-index: 2;
+    position: relative;
+  }
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div:first-child {
+    margin-right: 44px;
+  }
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div:nth-child(4) > .sejour-infos > .sejour-desc {
+    height: 40px;
+  }
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div:nth-child(4) > .sejour-infos > .sejour-desc > p:last-child {
+    font-size: 11px;
+  }
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div:hover > .sejour-infos > .sejour-bottom > p {
+    background-color: #219EBC !important;
+    color: #f1faee;
+    text-decoration: underline;
+  }
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div {
+    margin-top: 15px;
+  }
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div > img {
+    width: 100px;
+    height: 67px;
+    border-radius: 25px;
+    position: absolute;
+    left: 0px;
+  }
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    width: 100%;
+    height: 66px;
+  }
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos > .sejour-desc {
+    font-weight: bold;
+    color: #f1faee;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    width: 189px;
+    height: 45px;
+    padding-top: 4px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos > .sejour-desc > p:first-child {
+    font-size: 14px;
+  }
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos > .sejour-desc > p:last-child {
+    font-size: 11px;
+  }
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos > .sejour-bottom {
+    width: 244px;
+  }
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos > .sejour-bottom > div {
+    width: 125px;
+  }
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos > .sejour-bottom > div > img {
+    width: 18.8px;
+    height: 21.73px;
+  }
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos > .sejour-bottom > p {
+    width: 103px;
+    height: 37px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: #f1faee;
+  }
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.btnEchelle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: unset;
+    height: 36px;
+    padding: 0px 30px;
+    z-index: 1;
+    font-size: 15px;
+    margin-top: unset;
+    text-decoration: unset;
+    position: absolute;
+    bottom: 6px;
+    right: 3px;
+  }
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.btnEchelle:hover {
+    text-decoration: underline;
+  }
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.btnEchelle > img {
+    width: 30px;
+    height: auto;
+    margin-left: 20px;
+    margin-bottom: unset;
+    position: relative;
+  }
+  .PageReservation > .PageReservation-container > button.backButton {
+    text-decoration: unset;
+    margin: 30px 0px;
+  }
+  .PageReservation > .PageReservation-container > button.backButton:hover {
+    text-decoration: underline;
+  }
+  .PageReservation > .PageReservation-container > form {
+    margin-top: 40px;
+    width: 1078px;
+    position: relative;
+  }
+  .PageReservation > .PageReservation-container > form > .PageContact-input {
+    width: 437px;
+    height: 34px;
+    margin-top: 0px;
+  }
+  .PageReservation > .PageReservation-container > form > .PageContact-input:not(:first-child) {
+    margin-top: 30px;
+  }
+  .PageReservation > .PageReservation-container > form > .PageContact-input:nth-child(5) {
+    margin-top: 0px !important;
+  }
+  .PageReservation > .PageReservation-container > form > .PageContact-input label {
+    width: auto;
+    font-size: 20px;
+  }
+  .PageReservation > .PageReservation-container > form > .PageContact-input input,
+  .PageReservation > .PageReservation-container > form > .PageContact-input textarea {
+    width: 100%;
+    max-width: 297px;
+    font-size: 16px;
+    height: 30px;
+  }
+  .PageReservation > .PageReservation-container > form > .PageContact-input.message {
+    height: 224px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 483px;
+  }
+  .PageReservation > .PageReservation-container > form > .PageContact-input.message > textarea {
+    height: 179px;
+    border-radius: 12px;
+  }
+  .PageReservation > .PageReservation-container > form > input.submit {
+    font-size: 17px;
+    margin-top: 25px;
+    width: 125px;
+    height: 39px;
+  }
+}
+
+@media screen and (min-width: 1450px) {
+  .PageReservation {
+    padding-top: 108px;
+  }
+  .PageReservation > .PageReservation-container {
+    width: 1437px;
+  }
+  .PageReservation > .PageReservation-container > h1 {
+    width: auto;
+    height: 58.81px;
+    font-size: 33.85px;
+    padding: 6.04px 48.31px 0px 48.31px;
+  }
+  .PageReservation > .PageReservation-container > p,
+  .PageReservation > .PageReservation-container > a {
+    font-size: 16.91px;
+    line-height: 30.18px;
+  }
+  .PageReservation > .PageReservation-container > p {
+    margin-top: 22.63px;
+  }
+  .PageReservation > .PageReservation-container > a.btnEchelle {
+    display: none;
+  }
+  .PageReservation > .PageReservation-container > .PageReservation-sejours {
+    width: 100%;
+    height: 288.67px;
+    margin-top: 30.18px;
+    margin-bottom: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    position: relative;
+  }
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div {
+    height: 81.07px;
+    border-radius: 30.18px;
+    background-color: #C21E2B;
+    padding: 9.66px 26.11px 9.66px 126.96px;
+    z-index: 2;
+    position: relative;
+  }
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div:first-child {
+    margin-right: 53.23px;
+  }
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div:nth-child(4) > .sejour-infos > .sejour-desc {
+    height: 50px;
+  }
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div:nth-child(4) > .sejour-infos > .sejour-desc > p:last-child {
+    font-size: 13px;
+  }
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div {
+    margin-top: 18.75px;
+  }
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div > img {
+    width: 121px;
+    height: 81.07px;
+    border-radius: 30.18px;
+    position: absolute;
+    left: 0px;
+  }
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    width: 100%;
+    height: 79.84px;
+  }
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos > .sejour-desc {
+    font-weight: bold;
+    color: #f1faee;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    width: 229.01px;
+    height: 54.63px;
+    padding-top: 4.04px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos > .sejour-desc > p:first-child {
+    font-size: 16.91px;
+  }
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos > .sejour-desc > p:last-child {
+    font-size: 13px;
+  }
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos > .sejour-bottom {
+    width: 294.99px;
+  }
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos > .sejour-bottom > div {
+    width: 151.05px;
+  }
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos > .sejour-bottom > div > img {
+    width: 22.71px;
+    height: 26.24px;
+  }
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos > .sejour-bottom > p {
+    width: 124.62px;
+    height: 44.73px;
+    border-radius: 30.18px;
+    font-weight: bold;
+    font-size: 18.13px;
+    background-color: #f1faee;
+  }
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.btnEchelle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: unset;
+    height: 43.49px;
+    padding: 0px 36.27px;
+    padding-top: 3px;
+    z-index: 1;
+    font-size: 18.13px;
+    margin-top: unset;
+    text-decoration: unset;
+    position: absolute;
+    bottom: 7.25px;
+    right: 3.62px;
+  }
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.btnEchelle > img {
+    width: 36.27px;
+    height: auto;
+    margin-left: 24.2px;
+    margin-bottom: 3px;
+    position: relative;
+  }
+  .PageReservation > .PageReservation-container > form {
+    margin-top: 48.275862069px;
+    width: 1302.5862069px;
+    position: relative;
+  }
+  .PageReservation > .PageReservation-container > form > .PageContact-input {
+    width: 527.586206897px;
+    height: 41.034482759px;
+    margin-top: 0px;
+  }
+  .PageReservation > .PageReservation-container > form > .PageContact-input:not(:first-child) {
+    margin-top: 36.206896551px;
+  }
+  .PageReservation > .PageReservation-container > form > .PageContact-input:nth-child(5) {
+    margin-top: 0px !important;
+  }
+  .PageReservation > .PageReservation-container > form > .PageContact-input label {
+    width: auto;
+    font-size: 24.137931034px;
+  }
+  .PageReservation > .PageReservation-container > form > .PageContact-input input,
+  .PageReservation > .PageReservation-container > form > .PageContact-input textarea {
+    width: 100%;
+    max-width: 358.620689655px;
+    font-size: 19.342359767px;
+    height: 36.206896551px;
+  }
+  .PageReservation > .PageReservation-container > form > .PageContact-input.message {
+    height: 270.344827586px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 583.103448276px;
+  }
+  .PageReservation > .PageReservation-container > form > .PageContact-input.message > textarea {
+    height: 216.551724138px;
+    border-radius: 14.482758621px;
+  }
+  .PageReservation > .PageReservation-container > form > input.submit {
+    font-size: 20.548360866px;
+    margin-top: 30.172413793px;
+    width: 151.034482759px;
+    height: 47.155425219px;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .PageReservation {
+    padding-top: 136.86px;
+  }
+  .PageReservation > .PageReservation-container {
+    width: 1687.05px;
+  }
+  .PageReservation > .PageReservation-container > h1 {
+    width: auto;
+    height: 69.14px;
+    font-size: 39.69px;
+    padding: 7.06px 56.35px 0px 56.35px;
+  }
+  .PageReservation > .PageReservation-container > p,
+  .PageReservation > .PageReservation-container > a {
+    font-size: 19.85px;
+    line-height: 35.41px;
+  }
+  .PageReservation > .PageReservation-container > p {
+    margin-top: 25.5px;
+  }
+  .PageReservation > .PageReservation-container > a.btnEchelle {
+    display: none;
+  }
+  .PageReservation > .PageReservation-container > .PageReservation-sejours {
+    width: 100%;
+    height: 339.28px;
+    margin-top: 35.41px;
+    margin-bottom: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    position: relative;
+  }
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div {
+    height: 95.1px;
+    border-radius: 35.41px;
+    background-color: #C21E2B;
+    padding: 11.31px 30.92px 11.31px 152.94px;
+    z-index: 2;
+    position: relative;
+  }
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div:first-child {
+    margin-right: 59.66px;
+  }
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div {
+    margin-top: 21.21px;
+  }
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div:nth-child(4) > .sejour-infos > .sejour-desc {
+    height: 58px;
+  }
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div:nth-child(4) > .sejour-infos > .sejour-desc > p:last-child {
+    font-size: 16px;
+  }
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div > img {
+    width: 135.29px;
+    height: 95.1px;
+    border-radius: 35.41px;
+    position: absolute;
+    left: 0px;
+  }
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    width: 100%;
+    height: 94.08px;
+  }
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos > .sejour-desc {
+    font-weight: bold;
+    color: #f1faee;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    width: 267.93px;
+    height: 63.08px;
+    padding-top: 4.85px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos > .sejour-desc > p:first-child {
+    font-size: 19.85px;
+  }
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos > .sejour-desc > p:last-child {
+    font-size: 16px;
+  }
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos > .sejour-bottom {
+    width: 348.13px;
+  }
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos > .sejour-bottom > div {
+    width: 177.42px;
+  }
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos > .sejour-bottom > div > img {
+    width: 26.7px;
+    height: 30.78px;
+  }
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos > .sejour-bottom > p {
+    width: 146.23px;
+    height: 52.41px;
+    border-radius: 35.41px;
+    font-weight: bold;
+    font-size: 22.44px;
+    background-color: #f1faee;
+  }
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.btnEchelle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: unset;
+    height: 51.07px;
+    padding: 0px 42.35px;
+    z-index: 1;
+    font-size: 22.44px;
+    margin-top: unset;
+    text-decoration: unset;
+    position: absolute;
+    bottom: 8.45px;
+    right: 4.22px;
+  }
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.btnEchelle:hover {
+    text-decoration: underline;
+  }
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.btnEchelle > img {
+    width: 42.35px;
+    height: auto;
+    margin-left: 28.24px;
+    margin-bottom: unset;
+    position: relative;
+  }
+}
+
+.PageNiveaux {
+  width: 100vw;
+  min-height: 100vh;
+  padding-bottom: 50px;
+  background-image: url("../../public/assets/waves-dark_blue.png");
+  position: absolute;
+  top: 0px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 90px;
+  max-width: 100%;
+}
+
+.PageNiveaux > .niveaux-container {
+  display: none;
+}
+
+.PageNiveaux > button {
+  width: auto;
+  height: 39px;
+  font-size: 15px;
+  padding: 0px 20px;
+  background-color: #C21E2B;
+  border-radius: 25px;
+  margin-top: 30px;
+  text-decoration: underline;
+}
+
+.PageNiveaux > button > img {
+  width: 20px;
+  height: auto;
+  margin-right: 10px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.PageNiveaux > h1 {
+  font-size: 20px;
+  padding: 0px 30px;
+  height: 39px;
+  background-color: #C21E2B;
+  border-radius: 25px;
+  width: auto;
+}
+
+.PageNiveaux > .embla-mobile {
+  margin-top: 15px;
+  --slide-size: 100%;
+  max-width: 360px;
+  position: relative;
+}
+
+.PageNiveaux > .embla-mobile > span.shadow {
+  width: 100%;
+  max-width: 360px;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  border-radius: 25px;
+  -webkit-box-shadow: 0px 0px 11px 5px rgba(0, 0, 0, 0.38);
+          box-shadow: 0px 0px 11px 5px rgba(0, 0, 0, 0.38);
+}
+
+.PageNiveaux > .embla-mobile > .controllers {
+  height: 36px;
+  width: 313px;
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.PageNiveaux > .embla-mobile > .controllers > button {
+  width: auto;
+  min-width: 125px;
+  height: 100%;
+  border-radius: 25px;
+  background-color: #C21E2B;
+  padding-top: 2px;
+  padding: 2px 20px 0px 20px;
+}
+
+.PageNiveaux > .embla-mobile > .controllers > button > p {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.PageNiveaux > .embla-mobile > .controllers > button > img {
+  width: 16px;
+  height: auto;
+  padding-bottom: 2px;
+}
+
+.PageNiveaux > .embla-mobile > .embla__viewport {
+  overflow: hidden;
+}
+
+.PageNiveaux > .embla-mobile > .embla__viewport > .embla__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-touch-action: pan-y;
+      touch-action: pan-y;
+}
+
+.PageNiveaux > .embla-mobile > .embla__viewport > .embla__container > .embla__slide {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 var(--slide-size);
+          flex: 0 0 var(--slide-size);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 100vw;
+  overflow: hidden;
+  height: 448px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  padding: 20px 10px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-color: #f1faee;
+  border-radius: 25px;
+}
+
+.PageNiveaux > .embla-mobile > .embla__viewport > .embla__container > .embla__slide > .slide-header {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  padding: 13px 28px 13px 28px;
+  background-color: #219EBC;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  width: auto;
+  height: 80px;
+}
+
+.PageNiveaux > .embla-mobile > .embla__viewport > .embla__container > .embla__slide > .slide-header > p {
+  font-size: 18px;
+  color: #f1faee;
+  font-weight: bold;
+  width: auto;
+}
+
+.PageNiveaux > .embla-mobile > .embla__viewport > .embla__container > .embla__slide > .slide-header > div {
+  width: 135px;
+}
+
+.PageNiveaux > .embla-mobile > .embla__viewport > .embla__container > .embla__slide > .slide-header > div > img {
+  width: 18.8px;
+  height: 21.73px;
+}
+
+.PageNiveaux > .embla-mobile > .embla__viewport > .embla__container > .embla__slide > p.desc {
+  font-size: 14px;
+  text-align: center;
+  line-height: 22px;
+  width: 340px;
+  color: black;
+}
+
+@media screen and (min-width: 450px) {
+  .PageNiveaux {
+    padding-top: 101.5px;
+  }
+  .PageNiveaux > button {
+    height: 48.75px;
+    font-size: 18.75px;
+    padding: 0px 25px;
+    margin-top: 37.5px;
+  }
+  .PageNiveaux > button > img {
+    width: 25px;
+    margin-right: 12.5px;
+  }
+  .PageNiveaux > h1 {
+    font-size: 25px;
+    padding: 0px 37.5px;
+    height: 48.75px;
+  }
+  .PageNiveaux > .embla-mobile {
+    margin-top: 18.75px;
+    max-width: 450px;
+  }
+  .PageNiveaux > .embla-mobile > span.shadow {
+    max-width: 450px;
+    -webkit-box-shadow: 0px 0px 13.75px 6.25px rgba(0, 0, 0, 0.38);
+            box-shadow: 0px 0px 13.75px 6.25px rgba(0, 0, 0, 0.38);
+  }
+  .PageNiveaux > .embla-mobile > .controllers {
+    height: 45px;
+    width: 391.25px;
+    bottom: 31.25px;
+  }
+  .PageNiveaux > .embla-mobile > .controllers > button {
+    min-width: 156.25px;
+  }
+  .PageNiveaux > .embla-mobile > .controllers > button > p {
+    font-size: 18.75px;
+  }
+  .PageNiveaux > .embla-mobile > .controllers > button > img {
+    width: 20px;
+    height: 20px;
+    padding-bottom: 2.5px;
+  }
+  .PageNiveaux > .embla-mobile > .embla__viewport > .embla__container > .embla__slide {
+    height: 560px;
+    padding: 25px 12.5px;
+  }
+  .PageNiveaux > .embla-mobile > .embla__viewport > .embla__container > .embla__slide > .slide-header {
+    padding: 16.25px 35px 16.25px 35px;
+    margin-bottom: 25px;
+    height: 100px;
+  }
+  .PageNiveaux > .embla-mobile > .embla__viewport > .embla__container > .embla__slide > .slide-header > p {
+    font-size: 22.5px;
+  }
+  .PageNiveaux > .embla-mobile > .embla__viewport > .embla__container > .embla__slide > .slide-header > div {
+    width: 168.75px;
+  }
+  .PageNiveaux > .embla-mobile > .embla__viewport > .embla__container > .embla__slide > .slide-header > div > img {
+    width: 23.5px;
+    height: 27.16px;
+  }
+  .PageNiveaux > .embla-mobile > .embla__viewport > .embla__container > .embla__slide > p.desc {
+    font-size: 17.5px;
+    line-height: 27.5px;
+    width: 425px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .PageNiveaux {
+    padding-top: 103.5px;
+  }
+  .PageNiveaux > .embla-mobile {
+    display: none;
+  }
+  .PageNiveaux > .niveaux-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    width: 1140px;
+    margin-top: 24px;
+  }
+  .PageNiveaux > .niveaux-container > div {
+    background-color: #f1faee;
+    border-radius: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 7px 33px;
+    width: 100%;
+  }
+  .PageNiveaux > .niveaux-container > div:not(:first-child) {
+    margin-top: 30px;
+  }
+  .PageNiveaux > .niveaux-container > div > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 135.75px;
+    height: 21.73px;
+  }
+  .PageNiveaux > .niveaux-container > div > div > img {
+    width: 18.8px;
+    height: 21.73px;
+  }
+  .PageNiveaux > .niveaux-container > div > p.title {
+    color: #f1faee;
+    font-size: 20px;
+    background-color: #219EBC;
+    margin-left: 44px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 157px;
+    height: 39px;
+    border-radius: 25px;
+  }
+  .PageNiveaux > .niveaux-container > div.niveau-1 > p.desc {
+    width: 370px;
+    margin-left: 201px;
+  }
+  .PageNiveaux > .niveaux-container > div.niveau-2 > p.desc {
+    width: 505px;
+    margin-left: 132px;
+  }
+  .PageNiveaux > .niveaux-container > div.niveau-3 > p.desc {
+    width: 581px;
+    margin-left: 92px;
+  }
+  .PageNiveaux > .niveaux-container > div.niveau-4 > p.desc {
+    width: 625px;
+    margin-left: 72px;
+  }
+  .PageNiveaux > .niveaux-container > div.niveau-5 > p.desc {
+    width: 572px;
+    margin-left: 99px;
+  }
+  .PageNiveaux > .niveaux-container > div > p.desc {
+    font-size: 12px;
+    text-align: center;
+    color: black;
+    line-height: 20px;
+  }
+  .PageNiveaux > button {
+    height: 48.75px;
+    font-size: 18.75px;
+    padding: 0px 25px;
+    margin-top: 20px;
+    margin-right: 977px;
+    text-decoration: unset;
+  }
+  .PageNiveaux > button:hover {
+    text-decoration: underline;
+  }
+  .PageNiveaux > button > img {
+    width: 25px;
+    margin-right: 12.5px;
+  }
+  .PageNiveaux > h1 {
+    font-size: 28px;
+    padding: 0px 50px;
+    height: 48.75px;
+  }
+}
+
+@media screen and (min-width: 1450px) {
+  .PageNiveaux {
+    padding-top: 120px;
+  }
+  .PageNiveaux > .niveaux-container {
+    width: 1379.31px;
+    margin-top: 28.99px;
+  }
+  .PageNiveaux > .niveaux-container > div {
+    padding: 8.46px 39.86px;
+  }
+  .PageNiveaux > .niveaux-container > div:not(:first-child) {
+    margin-top: 36.28px;
+  }
+  .PageNiveaux > .niveaux-container > div > div {
+    width: 164.15px;
+    height: 26.26px;
+  }
+  .PageNiveaux > .niveaux-container > div > div > img {
+    width: 22.71px;
+    height: 26.26px;
+  }
+  .PageNiveaux > .niveaux-container > div > p.title {
+    font-size: 24.16px;
+    margin-left: 53.24px;
+    width: 190.07px;
+    height: 47.14px;
+  }
+  .PageNiveaux > .niveaux-container > div.niveau-1 > p.desc {
+    width: 447.31px;
+    margin-left: 243.09px;
+  }
+  .PageNiveaux > .niveaux-container > div.niveau-2 > p.desc {
+    width: 610.48px;
+    margin-left: 161.57px;
+  }
+  .PageNiveaux > .niveaux-container > div.niveau-3 > p.desc {
+    width: 701.38px;
+    margin-left: 111.03px;
+  }
+  .PageNiveaux > .niveaux-container > div.niveau-4 > p.desc {
+    width: 750.85px;
+    margin-left: 87.16px;
+  }
+  .PageNiveaux > .niveaux-container > div.niveau-5 > p.desc {
+    width: 690.79px;
+    margin-left: 119.74px;
+  }
+  .PageNiveaux > .niveaux-container > div > p.desc {
+    font-size: 14.51px;
+    line-height: 24.16px;
+  }
+  .PageNiveaux > button {
+    height: 58.91px;
+    font-size: 22.67px;
+    padding: 0px 30.21px;
+    margin-top: 24.16px;
+    margin-right: 1186.29px;
+  }
+  .PageNiveaux > button > img {
+    width: 30.21px;
+    margin-right: 15.11px;
+  }
+  .PageNiveaux > h1 {
+    font-size: 33.85px;
+    padding: 0px 60.38px;
+    height: 58.91px;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .PageNiveaux {
+    padding-top: 140px;
+  }
+  .PageNiveaux > .niveaux-container {
+    width: 1618.43px;
+    margin-top: 34.04px;
+  }
+  .PageNiveaux > .niveaux-container > div {
+    padding: 9.92px 46.93px;
+  }
+  .PageNiveaux > .niveaux-container > div:not(:first-child) {
+    margin-top: 42.53px;
+  }
+  .PageNiveaux > .niveaux-container > div > div {
+    width: 192.64px;
+    height: 30.8px;
+  }
+  .PageNiveaux > .niveaux-container > div > div > img {
+    width: 26.66px;
+    height: 30.8px;
+  }
+  .PageNiveaux > .niveaux-container > div > p.title {
+    font-size: 28.34px;
+    margin-left: 63.03px;
+    width: 222.52px;
+    height: 55.3px;
+  }
+  .PageNiveaux > .niveaux-container > div.niveau-1 > p.desc {
+    width: 524.47px;
+    margin-left: 283.4px;
+  }
+  .PageNiveaux > .niveaux-container > div.niveau-2 > p.desc {
+    width: 711.76px;
+    margin-left: 188.23px;
+  }
+  .PageNiveaux > .niveaux-container > div.niveau-3 > p.desc {
+    width: 820.7px;
+    margin-left: 132.48px;
+  }
+  .PageNiveaux > .niveaux-container > div.niveau-4 > p.desc {
+    width: 879.58px;
+    margin-left: 104.73px;
+  }
+  .PageNiveaux > .niveaux-container > div.niveau-5 > p.desc {
+    width: 806.67px;
+    margin-left: 144.4px;
+  }
+  .PageNiveaux > .niveaux-container > div > p.desc {
+    font-size: 16.99px;
+    line-height: 28.34px;
+  }
+  .PageNiveaux > button {
+    height: 69px;
+    font-size: 26.56px;
+    padding: 0px 35.44px;
+    margin-top: 28.34px;
+    margin-right: 1396.12px;
+  }
+  .PageNiveaux > button > img {
+    width: 35.44px;
+    margin-right: 17.72px;
+  }
+  .PageNiveaux > h1 {
+    font-size: 39.75px;
+    padding: 0px 70.87px;
+    height: 69px;
+  }
+}
+
+.CookieBanner-shadow {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0px;
+  z-index: 98;
+}
+
+.CookieBanner-shadow.none {
+  display: none;
+}
+
+.CookieBanner {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  width: 90vw;
+  background-color: #f1faee;
+  border-radius: 25px;
+  height: auto;
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 99;
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 20px;
+  text-align: center;
+  max-width: 496px;
+}
+
+.CookieBanner > p {
+  line-height: 20px;
+}
+
+.CookieBanner.none {
+  display: none;
+}
+
+.CookieBanner a {
+  text-decoration: underline;
+}
+
+.CookieBanner > div {
+  width: 75%;
+  margin: 20px 0px;
+  max-width: 279px;
+}
+
+.CookieBanner > div > button {
+  height: 35px;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 25px;
+  padding: 0px 20px;
+  background-color: #219EBC;
+}
+
+.CookieBanner > div > button:first-child {
+  background-color: black;
+}
+
+@media screen and (min-width: 700px) {
+  .CookieBanner-shadow {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0px;
+    z-index: 98;
+  }
+  .CookieBanner {
+    width: 700px;
+    bottom: 70px;
+    font-size: 18px;
+    max-width: unset;
+  }
+  .CookieBanner > p {
+    line-height: 26px;
+  }
+  .CookieBanner .aqua {
+    text-decoration: unset;
+  }
+  .CookieBanner .aqua:hover {
+    text-decoration: underline;
+  }
+  .CookieBanner > div {
+    width: 260px;
+  }
+  .CookieBanner > div > button {
+    height: 42px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 25px;
+    padding: 0px 20px;
+  }
+  .CookieBanner > div > button:first-child {
+    background-color: black;
+  }
+  .CookieBanner > div > button:last-child {
+    background-color: #219EBC;
+  }
+}
+
+.PageMentions {
+  width: 100vw;
+  min-height: 100vh;
+  padding-bottom: 50px;
+  background-image: url("../../public/assets/waves-dark_blue.png");
+  position: absolute;
+  top: 0px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 90px;
+  max-width: 100%;
+}
+
+.PageMentions > h1 {
+  font-size: 20px;
+  padding: 0px 30px;
+  height: 39px;
+  background-color: #C21E2B;
+  border-radius: 25px;
+  width: auto;
+  font-weight: bold;
+}
+
+.PageMentions > .PageMentions-container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  width: 90%;
+}
+
+.PageMentions > .PageMentions-container > button {
+  width: auto;
+  height: 39px;
+  font-size: 15px;
+  padding: 0px 20px;
+  background-color: #C21E2B;
+  border-radius: 25px;
+  margin-top: 30px;
+  text-decoration: underline;
+}
+
+.PageMentions > .PageMentions-container > button > img {
+  width: 20px;
+  height: auto;
+  margin-right: 10px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.PageMentions > .PageMentions-container .margintop {
+  margin-top: 30px;
+}
+
+.PageMentions > .PageMentions-container > ul {
+  padding-left: 42px;
+}
+
+.PageMentions > .PageMentions-container > ul > li {
+  margin-top: 10px;
+}
+
+.PageMentions > .PageMentions-container > p,
+.PageMentions > .PageMentions-container > ul {
+  color: black;
+  font-size: 14px;
+  line-height: 21px;
+  list-style-type: circle;
+}
+
+.PageMentions > .PageMentions-container > p.heading,
+.PageMentions > .PageMentions-container > ul.heading {
+  font-size: 15px;
+}
+
+.PageMentions > .PageMentions-container > p > a,
+.PageMentions > .PageMentions-container > ul > a {
+  text-decoration: underline;
+  color: white;
+}
+
+@media screen and (min-width: 450px) {
+  .PageMentions {
+    padding-bottom: 62.5px;
+    /* 50px / 0.8 */
+    padding-top: 112.5px;
+    /* 90px / 0.8 */
+  }
+  .PageMentions > h1 {
+    font-size: 25px;
+    /* 20px / 0.8 */
+    padding: 0px 37.5px;
+    /* 30px / 0.8 */
+    height: 48.75px;
+    /* 39px / 0.8 */
+  }
+  .PageMentions > .PageMentions-container > button {
+    height: 48.75px;
+    /* 39px / 0.8 */
+    padding: 0px 25px;
+    /* 20px / 0.8 */
+    margin-top: 37.5px;
+    /* 30px / 0.8 */
+    font-size: 18.75px;
+  }
+  .PageMentions > .PageMentions-container > button > img {
+    width: 25px;
+    /* 20px / 0.8 */
+    margin-right: 12.5px;
+    /* 10px / 0.8 */
+  }
+  .PageMentions > .PageMentions-container .margintop {
+    margin-top: 37.5px;
+    /* 30px / 0.8 */
+  }
+  .PageMentions > .PageMentions-container > ul {
+    padding-left: 52.5px;
+    /* 42px / 0.8 */
+  }
+  .PageMentions > .PageMentions-container > ul > li {
+    margin-top: 12.5px;
+    /* 10px / 0.8 */
+  }
+  .PageMentions > .PageMentions-container > p,
+  .PageMentions > .PageMentions-container > ul {
+    color: black;
+    font-size: 17.5px;
+    /* 14px / 0.8 */
+    line-height: 26.25px;
+    /* 21px / 0.8 */
+  }
+  .PageMentions > .PageMentions-container > p.heading,
+  .PageMentions > .PageMentions-container > ul.heading {
+    font-size: 18.75px;
+    /* 15px / 0.8 */
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .PageMentions {
+    padding-bottom: 50px;
+    padding-top: 100px;
+  }
+  .PageMentions > h1 {
+    font-size: 30px;
+    padding: 0px 40px;
+    height: 50px;
+  }
+  .PageMentions > .PageMentions-container {
+    max-width: 1180px;
+  }
+  .PageMentions > .PageMentions-container > button {
+    height: 50px;
+    padding: 0px 35px;
+    margin-top: 50px;
+    font-size: 22px;
+    text-decoration: unset;
+  }
+  .PageMentions > .PageMentions-container > button:hover {
+    text-decoration: underline;
+  }
+  .PageMentions > .PageMentions-container > button > img {
+    width: 28px;
+    margin-right: 20px;
+  }
+  .PageMentions > .PageMentions-container .margintop {
+    margin-top: 40px;
+  }
+  .PageMentions > .PageMentions-container > ul {
+    padding-left: 140px;
+  }
+  .PageMentions > .PageMentions-container > ul > li {
+    margin-top: 20px;
+  }
+  .PageMentions > .PageMentions-container > p,
+  .PageMentions > .PageMentions-container > ul {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .PageMentions > .PageMentions-container > p.heading,
+  .PageMentions > .PageMentions-container > ul.heading {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 1450px) {
+  .PageMentions {
+    padding-bottom: 60.3846px;
+    /* 50px / 0.827586 */
+    padding-top: 136.88px;
+    /* 100px / 0.827586 */
+  }
+  .PageMentions > h1 {
+    font-size: 36.2069px;
+    /* 30px / 0.827586 */
+    padding: 0px 48.276px;
+    /* 40px / 0.827586 */
+    height: 60.3448px;
+    padding-top: 4px;
+    /* 50px / 0.827586 */
+  }
+  .PageMentions > .PageMentions-container {
+    max-width: 1626.586px;
+    /* 1180px / 0.827586 */
+  }
+  .PageMentions > .PageMentions-container > button {
+    height: 60.3448px;
+    /* 50px / 0.827586 */
+    padding: 0px 42.2414px;
+    /* 35px / 0.827586 */
+    margin-top: 60.3448px;
+    /* 50px / 0.827586 */
+    font-size: 26.5862px;
+    /* 22px / 0.827586 */
+  }
+  .PageMentions > .PageMentions-container > button > img {
+    width: 33.8405px;
+    /* 28px / 0.827586 */
+    margin-right: 24.1379px;
+    /* 20px / 0.827586 */
+  }
+  .PageMentions > .PageMentions-container .margintop {
+    margin-top: 48.276px;
+    /* 40px / 0.827586 */
+  }
+  .PageMentions > .PageMentions-container > ul {
+    padding-left: 169.014px;
+    /* 140px / 0.827586 */
+  }
+  .PageMentions > .PageMentions-container > ul > li {
+    margin-top: 24.1379px;
+    /* 20px / 0.827586 */
+  }
+  .PageMentions > .PageMentions-container > p,
+  .PageMentions > .PageMentions-container > ul {
+    font-size: 22px;
+    /* 20px / 0.827586 */
+    line-height: 34px;
+    /* 30px / 0.827586 */
+  }
+  .PageMentions > .PageMentions-container > p.heading,
+  .PageMentions > .PageMentions-container > ul.heading {
+    font-size: 27px;
+    /* 24px / 0.827586 */
+  }
+}
+
+input, textarea {
+  background-color: grey;
+  color: #f1faee;
+  margin-left: 20px;
+}
+/*# sourceMappingURL=index.css.map */

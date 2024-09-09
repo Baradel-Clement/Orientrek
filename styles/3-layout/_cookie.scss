@@ -91,7 +91,6 @@
 
     & > div {
       width: 260px;
-      @extend %flex-between-center;
       & > button {
         height: 42px;
         color: white;

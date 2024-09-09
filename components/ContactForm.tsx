@@ -3,7 +3,9 @@ import { sendEmail } from "../utils/sendEmail";
 import ReactLoading from "react-loading";
 import toast, { Toaster } from "react-hot-toast";
 
-const ContactForm = () => {
+const ContactForm = ({
+  reservation = { isReservation: false, sejour: "", date: "" },
+}) => {
   const [values, setValues] = useState({
     firstName: "",
     lastName: "",
@@ -28,7 +30,7 @@ const ContactForm = () => {
   const handleSubmit = async () => {
     try {
       setIsLoading(true);
-      await sendEmail(values);
+      await sendEmail(values, reservation);
       notify();
     } catch (error) {
       notifyError();
@@ -115,7 +117,9 @@ const ContactForm = () => {
             onChange={(e) => setInputChanges("message", e.target.value)}
           />
         </div>
-        {!isLoading && <input className="drop-shadow submit" type="submit" value="Envoyer" />}
+        {!isLoading && (
+          <input className="drop-shadow submit" type="submit" value="Envoyer" />
+        )}
         {isLoading && (
           <ReactLoading type={"spin"} color={"blue"} height={66} width={37} />
         )}
