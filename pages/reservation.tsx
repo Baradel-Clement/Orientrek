@@ -73,7 +73,7 @@ const Reservation: NextPageWithLayout<Props> = () => {
             )}
             {!displayReservationForm.display && (
               <Link href={"/niveaux"} className="btnEchelle drop-shadow">
-                Niveaux des treks <Image src={arrow} alt="Icône flèche" />
+                Niveaux des treks
               </Link>
             )}
 
@@ -134,7 +134,7 @@ const Reservation: NextPageWithLayout<Props> = () => {
 
               {!displayReservationForm.display && (
                 <Link href={"/niveaux"} className="btnEchelle drop-shadow">
-                  Niveaux des treks <Image src={arrow} alt="Icône flèche" />
+                  Niveaux des treks
                 </Link>
               )}
             </div>

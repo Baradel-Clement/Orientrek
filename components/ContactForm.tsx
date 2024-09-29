@@ -93,7 +93,7 @@ const ContactForm = ({
           />
         </div>
         <div className="PageContact-input">
-          <label htmlFor="num">Numéro :</label>
+          <label htmlFor="num">Téléphone :</label>
           <input
             className="drop-shadow"
             type="tel"
