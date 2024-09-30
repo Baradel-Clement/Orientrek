@@ -33,14 +33,14 @@ export default async function handler(
           ? `${req.body.inputValues.firstName} ${req.body.inputValues.lastName} <contact@orientrek.com>`
           : "contact@orientrek.com",
       to: ["resa.orientrek@gmail.com", "contact@orientrek.com"],
-      subject: `demande de réservation du séjour ${req.body.reservation.sejour} ${req.body.reservation.date} de ${req.body.inputValues.firstName} ${req.body.inputValues.lastName}`,
+      subject: `demande de réservation du séjour ${req.body.reservation.sejour} ${req.body.reservation.date} 2025 de ${req.body.inputValues.firstName} ${req.body.inputValues.lastName}`,
       html: `Date de la demande: ${currentDate}<br />
       Nom : ${req.body.inputValues.lastName}<br />
       Prénom : ${req.body.inputValues.firstName}<br />
       Email : ${req.body.inputValues.email}<br />
       Téléphone : ${req.body.inputValues.num}<br />
       Séjour : ${req.body.reservation.sejour}<br />
-      Dates : ${req.body.reservation.date}<br />
+      Dates : ${req.body.reservation.date} 2025<br />
       Message : <br /> <br />
       ${req.body.inputValues.message}`,
     });
@@ -56,12 +56,12 @@ export default async function handler(
       from: "Samuel Bernard <ne-pas-repondre@orientrek.com>",
       cc: ["resa.orientrek@gmail.com"],
       to: [req.body.inputValues.email],
-      subject: `Votre demande de réservation du séjour ${req.body.reservation.sejour} ${req.body.reservation.date}`,
+      subject: `Votre demande de réservation du séjour ${req.body.reservation.sejour} ${req.body.reservation.date} 2025`,
       html: `Bonjour ${req.body.inputValues.firstName} ${req.body.inputValues.lastName},<br /><br />
   
       Ce ${currentDate}, vous avez envoyé une demande de réservation sur le site <a href="www.orientrek.com" target="_blank">www.orientrek.com</a> pour le séjour ci-après :<br /> 
       
-      ${req.body.reservation.sejour} ${req.body.reservation.date}<br /><br /> 
+      ${req.body.reservation.sejour} ${req.body.reservation.date} 2025<br /><br /> 
 
       Nous vous remercions pour votre confiance et notre équipe vous transmettra l’ensemble des documents nécessaires pour votre inscription.<br /><br /> 
 

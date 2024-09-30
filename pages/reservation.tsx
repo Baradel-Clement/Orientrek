@@ -76,6 +76,14 @@ const Reservation: NextPageWithLayout<Props> = () => {
                 Niveaux des treks
               </Link>
             )}
+            {!displayReservationForm.display && (
+              <Link
+                href={"/conditions-de-vente"}
+                className="btnEchelle drop-shadow reversed"
+              >
+                Conditions de Vente
+              </Link>
+            )}
 
             <div
               className={`PageReservation-sejours ${
@@ -86,7 +94,7 @@ const Reservation: NextPageWithLayout<Props> = () => {
                 sejours2025.map((sejour, i) => (
                   <div
                     key={sejour.trek}
-                    className="drop-shadow"
+                    className="drop-shadow sejour"
                     onClick={() =>
                       setDisplayReservationForm({
                         display: true,
@@ -132,13 +140,22 @@ const Reservation: NextPageWithLayout<Props> = () => {
                   </div>
                 ))}
 
-              {!displayReservationForm.display && (
-                <Link href={"/niveaux"} className="btnEchelle drop-shadow">
-                  Niveaux des treks
-                </Link>
-              )}
+              <div className="PageReservation-sejours-buttons">
+                {!displayReservationForm.display && (
+                  <Link href={"/niveaux"} className="btnEchelle drop-shadow">
+                    Niveaux des treks
+                  </Link>
+                )}
+                {!displayReservationForm.display && (
+                  <Link
+                    href={"/conditions-de-vente"}
+                    className="btnEchelle drop-shadow reversed"
+                  >
+                    Conditions de vente
+                  </Link>
+                )}
+              </div>
             </div>
-
             {/* 
             
             
