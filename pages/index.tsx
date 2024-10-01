@@ -52,8 +52,8 @@ const Accueil: NextPageWithLayout<Props> = () => {
         }}
         additionalLinkTags={[
           {
-            rel: 'icon',
-            href: '/favicon.ico',
+            rel: "icon",
+            href: "/favicon.ico",
           },
         ]}
       />
@@ -364,7 +364,9 @@ const Accueil: NextPageWithLayout<Props> = () => {
             </div>
             <div className="maps-news drop-shadow">
               <p className="bold">
-              Escaladez les montagnes et écoutez leurs bonnes nouvelles. Les vents vous souflleront leur fraîcheur et les tempêtes leur énergie, tandis que les soucis s'éparpilleront comme les feuilles de l'automne. John Muir
+                On se souvient des chefs de file, mais on ne connaît pas
+                forcément ceux qui ont contribué à faire de ces chefs de file de
+                grandes et hautes personnalités. Maurice Herzog
               </p>
             </div>
 
