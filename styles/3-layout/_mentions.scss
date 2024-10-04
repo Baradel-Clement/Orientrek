@@ -1,4 +1,4 @@
-.PageConditions {
+.PageMentions {
   width: 100vw;
   min-height: 100vh;
   padding-bottom: 50px;
@@ -20,7 +20,7 @@
     font-weight: bold;
   }
 
-  & > .PageConditions-container {
+  & > .PageMentions-container {
     @extend %flex-start-start;
     flex-flow: column;
     width: 90%;
@@ -73,7 +73,7 @@
 }
 
 @media screen and (min-width: 450px) {
-  .PageConditions {
+  .PageMentions {
     padding-bottom: 62.5px; /* 50px / 0.8 */
     padding-top: 112.5px; /* 90px / 0.8 */
     & > h1 {
@@ -82,7 +82,7 @@
       height: 48.75px; /* 39px / 0.8 */
     }
 
-    & > .PageConditions-container {
+    & > .PageMentions-container {
       & > button {
         height: 48.75px; /* 39px / 0.8 */
         padding: 0px 25px; /* 20px / 0.8 */
@@ -120,7 +120,7 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .PageConditions {
+  .PageMentions {
     padding-bottom: 50px;
     padding-top: 100px;
     & > h1 {
@@ -129,7 +129,7 @@
       height: 50px;
     }
 
-    & > .PageConditions-container {
+    & > .PageMentions-container {
       max-width: 1180px;
       & > button {
         height: 50px;
@@ -172,7 +172,7 @@
 }
 
 @media screen and (min-width: 1450px) {
-  .PageConditions {
+  .PageMentions {
     padding-bottom: 60.3846px; /* 50px / 0.827586 */
     padding-top: 136.88px; /* 100px / 0.827586 */
     & > h1 {
@@ -182,7 +182,7 @@
       padding-top: 4px; /* 50px / 0.827586 */
     }
 
-    & > .PageConditions-container {
+    & > .PageMentions-container {
       max-width: 1626.586px; /* 1180px / 0.827586 */
       & > button {
         height: 60.3448px; /* 50px / 0.827586 */
