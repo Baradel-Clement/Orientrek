@@ -203,7 +203,7 @@ label {
   a.sejour, a.sejour > div.sejour-desc > div.sejour-difficulty, nav div.nav-list > button.btnSejour,
   nav div.nav-list > a.navLink, nav div.nav-list > a.sejour, nav div.nav-list > a.sejour > div.sejour-desc > div.sejour-difficulty, .Accueil-destinations, .PageSejour-fullscreenImg > a, .embla-mobile > .controllers, .embla-mobile > .controllers > button, .embla-mobile > .bottom-buttons, .embla-mobile > .bottom-buttons > button,
   .embla-mobile > .bottom-buttons > a, .embla-mobile > .embla__viewport > .embla__container > .embla__slide > .slide-description > .desc-J0, .embla-mobile > .embla__viewport > .embla__container > .embla__slide > .slide-description > .desc-J0 > .desc-J0-infos, .embla-mobile > .embla__viewport > .embla__container > .embla__slide > .slide-description > .desc-J0 > .desc-J0-infos > .desc-J0-info > div, .embla-mobile > .embla__viewport > .embla__container > .embla__slide > .slide-description > .roadmapBtn, .sejour-desktop > .sejour-header > div.sejour-header-right, .sejour-desktop > .sejour-header > div.sejour-header-right > .sejour-header-infos, .sejour-desktop > .sejour-header > div.sejour-header-right > .sejour-header-infos > .sejour-header-info > div, .sejour-desktop > .sejour-buttons, .sejour-desktop > .sejour-buttons > button,
-  .sejour-desktop > .sejour-buttons > a, .PageContact > form > .PageContact-input, .PageReservation > .PageReservation-container a.btnEchelle, .PageReservation > .PageReservation-container > .PageReservation-sejours > div, .PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos, .PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos > .sejour-desc, .PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos > .sejour-bottom, .PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos > .sejour-bottom > div, .PageReservation > .PageReservation-container > button.backButton, .PageReservation > .PageReservation-container > form > .PageContact-input, .PageNiveaux > button, .PageNiveaux > .embla-mobile > .controllers, .PageNiveaux > .embla-mobile > .controllers > button, .PageNiveaux > .embla-mobile > .embla__viewport > .embla__container > .embla__slide > .slide-header, .PageNiveaux > .embla-mobile > .embla__viewport > .embla__container > .embla__slide > .slide-header > div, .CookieBanner, .CookieBanner > div, .PageMentions > .PageMentions-container > button {
+  .sejour-desktop > .sejour-buttons > a, .PageContact > form > .PageContact-input, .PageReservation > .PageReservation-container a.btnEchelle, .PageReservation > .PageReservation-container > .PageReservation-sejours > div.sejour, .PageReservation > .PageReservation-container > .PageReservation-sejours > div.sejour > .sejour-infos, .PageReservation > .PageReservation-container > .PageReservation-sejours > div.sejour > .sejour-infos > .sejour-desc, .PageReservation > .PageReservation-container > .PageReservation-sejours > div.sejour > .sejour-infos > .sejour-bottom, .PageReservation > .PageReservation-container > .PageReservation-sejours > div.sejour > .sejour-infos > .sejour-bottom > div, .PageReservation > .PageReservation-container > button.backButton, .PageReservation > .PageReservation-container > form > .PageContact-input, .PageNiveaux > button, .PageNiveaux > .embla-mobile > .controllers, .PageNiveaux > .embla-mobile > .controllers > button, .PageNiveaux > .embla-mobile > .embla__viewport > .embla__container > .embla__slide > .slide-header, .PageNiveaux > .embla-mobile > .embla__viewport > .embla__container > .embla__slide > .slide-header > div, .CookieBanner, .CookieBanner > div, .PageMentions > .PageMentions-container > button, .PageConditions > .PageConditions-container > button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -217,7 +217,7 @@ label {
   a.sejour > div.sejour-desc,
   nav div.nav-list > a.navLink, nav div.nav-list > a.sejour > div.sejour-desc, .maps-hint, .maps-news, .PageSejour-fullscreenImg, .PageSejour-fullscreenImg > button, .PageSejour > h1, .embla-mobile > .embla__viewport > .embla__container > .embla__slide > .slide-description > p.day, .embla-mobile > .embla__viewport > .embla__container > .embla__slide > .slide-description > .desc-J0 > .desc-J0-infos > .desc-J0-info > p,
   .embla-mobile > .embla__viewport > .embla__container > .embla__slide > .slide-description > .desc-J0 > .desc-J0-infos > .desc-J0-info > a, .embla-mobile > .embla__viewport > .embla__container > .embla__slide > .slide-description > .desc-J0 > .desc-J0-infos > .desc-J0-info > div > p, .sejour-desktop, .sejour-desktop > h1.title, .sejour-desktop > .sejour-header > div.sejour-header-left > .embla-desktop > .embla-desktop__viewport > .embla__container > .embla__slide > div > p:first-child, .sejour-desktop > .sejour-header > div.sejour-header-left > p:last-child, .sejour-desktop > .sejour-header > div.sejour-header-right > .sejour-header-infos > .sejour-header-info > p,
-  .sejour-desktop > .sejour-header > div.sejour-header-right > .sejour-header-infos > .sejour-header-info > a, .sejour-desktop > .sejour-header > div.sejour-header-right > .sejour-header-descDay > div:first-child, .sejour-desktop > .sejour-phrise, .sejour-desktop > .sejour-phrise > .sejour-phrise-thumbs > .sejour-phrise-thumb > p, .PageContact > .PageContact-instructions > h1, .PageContact > form > input.submit, .PageNous > .PageNous-container > h1, .PageReservation > .PageReservation-container > h1, .PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos > .sejour-bottom > p, .PageReservation > .PageReservation-container > form > input.submit, .PageNiveaux > h1, .PageMentions > h1 {
+  .sejour-desktop > .sejour-header > div.sejour-header-right > .sejour-header-infos > .sejour-header-info > a, .sejour-desktop > .sejour-header > div.sejour-header-right > .sejour-header-descDay > div:first-child, .sejour-desktop > .sejour-phrise, .sejour-desktop > .sejour-phrise > .sejour-phrise-thumbs > .sejour-phrise-thumb > p, .PageContact > .PageContact-instructions > h1, .PageContact > form > input.submit, .PageNous > .PageNous-container > h1, .PageReservation > .PageReservation-container > h1, .PageReservation > .PageReservation-container > .PageReservation-sejours > div.sejour > .sejour-infos > .sejour-bottom > p, .PageReservation > .PageReservation-container > form > input.submit, .PageNiveaux > h1, .PageMentions > h1, .PageConditions > h1 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -228,7 +228,7 @@ label {
         -ms-flex-align: center;
             align-items: center;
   }
-  nav .nav-upper, nav div.nav-list, .Accueil, .Accueil-main, .embla-mobile > .embla__viewport > .embla__container > .embla__slide > .slide-description, .embla-mobile > .embla__viewport > .embla__container > .embla__slide > .slide-description > .desc-J0 > .desc-J0-infos > .desc-J0-info, .sejour-desktop > .sejour-header > div.sejour-header-left > .embla-desktop > .embla-desktop__viewport > .embla__container > .embla__slide > div, .sejour-desktop > .sejour-header > div.sejour-header-right > .sejour-header-infos > .sejour-header-info, .sejour-desktop > .sejour-header > div.sejour-header-right > .sejour-header-descDay, .PageContact, .PageNous, .PageNous > .PageNous-container, .PageReservation, .PageReservation > .PageReservation-container, .PageNiveaux, .PageMentions {
+  nav .nav-upper, nav div.nav-list, .Accueil, .Accueil-main, .embla-mobile > .embla__viewport > .embla__container > .embla__slide > .slide-description, .embla-mobile > .embla__viewport > .embla__container > .embla__slide > .slide-description > .desc-J0 > .desc-J0-infos > .desc-J0-info, .sejour-desktop > .sejour-header > div.sejour-header-left > .embla-desktop > .embla-desktop__viewport > .embla__container > .embla__slide > div, .sejour-desktop > .sejour-header > div.sejour-header-right > .sejour-header-infos > .sejour-header-info, .sejour-desktop > .sejour-header > div.sejour-header-right > .sejour-header-descDay, .PageContact, .PageNous, .PageNous > .PageNous-container, .PageReservation, .PageReservation > .PageReservation-container, .PageNiveaux, .PageMentions, .PageConditions {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -261,7 +261,7 @@ label {
         -ms-flex-align: end;
             align-items: flex-end;
   }
-  .PageContact > .PageContact-instructions, .PageContact > form, .PageReservation > .PageReservation-container > form, .PageMentions > .PageMentions-container {
+  .PageContact > .PageContact-instructions, .PageContact > form, .PageReservation > .PageReservation-container > form, .PageMentions > .PageMentions-container, .PageConditions > .PageConditions-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -298,6 +298,10 @@ textarea {
 
 .bold {
   font-weight: 700;
+}
+
+.underline {
+  text-decoration: underline;
 }
 
 .XXXL {
@@ -1261,8 +1265,8 @@ div.Accueil {
 
 .maps-news > p {
   width: 634px;
-  line-height: 17px;
-  font-size: 11px;
+  line-height: 20px;
+  font-size: 15px;
 }
 
 .Accueil-destinations {
@@ -1604,8 +1608,8 @@ div.Accueil {
   }
   .maps-news > p {
     width: 893px;
-    line-height: 27px;
-    font-size: 16px;
+    line-height: 29px;
+    font-size: 20px;
   }
   .Accueil-destinations {
     width: 211px;
@@ -3409,6 +3413,11 @@ div.Accueil {
   margin-bottom: 3px;
 }
 
+.PageReservation > .PageReservation-container a.btnEchelle.reversed {
+  background-color: #f1faee;
+  color: #C21E2B;
+}
+
 .PageReservation > .PageReservation-container > .PageReservation-sejours {
   width: 100%;
   height: 500px;
@@ -3420,11 +3429,15 @@ div.Accueil {
           flex-flow: column;
 }
 
+.PageReservation > .PageReservation-container > .PageReservation-sejours .PageReservation-sejours-buttons {
+  display: none;
+}
+
 .PageReservation > .PageReservation-container > .PageReservation-sejours.displayNone {
   display: none;
 }
 
-.PageReservation > .PageReservation-container > .PageReservation-sejours > div {
+.PageReservation > .PageReservation-container > .PageReservation-sejours > div.sejour {
   width: 100%;
   height: 80px;
   border-radius: 25px;
@@ -3434,13 +3447,13 @@ div.Accueil {
   cursor: pointer;
 }
 
-.PageReservation > .PageReservation-container > .PageReservation-sejours > div > img {
+.PageReservation > .PageReservation-container > .PageReservation-sejours > div.sejour > img {
   width: 95px;
   height: auto;
   border-radius: 25px;
 }
 
-.PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos {
+.PageReservation > .PageReservation-container > .PageReservation-sejours > div.sejour > .sejour-infos {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
@@ -3449,7 +3462,7 @@ div.Accueil {
   height: 66px;
 }
 
-.PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos > .sejour-desc {
+.PageReservation > .PageReservation-container > .PageReservation-sejours > div.sejour > .sejour-infos > .sejour-desc {
   font-size: 12px;
   font-weight: bold;
   color: #f1faee;
@@ -3463,20 +3476,20 @@ div.Accueil {
           flex-flow: column;
 }
 
-.PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos > .sejour-bottom {
+.PageReservation > .PageReservation-container > .PageReservation-sejours > div.sejour > .sejour-infos > .sejour-bottom {
   width: 100%;
 }
 
-.PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos > .sejour-bottom > div {
+.PageReservation > .PageReservation-container > .PageReservation-sejours > div.sejour > .sejour-infos > .sejour-bottom > div {
   width: 100px;
 }
 
-.PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos > .sejour-bottom > div > img {
+.PageReservation > .PageReservation-container > .PageReservation-sejours > div.sejour > .sejour-infos > .sejour-bottom > div > img {
   width: 13.85px;
   height: 15.72;
 }
 
-.PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos > .sejour-bottom > p {
+.PageReservation > .PageReservation-container > .PageReservation-sejours > div.sejour > .sejour-infos > .sejour-bottom > p {
   width: 92px;
   height: 24px;
   border-radius: 25px;
@@ -3485,7 +3498,7 @@ div.Accueil {
   background-color: #f1faee;
 }
 
-.PageReservation > .PageReservation-container > .PageReservation-sejours > div.btnEchelle {
+.PageReservation > .PageReservation-container > .PageReservation-sejours > div.sejour.btnEchelle {
   display: none;
 }
 
@@ -3625,32 +3638,32 @@ div.Accueil {
   .PageReservation > .PageReservation-container > .PageReservation-sejours > a.btnEchelle {
     display: none;
   }
-  .PageReservation > .PageReservation-container > .PageReservation-sejours > div {
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.sejour {
     height: 100px;
     border-radius: 31.25px;
     padding: 10px 27.5px 10px 6.25px;
   }
-  .PageReservation > .PageReservation-container > .PageReservation-sejours > div > img {
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.sejour > img {
     width: 118.75px;
   }
-  .PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos {
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.sejour > .sejour-infos {
     width: 257.5px;
     height: 82.5px;
   }
-  .PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos > .sejour-desc {
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.sejour > .sejour-infos > .sejour-desc {
     font-size: 15px;
     text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
     height: 45px;
     padding-top: 5px;
   }
-  .PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos > .sejour-bottom > div {
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.sejour > .sejour-infos > .sejour-bottom > div {
     width: 125px;
   }
-  .PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos > .sejour-bottom > div > img {
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.sejour > .sejour-infos > .sejour-bottom > div > img {
     width: 17.3125px;
     height: 19.65px;
   }
-  .PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos > .sejour-bottom > p {
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.sejour > .sejour-infos > .sejour-bottom > p {
     width: 115px;
     height: 30px;
     font-size: 17.5px;
@@ -3767,7 +3780,7 @@ div.Accueil {
     display: -ms-flexbox;
     display: flex;
   }
-  .PageReservation > .PageReservation-container > .PageReservation-sejours > div {
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.sejour {
     width: 48%;
     height: 67px;
     border-radius: 25px;
@@ -3776,31 +3789,31 @@ div.Accueil {
     z-index: 2;
     position: relative;
   }
-  .PageReservation > .PageReservation-container > .PageReservation-sejours > div:first-child {
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.sejour:first-child {
     margin-right: 44px;
   }
-  .PageReservation > .PageReservation-container > .PageReservation-sejours > div:nth-child(4) > .sejour-infos > .sejour-desc {
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.sejour:nth-child(4) > .sejour-infos > .sejour-desc {
     height: 40px;
   }
-  .PageReservation > .PageReservation-container > .PageReservation-sejours > div:nth-child(4) > .sejour-infos > .sejour-desc > p:last-child {
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.sejour:nth-child(4) > .sejour-infos > .sejour-desc > p:last-child {
     font-size: 11px;
   }
-  .PageReservation > .PageReservation-container > .PageReservation-sejours > div:hover > .sejour-infos > .sejour-bottom > p {
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.sejour:hover > .sejour-infos > .sejour-bottom > p {
     background-color: #219EBC !important;
     color: #f1faee;
     text-decoration: underline;
   }
-  .PageReservation > .PageReservation-container > .PageReservation-sejours > div {
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.sejour {
     margin-top: 15px;
   }
-  .PageReservation > .PageReservation-container > .PageReservation-sejours > div > img {
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.sejour > img {
     width: 100px;
     height: 67px;
     border-radius: 25px;
     position: absolute;
     left: 0px;
   }
-  .PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos {
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.sejour > .sejour-infos {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -3811,7 +3824,7 @@ div.Accueil {
     width: 100%;
     height: 66px;
   }
-  .PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos > .sejour-desc {
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.sejour > .sejour-infos > .sejour-desc {
     font-weight: bold;
     color: #f1faee;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
@@ -3823,23 +3836,23 @@ div.Accueil {
         -ms-flex-flow: column;
             flex-flow: column;
   }
-  .PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos > .sejour-desc > p:first-child {
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.sejour > .sejour-infos > .sejour-desc > p:first-child {
     font-size: 14px;
   }
-  .PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos > .sejour-desc > p:last-child {
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.sejour > .sejour-infos > .sejour-desc > p:last-child {
     font-size: 11px;
   }
-  .PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos > .sejour-bottom {
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.sejour > .sejour-infos > .sejour-bottom {
     width: 244px;
   }
-  .PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos > .sejour-bottom > div {
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.sejour > .sejour-infos > .sejour-bottom > div {
     width: 125px;
   }
-  .PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos > .sejour-bottom > div > img {
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.sejour > .sejour-infos > .sejour-bottom > div > img {
     width: 18.8px;
     height: 21.73px;
   }
-  .PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos > .sejour-bottom > p {
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.sejour > .sejour-infos > .sejour-bottom > p {
     width: 103px;
     height: 37px;
     border-radius: 25px;
@@ -3847,25 +3860,37 @@ div.Accueil {
     font-size: 15px;
     background-color: #f1faee;
   }
-  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.btnEchelle {
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.PageReservation-sejours-buttons {
+    position: absolute;
+    bottom: 6px;
+    right: 3px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 48%;
+    height: 67px;
+  }
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.PageReservation-sejours-buttons a.btnEchelle {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: unset;
-    height: 36px;
+    height: 46px;
     padding: 0px 30px;
     z-index: 1;
-    font-size: 15px;
+    font-size: 18px;
     margin-top: unset;
     text-decoration: unset;
-    position: absolute;
-    bottom: 6px;
-    right: 3px;
   }
-  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.btnEchelle:hover {
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.PageReservation-sejours-buttons a.btnEchelle:hover {
     text-decoration: underline;
   }
-  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.btnEchelle > img {
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.PageReservation-sejours-buttons a.btnEchelle > img {
     width: 30px;
     height: auto;
     margin-left: 20px;
@@ -3965,7 +3990,7 @@ div.Accueil {
             justify-content: flex-start;
     position: relative;
   }
-  .PageReservation > .PageReservation-container > .PageReservation-sejours > div {
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.sejour {
     height: 81.07px;
     border-radius: 30.18px;
     background-color: #C21E2B;
@@ -3973,26 +3998,26 @@ div.Accueil {
     z-index: 2;
     position: relative;
   }
-  .PageReservation > .PageReservation-container > .PageReservation-sejours > div:first-child {
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.sejour:first-child {
     margin-right: 53.23px;
   }
-  .PageReservation > .PageReservation-container > .PageReservation-sejours > div:nth-child(4) > .sejour-infos > .sejour-desc {
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.sejour:nth-child(4) > .sejour-infos > .sejour-desc {
     height: 50px;
   }
-  .PageReservation > .PageReservation-container > .PageReservation-sejours > div:nth-child(4) > .sejour-infos > .sejour-desc > p:last-child {
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.sejour:nth-child(4) > .sejour-infos > .sejour-desc > p:last-child {
     font-size: 13px;
   }
-  .PageReservation > .PageReservation-container > .PageReservation-sejours > div {
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.sejour {
     margin-top: 18.75px;
   }
-  .PageReservation > .PageReservation-container > .PageReservation-sejours > div > img {
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.sejour > img {
     width: 121px;
     height: 81.07px;
     border-radius: 30.18px;
     position: absolute;
     left: 0px;
   }
-  .PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos {
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.sejour > .sejour-infos {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -4003,7 +4028,7 @@ div.Accueil {
     width: 100%;
     height: 79.84px;
   }
-  .PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos > .sejour-desc {
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.sejour > .sejour-infos > .sejour-desc {
     font-weight: bold;
     color: #f1faee;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
@@ -4015,23 +4040,23 @@ div.Accueil {
         -ms-flex-flow: column;
             flex-flow: column;
   }
-  .PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos > .sejour-desc > p:first-child {
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.sejour > .sejour-infos > .sejour-desc > p:first-child {
     font-size: 16.91px;
   }
-  .PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos > .sejour-desc > p:last-child {
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.sejour > .sejour-infos > .sejour-desc > p:last-child {
     font-size: 13px;
   }
-  .PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos > .sejour-bottom {
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.sejour > .sejour-infos > .sejour-bottom {
     width: 294.99px;
   }
-  .PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos > .sejour-bottom > div {
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.sejour > .sejour-infos > .sejour-bottom > div {
     width: 151.05px;
   }
-  .PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos > .sejour-bottom > div > img {
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.sejour > .sejour-infos > .sejour-bottom > div > img {
     width: 22.71px;
     height: 26.24px;
   }
-  .PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos > .sejour-bottom > p {
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.sejour > .sejour-infos > .sejour-bottom > p {
     width: 124.62px;
     height: 44.73px;
     border-radius: 30.18px;
@@ -4039,7 +4064,7 @@ div.Accueil {
     font-size: 18.13px;
     background-color: #f1faee;
   }
-  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.btnEchelle {
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.sejour.btnEchelle {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4055,7 +4080,7 @@ div.Accueil {
     bottom: 7.25px;
     right: 3.62px;
   }
-  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.btnEchelle > img {
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.sejour.btnEchelle > img {
     width: 36.27px;
     height: auto;
     margin-left: 24.2px;
@@ -4148,7 +4173,7 @@ div.Accueil {
             justify-content: flex-start;
     position: relative;
   }
-  .PageReservation > .PageReservation-container > .PageReservation-sejours > div {
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.sejour {
     height: 95.1px;
     border-radius: 35.41px;
     background-color: #C21E2B;
@@ -4156,26 +4181,26 @@ div.Accueil {
     z-index: 2;
     position: relative;
   }
-  .PageReservation > .PageReservation-container > .PageReservation-sejours > div:first-child {
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.sejour:first-child {
     margin-right: 59.66px;
   }
-  .PageReservation > .PageReservation-container > .PageReservation-sejours > div {
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.sejour {
     margin-top: 21.21px;
   }
-  .PageReservation > .PageReservation-container > .PageReservation-sejours > div:nth-child(4) > .sejour-infos > .sejour-desc {
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.sejour:nth-child(4) > .sejour-infos > .sejour-desc {
     height: 58px;
   }
-  .PageReservation > .PageReservation-container > .PageReservation-sejours > div:nth-child(4) > .sejour-infos > .sejour-desc > p:last-child {
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.sejour:nth-child(4) > .sejour-infos > .sejour-desc > p:last-child {
     font-size: 16px;
   }
-  .PageReservation > .PageReservation-container > .PageReservation-sejours > div > img {
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.sejour > img {
     width: 135.29px;
     height: 95.1px;
     border-radius: 35.41px;
     position: absolute;
     left: 0px;
   }
-  .PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos {
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.sejour > .sejour-infos {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -4186,7 +4211,7 @@ div.Accueil {
     width: 100%;
     height: 94.08px;
   }
-  .PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos > .sejour-desc {
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.sejour > .sejour-infos > .sejour-desc {
     font-weight: bold;
     color: #f1faee;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
@@ -4198,23 +4223,23 @@ div.Accueil {
         -ms-flex-flow: column;
             flex-flow: column;
   }
-  .PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos > .sejour-desc > p:first-child {
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.sejour > .sejour-infos > .sejour-desc > p:first-child {
     font-size: 19.85px;
   }
-  .PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos > .sejour-desc > p:last-child {
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.sejour > .sejour-infos > .sejour-desc > p:last-child {
     font-size: 16px;
   }
-  .PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos > .sejour-bottom {
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.sejour > .sejour-infos > .sejour-bottom {
     width: 348.13px;
   }
-  .PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos > .sejour-bottom > div {
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.sejour > .sejour-infos > .sejour-bottom > div {
     width: 177.42px;
   }
-  .PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos > .sejour-bottom > div > img {
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.sejour > .sejour-infos > .sejour-bottom > div > img {
     width: 26.7px;
     height: 30.78px;
   }
-  .PageReservation > .PageReservation-container > .PageReservation-sejours > div > .sejour-infos > .sejour-bottom > p {
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.sejour > .sejour-infos > .sejour-bottom > p {
     width: 146.23px;
     height: 52.41px;
     border-radius: 35.41px;
@@ -4222,7 +4247,7 @@ div.Accueil {
     font-size: 22.44px;
     background-color: #f1faee;
   }
-  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.btnEchelle {
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.sejour.btnEchelle {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4237,10 +4262,10 @@ div.Accueil {
     bottom: 8.45px;
     right: 4.22px;
   }
-  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.btnEchelle:hover {
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.sejour.btnEchelle:hover {
     text-decoration: underline;
   }
-  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.btnEchelle > img {
+  .PageReservation > .PageReservation-container > .PageReservation-sejours > div.sejour.btnEchelle > img {
     width: 42.35px;
     height: auto;
     margin-left: 28.24px;
@@ -5110,6 +5135,261 @@ div.Accueil {
   }
   .PageMentions > .PageMentions-container > p.heading,
   .PageMentions > .PageMentions-container > ul.heading {
+    font-size: 27px;
+    /* 24px / 0.827586 */
+  }
+}
+
+.PageConditions {
+  width: 100vw;
+  min-height: 100vh;
+  padding-bottom: 50px;
+  background-image: url("../../public/assets/waves-dark_blue.png");
+  position: absolute;
+  top: 0px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 90px;
+  max-width: 100%;
+}
+
+.PageConditions > h1 {
+  font-size: 20px;
+  padding: 0px 30px;
+  height: 39px;
+  background-color: #C21E2B;
+  border-radius: 25px;
+  width: auto;
+  font-weight: bold;
+}
+
+.PageConditions > .PageConditions-container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  width: 90%;
+}
+
+.PageConditions > .PageConditions-container > button {
+  width: auto;
+  height: 39px;
+  font-size: 15px;
+  padding: 0px 20px;
+  background-color: #C21E2B;
+  border-radius: 25px;
+  margin-top: 30px;
+  text-decoration: underline;
+}
+
+.PageConditions > .PageConditions-container > button > img {
+  width: 20px;
+  height: auto;
+  margin-right: 10px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.PageConditions > .PageConditions-container .margintop {
+  margin-top: 30px;
+}
+
+.PageConditions > .PageConditions-container > ul {
+  padding-left: 42px;
+}
+
+.PageConditions > .PageConditions-container > ul > li {
+  margin-top: 10px;
+}
+
+.PageConditions > .PageConditions-container > p,
+.PageConditions > .PageConditions-container > ul {
+  color: black;
+  font-size: 14px;
+  line-height: 21px;
+  list-style-type: circle;
+}
+
+.PageConditions > .PageConditions-container > p.heading,
+.PageConditions > .PageConditions-container > ul.heading {
+  font-size: 15px;
+}
+
+.PageConditions > .PageConditions-container > p.subheading,
+.PageConditions > .PageConditions-container > ul.subheading {
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.PageConditions > .PageConditions-container > p > a,
+.PageConditions > .PageConditions-container > ul > a {
+  text-decoration: underline;
+  color: white;
+}
+
+@media screen and (min-width: 450px) {
+  .PageConditions {
+    padding-bottom: 62.5px;
+    /* 50px / 0.8 */
+    padding-top: 112.5px;
+    /* 90px / 0.8 */
+  }
+  .PageConditions > h1 {
+    font-size: 25px;
+    /* 20px / 0.8 */
+    padding: 0px 37.5px;
+    /* 30px / 0.8 */
+    height: 48.75px;
+    /* 39px / 0.8 */
+  }
+  .PageConditions > .PageConditions-container > button {
+    height: 48.75px;
+    /* 39px / 0.8 */
+    padding: 0px 25px;
+    /* 20px / 0.8 */
+    margin-top: 37.5px;
+    /* 30px / 0.8 */
+    font-size: 18.75px;
+  }
+  .PageConditions > .PageConditions-container > button > img {
+    width: 25px;
+    /* 20px / 0.8 */
+    margin-right: 12.5px;
+    /* 10px / 0.8 */
+  }
+  .PageConditions > .PageConditions-container .margintop {
+    margin-top: 37.5px;
+    /* 30px / 0.8 */
+  }
+  .PageConditions > .PageConditions-container > ul {
+    padding-left: 52.5px;
+    /* 42px / 0.8 */
+  }
+  .PageConditions > .PageConditions-container > ul > li {
+    margin-top: 12.5px;
+    /* 10px / 0.8 */
+  }
+  .PageConditions > .PageConditions-container > p,
+  .PageConditions > .PageConditions-container > ul {
+    color: black;
+    font-size: 17.5px;
+    /* 14px / 0.8 */
+    line-height: 26.25px;
+    /* 21px / 0.8 */
+  }
+  .PageConditions > .PageConditions-container > p.heading,
+  .PageConditions > .PageConditions-container > ul.heading {
+    font-size: 18.75px;
+    /* 15px / 0.8 */
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .PageConditions {
+    padding-bottom: 50px;
+    padding-top: 100px;
+  }
+  .PageConditions > h1 {
+    font-size: 30px;
+    padding: 0px 40px;
+    height: 50px;
+  }
+  .PageConditions > .PageConditions-container {
+    max-width: 1180px;
+  }
+  .PageConditions > .PageConditions-container > button {
+    height: 50px;
+    padding: 0px 35px;
+    margin-top: 50px;
+    font-size: 22px;
+    text-decoration: unset;
+  }
+  .PageConditions > .PageConditions-container > button:hover {
+    text-decoration: underline;
+  }
+  .PageConditions > .PageConditions-container > button > img {
+    width: 28px;
+    margin-right: 20px;
+  }
+  .PageConditions > .PageConditions-container .margintop {
+    margin-top: 40px;
+  }
+  .PageConditions > .PageConditions-container > ul {
+    padding-left: 140px;
+  }
+  .PageConditions > .PageConditions-container > ul > li {
+    margin-top: 20px;
+  }
+  .PageConditions > .PageConditions-container > p,
+  .PageConditions > .PageConditions-container > ul {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .PageConditions > .PageConditions-container > p.heading,
+  .PageConditions > .PageConditions-container > ul.heading {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 1450px) {
+  .PageConditions {
+    padding-bottom: 60.3846px;
+    /* 50px / 0.827586 */
+    padding-top: 136.88px;
+    /* 100px / 0.827586 */
+  }
+  .PageConditions > h1 {
+    font-size: 36.2069px;
+    /* 30px / 0.827586 */
+    padding: 0px 48.276px;
+    /* 40px / 0.827586 */
+    height: 60.3448px;
+    padding-top: 4px;
+    /* 50px / 0.827586 */
+  }
+  .PageConditions > .PageConditions-container {
+    max-width: 1626.586px;
+    /* 1180px / 0.827586 */
+  }
+  .PageConditions > .PageConditions-container > button {
+    height: 60.3448px;
+    /* 50px / 0.827586 */
+    padding: 0px 42.2414px;
+    /* 35px / 0.827586 */
+    margin-top: 60.3448px;
+    /* 50px / 0.827586 */
+    font-size: 26.5862px;
+    /* 22px / 0.827586 */
+  }
+  .PageConditions > .PageConditions-container > button > img {
+    width: 33.8405px;
+    /* 28px / 0.827586 */
+    margin-right: 24.1379px;
+    /* 20px / 0.827586 */
+  }
+  .PageConditions > .PageConditions-container .margintop {
+    margin-top: 48.276px;
+    /* 40px / 0.827586 */
+  }
+  .PageConditions > .PageConditions-container > ul {
+    padding-left: 169.014px;
+    /* 140px / 0.827586 */
+  }
+  .PageConditions > .PageConditions-container > ul > li {
+    margin-top: 24.1379px;
+    /* 20px / 0.827586 */
+  }
+  .PageConditions > .PageConditions-container > p,
+  .PageConditions > .PageConditions-container > ul {
+    font-size: 22px;
+    /* 20px / 0.827586 */
+    line-height: 34px;
+    /* 30px / 0.827586 */
+  }
+  .PageConditions > .PageConditions-container > p.heading,
+  .PageConditions > .PageConditions-container > ul.heading {
     font-size: 27px;
     /* 24px / 0.827586 */
   }

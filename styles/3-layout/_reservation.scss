@@ -83,6 +83,10 @@
       margin-bottom: 10px;
       flex-flow: column;
 
+      .PageReservation-sejours-buttons {
+        display: none;
+      }
+
       &.displayNone {
         display: none;
       }

@@ -188,7 +188,7 @@ const Reservation: NextPageWithLayout<Props> = () => {
                       sejours2025.find(
                         (e) => e.trek === displayReservationForm.sejour
                       ).date
-                    }
+                    } 2025
                   </span>
                 </p>
 
