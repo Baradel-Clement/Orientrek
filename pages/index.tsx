@@ -364,9 +364,9 @@ const Accueil: NextPageWithLayout<Props> = () => {
             </div>
             <div className="maps-news drop-shadow">
               <p className="bold">
-                On se souvient des chefs de file, mais on ne connaît pas
-                forcément ceux qui ont contribué à faire de ces chefs de file de
-                grandes et hautes personnalités. Maurice Herzog
+                Un soir consacré à la lecture des grands livres est pour
+                l'esprit ce qu'un séjour en montagne est pour l'âme. André
+                Maurois
               </p>
             </div>
 
