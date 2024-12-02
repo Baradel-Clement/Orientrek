@@ -364,9 +364,8 @@ const Accueil: NextPageWithLayout<Props> = () => {
             </div>
             <div className="maps-news drop-shadow">
               <p className="bold">
-                Un soir consacré à la lecture des grands livres est pour
-                l'esprit ce qu'un séjour en montagne est pour l'âme. André
-                Maurois
+                Vieillir c’est comme escalader une montagne. Vous êtes un peu
+                essoufflé, mais la vue est bien meilleure. Ingrid Bergman
               </p>
             </div>
 
